@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowDownLeft, Wallet, Building2, Smartphone, AlertCircle, CheckCircle, Clock, XCircle } from 'lucide-react';
 import { useAuth } from '@/contexts/auth-context';
 import { useLanguage } from '@/contexts/language-context';
+import { FormatSaldo } from '@/components/format-saldo';
 
 interface SessionUser {
   id: number;
@@ -208,7 +209,7 @@ export default function WithdrawContent({ user }: { user: SessionUser }) {
             <div>
               <h1 className="text-xl font-bold text-gray-900 dark:text-white">{t('dashboardPages.withdraw.title')}</h1>
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                Saldo: <span className="font-semibold text-blue-600">Rp {saldo.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                Saldo: <FormatSaldo amount={saldo} className="font-semibold text-blue-600" />
               </p>
             </div>
           </div>

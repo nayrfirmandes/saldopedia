@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '@/contexts/auth-context';
 import { useLanguage } from '@/contexts/language-context';
+import { FormatSaldo } from '@/components/format-saldo';
 
 interface SessionUser {
   id: number;
@@ -252,7 +253,7 @@ export default function TransferContent({ user }: { user: SessionUser }) {
             <div>
               <h1 className="text-xl font-bold text-gray-900 dark:text-white">{t('dashboardPages.transfer.title')}</h1>
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                {t('dashboard.balance')}: <span className="font-semibold text-blue-600">{formatIDR(saldo)}</span>
+                {t('dashboard.balance')}: <FormatSaldo amount={saldo} className="font-semibold text-blue-600" />
               </p>
             </div>
           </div>

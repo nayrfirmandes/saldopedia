@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { ArrowLeft, Mail, Phone } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
+import { FormatSaldo } from '@/components/format-saldo';
 
 type User = {
   email: string;
@@ -15,11 +16,6 @@ type User = {
 
 export default function ProfileContent({ user }: { user: User }) {
   const { t } = useLanguage();
-
-  const formatIDR = (amount: string | number) => {
-    const num = typeof amount === 'string' ? parseFloat(amount) : amount;
-    return `Rp ${num.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-  };
 
   return (
     <div className="max-w-2xl mx-auto space-y-8">
@@ -53,7 +49,7 @@ export default function ProfileContent({ user }: { user: User }) {
 
       <div>
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">{t('dashboard.balance')}</p>
-        <p className="text-4xl font-semibold text-gray-900 dark:text-white tracking-tight">{formatIDR(user.saldo)}</p>
+        <p className="text-4xl font-semibold text-gray-900 dark:text-white tracking-tight"><FormatSaldo amount={user.saldo} /></p>
       </div>
 
       <div className="border-t border-gray-200 dark:border-gray-800 pt-8 space-y-6">

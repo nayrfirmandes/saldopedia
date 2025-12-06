@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { ArrowLeft, Upload, X, Loader2, CheckCircle, AlertCircle, Copy, Check } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
+import { FormatSaldo } from '@/components/format-saldo';
 
 type User = {
   name: string;
@@ -253,7 +254,7 @@ export default function DepositContent({ user, paymentConfig }: { user: User; pa
 
       <div className="mb-8">
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">{t('dashboard.balance')}</p>
-        <p className="text-2xl font-bold text-gray-900 dark:text-white">{formatIDR(parseFloat(user.saldo))}</p>
+        <p className="text-2xl font-bold text-gray-900 dark:text-white"><FormatSaldo amount={user.saldo} /></p>
       </div>
 
       <div className="flex items-center gap-4 mb-8">
