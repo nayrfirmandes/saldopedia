@@ -10,6 +10,7 @@ interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
+  isHydrated: boolean;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -21,6 +22,7 @@ const translationsMap = {
 
 export function LanguageProvider({ children, initialLanguage = 'id' }: { children: ReactNode; initialLanguage?: Language }) {
   const [language, setLanguageState] = useState<Language>(initialLanguage);
+  const [isHydrated, setIsHydrated] = useState(false);
   const hasHydratedRef = useRef(false);
 
   useEffect(() => {
@@ -35,6 +37,7 @@ export function LanguageProvider({ children, initialLanguage = 'id' }: { childre
       setLanguageState(savedLanguage);
     }
     hasHydratedRef.current = true;
+    setIsHydrated(true);
   }, []);
 
   const setLanguage = (lang: Language) => {
@@ -67,7 +70,7 @@ export function LanguageProvider({ children, initialLanguage = 'id' }: { childre
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, isHydrated }}>
       {children}
     </LanguageContext.Provider>
   );

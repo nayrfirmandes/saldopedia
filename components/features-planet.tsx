@@ -1,11 +1,31 @@
 'use client';
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/contexts/language-context";
 import { AnimateOnScroll } from "@/lib/use-animate-on-scroll";
 
 export default function FeaturesPlanet() {
   const { t } = useLanguage();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <section className="relative before:absolute before:inset-0 before:-z-20 before:bg-gray-900">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="py-12 md:py-20">
+            <div className="mx-auto max-w-3xl pb-16 text-center md:pb-20">
+              <div className="h-10 w-3/4 mx-auto bg-gray-700 rounded animate-pulse" />
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
   
   return (
     <section className="relative before:absolute before:inset-0 before:-z-20 before:bg-gray-900">
