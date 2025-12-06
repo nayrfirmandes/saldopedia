@@ -104,7 +104,7 @@ export default function DashboardContent({ user, userOrders, userDeposits, userW
   useEffect(() => {
     setMounted(true);
     setGreeting(getGreeting());
-  }, [user.name]);
+  }, [user.name, t]);
 
   type ActivityItem = 
     | { type: 'order'; data: Order; timestamp: number }
