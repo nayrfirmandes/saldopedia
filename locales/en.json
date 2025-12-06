@@ -2482,6 +2482,15 @@
     "needHelp": "Need help?",
     "backToDashboard": "Back to Dashboard",
     "copied": "Copied!",
-    "copy": "Copy"
+    "copy": "Copy",
+    "statusPendingProof": "Awaiting Proof",
+    "uploadProofTitle": "Upload {service} Transfer Proof",
+    "uploadProofDesc": "After sending the balance to the email above, upload a screenshot of the transfer for verification.",
+    "selectFile": "Select file (JPG, PNG, WebP, PDF - Max 10MB)",
+    "uploadButton": "Upload Proof",
+    "uploading": "Uploading...",
+    "uploadSuccess": "Proof Uploaded Successfully!",
+    "uploadSuccessDesc": "Your order is being verified. You will receive an email notification when the admin confirms the payment.",
+    "uploadProofStep": "Upload transfer proof above"
   }
 }

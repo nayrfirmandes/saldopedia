@@ -2482,6 +2482,15 @@
     "needHelp": "Butuh bantuan?",
     "backToDashboard": "Kembali ke Dashboard",
     "copied": "Tersalin!",
-    "copy": "Salin"
+    "copy": "Salin",
+    "statusPendingProof": "Menunggu Bukti",
+    "uploadProofTitle": "Upload Bukti Pengiriman {service}",
+    "uploadProofDesc": "Setelah mengirim saldo ke email di atas, upload bukti screenshot pengiriman untuk verifikasi.",
+    "selectFile": "Pilih file (JPG, PNG, WebP, PDF - Max 10MB)",
+    "uploadButton": "Upload Bukti",
+    "uploading": "Mengupload...",
+    "uploadSuccess": "Bukti Berhasil Diupload!",
+    "uploadSuccessDesc": "Pesanan Anda sedang diverifikasi. Anda akan menerima notifikasi email saat admin mengkonfirmasi pembayaran.",
+    "uploadProofStep": "Upload bukti pengiriman di atas"
   }
 }

@@ -157,7 +157,7 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
               {order.status === "pending" || order.status === "pending_proof" ? (
                 <>
                   <Clock className="w-4 h-4" />
-                  {order.status === "pending_proof" ? "Menunggu Bukti" : t('orderInstructions.statusPending')}
+                  {order.status === "pending_proof" ? t('orderInstructions.statusPendingProof') : t('orderInstructions.statusPending')}
                 </>
               ) : order.status === "confirmed" ? (
                 <>
@@ -412,10 +412,10 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
                   <Upload className="w-5 h-5 text-orange-600 dark:text-orange-400 flex-shrink-0 mt-0.5" />
                   <div className="flex-1">
                     <p className="font-medium text-orange-800 dark:text-orange-300 mb-2">
-                      Upload Bukti Pengiriman {serviceLabel}
+                      {t('orderInstructions.uploadProofTitle').replace('{service}', serviceLabel)}
                     </p>
                     <p className="text-sm text-orange-700 dark:text-orange-400 mb-4">
-                      Setelah mengirim saldo ke email di atas, upload bukti screenshot pengiriman untuk verifikasi.
+                      {t('orderInstructions.uploadProofDesc')}
                     </p>
                     
                     <div className="space-y-3">
@@ -442,7 +442,7 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
                             <>
                               <FileImage className="w-5 h-5 text-gray-400" />
                               <span className="text-sm text-gray-500 dark:text-gray-400">
-                                Pilih file (JPG, PNG, WebP, PDF - Max 10MB)
+                                {t('orderInstructions.selectFile')}
                               </span>
                             </>
                           )}
@@ -468,12 +468,12 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
                         {uploading ? (
                           <>
                             <Loader2 className="w-4 h-4 animate-spin" />
-                            Mengupload...
+                            {t('orderInstructions.uploading')}
                           </>
                         ) : (
                           <>
                             <Upload className="w-4 h-4" />
-                            Upload Bukti
+                            {t('orderInstructions.uploadButton')}
                           </>
                         )}
                       </button>
@@ -489,10 +489,10 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
                   <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-medium text-green-800 dark:text-green-300 mb-1">
-                      Bukti Berhasil Diupload!
+                      {t('orderInstructions.uploadSuccess')}
                     </p>
                     <p className="text-sm text-green-700 dark:text-green-400">
-                      Tim kami akan memverifikasi pembayaran Anda. Saldo akan dikreditkan setelah konfirmasi.
+                      {t('orderInstructions.uploadSuccessDesc')}
                     </p>
                   </div>
                 </div>
@@ -518,9 +518,9 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
               <ol className="list-decimal list-inside space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
                 <li>{t('orderInstructions.loginTo').replace('{service}', serviceLabel).replace('{email}', (isPayPal ? order.paypal_email : order.skrill_email) || '')}</li>
                 <li>{t('orderInstructions.sendAmountTo').replace('{amount}', formatUSD(order.amount_input))} <span className="font-mono text-blue-600 dark:text-blue-400">{adminEmail}</span></li>
-                <li>Screenshot bukti pengiriman</li>
+                <li>{t('orderInstructions.screenshotProof')}</li>
                 {isPendingProof ? (
-                  <li>Upload bukti pengiriman di atas</li>
+                  <li>{t('orderInstructions.uploadProofStep')}</li>
                 ) : (
                   <li>{t('orderInstructions.sendViaWhatsApp').replace('{phone}', paymentConfig.whatsapp)} <span className="font-mono font-semibold text-gray-900 dark:text-white">{order.order_id}</span></li>
                 )}
