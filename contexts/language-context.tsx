@@ -24,6 +24,7 @@ export function LanguageProvider({ children, initialLanguage = 'id' }: { childre
   const [language, setLanguageState] = useState<Language>(initialLanguage);
   const [isHydrated, setIsHydrated] = useState(false);
   const hasHydratedRef = useRef(false);
+  const initialLanguageRef = useRef<Language>(initialLanguage);
 
   useEffect(() => {
     if (typeof document !== 'undefined') {
@@ -54,7 +55,9 @@ export function LanguageProvider({ children, initialLanguage = 'id' }: { childre
   };
 
   const t = (key: string): string => {
-    const translations = translationsMap[language];
+    // Use initial language until hydration completes to prevent server/client mismatch
+    const langToUse = isHydrated ? language : initialLanguageRef.current;
+    const translations = translationsMap[langToUse];
     const keys = key.split('.');
     let value: any = translations;
     
