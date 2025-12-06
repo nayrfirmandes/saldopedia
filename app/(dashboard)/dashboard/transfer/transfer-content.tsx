@@ -12,7 +12,11 @@ import {
   CheckCircle, 
   User,
   Loader2,
-  X
+  X,
+  Star,
+  Clock,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
 import { useAuth } from '@/contexts/auth-context';
 import { useLanguage } from '@/contexts/language-context';
@@ -46,6 +50,17 @@ interface RecipientInfo {
   email: string;
 }
 
+interface SavedRecipient {
+  id: number;
+  recipientId: number;
+  label: string | null;
+  usedCount: number;
+  lastUsedAt: string | null;
+  createdAt: string;
+  recipientName: string;
+  recipientEmail: string;
+}
+
 type Step = 1 | 2 | 3;
 
 export default function TransferContent({ user }: { user: SessionUser }) {
@@ -68,6 +83,12 @@ export default function TransferContent({ user }: { user: SessionUser }) {
   const [transfers, setTransfers] = useState<Transfer[]>([]);
   const [loadingHistory, setLoadingHistory] = useState(true);
   
+  const [savedRecipients, setSavedRecipients] = useState<SavedRecipient[]>([]);
+  const [loadingSavedRecipients, setLoadingSavedRecipients] = useState(true);
+  const [showSavedRecipients, setShowSavedRecipients] = useState(false);
+  const [saveThisRecipient, setSaveThisRecipient] = useState(false);
+  const [recipientLabel, setRecipientLabel] = useState('');
+  
   const messageRef = useRef<HTMLDivElement>(null);
   const amountInputRef = useRef<HTMLInputElement>(null);
 
@@ -88,7 +109,66 @@ export default function TransferContent({ user }: { user: SessionUser }) {
 
   useEffect(() => {
     fetchTransfers();
+    fetchSavedRecipients();
   }, []);
+
+  const fetchSavedRecipients = async () => {
+    try {
+      const res = await fetch('/api/saved-recipients');
+      if (res.ok) {
+        const data = await res.json();
+        if (data.success) {
+          setSavedRecipients(data.recipients);
+        }
+      }
+    } catch (err) {
+      console.error('Failed to fetch saved recipients:', err);
+    } finally {
+      setLoadingSavedRecipients(false);
+    }
+  };
+
+  const getRecentRecipients = (): RecipientInfo[] => {
+    const sentTransfers = transfers.filter(tx => tx.type === 'sent');
+    const uniqueRecipients = new Map<number, RecipientInfo>();
+    
+    for (const tx of sentTransfers) {
+      if (!uniqueRecipients.has(tx.receiverId)) {
+        uniqueRecipients.set(tx.receiverId, {
+          id: tx.receiverId,
+          name: tx.receiverName,
+          email: tx.receiverEmail,
+        });
+      }
+      if (uniqueRecipients.size >= 5) break;
+    }
+    
+    return Array.from(uniqueRecipients.values());
+  };
+
+  const handleSelectSavedRecipient = (recipient: SavedRecipient) => {
+    setRecipientEmail(recipient.recipientEmail);
+    setRecipientInfo({
+      id: recipient.recipientId,
+      name: recipient.recipientName,
+      email: recipient.recipientEmail,
+    });
+    setShowSavedRecipients(false);
+    goToStep(2);
+    
+    fetch(`/api/saved-recipients/${recipient.id}`, { method: 'POST' }).catch(() => {});
+  };
+
+  const handleSelectRecentRecipient = (recipient: RecipientInfo) => {
+    setRecipientEmail(recipient.email);
+    setRecipientInfo(recipient);
+    setShowSavedRecipients(false);
+    goToStep(2);
+  };
+
+  const isRecipientAlreadySaved = (recipientId: number) => {
+    return savedRecipients.some(r => r.recipientId === recipientId);
+  };
 
   useEffect(() => {
     if ((error || success) && messageRef.current) {
@@ -202,6 +282,22 @@ export default function TransferContent({ user }: { user: SessionUser }) {
       });
       setSuccess(t('dashboardPages.transfer.successMessage').replace('{name}', data.recipientName));
       
+      if (saveThisRecipient && recipientInfo && !isRecipientAlreadySaved(recipientInfo.id)) {
+        try {
+          await fetch('/api/saved-recipients', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              recipientId: recipientInfo.id,
+              label: recipientLabel.trim() || null,
+            }),
+          });
+          await fetchSavedRecipients();
+        } catch (saveErr) {
+          console.error('Failed to save recipient:', saveErr);
+        }
+      }
+      
       try {
         await refreshAuth();
         await fetchTransfers();
@@ -224,6 +320,9 @@ export default function TransferContent({ user }: { user: SessionUser }) {
     setError('');
     setSuccess('');
     setTransferResult(null);
+    setSaveThisRecipient(false);
+    setRecipientLabel('');
+    setShowSavedRecipients(false);
   };
 
   return (
@@ -319,6 +418,99 @@ export default function TransferContent({ user }: { user: SessionUser }) {
 
           {!success && step === 1 && (
             <div className="space-y-4">
+              {(savedRecipients.length > 0 || getRecentRecipients().length > 0) && (
+                <div className="space-y-3">
+                  <button
+                    type="button"
+                    onClick={() => setShowSavedRecipients(!showSavedRecipients)}
+                    className="w-full flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-800/50 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                  >
+                    <div className="flex items-center gap-2">
+                      <Star className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                        {t('dashboardPages.transfer.savedRecipients') || 'Penerima Tersimpan'}
+                      </span>
+                      {savedRecipients.length > 0 && (
+                        <span className="text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-2 py-0.5 rounded-full">
+                          {savedRecipients.length}
+                        </span>
+                      )}
+                    </div>
+                    {showSavedRecipients ? (
+                      <ChevronUp className="w-4 h-4 text-gray-400" />
+                    ) : (
+                      <ChevronDown className="w-4 h-4 text-gray-400" />
+                    )}
+                  </button>
+
+                  {showSavedRecipients && (
+                    <div className="space-y-4 p-3 bg-gray-50 dark:bg-gray-800/30 rounded-lg">
+                      {savedRecipients.length > 0 && (
+                        <div className="space-y-2">
+                          <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide flex items-center gap-1.5">
+                            <Star className="w-3 h-3" />
+                            {t('dashboardPages.transfer.favoriteLabel') || 'Favorit'}
+                          </p>
+                          <div className="space-y-1">
+                            {savedRecipients.slice(0, 5).map((recipient) => (
+                              <button
+                                key={recipient.id}
+                                type="button"
+                                onClick={() => handleSelectSavedRecipient(recipient)}
+                                className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-white dark:hover:bg-gray-700 transition-colors text-left"
+                              >
+                                <div className="flex items-center justify-center w-8 h-8 bg-blue-600 text-white rounded-full font-semibold text-xs">
+                                  {getInitials(recipient.recipientName)}
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                  <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
+                                    {recipient.label || recipient.recipientName}
+                                  </p>
+                                  <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
+                                    {recipient.recipientEmail}
+                                  </p>
+                                </div>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {getRecentRecipients().length > 0 && (
+                        <div className="space-y-2">
+                          <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide flex items-center gap-1.5">
+                            <Clock className="w-3 h-3" />
+                            {t('dashboardPages.transfer.recentLabel') || 'Terakhir'}
+                          </p>
+                          <div className="space-y-1">
+                            {getRecentRecipients().map((recipient) => (
+                              <button
+                                key={recipient.id}
+                                type="button"
+                                onClick={() => handleSelectRecentRecipient(recipient)}
+                                className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-white dark:hover:bg-gray-700 transition-colors text-left"
+                              >
+                                <div className="flex items-center justify-center w-8 h-8 bg-gray-400 text-white rounded-full font-semibold text-xs">
+                                  {getInitials(recipient.name)}
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                  <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
+                                    {recipient.name}
+                                  </p>
+                                  <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
+                                    {recipient.email}
+                                  </p>
+                                </div>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                   {t('dashboardPages.transfer.recipientEmail')}
@@ -504,6 +696,33 @@ export default function TransferContent({ user }: { user: SessionUser }) {
                   </div>
                 </div>
               </div>
+
+              {recipientInfo && !isRecipientAlreadySaved(recipientInfo.id) && (
+                <div className="space-y-2">
+                  <label className="flex items-center gap-3 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={saveThisRecipient}
+                      onChange={(e) => setSaveThisRecipient(e.target.checked)}
+                      className="w-4 h-4 text-blue-600 border-gray-300 dark:border-gray-600 rounded focus:ring-blue-500"
+                    />
+                    <span className="text-sm text-gray-700 dark:text-gray-300">
+                      {t('dashboardPages.transfer.saveRecipientCheckbox') || 'Simpan penerima ini untuk transfer berikutnya'}
+                    </span>
+                  </label>
+                  
+                  {saveThisRecipient && (
+                    <input
+                      type="text"
+                      value={recipientLabel}
+                      onChange={(e) => setRecipientLabel(e.target.value)}
+                      placeholder={t('dashboardPages.transfer.recipientLabelPlaceholder') || 'Label (contoh: Ibu, Adik, Teman)'}
+                      maxLength={50}
+                      className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                    />
+                  )}
+                </div>
+              )}
 
               <div className="flex gap-3">
                 <button
