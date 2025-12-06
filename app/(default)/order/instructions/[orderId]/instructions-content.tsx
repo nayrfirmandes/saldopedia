@@ -5,9 +5,11 @@ import { Copy, Check } from 'lucide-react';
 
 interface CopyButtonInlineProps {
   text: string;
+  copiedText?: string;
+  copyText?: string;
 }
 
-export function CopyButtonInline({ text }: CopyButtonInlineProps) {
+export function CopyButtonInline({ text, copiedText = 'Tersalin!', copyText = 'Salin' }: CopyButtonInlineProps) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = useCallback(async () => {
@@ -42,7 +44,7 @@ export function CopyButtonInline({ text }: CopyButtonInlineProps) {
           ? 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30'
           : 'text-gray-400 dark:text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700'
       }`}
-      title={copied ? 'Tersalin!' : 'Salin'}
+      title={copied ? copiedText : copyText}
     >
       {copied ? (
         <Check className="w-3.5 h-3.5" />
@@ -57,9 +59,11 @@ interface CopyableAddressProps {
   address: string;
   label?: string;
   className?: string;
+  copiedText?: string;
+  copyText?: string;
 }
 
-export function CopyableAddress({ address, label, className = '' }: CopyableAddressProps) {
+export function CopyableAddress({ address, label, className = '', copiedText = 'Tersalin!', copyText = 'Salin' }: CopyableAddressProps) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = useCallback(async () => {
@@ -106,12 +110,12 @@ export function CopyableAddress({ address, label, className = '' }: CopyableAddr
           {copied ? (
             <>
               <Check className="w-3.5 h-3.5" />
-              Tersalin!
+              {copiedText}
             </>
           ) : (
             <>
               <Copy className="w-3.5 h-3.5" />
-              Salin
+              {copyText}
             </>
           )}
         </button>
@@ -124,9 +128,11 @@ interface CopyableEmailProps {
   email: string;
   label?: string;
   className?: string;
+  copiedText?: string;
+  copyText?: string;
 }
 
-export function CopyableEmail({ email, label, className = '' }: CopyableEmailProps) {
+export function CopyableEmail({ email, label, className = '', copiedText = 'Tersalin!', copyText = 'Salin' }: CopyableEmailProps) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = useCallback(async () => {
@@ -169,7 +175,7 @@ export function CopyableEmail({ email, label, className = '' }: CopyableEmailPro
               ? 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400'
               : 'text-gray-400 dark:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400'
           }`}
-          title={copied ? 'Tersalin!' : 'Salin'}
+          title={copied ? copiedText : copyText}
         >
           {copied ? (
             <Check className="w-4 h-4" />
