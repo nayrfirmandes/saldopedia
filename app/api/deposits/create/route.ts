@@ -5,16 +5,17 @@ import { getSessionUser } from "@/lib/auth/session";
 import { getDatabaseUrl } from "@/lib/db-url";
 import { getDepositConfirmUrl } from "@/lib/deposit-token";
 import { generateDepositAdminEmailHTML, generateDepositUserRequestEmailHTML } from "../email-templates";
-import { adminPaymentConfig } from "@/lib/payment-config";
+import { getAdminPaymentConfig } from "@/lib/payment-config";
 
 function getTargetAccountInfo(method: string, bankCode: string) {
+  const config = getAdminPaymentConfig();
   if (method === 'bank_transfer') {
-    const bank = adminPaymentConfig.bankAccounts.find(b => b.bank === bankCode);
+    const bank = config.bankAccounts.find(b => b.bank === bankCode);
     if (bank) {
       return { name: bank.accountName, number: bank.accountNumber };
     }
   } else if (method === 'ewallet') {
-    const wallet = adminPaymentConfig.ewallets.find(w => w.provider === bankCode);
+    const wallet = config.ewallets.find(w => w.provider === bankCode);
     if (wallet) {
       return { name: wallet.accountName, number: wallet.phoneNumber };
     }

@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/contexts/language-context";
-import { adminPaymentConfig } from "@/lib/payment-config";
 import OrderCountdown from "@/components/order-countdown";
 import { CopyableAddress, CopyableEmail } from "./instructions-content";
 import {
@@ -34,11 +33,18 @@ interface OrderData {
   rate: string;
 }
 
-interface InstructionsClientWrapperProps {
-  order: OrderData;
+interface PaymentConfig {
+  paypal: { email: string; name: string };
+  skrill: { email: string; name: string };
+  whatsapp: string;
 }
 
-export default function InstructionsClientWrapper({ order }: InstructionsClientWrapperProps) {
+interface InstructionsClientWrapperProps {
+  order: OrderData;
+  paymentConfig: PaymentConfig;
+}
+
+export default function InstructionsClientWrapper({ order, paymentConfig }: InstructionsClientWrapperProps) {
   const { t } = useLanguage();
 
   const formatIDR = (amount: string) => {
@@ -72,9 +78,9 @@ export default function InstructionsClientWrapper({ order }: InstructionsClientW
   const transactionLabel = isBuy ? t('orderInstructions.buy') : t('orderInstructions.sell');
 
   const adminEmail = isPayPal
-    ? adminPaymentConfig.paypal.email
+    ? paymentConfig.paypal.email
     : isSkrill
-    ? adminPaymentConfig.skrill.email
+    ? paymentConfig.skrill.email
     : "";
 
   const copiedText = t('orderInstructions.copied');
@@ -362,7 +368,7 @@ export default function InstructionsClientWrapper({ order }: InstructionsClientW
                 <div className="flex justify-between items-baseline py-2">
                   <div className="text-xs text-gray-600 dark:text-gray-400">{t('orderInstructions.accountName')}</div>
                   <div className="font-medium text-sm text-gray-900 dark:text-white">
-                    {isPayPal ? adminPaymentConfig.paypal.name : adminPaymentConfig.skrill.name}
+                    {isPayPal ? paymentConfig.paypal.name : paymentConfig.skrill.name}
                   </div>
                 </div>
               </div>
@@ -386,7 +392,7 @@ export default function InstructionsClientWrapper({ order }: InstructionsClientW
                 <li>{t('orderInstructions.loginTo').replace('{service}', serviceLabel).replace('{email}', (isPayPal ? order.paypal_email : order.skrill_email) || '')}</li>
                 <li>{t('orderInstructions.sendAmountTo').replace('{amount}', formatUSD(order.amount_input))} <span className="font-mono text-blue-600 dark:text-blue-400">{adminEmail}</span></li>
                 <li>{t('orderInstructions.screenshotProof')}</li>
-                <li>{t('orderInstructions.sendViaWhatsApp').replace('{phone}', adminPaymentConfig.whatsapp)} <span className="font-mono font-semibold text-gray-900 dark:text-white">{order.order_id}</span></li>
+                <li>{t('orderInstructions.sendViaWhatsApp').replace('{phone}', paymentConfig.whatsapp)} <span className="font-mono font-semibold text-gray-900 dark:text-white">{order.order_id}</span></li>
                 <li>{t('orderInstructions.saldoCreditedAmount').replace('{amount}', formatIDR(order.amount_idr))}</li>
               </ol>
             </div>
@@ -395,7 +401,7 @@ export default function InstructionsClientWrapper({ order }: InstructionsClientW
 
         <div className="text-center pt-6 border-t border-gray-200 dark:border-gray-700">
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-            {t('orderInstructions.needHelp')} <a href={`https://wa.me/${adminPaymentConfig.whatsapp.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="text-green-600 dark:text-green-400 font-medium hover:underline inline-flex items-center gap-1"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
+            {t('orderInstructions.needHelp')} <a href={`https://wa.me/${paymentConfig.whatsapp.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="text-green-600 dark:text-green-400 font-medium hover:underline inline-flex items-center gap-1"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
           </p>
           <Link 
             href="/dashboard" 

@@ -53,35 +53,41 @@ const defaultEwallets = [
   },
 ];
 
-export const adminPaymentConfig = {
-  // Bank Accounts (for IDR transfers)
-  // Override with: ADMIN_BANK_ACCOUNTS='[{"bank":"BCA","accountNumber":"123","accountName":"Name"}]'
-  bankAccounts: parseEnvArray(process.env.ADMIN_BANK_ACCOUNTS, defaultBankAccounts),
-  
-  // E-Wallets (for IDR transfers)
-  // Override with: ADMIN_EWALLETS='[{"provider":"GoPay","phoneNumber":"08119666620","accountName":"Name"}]'
-  ewallets: parseEnvArray(process.env.ADMIN_EWALLETS, defaultEwallets),
-  
-  // PayPal Account (for receiving PayPal balance)
-  paypal: {
-    email: process.env.ADMIN_PAYPAL_EMAIL || "Saldopedia.co@gmail.com",
-    name: "-",
-  },
-  
-  // Skrill Account (for receiving Skrill balance)
-  skrill: {
-    email: process.env.ADMIN_SKRILL_EMAIL || "nayrfirmandes@proton.me",
-    name: "Ryan Firmandes",
-  },
-  
-  // Contact
-  whatsapp: "08119666620",
-  supportEmail: "support@saldopedia.com",
-};
+export function getAdminPaymentConfig() {
+  return {
+    // Bank Accounts (for IDR transfers)
+    // Override with: ADMIN_BANK_ACCOUNTS='[{"bank":"BCA","accountNumber":"123","accountName":"Name"}]'
+    bankAccounts: parseEnvArray(process.env.ADMIN_BANK_ACCOUNTS, defaultBankAccounts),
+    
+    // E-Wallets (for IDR transfers)
+    // Override with: ADMIN_EWALLETS='[{"provider":"GoPay","phoneNumber":"08119666620","accountName":"Name"}]'
+    ewallets: parseEnvArray(process.env.ADMIN_EWALLETS, defaultEwallets),
+    
+    // PayPal Account (for receiving PayPal balance)
+    paypal: {
+      email: process.env.ADMIN_PAYPAL_EMAIL || "Saldopedia.co@gmail.com",
+      name: "-",
+    },
+    
+    // Skrill Account (for receiving Skrill balance)
+    skrill: {
+      email: process.env.ADMIN_SKRILL_EMAIL || "nayrfirmandes@proton.me",
+      name: "Ryan Firmandes",
+    },
+    
+    // Contact
+    whatsapp: "08119666620",
+    supportEmail: "support@saldopedia.com",
+  };
+}
+
+// For backward compatibility
+export const adminPaymentConfig = getAdminPaymentConfig();
 
 // Helper function to get admin email based on service type
 export function getAdminEmail(serviceType: "paypal" | "skrill"): string {
+  const config = getAdminPaymentConfig();
   return serviceType === "paypal" 
-    ? adminPaymentConfig.paypal.email 
-    : adminPaymentConfig.skrill.email;
+    ? config.paypal.email 
+    : config.skrill.email;
 }

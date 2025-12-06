@@ -1,6 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 import { getCachedOrderById } from "@/lib/orders";
 import { getSessionUser } from "@/lib/auth/session";
+import { getAdminPaymentConfig } from "@/lib/payment-config";
 import InstructionsClientWrapper from "./instructions-client-wrapper";
 
 export const revalidate = 10;
@@ -36,5 +37,6 @@ export default async function InstructionsPage({
     redirect(`/order/expired?orderId=${orderId}`);
   }
 
-  return <InstructionsClientWrapper order={order} />;
+  const paymentConfig = getAdminPaymentConfig();
+  return <InstructionsClientWrapper order={order} paymentConfig={paymentConfig} />;
 }

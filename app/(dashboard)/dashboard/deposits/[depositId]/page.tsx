@@ -2,6 +2,7 @@ import { getSessionUser } from '@/lib/auth/session';
 import { redirect, notFound } from 'next/navigation';
 import { formatDateWIB } from '@/lib/formatters';
 import { getDepositById } from '@/lib/deposits';
+import { getAdminPaymentConfig } from '@/lib/payment-config';
 import DepositDetailContent from './deposit-detail-content';
 
 export const dynamic = 'force-dynamic';
@@ -69,5 +70,6 @@ export default async function DepositDetailPage({ params }: PageProps) {
     completedAt: completedAtDate ? formatDateWIB(completedAtDate) : null,
   };
 
-  return <DepositDetailContent deposit={serializedDeposit} />;
+  const paymentConfig = getAdminPaymentConfig();
+  return <DepositDetailContent deposit={serializedDeposit} paymentConfig={paymentConfig} />;
 }

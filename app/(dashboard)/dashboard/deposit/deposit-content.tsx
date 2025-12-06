@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { ArrowLeft, Upload, X, Loader2, CheckCircle, AlertCircle, Copy, Check } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
-import { adminPaymentConfig } from '@/lib/payment-config';
 
 type User = {
   name: string;
@@ -13,6 +12,23 @@ type User = {
   saldo: string;
   phone: string | null;
 };
+
+interface BankAccount {
+  bank: string;
+  accountNumber: string;
+  accountName: string;
+}
+
+interface Ewallet {
+  provider: string;
+  phoneNumber: string;
+  accountName: string;
+}
+
+interface PaymentConfig {
+  bankAccounts: BankAccount[];
+  ewallets: Ewallet[];
+}
 
 type DepositDetails = {
   depositId: string;
@@ -36,7 +52,7 @@ const DEPOSIT_FEE = 1500;
 const UNIQUE_CODE_MIN = 100;
 const UNIQUE_CODE_MAX = 300;
 
-export default function DepositContent({ user }: { user: User }) {
+export default function DepositContent({ user, paymentConfig }: { user: User; paymentConfig: PaymentConfig }) {
   const { t } = useLanguage();
   const router = useRouter();
   
@@ -68,13 +84,13 @@ export default function DepositContent({ user }: { user: User }) {
   const selectedAmountNum = parseFloat(selectedAmount) || 0;
 
   const paymentOptions = method === 'bank_transfer' 
-    ? adminPaymentConfig.bankAccounts.map(acc => ({
+    ? paymentConfig.bankAccounts.map(acc => ({
         code: acc.bank,
         label: acc.bank,
         accountNumber: acc.accountNumber,
         accountName: acc.accountName,
       }))
-    : adminPaymentConfig.ewallets.map(ew => ({
+    : paymentConfig.ewallets.map(ew => ({
         code: ew.provider,
         label: ew.provider,
         accountNumber: ew.phoneNumber,

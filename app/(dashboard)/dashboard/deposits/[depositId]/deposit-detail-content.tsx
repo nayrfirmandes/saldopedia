@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/contexts/language-context';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, XCircle, AlertTriangle, ArrowUpRight, Upload, X, Loader2, Copy, Check } from 'lucide-react';
-import { adminPaymentConfig } from '@/lib/payment-config';
 
 interface Deposit {
   depositId: string;
@@ -23,11 +22,29 @@ interface Deposit {
   completedAt: string | null;
 }
 
-interface DepositDetailContentProps {
-  deposit: Deposit;
+interface BankAccount {
+  bank: string;
+  accountNumber: string;
+  accountName: string;
 }
 
-export default function DepositDetailContent({ deposit }: DepositDetailContentProps) {
+interface Ewallet {
+  provider: string;
+  phoneNumber: string;
+  accountName: string;
+}
+
+interface PaymentConfig {
+  bankAccounts: BankAccount[];
+  ewallets: Ewallet[];
+}
+
+interface DepositDetailContentProps {
+  deposit: Deposit;
+  paymentConfig: PaymentConfig;
+}
+
+export default function DepositDetailContent({ deposit, paymentConfig }: DepositDetailContentProps) {
   const { t } = useLanguage();
   const router = useRouter();
   const [proofFile, setProofFile] = useState<File | null>(null);
@@ -45,10 +62,10 @@ export default function DepositDetailContent({ deposit }: DepositDetailContentPr
 
   const getTargetAccount = () => {
     if (deposit.method === 'bank_transfer') {
-      const bank = adminPaymentConfig.bankAccounts.find(b => b.bank === deposit.bankCode);
+      const bank = paymentConfig.bankAccounts.find(b => b.bank === deposit.bankCode);
       if (bank) return { name: bank.accountName, number: bank.accountNumber };
     } else if (deposit.method === 'ewallet') {
-      const wallet = adminPaymentConfig.ewallets.find(w => w.provider === deposit.bankCode);
+      const wallet = paymentConfig.ewallets.find(w => w.provider === deposit.bankCode);
       if (wallet) return { name: wallet.accountName, number: wallet.phoneNumber };
     }
     return { name: 'Saldopedia', number: deposit.bankCode || '' };
