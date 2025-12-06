@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback, useRef, ReactNode } from 'react';
 
 interface User {
   id: number;
@@ -49,8 +49,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   
   const [loading, setLoading] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const userRef = useRef(user);
+  const initialCheckDone = useRef(false);
   
-  // Prevent hydration mismatch by waiting for client mount
+  useEffect(() => {
+    userRef.current = user;
+  }, [user]);
+  
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -60,24 +65,21 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setLoading(true);
     }
     
-    // Smart optimization: Skip API call only if we recently got 401
-    // BUT allow force bypass for post-login scenarios
     if (!force) {
       const shouldSkip = (() => {
-        if (user) return false; // Always check if we think we're logged in
+        if (userRef.current) return false;
         
         try {
           const last401 = localStorage.getItem(AUTH_LAST_401_KEY);
-          if (!last401) return false; // No 401 history, do the check
+          if (!last401) return false;
           
           const last401Time = parseInt(last401, 10);
           const now = Date.now();
           const fiveMinutes = 5 * 60 * 1000;
           
-          // Skip only if we got 401 within last 5 minutes (definitely anonymous)
           return now - last401Time < fiveMinutes;
         } catch {
-          return false; // If error, better to check
+          return false;
         }
       })();
       
@@ -96,11 +98,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       });
       
       if (response.ok) {
-        // Defensive JSON parsing with validation
         try {
           const data = await response.json();
           
-          // ONLY update user if valid user data exists
           if (data && data.user && typeof data.user === 'object') {
             setUser(data.user);
             
@@ -109,40 +109,33 @@ export function AuthProvider({ children }: { children: ReactNode }) {
                 user: data.user,
                 timestamp: Date.now()
               }));
-              // Clear 401 marker since we're logged in
               localStorage.removeItem(AUTH_LAST_401_KEY);
             } catch (error) {
               console.error('Auth cache write error:', error);
             }
           } else {
-            // Malformed response - keep existing user, log warning
             console.warn('Profile API returned 200 but invalid user data:', data);
           }
         } catch (jsonError) {
-          // JSON parse error - keep existing user, log error
           console.error('Failed to parse profile response:', jsonError);
         }
       } else if (response.status === 401) {
-        // ONLY logout on 401 (session expired), NOT on other errors
         setUser(null);
         try {
           localStorage.removeItem(AUTH_CACHE_KEY);
-          // Mark timestamp of last 401 to skip subsequent calls for 5 minutes
           localStorage.setItem(AUTH_LAST_401_KEY, Date.now().toString());
         } catch (error) {
           console.error('Auth cache clear error:', error);
         }
       }
-      // Ignore other errors (500, network blips) - keep user logged in
     } catch (error) {
-      // Network errors - keep user logged in, don't clear session
       console.error('Auth refresh network error:', error);
     } finally {
       if (showLoading) {
         setLoading(false);
       }
     }
-  }, [user]);
+  }, []);
 
   const logout = useCallback(async () => {
     try {
@@ -159,13 +152,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
-    // Silent background refresh - no loading spinner
+    if (initialCheckDone.current) return;
+    initialCheckDone.current = true;
+    
     refreshAuth(false, true);
 
-    // AUTO LOGOUT: Periodic session check setiap 5 menit
     const intervalId = setInterval(() => {
       refreshAuth(false, false);
-    }, 5 * 60 * 1000); // 5 minutes
+    }, 5 * 60 * 1000);
 
     return () => clearInterval(intervalId);
   }, [refreshAuth]);

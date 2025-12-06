@@ -1,69 +1,87 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/contexts/auth-context';
 
-const IDLE_TIMEOUT = 10 * 60 * 1000; // 10 minutes in milliseconds
+const IDLE_TIMEOUT = 10 * 60 * 1000; // 10 minutes
 
 export default function AutoLogout() {
   const router = useRouter();
   const { user, loading, logout } = useAuth();
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const lastActivityRef = useRef<number>(Date.now());
-  const isSetupRef = useRef<boolean>(false);
-  const logoutRef = useRef(logout);
-  const userRef = useRef(user);
+  const listenersAttached = useRef(false);
+  const setupLoggedRef = useRef<string | null>(null);
 
-  useEffect(() => {
-    logoutRef.current = logout;
-    userRef.current = user;
-  }, [logout, user]);
+  const clearTimer = useCallback(() => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+  }, []);
+
+  const startTimer = useCallback(() => {
+    clearTimer();
+    timeoutRef.current = setTimeout(async () => {
+      console.log('[AutoLogout] Idle timeout reached, logging out...');
+      await logout();
+      router.push('/login?reason=timeout');
+    }, IDLE_TIMEOUT);
+  }, [clearTimer, logout, router]);
+
+  const handleActivity = useCallback(() => {
+    lastActivityRef.current = Date.now();
+    if (timeoutRef.current) {
+      clearTimer();
+      startTimer();
+    }
+  }, [clearTimer, startTimer]);
 
   useEffect(() => {
     if (loading) return;
 
     if (!user) {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-        timeoutRef.current = null;
+      clearTimer();
+      if (listenersAttached.current) {
+        const events = ['mousedown', 'keydown', 'scroll', 'touchstart'];
+        events.forEach(event => window.removeEventListener(event, handleActivity));
+        listenersAttached.current = false;
       }
-      isSetupRef.current = false;
+      setupLoggedRef.current = null;
       return;
     }
 
-    if (isSetupRef.current) return;
+    if (!listenersAttached.current) {
+      const events = ['mousedown', 'keydown', 'scroll', 'touchstart'];
+      events.forEach(event => {
+        window.addEventListener(event, handleActivity, { passive: true });
+      });
+      listenersAttached.current = true;
+    }
 
-    const clearTimer = () => {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-        timeoutRef.current = null;
-      }
-    };
+    startTimer();
 
-    const startTimer = () => {
+    if (setupLoggedRef.current !== user.email) {
+      console.log('[AutoLogout] Setup complete for user:', user.email);
+      setupLoggedRef.current = user.email;
+    }
+
+    return () => {
       clearTimer();
-      timeoutRef.current = setTimeout(async () => {
-        console.log('[AutoLogout] Idle timeout reached, logging out...');
-        await logoutRef.current();
-        router.push('/login?reason=timeout');
-      }, IDLE_TIMEOUT);
     };
+  }, [user, loading, handleActivity, clearTimer, startTimer]);
 
-    const handleActivity = () => {
-      lastActivityRef.current = Date.now();
-      startTimer();
-    };
-
+  useEffect(() => {
     const handleVisibilityChange = () => {
-      if (!userRef.current) return;
+      if (!user) return;
       
       if (document.visibilityState === 'visible') {
         const timeSinceLastActivity = Date.now() - lastActivityRef.current;
         
         if (timeSinceLastActivity >= IDLE_TIMEOUT) {
           console.log('[AutoLogout] Tab visible after idle timeout, logging out...');
-          logoutRef.current();
+          logout();
           router.push('/login?reason=timeout');
         } else {
           startTimer();
@@ -71,27 +89,9 @@ export default function AutoLogout() {
       }
     };
 
-    const events = ['mousedown', 'keydown', 'scroll', 'touchstart'];
-    
-    events.forEach(event => {
-      window.addEventListener(event, handleActivity, { passive: true });
-    });
-    
     document.addEventListener('visibilitychange', handleVisibilityChange);
-
-    startTimer();
-    isSetupRef.current = true;
-    console.log('[AutoLogout] Setup complete for user:', user.email);
-
-    return () => {
-      clearTimer();
-      events.forEach(event => {
-        window.removeEventListener(event, handleActivity);
-      });
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-      isSetupRef.current = false;
-    };
-  }, [user, loading, router]);
+    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+  }, [user, logout, router, startTimer]);
 
   return null;
 }
