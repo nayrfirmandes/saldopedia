@@ -88,7 +88,7 @@ export default function DashboardContent({ user, userOrders, userDeposits, userW
 
   const getGreeting = () => {
     const hour = new Date().getHours();
-    const firstName = user.name.split(' ')[0];
+    const firstName = user.name ? user.name.split(' ')[0] : user.email.split('@')[0];
     
     if (hour >= 5 && hour < 11) {
       return t('dashboard.greetingMorning').replace('{name}', firstName);

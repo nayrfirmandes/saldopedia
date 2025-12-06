@@ -13,7 +13,6 @@ import {
   CheckCircle2,
   Clock,
   CreditCard,
-  ArrowRight,
 } from "lucide-react";
 
 export const revalidate = 10;
@@ -209,7 +208,7 @@ export default async function InstructionsPage({
             {/* What user will receive */}
             <div className="mb-6">
               <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 flex items-center gap-2">
-                <ArrowRight className="w-4 h-4" />
+                <span className="text-base">-</span>
                 Yang Akan Anda Terima
               </h3>
               

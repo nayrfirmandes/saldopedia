@@ -1879,11 +1879,11 @@
       "expired": "reCAPTCHA kedaluwarsa. Silakan verifikasi ulang"
     },
     "recaptcha": {
-      "protectedBy": "Dilindungi oleh reCAPTCHA dan berlaku",
+      "protectedBy": "Halaman ini dilindungi oleh reCAPTCHA Google. Berlaku",
       "privacyPolicy": "Kebijakan Privasi",
-      "and": "serta",
-      "termsOfService": "Persyaratan Layanan",
-      "apply": "Google"
+      "and": "dan",
+      "termsOfService": "Ketentuan Layanan",
+      "apply": "Saldopedia."
     },
     "login": {
       "title": "Masuk ke Akun",

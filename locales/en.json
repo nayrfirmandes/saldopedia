@@ -1879,11 +1879,11 @@
       "expired": "reCAPTCHA expired. Please verify again"
     },
     "recaptcha": {
-      "protectedBy": "Protected by reCAPTCHA and subject to",
+      "protectedBy": "This page is protected by Google reCAPTCHA. Subject to",
       "privacyPolicy": "Privacy Policy",
       "and": "and",
       "termsOfService": "Terms of Service",
-      "apply": "Google"
+      "apply": "of Saldopedia."
     },
     "login": {
       "title": "Login to Account",
