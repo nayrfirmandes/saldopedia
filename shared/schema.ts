@@ -146,6 +146,7 @@ export const orders = pgTable("orders", {
   payoutStatus: varchar("payout_status", { length: 50 }),
   payoutHash: text("payout_hash"),
   payoutError: text("payout_error"),
+  proofUploadedAt: timestamp("proof_uploaded_at"),
   
   paidWithSaldo: boolean("paid_with_saldo").notNull().default(false),
   paymentNote: varchar("payment_note", { length: 50 }),

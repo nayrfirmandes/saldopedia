@@ -36,6 +36,7 @@ interface OrderData {
   amount_idr: string;
   amount_input: string;
   rate: string;
+  proof_uploaded_at: Date | string | null;
 }
 
 interface PaymentConfig {
@@ -105,6 +106,7 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
   const isSkrill = order.service_type === "skrill";
   const isCrypto = order.service_type === "cryptocurrency";
   const isPendingProof = order.status === "pending_proof";
+  const isProofUploaded = !!order.proof_uploaded_at;
 
   const serviceLabel = isPayPal ? "PayPal" : isSkrill ? "Skrill" : "Cryptocurrency";
   const transactionLabel = isBuy ? t('orderInstructions.buy') : t('orderInstructions.sell');
@@ -406,7 +408,7 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
               </div>
             </div>
 
-            {isPendingProof && !uploadSuccess && (
+            {isPendingProof && !uploadSuccess && !isProofUploaded && (
               <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-xl p-4 mb-6">
                 <div className="flex items-start gap-3">
                   <Upload className="w-5 h-5 text-orange-600 dark:text-orange-400 flex-shrink-0 mt-0.5" />
@@ -483,7 +485,7 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
               </div>
             )}
 
-            {uploadSuccess && (
+            {(uploadSuccess || isProofUploaded) && (
               <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-4 mb-6">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
@@ -499,7 +501,7 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
               </div>
             )}
 
-            {!isPendingProof && !uploadSuccess && (
+            {!isPendingProof && !uploadSuccess && !isProofUploaded && (
               <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-4 mb-6">
                 <div className="flex items-start gap-2 text-blue-800 dark:text-blue-300 text-sm">
                   <CreditCard className="w-4 h-4 flex-shrink-0 mt-0.5" />
@@ -513,20 +515,22 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
               </div>
             )}
 
-            <div className="border-l-2 border-green-500 pl-4 py-2">
-              <div className="text-sm font-medium text-gray-900 dark:text-white mb-2">{t('orderInstructions.nextSteps')}</div>
-              <ol className="list-decimal list-inside space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
-                <li>{t('orderInstructions.loginTo').replace('{service}', serviceLabel).replace('{email}', (isPayPal ? order.paypal_email : order.skrill_email) || '')}</li>
-                <li>{t('orderInstructions.sendAmountTo').replace('{amount}', formatUSD(order.amount_input))} <span className="font-mono text-blue-600 dark:text-blue-400">{adminEmail}</span></li>
-                <li>{t('orderInstructions.screenshotProof')}</li>
-                {isPendingProof ? (
-                  <li>{t('orderInstructions.uploadProofStep')}</li>
-                ) : (
-                  <li>{t('orderInstructions.sendViaWhatsApp').replace('{phone}', paymentConfig.whatsapp)} <span className="font-mono font-semibold text-gray-900 dark:text-white">{order.order_id}</span></li>
-                )}
-                <li>{t('orderInstructions.saldoCreditedAmount').replace('{amount}', formatIDR(order.amount_idr))}</li>
-              </ol>
-            </div>
+            {!uploadSuccess && !isProofUploaded && (
+              <div className="border-l-2 border-green-500 pl-4 py-2">
+                <div className="text-sm font-medium text-gray-900 dark:text-white mb-2">{t('orderInstructions.nextSteps')}</div>
+                <ol className="list-decimal list-inside space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+                  <li>{t('orderInstructions.loginTo').replace('{service}', serviceLabel).replace('{email}', (isPayPal ? order.paypal_email : order.skrill_email) || '')}</li>
+                  <li>{t('orderInstructions.sendAmountTo').replace('{amount}', formatUSD(order.amount_input))} <span className="font-mono text-blue-600 dark:text-blue-400">{adminEmail}</span></li>
+                  <li>{t('orderInstructions.screenshotProof')}</li>
+                  {isPendingProof ? (
+                    <li>{t('orderInstructions.uploadProofStep')}</li>
+                  ) : (
+                    <li>{t('orderInstructions.sendViaWhatsApp').replace('{phone}', paymentConfig.whatsapp)} <span className="font-mono font-semibold text-gray-900 dark:text-white">{order.order_id}</span></li>
+                  )}
+                  <li>{t('orderInstructions.saldoCreditedAmount').replace('{amount}', formatIDR(order.amount_idr))}</li>
+                </ol>
+              </div>
+            )}
           </div>
         )}
 
