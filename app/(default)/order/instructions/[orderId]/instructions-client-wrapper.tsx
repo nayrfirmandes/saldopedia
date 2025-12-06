@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/language-context";
 import OrderCountdown from "@/components/order-countdown";
@@ -11,6 +12,10 @@ import {
   CheckCircle2,
   Clock,
   CreditCard,
+  Upload,
+  FileImage,
+  Loader2,
+  AlertCircle,
 } from "lucide-react";
 
 interface OrderData {
@@ -46,6 +51,11 @@ interface InstructionsClientWrapperProps {
 
 export default function InstructionsClientWrapper({ order, paymentConfig }: InstructionsClientWrapperProps) {
   const { t } = useLanguage();
+  
+  const [proofFile, setProofFile] = useState<File | null>(null);
+  const [uploading, setUploading] = useState(false);
+  const [uploadSuccess, setUploadSuccess] = useState(false);
+  const [uploadError, setUploadError] = useState<string | null>(null);
 
   const formatIDR = (amount: string) => {
     return `Rp ${Math.round(parseFloat(amount)).toLocaleString("id-ID")}`;
@@ -69,10 +79,32 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
     }
   };
 
+  const handleUploadProof = async () => {
+    if (!proofFile) return;
+    setUploading(true);
+    setUploadError(null);
+    try {
+      const formData = new FormData();
+      formData.append('orderId', order.order_id);
+      formData.append('proof', proofFile);
+      const res = await fetch('/api/orders/upload-proof', { method: 'POST', body: formData });
+      const data = await res.json();
+      if (data.success) {
+        setUploadSuccess(true);
+      } else {
+        setUploadError(data.error || 'Terjadi kesalahan');
+      }
+    } catch (err) {
+      setUploadError('Terjadi kesalahan. Silakan coba lagi.');
+    }
+    setUploading(false);
+  };
+
   const isBuy = order.transaction_type === "buy";
   const isPayPal = order.service_type === "paypal";
   const isSkrill = order.service_type === "skrill";
   const isCrypto = order.service_type === "cryptocurrency";
+  const isPendingProof = order.status === "pending_proof";
 
   const serviceLabel = isPayPal ? "PayPal" : isSkrill ? "Skrill" : "Cryptocurrency";
   const transactionLabel = isBuy ? t('orderInstructions.buy') : t('orderInstructions.sell');
@@ -113,7 +145,7 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
             </div>
             <span
               className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold ${
-                order.status === "pending"
+                order.status === "pending" || order.status === "pending_proof"
                   ? "bg-yellow-50 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-400 border border-yellow-200 dark:border-yellow-800"
                   : order.status === "confirmed"
                   ? "bg-blue-50 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400 border border-blue-200 dark:border-blue-800"
@@ -122,10 +154,10 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
                   : "bg-gray-50 text-gray-800 dark:bg-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600"
               }`}
             >
-              {order.status === "pending" ? (
+              {order.status === "pending" || order.status === "pending_proof" ? (
                 <>
                   <Clock className="w-4 h-4" />
-                  {t('orderInstructions.statusPending')}
+                  {order.status === "pending_proof" ? "Menunggu Bukti" : t('orderInstructions.statusPending')}
                 </>
               ) : order.status === "confirmed" ? (
                 <>
@@ -374,25 +406,124 @@ export default function InstructionsClientWrapper({ order, paymentConfig }: Inst
               </div>
             </div>
 
-            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-4 mb-6">
-              <div className="flex items-start gap-2 text-blue-800 dark:text-blue-300 text-sm">
-                <CreditCard className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-medium mb-1">{t('orderInstructions.paymentViaSaldo')}</p>
-                  <p className="text-blue-700 dark:text-blue-400 text-xs">
-                    {t('orderInstructions.saldoCredit').replace('{amount}', formatIDR(order.amount_idr))}
-                  </p>
+            {isPendingProof && !uploadSuccess && (
+              <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-xl p-4 mb-6">
+                <div className="flex items-start gap-3">
+                  <Upload className="w-5 h-5 text-orange-600 dark:text-orange-400 flex-shrink-0 mt-0.5" />
+                  <div className="flex-1">
+                    <p className="font-medium text-orange-800 dark:text-orange-300 mb-2">
+                      Upload Bukti Pengiriman {serviceLabel}
+                    </p>
+                    <p className="text-sm text-orange-700 dark:text-orange-400 mb-4">
+                      Setelah mengirim saldo ke email di atas, upload bukti screenshot pengiriman untuk verifikasi.
+                    </p>
+                    
+                    <div className="space-y-3">
+                      <label className="block">
+                        <input
+                          type="file"
+                          accept="image/jpeg,image/png,image/webp,application/pdf"
+                          onChange={(e) => {
+                            setProofFile(e.target.files?.[0] || null);
+                            setUploadError(null);
+                          }}
+                          className="hidden"
+                          id="proof-upload"
+                        />
+                        <span className="flex items-center justify-center gap-2 w-full py-3 px-4 border-2 border-dashed border-orange-300 dark:border-orange-600 rounded-lg cursor-pointer hover:border-orange-400 dark:hover:border-orange-500 transition-colors bg-white dark:bg-gray-800">
+                          {proofFile ? (
+                            <>
+                              <FileImage className="w-5 h-5 text-orange-600 dark:text-orange-400" />
+                              <span className="text-sm text-gray-700 dark:text-gray-300 truncate max-w-[200px]">
+                                {proofFile.name}
+                              </span>
+                            </>
+                          ) : (
+                            <>
+                              <FileImage className="w-5 h-5 text-gray-400" />
+                              <span className="text-sm text-gray-500 dark:text-gray-400">
+                                Pilih file (JPG, PNG, WebP, PDF - Max 10MB)
+                              </span>
+                            </>
+                          )}
+                        </span>
+                      </label>
+
+                      {uploadError && (
+                        <div className="flex items-center gap-2 text-red-600 dark:text-red-400 text-sm">
+                          <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                          <span>{uploadError}</span>
+                        </div>
+                      )}
+
+                      <button
+                        onClick={handleUploadProof}
+                        disabled={!proofFile || uploading}
+                        className={`w-full py-3 px-4 rounded-lg font-medium text-sm flex items-center justify-center gap-2 transition-colors ${
+                          proofFile && !uploading
+                            ? 'bg-orange-600 hover:bg-orange-700 text-white'
+                            : 'bg-gray-200 dark:bg-gray-700 text-gray-400 cursor-not-allowed'
+                        }`}
+                      >
+                        {uploading ? (
+                          <>
+                            <Loader2 className="w-4 h-4 animate-spin" />
+                            Mengupload...
+                          </>
+                        ) : (
+                          <>
+                            <Upload className="w-4 h-4" />
+                            Upload Bukti
+                          </>
+                        )}
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
+
+            {uploadSuccess && (
+              <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-4 mb-6">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium text-green-800 dark:text-green-300 mb-1">
+                      Bukti Berhasil Diupload!
+                    </p>
+                    <p className="text-sm text-green-700 dark:text-green-400">
+                      Tim kami akan memverifikasi pembayaran Anda. Saldo akan dikreditkan setelah konfirmasi.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {!isPendingProof && !uploadSuccess && (
+              <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-4 mb-6">
+                <div className="flex items-start gap-2 text-blue-800 dark:text-blue-300 text-sm">
+                  <CreditCard className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium mb-1">{t('orderInstructions.paymentViaSaldo')}</p>
+                    <p className="text-blue-700 dark:text-blue-400 text-xs">
+                      {t('orderInstructions.saldoCredit').replace('{amount}', formatIDR(order.amount_idr))}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
 
             <div className="border-l-2 border-green-500 pl-4 py-2">
               <div className="text-sm font-medium text-gray-900 dark:text-white mb-2">{t('orderInstructions.nextSteps')}</div>
               <ol className="list-decimal list-inside space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
                 <li>{t('orderInstructions.loginTo').replace('{service}', serviceLabel).replace('{email}', (isPayPal ? order.paypal_email : order.skrill_email) || '')}</li>
                 <li>{t('orderInstructions.sendAmountTo').replace('{amount}', formatUSD(order.amount_input))} <span className="font-mono text-blue-600 dark:text-blue-400">{adminEmail}</span></li>
-                <li>{t('orderInstructions.screenshotProof')}</li>
-                <li>{t('orderInstructions.sendViaWhatsApp').replace('{phone}', paymentConfig.whatsapp)} <span className="font-mono font-semibold text-gray-900 dark:text-white">{order.order_id}</span></li>
+                <li>Screenshot bukti pengiriman</li>
+                {isPendingProof ? (
+                  <li>Upload bukti pengiriman di atas</li>
+                ) : (
+                  <li>{t('orderInstructions.sendViaWhatsApp').replace('{phone}', paymentConfig.whatsapp)} <span className="font-mono font-semibold text-gray-900 dark:text-white">{order.order_id}</span></li>
+                )}
                 <li>{t('orderInstructions.saldoCreditedAmount').replace('{amount}', formatIDR(order.amount_idr))}</li>
               </ol>
             </div>
