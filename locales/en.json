@@ -2395,6 +2395,7 @@
       },
       "network": "Network",
       "amountReceived": "Amount Received",
+      "amountSent": "Crypto Sent",
       "accountName": "Account Name",
       "accountNumber": "Account Number",
       "walletInfo": "Wallet Information",

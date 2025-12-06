@@ -2395,6 +2395,7 @@
       },
       "network": "Network",
       "amountReceived": "Jumlah Diterima",
+      "amountSent": "Crypto Terkirim",
       "accountName": "Nama Rekening",
       "accountNumber": "No. Rekening",
       "walletInfo": "Informasi Wallet",

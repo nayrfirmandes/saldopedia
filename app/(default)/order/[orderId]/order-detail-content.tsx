@@ -254,7 +254,7 @@ export default function OrderDetailContent({ order }: OrderDetailContentProps) {
 
                 {isCrypto && isSell && order.actually_paid && (
                   <div className="flex justify-between py-3 border-b border-gray-100 dark:border-gray-700">
-                    <span className="text-sm text-gray-500 dark:text-gray-400">{t('orderPages.detail.amountReceived')}</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-400">{t('orderPages.detail.amountSent')}</span>
                     <span className="text-sm font-medium text-gray-900 dark:text-white">
                       {formatCryptoAmount(order.actually_paid)} {order.crypto_symbol}
                     </span>
