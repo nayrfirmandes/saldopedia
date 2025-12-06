@@ -22,6 +22,7 @@ export async function GET() {
         createdAt: savedRecipients.createdAt,
         recipientName: users.name,
         recipientEmail: users.email,
+        recipientPhotoUrl: users.photoUrl,
       })
       .from(savedRecipients)
       .innerJoin(users, eq(savedRecipients.recipientId, users.id))
@@ -114,6 +115,7 @@ export async function POST(request: NextRequest) {
         ...newRecipient,
         recipientName: recipient.name,
         recipientEmail: recipient.email,
+        recipientPhotoUrl: recipient.photoUrl,
       },
     });
   } catch (error) {

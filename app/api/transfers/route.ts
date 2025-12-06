@@ -207,18 +207,18 @@ export async function GET(request: NextRequest) {
       userIds.add(t.receiverId);
     });
 
-    const userMap: Record<number, { name: string; email: string }> = {};
+    const userMap: Record<number, { name: string; email: string; photoUrl: string | null }> = {};
     
     if (userIds.size > 0) {
       const usersData = await db
-        .select({ id: users.id, name: users.name, email: users.email })
+        .select({ id: users.id, name: users.name, email: users.email, photoUrl: users.photoUrl })
         .from(users)
         .where(
           drizzleSql`${users.id} IN (${drizzleSql.raw(Array.from(userIds).join(','))})`
         );
       
       usersData.forEach(u => {
-        userMap[u.id] = { name: u.name, email: u.email };
+        userMap[u.id] = { name: u.name, email: u.email, photoUrl: u.photoUrl };
       });
     }
 
@@ -227,8 +227,10 @@ export async function GET(request: NextRequest) {
       type: t.senderId === user.id ? 'sent' : 'received',
       senderName: userMap[t.senderId]?.name || 'Unknown',
       senderEmail: userMap[t.senderId]?.email || '',
+      senderPhotoUrl: userMap[t.senderId]?.photoUrl || null,
       receiverName: userMap[t.receiverId]?.name || 'Unknown',
       receiverEmail: userMap[t.receiverId]?.email || '',
+      receiverPhotoUrl: userMap[t.receiverId]?.photoUrl || null,
     }));
 
     return NextResponse.json({ transfers: enrichedTransfers });

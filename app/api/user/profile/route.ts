@@ -40,6 +40,7 @@ export async function GET(request: NextRequest) {
           id: users.id,
           name: users.name,
           email: users.email,
+          photoUrl: users.photoUrl,
         })
         .from(users)
         .where(eq(users.email, lookupEmail.toLowerCase()))
@@ -58,6 +59,7 @@ export async function GET(request: NextRequest) {
           id: foundUser.id,
           name: foundUser.name,
           email: foundUser.email,
+          photoUrl: foundUser.photoUrl,
         },
       }, {
         headers: {

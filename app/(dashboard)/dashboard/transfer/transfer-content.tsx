@@ -40,14 +40,17 @@ interface Transfer {
   type: 'sent' | 'received';
   senderName: string;
   senderEmail: string;
+  senderPhotoUrl: string | null;
   receiverName: string;
   receiverEmail: string;
+  receiverPhotoUrl: string | null;
 }
 
 interface RecipientInfo {
   id: number;
   name: string;
   email: string;
+  photoUrl?: string | null;
 }
 
 interface SavedRecipient {
@@ -59,6 +62,7 @@ interface SavedRecipient {
   createdAt: string;
   recipientName: string;
   recipientEmail: string;
+  recipientPhotoUrl: string | null;
 }
 
 type Step = 1 | 2 | 3;
@@ -138,6 +142,7 @@ export default function TransferContent({ user }: { user: SessionUser }) {
           id: tx.receiverId,
           name: tx.receiverName,
           email: tx.receiverEmail,
+          photoUrl: tx.receiverPhotoUrl,
         });
       }
       if (uniqueRecipients.size >= 5) break;
@@ -146,12 +151,37 @@ export default function TransferContent({ user }: { user: SessionUser }) {
     return Array.from(uniqueRecipients.values());
   };
 
+  const UserAvatar = ({ name, photoUrl, size = 'md' }: { name: string; photoUrl?: string | null; size?: 'sm' | 'md' | 'lg' }) => {
+    const sizeClasses = {
+      sm: 'w-8 h-8 text-xs',
+      md: 'w-10 h-10 text-sm',
+      lg: 'w-12 h-12 text-base',
+    };
+    
+    if (photoUrl) {
+      return (
+        <img 
+          src={photoUrl} 
+          alt={name}
+          className={`${sizeClasses[size]} rounded-full object-cover`}
+        />
+      );
+    }
+    
+    return (
+      <div className={`flex items-center justify-center ${sizeClasses[size]} bg-blue-600 text-white rounded-full font-semibold`}>
+        {getInitials(name)}
+      </div>
+    );
+  };
+
   const handleSelectSavedRecipient = (recipient: SavedRecipient) => {
     setRecipientEmail(recipient.recipientEmail);
     setRecipientInfo({
       id: recipient.recipientId,
       name: recipient.recipientName,
       email: recipient.recipientEmail,
+      photoUrl: recipient.recipientPhotoUrl,
     });
     setShowSavedRecipients(false);
     goToStep(2);
@@ -459,9 +489,7 @@ export default function TransferContent({ user }: { user: SessionUser }) {
                                 onClick={() => handleSelectSavedRecipient(recipient)}
                                 className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-white dark:hover:bg-gray-700 transition-colors text-left"
                               >
-                                <div className="flex items-center justify-center w-8 h-8 bg-blue-600 text-white rounded-full font-semibold text-xs">
-                                  {getInitials(recipient.recipientName)}
-                                </div>
+                                <UserAvatar name={recipient.recipientName} photoUrl={recipient.recipientPhotoUrl} size="sm" />
                                 <div className="flex-1 min-w-0">
                                   <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
                                     {recipient.label || recipient.recipientName}
@@ -490,9 +518,7 @@ export default function TransferContent({ user }: { user: SessionUser }) {
                                 onClick={() => handleSelectRecentRecipient(recipient)}
                                 className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-white dark:hover:bg-gray-700 transition-colors text-left"
                               >
-                                <div className="flex items-center justify-center w-8 h-8 bg-gray-400 text-white rounded-full font-semibold text-xs">
-                                  {getInitials(recipient.name)}
-                                </div>
+                                <UserAvatar name={recipient.name} photoUrl={recipient.photoUrl} size="sm" />
                                 <div className="flex-1 min-w-0">
                                   <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
                                     {recipient.name}
@@ -552,9 +578,7 @@ export default function TransferContent({ user }: { user: SessionUser }) {
           {!success && step === 2 && recipientInfo && (
             <form onSubmit={handleStep2Submit} className="space-y-4">
               <div className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <div className="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-full font-semibold text-sm">
-                  {getInitials(recipientInfo.name)}
-                </div>
+                <UserAvatar name={recipientInfo.name} photoUrl={recipientInfo.photoUrl} size="md" />
                 <div className="flex-1 min-w-0">
                   <p className="font-medium text-gray-900 dark:text-white truncate">{recipientInfo.name}</p>
                   <p className="text-sm text-gray-500 dark:text-gray-400 truncate">{recipientInfo.email}</p>
@@ -672,9 +696,12 @@ export default function TransferContent({ user }: { user: SessionUser }) {
                     <span className="text-gray-600 dark:text-gray-400">{t('dashboardPages.transfer.from')}</span>
                     <span className="font-medium text-gray-900 dark:text-white">{user.name}</span>
                   </div>
-                  <div className="flex justify-between text-sm">
+                  <div className="flex justify-between items-center text-sm">
                     <span className="text-gray-600 dark:text-gray-400">{t('dashboardPages.transfer.to')}</span>
-                    <span className="font-medium text-gray-900 dark:text-white">{recipientInfo.name}</span>
+                    <div className="flex items-center gap-2">
+                      <UserAvatar name={recipientInfo.name} photoUrl={recipientInfo.photoUrl} size="sm" />
+                      <span className="font-medium text-gray-900 dark:text-white">{recipientInfo.name}</span>
+                    </div>
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-600 dark:text-gray-400">{t('dashboardPages.transfer.amount')}</span>
