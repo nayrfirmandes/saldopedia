@@ -373,4 +373,124 @@ export function generateExpiredEmailHTML(data: any, serviceLabel: string, transa
   return generateEmailWrapper(content);
 }
 
+export function generateOrderProofAdminEmailHTML(data: {
+  orderId: string;
+  userName: string;
+  userEmail: string;
+  userPhone: string | null;
+  serviceType: string;
+  amountInput: string;
+  amountIdr: string;
+  rate: string;
+  paypalEmail?: string | null;
+  skrillEmail?: string | null;
+  confirmUrl: string;
+  createdAt: Date;
+}): string {
+  const currentYear = new Date().getFullYear();
+  const formattedDate = formatDateWIB(data.createdAt);
+  const serviceLabel = data.serviceType === 'paypal' ? 'PayPal' : 'Skrill';
+  const amountUSD = `$${parseFloat(data.amountInput).toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 2})}`;
+  
+  const userRows = [
+    generateDetailRow('Nama', data.userName, { bold: true }),
+    generateDetailRow('Email', data.userEmail),
+    ...(data.userPhone ? [generateDetailRow('Telepon', data.userPhone)] : [])
+  ];
+  
+  const detailRows = [
+    generateDetailRow('Order ID', data.orderId, { mono: true }),
+    generateDetailRow('Waktu', formattedDate),
+    generateDetailRow('Layanan', `Jual ${serviceLabel}`, { bold: true }),
+    generateDetailRow(`Email ${serviceLabel} User`, data.serviceType === 'paypal' ? (data.paypalEmail || '-') : (data.skrillEmail || '-')),
+    generateDetailRow('Jumlah USD', amountUSD, { bold: true }),
+    generateDetailRow('Rate', formatIDR(parseFloat(data.rate))),
+    generateTotalRow('Total IDR', formatIDR(parseFloat(data.amountIdr)), '#10b981')
+  ];
+  
+  const content = `
+    ${generateEmailHeader(`Jual ${serviceLabel} - Bukti Diterima`, '#10b981')}
+    
+    <tr>
+      <td class="content-area" style="padding: 28px 24px; background-color: #ffffff;">
+        
+        ${generateInfoBox(`Bukti Pengiriman ${serviceLabel} Diterima`, `Order ID: ${data.orderId}`, 'success')}
+
+        <p class="secondary-text" style="margin: 0 0 20px; color: #4b5563; font-size: 14px;">
+          User telah mengirim bukti pengiriman saldo ${serviceLabel}. Cek bukti transfer di attachment email ini.
+        </p>
+
+        ${generateSectionTitle('Detail User')}
+        ${generateDetailTable(userRows)}
+
+        ${generateSectionTitle('Detail Order')}
+        ${generateDetailTable(detailRows)}
+
+        ${generateInfoBox('Bukti Pengiriman', `Lihat attachment email ini untuk bukti pengiriman saldo ${serviceLabel} dari user.`, 'warning')}
+
+        ${generateButton('Konfirmasi & Complete Order', data.confirmUrl, 'success')}
+        
+        <p class="secondary-text" style="margin: 16px 0 0; text-align: center; color: #9ca3af; font-size: 11px;">
+          Klik tombol di atas setelah verifikasi bukti pengiriman
+        </p>
+
+      </td>
+    </tr>
+
+    ${generateEmailFooter(currentYear, false)}
+  `;
+  
+  return generateEmailWrapper(content);
+}
+
+export function generateOrderProofUserEmailHTML(data: {
+  orderId: string;
+  userName: string;
+  serviceType: string;
+  amountInput: string;
+  amountIdr: string;
+  createdAt: Date;
+}): string {
+  const currentYear = new Date().getFullYear();
+  const serviceLabel = data.serviceType === 'paypal' ? 'PayPal' : 'Skrill';
+  const amountUSD = `$${parseFloat(data.amountInput).toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 2})}`;
+  
+  const detailRows = [
+    generateDetailRow('Order ID', data.orderId, { mono: true }),
+    generateDetailRow('Layanan', `Jual ${serviceLabel}`),
+    generateDetailRow('Jumlah', amountUSD, { bold: true }),
+    generateTotalRow('Akan Diterima', formatIDR(parseFloat(data.amountIdr)), '#10b981')
+  ];
+  
+  const content = `
+    ${generateEmailHeader('Bukti Pengiriman Diterima', '#3b82f6')}
+    
+    <tr>
+      <td class="content-area" style="padding: 28px 24px; background-color: #ffffff;">
+        
+        ${generateInfoBox('Bukti Berhasil Diupload', `Order ID: ${data.orderId}`, 'info')}
+
+        <p class="main-text" style="margin: 0 0 12px; color: #111827; font-size: 15px;">
+          Halo <strong>${data.userName}</strong>,
+        </p>
+        <p class="secondary-text" style="margin: 0 0 24px; color: #4b5563; font-size: 14px; line-height: 1.6;">
+          Bukti pengiriman saldo ${serviceLabel} Anda telah kami terima. Tim kami akan segera memverifikasi dan memproses order Anda.
+        </p>
+
+        ${generateSectionTitle('Detail Order')}
+        ${generateDetailTable(detailRows)}
+
+        ${generateInfoBox('Status', `Menunggu verifikasi admin. Proses verifikasi biasanya memakan waktu 5-30 menit pada jam kerja. Setelah dikonfirmasi, saldo Anda akan bertambah ${formatIDR(parseFloat(data.amountIdr))}.`, 'warning')}
+
+        ${generateButton('Cek Status di Dashboard', `https://${getPrimaryDomain()}/dashboard`, 'primary')}
+
+      </td>
+    </tr>
+
+    ${generateEmailFooter(currentYear, false)}
+  `;
+  
+  return generateEmailWrapper(content);
+}
+
 export { formatIDR };

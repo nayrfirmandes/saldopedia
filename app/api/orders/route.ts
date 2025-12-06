@@ -195,7 +195,8 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    const initialStatus = paidWithSaldo ? 'confirmed' : 'pending';
+    const isSellPayPalSkrill = !paidWithSaldo && data.transactionType === 'sell' && (data.serviceType === 'paypal' || data.serviceType === 'skrill');
+    const initialStatus = paidWithSaldo ? 'confirmed' : (isSellPayPalSkrill ? 'pending_proof' : 'pending');
     const expiresAt = new Date(Date.now() + 60 * 60 * 1000);
     const createdAt = new Date();
     
