@@ -245,7 +245,7 @@ export default function OrderDetailContent({ order }: OrderDetailContentProps) {
 
                 {(isPayPal || isSkrill) && (() => {
                   const usdAmount = parseFloat(order.amount_input);
-                  const tierInfo = getTierInfo(usdAmount, isSell ? 'sell' : 'buy');
+                  const tierInfo = getTierInfo(usdAmount, isSell ? 'convert' : 'topup');
                   if (!tierInfo) return null;
                   
                   const tierColors: Record<string, string> = {
