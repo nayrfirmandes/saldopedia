@@ -19,7 +19,7 @@ export function FormatSaldo({ amount, className = '', showSign = 'none' }: Forma
   
   return (
     <span className={className}>
-      {sign}Rp {wholePart}<span className="text-[0.7em] opacity-70">,{decimalPart}</span>
+      {sign}Rp {wholePart}<span className="text-[0.7em]">,{decimalPart}</span>
     </span>
   );
 }
