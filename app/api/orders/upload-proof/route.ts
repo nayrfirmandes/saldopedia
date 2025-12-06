@@ -87,7 +87,7 @@ export async function POST(request: NextRequest) {
     }
 
     const updateResult = await sql`
-      UPDATE orders SET status = 'pending', updated_at = NOW()
+      UPDATE orders SET status = 'pending', expires_at = NULL, updated_at = NOW()
       WHERE order_id = ${orderId} AND status = 'pending_proof'
       RETURNING order_id
     `;
