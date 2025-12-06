@@ -111,7 +111,7 @@ export const passwordResetTokens = pgTable("password_reset_tokens", {
 export type PasswordResetToken = typeof passwordResetTokens.$inferSelect;
 export type InsertPasswordResetToken = typeof passwordResetTokens.$inferInsert;
 
-export const orderStatusEnum = pgEnum("order_status", ["pending", "confirmed", "processing", "completed", "cancelled", "expired"]);
+export const orderStatusEnum = pgEnum("order_status", ["pending", "pending_proof", "confirmed", "processing", "completed", "cancelled", "expired"]);
 
 export const orders = pgTable("orders", {
   id: serial("id").primaryKey(),

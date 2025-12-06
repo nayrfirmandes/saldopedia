@@ -1,0 +1,118 @@
+
+Dec 07 01:06:46.67
+GET
+200
+saldopedia.com
+/support
+Dec 07 01:06:46.67
+GET
+200
+saldopedia.com
+/support
+Dec 07 01:06:46.67
+GET
+200
+saldopedia.com
+/support
+Dec 07 01:06:46.67
+POST
+500
+saldopedia.com
+/api/orders
+Order transaction error: Error [NeonDbError]: invalid input value for enum order_status: "pending_proof" at bv.execute (.next/server/chunks/5171.js:29:3669) at async L (.next/server/app/api/orders/route.js:6:188) at async k (.next/server/app/api/orders/route.js:73:5358) at async j (.next/server/app/api/orders/route.js:73:6367) at async T (.next/server/app/api/orders/route.js:73:7434) { severity: 'ERROR', code: '22P02', detail: undefined, hint: undefined, position: undefined, internalPosition: undefined, internalQuery: undefined, where: "unnamed portal parameter $21 = '...'", schema: undefined, table: undefined, column: undefined, dataType: undefined, constraint: undefined, file: 'enum.c', line: '129', routine: 'enum_in', sourceError: undefined }
+Dec 07 01:06:43.93
+GET
+200
+saldopedia.com
+/customers
+Dec 07 01:06:43.92
+GET
+200
+saldopedia.com
+/customers
+Dec 07 01:06:43.92
+GET
+200
+saldopedia.com
+/calculator
+Dec 07 01:06:43.89
+GET
+200
+saldopedia.com
+/calculator
+Dec 07 01:06:43.59
+GET
+200
+saldopedia.com
+/calculator
+Dec 07 01:06:43.59
+GET
+200
+saldopedia.com
+/documentation
+Dec 07 01:06:43.58
+GET
+200
+saldopedia.com
+/documentation
+Dec 07 01:06:43.54
+GET
+200
+saldopedia.com
+/documentation
+Dec 07 01:06:43.25
+GET
+200
+saldopedia.com
+/cookie-policy
+Dec 07 01:06:43.24
+GET
+200
+saldopedia.com
+/cookie-policy
+Dec 07 01:06:43.24
+GET
+200
+saldopedia.com
+/cookie-policy
+Dec 07 01:06:43.18
+GET
+200
+saldopedia.com
+/privacy-policy
+Dec 07 01:06:43.18
+GET
+200
+saldopedia.com
+/privacy-policy
+Dec 07 01:06:43.18
+GET
+200
+saldopedia.com
+/privacy-policy
+Dec 07 01:06:43.18
+GET
+200
+saldopedia.com
+/customers
+Dec 07 01:06:36.80
+POST
+500
+saldopedia.com
+/api/orders
+Order transaction error: Error [NeonDbError]: invalid input value for enum order_status: "pending_proof" at bv.execute (.next/server/chunks/5171.js:29:3669) at async L (.next/server/app/api/orders/route.js:6:188) at async k (.next/server/app/api/orders/route.js:73:5358) at async j (.next/server/app/api/orders/route.js:73:6367) at async T (.next/server/app/api/orders/route.js:73:7434) { severity: 'ERROR', code: '22P02', detail: undefined, hint: undefined, position: undefined, internalPosition: undefined, internalQuery: undefined, where: "unnamed portal parameter $21 = '...'", schema: undefined, table: undefined, column: undefined, dataType: undefined, constraint: undefined, file: 'enum.c', line: '129', routine: 'enum_in', sourceError: undefined }
+Dec 07 01:06:35.33
+GET
+200
+saldopedia.com
+/about
+Dec 07 01:06:35.28
+GET
+200
+saldopedia.com
+/about
+Dec 07 01:06:35.27
+GET
+200
+saldopedia.com
+/cryptocurrencies
