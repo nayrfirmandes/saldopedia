@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ArrowUpRight, ArrowDownLeft, Plus, Clock, ChevronRight, Wallet, Send } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
+import { FormatSaldo } from '@/components/format-saldo';
 
 type Order = {
   id: number;
@@ -146,7 +147,9 @@ export default function DashboardContent({ user, userOrders, userDeposits, userW
       <div className="space-y-6">
         <div>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">{t('dashboard.balance')}</p>
-          <p className="text-4xl font-semibold text-gray-900 dark:text-white tracking-tight">{formatIDR(saldo)}</p>
+          <p className="text-4xl font-semibold text-gray-900 dark:text-white tracking-tight">
+            <FormatSaldo amount={saldo} />
+          </p>
         </div>
         
         <div className="flex flex-col sm:flex-row items-center gap-3">
