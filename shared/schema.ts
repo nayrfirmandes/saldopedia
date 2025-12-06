@@ -255,3 +255,48 @@ export const saldoTransfers = pgTable("saldo_transfers", {
 
 export type SaldoTransfer = typeof saldoTransfers.$inferSelect;
 export type InsertSaldoTransfer = typeof saldoTransfers.$inferInsert;
+
+// Saved crypto wallet addresses
+export const savedWallets = pgTable("saved_wallets", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  
+  label: varchar("label", { length: 100 }).notNull(),
+  cryptoSymbol: varchar("crypto_symbol", { length: 20 }).notNull(),
+  network: varchar("network", { length: 100 }),
+  walletAddress: text("wallet_address").notNull(),
+  xrpTag: varchar("xrp_tag", { length: 100 }),
+  
+  usedCount: integer("used_count").notNull().default(0),
+  lastUsedAt: timestamp("last_used_at"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+}, (table) => {
+  return {
+    userIdIdx: index("saved_wallets_user_id_idx").on(table.userId),
+    userCryptoIdx: index("saved_wallets_user_crypto_idx").on(table.userId, table.cryptoSymbol),
+  };
+});
+
+export type SavedWallet = typeof savedWallets.$inferSelect;
+export type InsertSavedWallet = typeof savedWallets.$inferInsert;
+
+// Saved transfer recipients
+export const savedRecipients = pgTable("saved_recipients", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  recipientId: integer("recipient_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  
+  label: varchar("label", { length: 100 }),
+  
+  usedCount: integer("used_count").notNull().default(0),
+  lastUsedAt: timestamp("last_used_at"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+}, (table) => {
+  return {
+    userIdIdx: index("saved_recipients_user_id_idx").on(table.userId),
+    uniqueRecipient: index("saved_recipients_unique_idx").on(table.userId, table.recipientId),
+  };
+});
+
+export type SavedRecipient = typeof savedRecipients.$inferSelect;
+export type InsertSavedRecipient = typeof savedRecipients.$inferInsert;
