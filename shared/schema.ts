@@ -300,3 +300,25 @@ export const savedRecipients = pgTable("saved_recipients", {
 
 export type SavedRecipient = typeof savedRecipients.$inferSelect;
 export type InsertSavedRecipient = typeof savedRecipients.$inferInsert;
+
+// Saved PayPal/Skrill email accounts
+export const savedEmails = pgTable("saved_emails", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  
+  label: varchar("label", { length: 100 }).notNull(),
+  serviceType: varchar("service_type", { length: 20 }).notNull(), // 'paypal' or 'skrill'
+  email: varchar("email", { length: 255 }).notNull(),
+  
+  usedCount: integer("used_count").notNull().default(0),
+  lastUsedAt: timestamp("last_used_at"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+}, (table) => {
+  return {
+    userIdIdx: index("saved_emails_user_id_idx").on(table.userId),
+    userServiceIdx: index("saved_emails_user_service_idx").on(table.userId, table.serviceType),
+  };
+});
+
+export type SavedEmail = typeof savedEmails.$inferSelect;
+export type InsertSavedEmail = typeof savedEmails.$inferInsert;
