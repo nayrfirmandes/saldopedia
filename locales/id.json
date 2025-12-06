@@ -2396,6 +2396,7 @@
       "network": "Network",
       "amountReceived": "Jumlah Diterima",
       "amountSent": "Crypto Terkirim",
+      "tier": "Tier",
       "accountName": "Nama Rekening",
       "accountNumber": "No. Rekening",
       "walletInfo": "Informasi Wallet",

@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/language-context';
 import Link from 'next/link';
-import { ArrowLeft, CheckCircle, Clock, XCircle, AlertTriangle, Copy, Check, ExternalLink, Wallet, CreditCard, Mail, Phone, User, Hash, Globe, FileText } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Clock, XCircle, AlertTriangle, Copy, Check, ExternalLink, Wallet, CreditCard, Mail, Phone, User, Hash, Globe, FileText, Tag } from 'lucide-react';
+import { getTierInfo } from '@/lib/calculator';
 
 interface Order {
   order_id: string;
@@ -241,6 +242,31 @@ export default function OrderDetailContent({ order }: OrderDetailContentProps) {
                   <span className="text-sm text-gray-500 dark:text-gray-400">{t('orderPages.detail.rate')}</span>
                   <span className="text-sm font-medium text-gray-900 dark:text-white">{formatRate()}</span>
                 </div>
+
+                {(isPayPal || isSkrill) && (() => {
+                  const usdAmount = parseFloat(order.amount_input);
+                  const tierInfo = getTierInfo(usdAmount, isSell ? 'sell' : 'buy');
+                  if (!tierInfo) return null;
+                  
+                  const tierColors: Record<string, string> = {
+                    basic: 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300',
+                    pro: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400',
+                    premium: 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400',
+                    gold: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400'
+                  };
+                  
+                  return (
+                    <div className="flex justify-between py-3 border-b border-gray-100 dark:border-gray-700">
+                      <span className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
+                        <Tag className="h-3.5 w-3.5" />
+                        {t('orderPages.detail.tier')}
+                      </span>
+                      <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${tierColors[tierInfo.tierName]}`}>
+                        {t(`tiers.${tierInfo.tierName}`)} ({tierInfo.tierLabel})
+                      </span>
+                    </div>
+                  );
+                })()}
 
                 {isCrypto && order.crypto_network && (
                   <div className="flex justify-between py-3 border-b border-gray-100 dark:border-gray-700">

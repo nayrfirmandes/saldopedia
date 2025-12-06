@@ -36,6 +36,48 @@ function generateTransactionBadge(transactionType: string, transactionLabel: str
 }
 
 function generatePaymentDetails(data: any): string {
+  let html = '';
+  
+  // For SELL PayPal/Skrill: show source email, IDR goes to Saldopedia account balance
+  if (data.transactionType === 'sell' && (data.serviceType === 'paypal' || data.serviceType === 'skrill')) {
+    // Section 1: Source (PayPal/Skrill email that user will send from)
+    const sourceRows: string[] = [];
+    if (data.paypalEmail) {
+      sourceRows.push(generateDetailRow('Email PayPal Anda', data.paypalEmail));
+    }
+    if (data.skrillEmail) {
+      sourceRows.push(generateDetailRow('Email Skrill Anda', data.skrillEmail));
+    }
+    
+    if (sourceRows.length > 0) {
+      const sourceTitle = data.serviceType === 'paypal' ? 'Sumber Saldo PayPal' : 'Sumber Saldo Skrill';
+      html += `
+        <div style="margin-top: 20px;">
+          <p class="secondary-text" style="margin: 0 0 12px; color: #6b7280; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+            ${sourceTitle}
+          </p>
+          ${generateDetailTable(sourceRows)}
+        </div>
+      `;
+    }
+    
+    // Section 2: Destination is Saldopedia account balance
+    const destRows: string[] = [];
+    destRows.push(generateDetailRow('Tujuan', 'Saldo Akun Saldopedia', { bold: true, color: '#10b981' }));
+    
+    html += `
+      <div style="margin-top: 20px;">
+        <p class="secondary-text" style="margin: 0 0 12px; color: #6b7280; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+          Penerimaan IDR
+        </p>
+        ${generateDetailTable(destRows)}
+      </div>
+    `;
+    
+    return html;
+  }
+  
+  // For other transaction types, use the original logic
   const rows: string[] = [];
   
   if (data.paypalEmail) {
