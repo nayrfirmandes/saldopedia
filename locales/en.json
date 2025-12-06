@@ -2126,9 +2126,12 @@
       "fileFormatError": "File format not supported. Use JPG, PNG, WebP, or PDF.",
       "fileSizeError": "Maximum file size is 10MB.",
       "selectBankError": "Select destination bank/e-wallet",
-      "minDepositError": "Minimum deposit",
-      "maxDepositError": "Maximum deposit",
-      "createDepositError": "Failed to create deposit"
+      "minDepositError": "Minimum deposit {amount}",
+      "maxDepositError": "Maximum deposit {amount}",
+      "createDepositError": "Failed to create deposit",
+      "estimateFee": "Estimated Fees",
+      "adminFee": "Admin Fee",
+      "uniqueCode": "Unique Code (3 digits)"
     },
     "depositDetail": {
       "backToHistory": "Back to History",
@@ -2159,7 +2162,12 @@
       "fileSizeError": "Maximum file size is 10MB.",
       "uploadProofError": "Upload transfer proof",
       "uploadError": "Failed to upload proof",
-      "genericError": "An error occurred"
+      "genericError": "An error occurred",
+      "adminFee": "Admin Fee",
+      "uniqueCode": "Unique Code",
+      "clickToUpload": "Click to upload transfer proof",
+      "fileFormats": "JPG, PNG, WebP, or PDF (max 10MB)",
+      "uploading": "Uploading..."
     },
     "riwayat": {
       "title": "Deposit History",

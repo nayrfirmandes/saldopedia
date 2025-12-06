@@ -397,7 +397,7 @@ export default function WithdrawContent({ user }: { user: SessionUser }) {
           ) : (
             <div className="divide-y divide-gray-100 dark:divide-gray-800">
               {withdrawals.map((w) => {
-                const methodLabel = w.bankCode?.toUpperCase() || (w.method === 'bank_transfer' ? 'Bank' : 'E-Wallet');
+                const methodLabel = w.bankCode?.toUpperCase() || (w.method === 'bank_transfer' ? t('dashboardPages.withdraw.bankTransfer') : t('dashboardPages.withdraw.eWallet'));
                 const statusConfig: Record<string, { text: string; color: string }> = {
                   completed: { text: t('dashboardPages.withdraw.status.completed'), color: 'text-green-600 dark:text-green-400' },
                   pending: { text: t('dashboardPages.withdraw.status.pending'), color: 'text-yellow-600 dark:text-yellow-400' },

@@ -95,12 +95,12 @@ export default function DepositContent({ user }: { user: User }) {
 
     const allowedTypes = ['image/jpeg', 'image/png', 'image/webp', 'application/pdf'];
     if (!allowedTypes.includes(file.type)) {
-      setError('Format file tidak didukung. Gunakan JPG, PNG, WebP, atau PDF.');
+      setError(t('dashboardPages.deposit.fileFormatError'));
       return;
     }
 
     if (file.size > 10 * 1024 * 1024) {
-      setError('Ukuran file maksimal 10MB.');
+      setError(t('dashboardPages.deposit.fileSizeError'));
       return;
     }
 
@@ -129,17 +129,17 @@ export default function DepositContent({ user }: { user: User }) {
     setError('');
 
     if (!bankCode) {
-      setError('Pilih bank/e-wallet tujuan');
+      setError(t('dashboardPages.deposit.selectBankError'));
       return;
     }
 
     if (selectedAmountNum < MIN_DEPOSIT) {
-      setError(`Minimum deposit ${formatIDR(MIN_DEPOSIT)}`);
+      setError(t('dashboardPages.deposit.minDepositError').replace('{amount}', formatIDR(MIN_DEPOSIT)));
       return;
     }
 
     if (selectedAmountNum > MAX_DEPOSIT) {
-      setError(`Maksimum deposit ${formatIDR(MAX_DEPOSIT)}`);
+      setError(t('dashboardPages.deposit.maxDepositError').replace('{amount}', formatIDR(MAX_DEPOSIT)));
       return;
     }
 
@@ -159,7 +159,7 @@ export default function DepositContent({ user }: { user: User }) {
       const data = await res.json();
 
       if (!res.ok || !data.success) {
-        throw new Error(data.error || 'Gagal membuat deposit');
+        throw new Error(data.error || t('dashboardPages.deposit.createDepositError'));
       }
 
       setDepositDetails({
@@ -282,7 +282,7 @@ export default function DepositContent({ user }: { user: User }) {
                     : 'border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
                 }`}
               >
-                E-Wallet
+                {t('dashboardPages.deposit.eWallet')}
               </button>
             </div>
 
@@ -357,7 +357,7 @@ export default function DepositContent({ user }: { user: User }) {
 
           {selectedPayment && selectedAmountNum >= MIN_DEPOSIT && selectedAmountNum <= MAX_DEPOSIT && (
             <div className="border-t border-gray-200 dark:border-gray-700 pt-8">
-              <h2 className="font-semibold text-gray-900 dark:text-white mb-4">Estimasi Biaya</h2>
+              <h2 className="font-semibold text-gray-900 dark:text-white mb-4">{t('dashboardPages.deposit.estimateFee')}</h2>
               
               <div className="space-y-3 mb-4">
                 <div className="flex justify-between text-sm">
@@ -365,15 +365,15 @@ export default function DepositContent({ user }: { user: User }) {
                   <span className="text-gray-900 dark:text-white font-medium">{formatIDR(selectedAmountNum)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-600 dark:text-gray-400">Biaya Admin</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('dashboardPages.deposit.adminFee')}</span>
                   <span className="text-gray-900 dark:text-white font-medium">{formatIDR(DEPOSIT_FEE)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-600 dark:text-gray-400">Kode Unik (3 digit)</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('dashboardPages.deposit.uniqueCode')}</span>
                   <span className="text-amber-600 dark:text-amber-400 font-medium">+{formatIDR(UNIQUE_CODE_MIN)} - {formatIDR(UNIQUE_CODE_MAX)}</span>
                 </div>
                 <div className="border-t border-gray-200 dark:border-gray-700 pt-3 flex justify-between">
-                  <span className="text-gray-900 dark:text-white font-semibold">Estimasi Total</span>
+                  <span className="text-gray-900 dark:text-white font-semibold">{t('dashboardPages.deposit.estimateTotal')}</span>
                   <span className="text-blue-600 dark:text-blue-400 font-bold">
                     {formatIDR(selectedAmountNum + DEPOSIT_FEE + UNIQUE_CODE_MIN)} - {formatIDR(selectedAmountNum + DEPOSIT_FEE + UNIQUE_CODE_MAX)}
                   </span>
@@ -382,7 +382,7 @@ export default function DepositContent({ user }: { user: User }) {
 
               <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-100 dark:border-amber-800 rounded-lg p-3">
                 <p className="text-xs text-amber-700 dark:text-amber-300">
-                  Kode unik akan ditentukan setelah submit untuk memudahkan verifikasi pembayaran.
+                  {t('dashboardPages.deposit.uniqueCodeNote')}
                 </p>
               </div>
             </div>
@@ -403,10 +403,10 @@ export default function DepositContent({ user }: { user: User }) {
             {isSubmitting ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />
-                Memproses...
+                {t('dashboardPages.deposit.processing')}
               </>
             ) : (
-              'Lanjutkan'
+              t('dashboardPages.deposit.continue')
             )}
           </button>
         </form>
@@ -432,7 +432,7 @@ export default function DepositContent({ user }: { user: User }) {
             <div className="bg-blue-50 dark:bg-blue-900/30 rounded-lg p-4 mb-4">
               <div className="text-center mb-4">
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
-                  {depositDetails.method === 'bank_transfer' ? 'Bank' : 'E-Wallet'}
+                  {depositDetails.method === 'bank_transfer' ? t('dashboardPages.deposit.bank') : t('dashboardPages.deposit.eWallet')}
                 </p>
                 <p className="text-xl font-bold text-blue-600 dark:text-blue-400">
                   {depositDetails.bankCode}
@@ -442,7 +442,7 @@ export default function DepositContent({ user }: { user: User }) {
               <div className="space-y-3">
                 <div className="flex items-center justify-between p-3 bg-white dark:bg-gray-800 rounded-lg">
                   <div>
-                    <p className="text-xs text-gray-500 dark:text-gray-400">Nomor Rekening</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">{t('dashboardPages.deposit.accountNumber')}</p>
                     <p className="font-mono font-bold text-gray-900 dark:text-white text-lg">
                       {depositDetails.targetAccount.number}
                     </p>
@@ -461,7 +461,7 @@ export default function DepositContent({ user }: { user: User }) {
                 </div>
 
                 <div className="p-3 bg-white dark:bg-gray-800 rounded-lg">
-                  <p className="text-xs text-gray-500 dark:text-gray-400">Atas Nama</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">{t('dashboardPages.deposit.accountName')}</p>
                   <p className="font-semibold text-gray-900 dark:text-white">
                     {depositDetails.targetAccount.name}
                   </p>
@@ -496,11 +496,11 @@ export default function DepositContent({ user }: { user: User }) {
                   <span className="text-amber-800 dark:text-amber-300">{formatIDR(depositDetails.amount)}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-amber-700 dark:text-amber-400">Biaya Admin</span>
+                  <span className="text-amber-700 dark:text-amber-400">{t('dashboardPages.deposit.adminFee')}</span>
                   <span className="text-amber-800 dark:text-amber-300">{formatIDR(depositDetails.fee)}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-amber-700 dark:text-amber-400">Kode Unik</span>
+                  <span className="text-amber-700 dark:text-amber-400">{t('dashboardPages.deposit.uniqueCode')}</span>
                   <span className="font-bold text-amber-800 dark:text-amber-300">+{formatIDR(depositDetails.uniqueCode)}</span>
                 </div>
               </div>

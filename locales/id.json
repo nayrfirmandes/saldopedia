@@ -2126,9 +2126,12 @@
       "fileFormatError": "Format file tidak didukung. Gunakan JPG, PNG, WebP, atau PDF.",
       "fileSizeError": "Ukuran file maksimal 10MB.",
       "selectBankError": "Pilih bank/e-wallet tujuan",
-      "minDepositError": "Minimum deposit",
-      "maxDepositError": "Maksimum deposit",
-      "createDepositError": "Gagal membuat deposit"
+      "minDepositError": "Minimum deposit {amount}",
+      "maxDepositError": "Maksimum deposit {amount}",
+      "createDepositError": "Gagal membuat deposit",
+      "estimateFee": "Estimasi Biaya",
+      "adminFee": "Biaya Admin",
+      "uniqueCode": "Kode Unik (3 digit)"
     },
     "depositDetail": {
       "backToHistory": "Kembali ke Riwayat",
@@ -2159,7 +2162,12 @@
       "fileSizeError": "Ukuran file maksimal 10MB.",
       "uploadProofError": "Upload bukti transfer",
       "uploadError": "Gagal upload bukti",
-      "genericError": "Terjadi kesalahan"
+      "genericError": "Terjadi kesalahan",
+      "adminFee": "Biaya Admin",
+      "uniqueCode": "Kode Unik",
+      "clickToUpload": "Klik untuk upload bukti transfer",
+      "fileFormats": "JPG, PNG, WebP, atau PDF (max 10MB)",
+      "uploading": "Mengupload..."
     },
     "riwayat": {
       "title": "Riwayat Deposit",

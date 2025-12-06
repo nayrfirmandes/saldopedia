@@ -60,12 +60,12 @@ export default function DepositDetailContent({ deposit }: DepositDetailContentPr
 
     const allowedTypes = ['image/jpeg', 'image/png', 'image/webp', 'application/pdf'];
     if (!allowedTypes.includes(file.type)) {
-      setError('Format file tidak didukung. Gunakan JPG, PNG, WebP, atau PDF.');
+      setError(t('dashboardPages.depositDetail.fileFormatError'));
       return;
     }
 
     if (file.size > 10 * 1024 * 1024) {
-      setError('Ukuran file maksimal 10MB.');
+      setError(t('dashboardPages.depositDetail.fileSizeError'));
       return;
     }
 
@@ -89,7 +89,7 @@ export default function DepositDetailContent({ deposit }: DepositDetailContentPr
 
   const handleUploadProof = async () => {
     if (!proofFile) {
-      setError('Upload bukti transfer');
+      setError(t('dashboardPages.depositDetail.uploadProofError'));
       return;
     }
 
@@ -109,12 +109,12 @@ export default function DepositDetailContent({ deposit }: DepositDetailContentPr
       const data = await res.json();
 
       if (!res.ok || !data.success) {
-        throw new Error(data.error || 'Gagal upload bukti');
+        throw new Error(data.error || t('dashboardPages.depositDetail.uploadError'));
       }
 
       router.refresh();
     } catch (err: any) {
-      setError(err.message || 'Terjadi kesalahan');
+      setError(err.message || t('dashboardPages.depositDetail.genericError'));
     } finally {
       setIsUploading(false);
     }
@@ -219,20 +219,20 @@ export default function DepositDetailContent({ deposit }: DepositDetailContentPr
 
       <div className="border-t border-gray-200 dark:border-gray-800 pt-8 space-y-4">
         <div className="flex justify-between py-2 border-b border-gray-100 dark:border-gray-800">
-          <span className="text-sm text-gray-500 dark:text-gray-400">Metode Pembayaran</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">{t('dashboardPages.depositDetail.paymentMethod')}</span>
           <span className="text-sm font-medium text-gray-900 dark:text-white">
             {getMethodLabel(deposit.method, deposit.bankCode)}
           </span>
         </div>
         <div className="flex justify-between py-2 border-b border-gray-100 dark:border-gray-800">
-          <span className="text-sm text-gray-500 dark:text-gray-400">Tanggal Dibuat</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">{t('dashboardPages.depositDetail.createdDate')}</span>
           <span className="text-sm font-medium text-gray-900 dark:text-white">{deposit.createdAt}</span>
         </div>
         {deposit.expiresAt && deposit.status !== 'completed' && (
           <div className="flex justify-between py-2 border-b border-gray-100 dark:border-gray-800">
             <span className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
               {deposit.status === 'expired' && <AlertTriangle className="h-3.5 w-3.5 text-red-500" />}
-              {deposit.status === 'expired' ? 'Kadaluarsa' : 'Batas Waktu'}
+              {deposit.status === 'expired' ? t('dashboardPages.depositDetail.expired') : t('dashboardPages.depositDetail.deadline')}
             </span>
             <span className={`text-sm font-medium ${deposit.status === 'expired' ? 'text-red-600 dark:text-red-400' : 'text-gray-900 dark:text-white'}`}>
               {deposit.expiresAt}
@@ -241,14 +241,14 @@ export default function DepositDetailContent({ deposit }: DepositDetailContentPr
         )}
         {deposit.completedAt && (
           <div className="flex justify-between py-2 border-b border-gray-100 dark:border-gray-800">
-            <span className="text-sm text-gray-500 dark:text-gray-400">Tanggal Selesai</span>
+            <span className="text-sm text-gray-500 dark:text-gray-400">{t('dashboardPages.depositDetail.completedDate')}</span>
             <span className="text-sm font-medium text-gray-900 dark:text-white">{deposit.completedAt}</span>
           </div>
         )}
         
         {deposit.adminNotes && (
           <div className="pt-2">
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Catatan Admin</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">{t('dashboardPages.depositDetail.adminNotes')}</p>
             <p className="text-sm text-gray-700 dark:text-gray-300">{deposit.adminNotes}</p>
           </div>
         )}
@@ -261,7 +261,7 @@ export default function DepositDetailContent({ deposit }: DepositDetailContentPr
           <div className="bg-blue-50 dark:bg-blue-900/30 rounded-lg p-4 mb-6">
             <div className="text-center mb-4">
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
-                {deposit.method === 'bank_transfer' ? 'Bank' : 'E-Wallet'}
+                {deposit.method === 'bank_transfer' ? t('dashboardPages.depositDetail.bank') : t('dashboardPages.depositDetail.eWallet')}
               </p>
               <p className="text-xl font-bold text-blue-600 dark:text-blue-400">
                 {deposit.bankCode}
@@ -271,7 +271,7 @@ export default function DepositDetailContent({ deposit }: DepositDetailContentPr
             <div className="space-y-3">
               <div className="flex items-center justify-between p-3 bg-white dark:bg-gray-800 rounded-lg">
                 <div>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">Nomor Rekening</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">{t('dashboardPages.depositDetail.accountNumber')}</p>
                   <p className="font-mono font-bold text-gray-900 dark:text-white text-lg">
                     {targetAccount.number}
                   </p>
@@ -290,7 +290,7 @@ export default function DepositDetailContent({ deposit }: DepositDetailContentPr
               </div>
 
               <div className="p-3 bg-white dark:bg-gray-800 rounded-lg">
-                <p className="text-xs text-gray-500 dark:text-gray-400">Atas Nama</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400">{t('dashboardPages.depositDetail.accountName')}</p>
                 <p className="font-semibold text-gray-900 dark:text-white">
                   {targetAccount.name}
                 </p>
@@ -312,11 +312,11 @@ export default function DepositDetailContent({ deposit }: DepositDetailContentPr
                 <span className="text-gray-700 dark:text-gray-300">{formatIDR(deposit.amount)}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-500 dark:text-gray-400">Biaya Admin</span>
+                <span className="text-gray-500 dark:text-gray-400">{t('dashboardPages.depositDetail.adminFee')}</span>
                 <span className="text-gray-700 dark:text-gray-300">{formatIDR(deposit.fee)}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-500 dark:text-gray-400">Kode Unik</span>
+                <span className="text-gray-500 dark:text-gray-400">{t('dashboardPages.depositDetail.uniqueCode')}</span>
                 <span className="font-semibold text-gray-700 dark:text-gray-300">+Rp {deposit.uniqueCode.toLocaleString('id-ID')}</span>
               </div>
             </div>
@@ -332,10 +332,10 @@ export default function DepositDetailContent({ deposit }: DepositDetailContentPr
             <label className="flex flex-col items-center justify-center p-8 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg cursor-pointer hover:border-blue-400 dark:hover:border-blue-500 transition-colors">
               <Upload className="h-8 w-8 text-gray-400 mb-2" />
               <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
-                Klik untuk upload bukti transfer
+                {t('dashboardPages.depositDetail.clickToUpload')}
               </p>
               <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
-                JPG, PNG, WebP, atau PDF (max 10MB)
+                {t('dashboardPages.depositDetail.fileFormats')}
               </p>
               <input
                 ref={fileInputRef}
@@ -393,7 +393,7 @@ export default function DepositDetailContent({ deposit }: DepositDetailContentPr
             {isUploading ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />
-                Mengupload...
+                {t('dashboardPages.depositDetail.uploading')}
               </>
             ) : (
               <>
