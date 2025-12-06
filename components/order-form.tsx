@@ -102,6 +102,19 @@ export default function OrderForm() {
     minAmountIDR: number;
   } | null>(null);
   const [loadingMinimum, setLoadingMinimum] = useState(false);
+  
+  // Saved wallets state
+  const [savedWallets, setSavedWallets] = useState<Array<{
+    id: number;
+    label: string;
+    cryptoSymbol: string;
+    network: string | null;
+    walletAddress: string;
+    xrpTag: string | null;
+  }>>([]);
+  const [loadingSavedWallets, setLoadingSavedWallets] = useState(false);
+  const [saveThisWallet, setSaveThisWallet] = useState(false);
+  const [walletLabel, setWalletLabel] = useState("");
 
   // Fetch logged-in user info and auto-fill form
   useEffect(() => {
@@ -197,6 +210,34 @@ export default function OrderForm() {
     fetchMinimum();
   }, [formData.cryptoSymbol, formData.serviceType, cryptoPrices]);
 
+  // Fetch saved wallets when crypto symbol changes (only for logged in users on BUY)
+  useEffect(() => {
+    const fetchSavedWallets = async () => {
+      if (!isLoggedIn || formData.serviceType !== "cryptocurrency" || formData.transactionType !== "buy") {
+        setSavedWallets([]);
+        return;
+      }
+
+      setLoadingSavedWallets(true);
+      try {
+        const response = await fetch(`/api/saved-wallets?crypto=${formData.cryptoSymbol}`);
+        const result = await response.json();
+        if (result.success && result.wallets) {
+          setSavedWallets(result.wallets);
+        } else {
+          setSavedWallets([]);
+        }
+      } catch (error) {
+        console.error("Failed to fetch saved wallets:", error);
+        setSavedWallets([]);
+      } finally {
+        setLoadingSavedWallets(false);
+      }
+    };
+
+    fetchSavedWallets();
+  }, [formData.cryptoSymbol, formData.serviceType, formData.transactionType, isLoggedIn]);
+
   // Calculate total
   const getCalculation = () => {
     const numAmount = parseFloat(formData.amountInput);
@@ -251,10 +292,38 @@ export default function OrderForm() {
       ...prev, 
       cryptoSymbol: symbol,
       cryptoNetwork: networks[0] || "",
-      xrpTag: "" // Reset XRP tag when crypto changes
+      xrpTag: "", // Reset XRP tag when crypto changes
+      walletAddress: "" // Reset wallet when crypto changes
     }));
+    // Reset save wallet checkbox
+    setSaveThisWallet(false);
+    setWalletLabel("");
     if (errors.cryptoSymbol || errors.cryptoNetwork) {
       setErrors(prev => ({ ...prev, cryptoSymbol: "", cryptoNetwork: "" }));
+    }
+  };
+
+  // Handle selecting a saved wallet
+  const handleSavedWalletSelect = (walletId: string) => {
+    if (!walletId) {
+      // User selected "Enter manually"
+      return;
+    }
+    
+    const wallet = savedWallets.find(w => w.id === parseInt(walletId));
+    if (wallet) {
+      setFormData(prev => ({
+        ...prev,
+        walletAddress: wallet.walletAddress,
+        cryptoNetwork: wallet.network || prev.cryptoNetwork,
+        xrpTag: wallet.xrpTag || ""
+      }));
+      // Don't enable save checkbox for already-saved wallet
+      setSaveThisWallet(false);
+      setWalletLabel("");
+      if (errors.walletAddress) {
+        setErrors(prev => ({ ...prev, walletAddress: "" }));
+      }
     }
   };
 
@@ -503,6 +572,26 @@ export default function OrderForm() {
       const result = await response.json();
 
       if (response.ok && result.success && result.orderId) {
+        // Save wallet if checkbox was checked (for crypto BUY orders)
+        if (saveThisWallet && formData.serviceType === "cryptocurrency" && formData.transactionType === "buy" && formData.walletAddress) {
+          try {
+            await fetch("/api/saved-wallets", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                label: walletLabel.trim() || `${formData.cryptoSymbol} Wallet`,
+                cryptoSymbol: formData.cryptoSymbol,
+                network: formData.cryptoNetwork,
+                walletAddress: formData.walletAddress,
+                xrpTag: formData.cryptoSymbol === "XRP" ? formData.xrpTag : null
+              })
+            });
+          } catch (err) {
+            // Silently ignore save wallet errors - order was successful
+            console.error("Failed to save wallet:", err);
+          }
+        }
+        
         // Redirect to instructions page
         router.push(`/order/instructions/${result.orderId}`);
       } else {
@@ -1016,11 +1105,51 @@ export default function OrderForm() {
                               <label className="mb-2 block text-sm font-semibold text-gray-700 dark:text-gray-200">
                                 {t('order.walletAddress')} {formData.cryptoSymbol} <span className="text-red-500">*</span>
                               </label>
+                              
+                              {/* Saved wallets dropdown */}
+                              {isLoggedIn && savedWallets.length > 0 && (
+                                <div className="mb-3">
+                                  <select
+                                    onChange={(e) => handleSavedWalletSelect(e.target.value)}
+                                    className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-700 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200"
+                                    defaultValue=""
+                                  >
+                                    <option value="">
+                                      {language === 'id' ? '-- Pilih wallet tersimpan --' : '-- Select saved wallet --'}
+                                    </option>
+                                    {savedWallets.map((wallet) => (
+                                      <option key={wallet.id} value={wallet.id}>
+                                        {wallet.label} - {wallet.walletAddress.substring(0, 10)}...{wallet.walletAddress.slice(-6)}
+                                      </option>
+                                    ))}
+                                  </select>
+                                  <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                                    {language === 'id' ? 'Pilih dari daftar wallet tersimpan atau masukkan baru di bawah' : 'Select from saved wallets or enter new below'}
+                                  </p>
+                                </div>
+                              )}
+                              
+                              {/* Loading saved wallets indicator */}
+                              {loadingSavedWallets && (
+                                <p className="mb-2 text-xs text-gray-500 dark:text-gray-400 animate-pulse">
+                                  {language === 'id' ? 'Memuat wallet tersimpan...' : 'Loading saved wallets...'}
+                                </p>
+                              )}
+                              
                               <input
                                 type="text"
                                 name="walletAddress"
                                 value={formData.walletAddress}
-                                onChange={handleChange}
+                                onChange={(e) => {
+                                  handleChange(e);
+                                  // Enable save option when typing new address
+                                  if (e.target.value && !savedWallets.some(w => w.walletAddress === e.target.value)) {
+                                    // Allow saving new wallet
+                                  } else {
+                                    setSaveThisWallet(false);
+                                    setWalletLabel("");
+                                  }
+                                }}
                                 className={`w-full rounded-lg border ${errors.walletAddress ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'} bg-white px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500 font-mono text-sm`}
                                 placeholder={language === 'id' ? 'Paste alamat wallet Anda di sini' : 'Paste your wallet address here'}
                               />
@@ -1030,6 +1159,36 @@ export default function OrderForm() {
                               <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
                                 {language === 'id' ? 'Cryptocurrency akan dikirim ke alamat ini' : 'Cryptocurrency will be sent to this address'}
                               </p>
+                              
+                              {/* Save wallet checkbox (only for logged in users with new address) */}
+                              {isLoggedIn && formData.walletAddress && !savedWallets.some(w => w.walletAddress === formData.walletAddress) && (
+                                <div className="mt-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700/50">
+                                  <label className="flex items-center gap-2 cursor-pointer">
+                                    <input
+                                      type="checkbox"
+                                      checked={saveThisWallet}
+                                      onChange={(e) => setSaveThisWallet(e.target.checked)}
+                                      className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700"
+                                    />
+                                    <span className="text-sm text-gray-700 dark:text-gray-200">
+                                      {language === 'id' ? 'Simpan wallet ini untuk transaksi berikutnya' : 'Save this wallet for future transactions'}
+                                    </span>
+                                  </label>
+                                  
+                                  {saveThisWallet && (
+                                    <div className="mt-2">
+                                      <input
+                                        type="text"
+                                        value={walletLabel}
+                                        onChange={(e) => setWalletLabel(e.target.value)}
+                                        placeholder={language === 'id' ? 'Label (contoh: Binance, Tokocrypto)' : 'Label (e.g., Binance, Coinbase)'}
+                                        className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500"
+                                        maxLength={50}
+                                      />
+                                    </div>
+                                  )}
+                                </div>
+                              )}
                             </div>
 
                             {/* Payment Info - BUY orders use saldo */}
