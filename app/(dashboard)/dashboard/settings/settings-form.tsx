@@ -2,8 +2,10 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { useAuth } from '@/contexts/auth-context';
 import { useLanguage } from '@/contexts/language-context';
+import { Wallet, ChevronRight } from 'lucide-react';
 
 interface User {
   email: string;
@@ -22,7 +24,7 @@ interface SettingsFormProps {
 export default function SettingsForm({ user, hasPassword, isGoogleUser, nameChanged }: SettingsFormProps) {
   const router = useRouter();
   const { refreshAuth } = useAuth();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const [photoPreview, setPhotoPreview] = useState<string | null>(user.photoUrl);
@@ -240,6 +242,31 @@ export default function SettingsForm({ user, hasPassword, isGoogleUser, nameChan
             {loading ? t('dashboardPages.settings.saving') : t('dashboardPages.settings.saveChanges')}
           </button>
         </form>
+      </div>
+
+      <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
+        <h2 className="text-lg font-medium text-gray-900 dark:text-white mb-4">
+          {t('dashboardPages.settings.savedAddresses')}
+        </h2>
+        <Link
+          href="/dashboard/settings/addresses"
+          className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
+        >
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+              <Wallet className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+            </div>
+            <div>
+              <p className="text-sm font-medium text-gray-900 dark:text-white">
+                {t('dashboardPages.settings.manageAddresses')}
+              </p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">
+                {t('dashboardPages.settings.manageAddressesDesc')}
+              </p>
+            </div>
+          </div>
+          <ChevronRight className="h-5 w-5 text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors" />
+        </Link>
       </div>
 
       <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
