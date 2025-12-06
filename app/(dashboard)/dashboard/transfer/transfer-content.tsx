@@ -258,7 +258,8 @@ export default function TransferContent({ user }: { user: SessionUser }) {
       setRecipientInfo({
         id: data.user.id,
         name: data.user.name,
-        email: data.user.email
+        email: data.user.email,
+        photoUrl: data.user.photoUrl
       });
       goToStep(2);
     } catch (err) {
