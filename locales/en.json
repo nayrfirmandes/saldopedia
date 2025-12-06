@@ -2006,6 +2006,7 @@
     "orderStatus": {
       "completed": "Completed",
       "pending": "Pending",
+      "pendingProof": "Upload Proof",
       "processing": "Processing",
       "expired": "Expired",
       "cancelled": "Cancelled"

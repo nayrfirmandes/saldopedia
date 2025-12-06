@@ -2006,6 +2006,7 @@
     "orderStatus": {
       "completed": "Selesai",
       "pending": "Pending",
+      "pendingProof": "Upload Bukti",
       "processing": "Proses",
       "expired": "Expired",
       "cancelled": "Dibatalkan"
