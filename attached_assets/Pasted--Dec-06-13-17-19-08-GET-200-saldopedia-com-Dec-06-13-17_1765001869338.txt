@@ -1,0 +1,500 @@
+
+Dec 06 13:17:19.08
+GET
+200
+saldopedia.com
+/
+Dec 06 13:17:19.06
+GET
+200
+saldopedia.com
+/
+Dec 06 13:17:19.06
+GET
+304
+saldopedia.com
+/forgot-password
+Dec 06 13:17:19.06
+GET
+304
+saldopedia.com
+/forgot-password
+Dec 06 13:17:19.05
+GET
+304
+saldopedia.com
+/manifest.webmanifest
+Dec 06 13:17:19.01
+GET
+304
+saldopedia.com
+/register
+Dec 06 13:17:19.00
+GET
+304
+saldopedia.com
+/register
+Dec 06 13:17:19.00
+GET
+304
+saldopedia.com
+/register
+Dec 06 13:17:18.96
+GET
+304
+saldopedia.com
+/register
+Dec 06 13:17:18.95
+GET
+304
+saldopedia.com
+/forgot-password
+Dec 06 13:17:18.95
+GET
+200
+saldopedia.com
+/
+Dec 06 13:17:18.95
+GET
+200
+saldopedia.com
+/
+Dec 06 13:17:18.90
+GET
+304
+saldopedia.com
+/register
+Dec 06 13:17:18.90
+GET
+304
+saldopedia.com
+/forgot-password
+Dec 06 13:17:18.89
+GET
+200
+saldopedia.com
+/
+Dec 06 13:17:18.89
+GET
+401
+saldopedia.com
+/api/user/profile
+Dec 06 13:17:18.79
+GET
+200
+saldopedia.com
+/login
+Dec 06 13:17:18.70
+GET
+307
+saldopedia.com
+/dashboard
+Dec 06 13:17:18.34
+GET
+200
+saldopedia.com
+/api/auth/google/callback
+Dec 06 13:17:15.81
+GET
+307
+saldopedia.com
+/api/auth/google
+Dec 06 13:17:14.03
+GET
+200
+saldopedia.com
+/login
+Dec 06 13:17:14.03
+GET
+200
+saldopedia.com
+/login
+Dec 06 13:17:14.03
+GET
+200
+saldopedia.com
+/login
+Dec 06 13:17:13.97
+GET
+200
+saldopedia.com
+/login
+Dec 06 13:17:13.96
+GET
+304
+saldopedia.com
+/manifest.webmanifest
+Dec 06 13:17:10.63
+GET
+200
+saldopedia.com
+/
+Dec 06 13:17:10.61
+GET
+200
+saldopedia.com
+/
+Dec 06 13:17:10.57
+GET
+200
+saldopedia.com
+/
+Dec 06 13:17:10.57
+GET
+304
+saldopedia.com
+/forgot-password
+Dec 06 13:17:10.56
+GET
+304
+saldopedia.com
+/manifest.webmanifest
+Dec 06 13:17:10.55
+GET
+304
+saldopedia.com
+/forgot-password
+Dec 06 13:17:10.52
+GET
+200
+saldopedia.com
+/register
+Dec 06 13:17:10.52
+GET
+200
+saldopedia.com
+/register
+Dec 06 13:17:10.50
+GET
+200
+saldopedia.com
+/register
+Dec 06 13:17:10.47
+GET
+304
+saldopedia.com
+/forgot-password
+Dec 06 13:17:10.47
+GET
+200
+saldopedia.com
+/register
+Dec 06 13:17:10.46
+GET
+200
+saldopedia.com
+/forgot-password
+Dec 06 13:17:10.41
+GET
+304
+saldopedia.com
+/forgot-password
+Dec 06 13:17:10.41
+GET
+200
+saldopedia.com
+/register
+Dec 06 13:17:10.40
+GET
+200
+saldopedia.com
+/
+Dec 06 13:17:10.39
+GET
+401
+saldopedia.com
+/api/user/profile
+Dec 06 13:17:10.30
+GET
+200
+saldopedia.com
+/login
+Dec 06 13:17:09.53
+GET
+307
+saldopedia.com
+/dashboard
+Dec 06 13:17:09.12
+GET
+200
+saldopedia.com
+/api/auth/google/callback
+Dec 06 13:17:06.77
+GET
+307
+saldopedia.com
+/api/auth/google
+Dec 06 13:17:05.28
+GET
+200
+saldopedia.com
+/forgot-password
+Dec 06 13:17:05.28
+GET
+200
+saldopedia.com
+/forgot-password
+Dec 06 13:17:05.28
+GET
+200
+saldopedia.com
+/forgot-password
+Dec 06 13:17:05.23
+GET
+304
+saldopedia.com
+/manifest.webmanifest
+Dec 06 13:17:05.23
+GET
+200
+saldopedia.com
+/forgot-password
+Dec 06 13:17:04.91
+GET
+200
+saldopedia.com
+/
+Dec 06 13:17:04.84
+GET
+200
+saldopedia.com
+/
+Dec 06 13:17:04.77
+GET
+200
+saldopedia.com
+/crypto
+Dec 06 13:17:04.76
+GET
+200
+saldopedia.com
+/crypto
+Dec 06 13:17:04.42
+GET
+200
+saldopedia.com
+/crypto
+Dec 06 13:17:04.41
+GET
+200
+saldopedia.com
+/paypal
+Dec 06 13:17:04.40
+GET
+200
+saldopedia.com
+/paypal
+Dec 06 13:17:04.38
+GET
+200
+saldopedia.com
+/paypal
+Dec 06 13:17:04.32
+GET
+200
+saldopedia.com
+/order
+Dec 06 13:17:04.26
+GET
+200
+saldopedia.com
+/order
+Dec 06 13:17:04.07
+GET
+200
+saldopedia.com
+/skrill
+Dec 06 13:17:04.07
+GET
+200
+saldopedia.com
+/skrill
+Dec 06 13:17:04.06
+GET
+200
+saldopedia.com
+/skrill
+Dec 06 13:17:04.03
+GET
+200
+saldopedia.com
+/order
+Dec 06 13:17:03.90
+GET
+200
+saldopedia.com
+/cryptocurrencies
+Dec 06 13:17:03.78
+GET
+200
+saldopedia.com
+/cryptocurrencies
+Dec 06 13:17:03.74
+GET
+200
+saldopedia.com
+/cryptocurrencies
+Dec 06 13:17:03.68
+GET
+200
+saldopedia.com
+/pricing
+Dec 06 13:17:03.57
+GET
+200
+saldopedia.com
+/pricing
+Dec 06 13:17:03.40
+GET
+200
+saldopedia.com
+/pricing
+Dec 06 13:17:03.35
+GET
+200
+saldopedia.com
+/calculator
+Dec 06 13:17:03.29
+GET
+200
+saldopedia.com
+/calculator
+Dec 06 13:17:03.20
+GET
+200
+saldopedia.com
+/calculator
+Dec 06 13:17:03.03
+GET
+200
+saldopedia.com
+/about
+Dec 06 13:17:03.00
+GET
+200
+saldopedia.com
+/about
+Dec 06 13:17:02.95
+GET
+200
+saldopedia.com
+/about
+Dec 06 13:17:02.79
+GET
+200
+saldopedia.com
+/blog
+Dec 06 13:17:02.67
+GET
+200
+saldopedia.com
+/blog
+Dec 06 13:17:02.63
+GET
+200
+saldopedia.com
+/blog
+Dec 06 13:17:02.60
+GET
+200
+saldopedia.com
+/customers
+Dec 06 13:17:02.43
+GET
+200
+saldopedia.com
+/customers
+Dec 06 13:17:02.26
+GET
+200
+saldopedia.com
+/customers
+Dec 06 13:17:02.22
+GET
+200
+saldopedia.com
+/documentation
+Dec 06 13:17:02.08
+GET
+200
+saldopedia.com
+/documentation
+Dec 06 13:17:02.08
+GET
+200
+saldopedia.com
+/documentation
+Dec 06 13:17:01.92
+GET
+200
+saldopedia.com
+/support
+Dec 06 13:17:01.86
+GET
+200
+saldopedia.com
+/support
+Dec 06 13:17:01.71
+GET
+200
+saldopedia.com
+/support
+Dec 06 13:17:01.66
+GET
+200
+saldopedia.com
+/site-map
+Dec 06 13:17:01.45
+GET
+200
+saldopedia.com
+/site-map
+Dec 06 13:17:01.45
+GET
+200
+saldopedia.com
+/site-map
+Dec 06 13:17:01.35
+GET
+200
+saldopedia.com
+/terms-of-service
+Dec 06 13:17:01.28
+GET
+200
+saldopedia.com
+/terms-of-service
+Dec 06 13:17:01.10
+GET
+200
+saldopedia.com
+/terms-of-service
+Dec 06 13:17:01.09
+GET
+200
+saldopedia.com
+/privacy-policy
+Dec 06 13:17:00.98
+GET
+200
+saldopedia.com
+/privacy-policy
+Dec 06 13:17:00.71
+GET
+200
+saldopedia.com
+/privacy-policy
+Dec 06 13:17:00.69
+GET
+200
+saldopedia.com
+/cookie-policy
+Dec 06 13:17:00.34
+GET
+200
+saldopedia.com
+/cookie-policy
+Dec 06 13:17:00.33
+GET
+200
+saldopedia.com

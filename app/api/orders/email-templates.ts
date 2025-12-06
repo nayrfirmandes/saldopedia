@@ -1,0 +1,334 @@
+import {
+  generateEmailWrapper,
+  generateEmailHeader,
+  generateEmailFooter,
+  generateInfoBox,
+  generateButton,
+  generateDetailRow,
+  generateDetailTable,
+  generateTotalRow,
+  generateSectionTitle,
+  formatIDR,
+  formatDateWIB
+} from '@/lib/email-base';
+import { getPrimaryDomain } from "@/lib/order-token";
+
+function getServiceAmount(data: any): string {
+  if (data.serviceType === "cryptocurrency") {
+    if (data.transactionType === "sell") {
+      return `${data.amountInput} ${data.cryptoSymbol}`;
+    }
+    return `${(parseFloat(data.amountIdr) / parseFloat(data.rate)).toFixed(8).replace(/\.?0+$/, '')} ${data.cryptoSymbol}`;
+  }
+  return `$${parseFloat(data.amountInput).toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 2})}`;
+}
+
+function generateTransactionBadge(transactionType: string, transactionLabel: string): string {
+  const isBuy = transactionType === 'buy';
+  return `
+    <tr class="detail-row" style="border-bottom: 1px solid #f3f4f6;">
+      <td class="detail-label" style="padding: 10px 0; color: #6b7280; font-size: 13px;">Jenis Transaksi</td>
+      <td style="padding: 10px 0; text-align: right;">
+        <span style="display: inline-block; padding: 4px 10px; background-color: ${isBuy ? '#dcfce7' : '#fef3c7'}; color: ${isBuy ? '#166534' : '#92400e'}; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase;">${transactionLabel}</span>
+      </td>
+    </tr>
+  `;
+}
+
+function generatePaymentDetails(data: any): string {
+  const rows: string[] = [];
+  
+  if (data.paypalEmail) {
+    rows.push(generateDetailRow('Email PayPal', data.paypalEmail));
+  }
+  if (data.skrillEmail) {
+    rows.push(generateDetailRow('Email Skrill', data.skrillEmail));
+  }
+  if (data.cryptoNetwork) {
+    rows.push(generateDetailRow('Network', data.cryptoNetwork));
+  }
+  if (data.walletAddress) {
+    rows.push(generateDetailRow('Wallet Address', data.walletAddress, { mono: true, color: '#10b981' }));
+  }
+  if (data.xrpTag) {
+    rows.push(generateDetailRow('XRP Tag', data.xrpTag, { mono: true }));
+  }
+  if (data.depositAddress) {
+    rows.push(generateDetailRow('Deposit Address', data.depositAddress, { mono: true, color: '#10b981' }));
+  }
+  if (data.paymentMethod) {
+    rows.push(generateDetailRow('Metode Pembayaran', data.paymentMethod));
+  }
+  if (data.paymentAccountName) {
+    rows.push(generateDetailRow('Nama Pemilik', data.paymentAccountName, { bold: true }));
+  }
+  if (data.paymentAccountNumber) {
+    rows.push(generateDetailRow('No. Rekening/HP', data.paymentAccountNumber, { mono: true }));
+  }
+  
+  if (rows.length === 0) return '';
+  
+  let sectionTitle = 'Detail Pembayaran';
+  if (data.transactionType === 'sell') {
+    sectionTitle = 'Tujuan Penerimaan IDR';
+  } else if (data.transactionType === 'buy') {
+    if (data.serviceType === 'cryptocurrency') {
+      sectionTitle = 'Tujuan Penerimaan Crypto';
+    } else if (data.serviceType === 'paypal') {
+      sectionTitle = 'Tujuan Penerimaan PayPal';
+    } else if (data.serviceType === 'skrill') {
+      sectionTitle = 'Tujuan Penerimaan Skrill';
+    }
+  }
+  
+  return `
+    <div style="margin-top: 20px;">
+      <p class="secondary-text" style="margin: 0 0 12px; color: #6b7280; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+        ${sectionTitle}
+      </p>
+      ${generateDetailTable(rows)}
+    </div>
+  `;
+}
+
+export function generateCustomerEmailHTML(data: any, serviceLabel: string, transactionLabel: string): string {
+  const currentYear = new Date().getFullYear();
+  
+  const detailRows = [
+    generateDetailRow('Layanan', `${serviceLabel}${data.serviceType === "cryptocurrency" && data.cryptoSymbol ? ` (${data.cryptoSymbol})` : ''}`, { bold: true }),
+    generateTransactionBadge(data.transactionType, transactionLabel),
+    generateDetailRow('Jumlah', getServiceAmount(data), { bold: true }),
+    generateDetailRow('Rate', formatIDR(parseFloat(data.rate))),
+    generateTotalRow('Total IDR', formatIDR(parseFloat(data.amountIdr)), '#3b82f6')
+  ];
+  
+  const flowDescription = data.paidWithSaldo 
+    ? (data.serviceType === "cryptocurrency" 
+      ? `Pembayaran via Saldo ${formatIDR(parseFloat(data.amountIdr))} → Terima ${data.cryptoSymbol}`
+      : `Pembayaran via Saldo ${formatIDR(parseFloat(data.amountIdr))} → Terima saldo ${data.serviceType === "paypal" ? "PayPal" : "Skrill"}`)
+    : (data.transactionType === "buy" 
+      ? (data.serviceType === "cryptocurrency" 
+        ? `Transfer ${formatIDR(parseFloat(data.amountIdr))} → Terima ${data.cryptoSymbol}`
+        : `Transfer ${formatIDR(parseFloat(data.amountIdr))} → Terima saldo ${data.serviceType === "paypal" ? "PayPal" : "Skrill"}`)
+      : (data.serviceType === "cryptocurrency"
+        ? `Kirim ${data.cryptoSymbol} → Terima ${formatIDR(parseFloat(data.amountIdr))}`
+        : `Kirim saldo ${data.serviceType === "paypal" ? "PayPal" : "Skrill"} → Terima ${formatIDR(parseFloat(data.amountIdr))}`));
+  
+  const content = `
+    ${generateEmailHeader('Konfirmasi Order', '#3b82f6')}
+    
+    <tr>
+      <td class="content-area" style="padding: 28px 24px; background-color: #ffffff;">
+        
+        ${generateInfoBox('Order Berhasil Diterima', `Order ID: ${data.orderId}`, 'success')}
+
+        <p class="main-text" style="margin: 0 0 12px; color: #111827; font-size: 15px;">
+          Halo <strong>${data.customerName}</strong>,
+        </p>
+        <p class="secondary-text" style="margin: 0 0 24px; color: #4b5563; font-size: 14px; line-height: 1.6;">
+          Terima kasih telah mempercayai Saldopedia. Order Anda telah kami terima dan akan segera diproses.
+        </p>
+
+        ${generateSectionTitle('Detail Order')}
+        ${generateDetailTable(detailRows)}
+        
+        ${generatePaymentDetails(data)}
+
+        ${generateInfoBox('Alur Transaksi', flowDescription, data.paidWithSaldo ? 'success' : (data.transactionType === 'buy' ? 'info' : 'success'))}
+
+        ${data.paidWithSaldo ? `
+        ${generateInfoBox('Pembayaran dengan Saldo Berhasil', `Saldo Anda telah dipotong sebesar ${formatIDR(parseFloat(data.amountIdr))}. Order akan segera diproses tanpa perlu transfer manual.`, 'success')}
+        ` : ''}
+
+        ${data.transactionType === "buy" && data.serviceType === "cryptocurrency" ? `
+        <div class="amount-display" style="text-align: center; margin-bottom: 24px; padding: 20px; background-color: #f0fdf4; border-radius: 8px;">
+          <p style="margin: 0 0 12px; color: #166534; font-size: 13px; font-weight: 600;">
+            Order Anda sedang diproses secara otomatis
+          </p>
+          <p style="margin: 0 0 16px; color: #15803d; font-size: 12px;">
+            Estimasi waktu: 5-15 menit. Anda akan menerima notifikasi email saat selesai.
+          </p>
+          ${generateButton('Lihat Status di Dashboard', `https://${getPrimaryDomain()}/dashboard`, 'primary')}
+        </div>
+        ` : data.transactionType === "buy" ? `
+        <div class="amount-display" style="text-align: center; margin-bottom: 24px; padding: 20px; background-color: #eff6ff; border-radius: 8px;">
+          <p style="margin: 0 0 12px; color: #1e40af; font-size: 13px; font-weight: 600;">
+            Order Anda sedang diproses oleh tim kami
+          </p>
+          <p style="margin: 0 0 16px; color: #3b82f6; font-size: 12px;">
+            Saldo ${data.serviceType === "paypal" ? "PayPal" : "Skrill"} akan dikirim ke email Anda dalam waktu 1x24 jam kerja.
+          </p>
+          ${generateButton('Lihat Status di Dashboard', `https://${getPrimaryDomain()}/dashboard`, 'primary')}
+        </div>
+        ` : `
+        <div class="amount-display" style="text-align: center; margin-bottom: 24px; padding: 20px; background-color: #f9fafb; border-radius: 8px;">
+          <p class="secondary-text" style="margin: 0 0 16px; color: #374151; font-size: 13px;">
+            Lihat alamat deposit dan instruksi pengiriman
+          </p>
+          ${generateButton('Lihat Instruksi Pembayaran', `https://${getPrimaryDomain()}/order/instructions/${data.orderId}`, 'success')}
+        </div>
+        `}
+
+      </td>
+    </tr>
+
+    ${generateEmailFooter(currentYear, true)}
+  `;
+  
+  return generateEmailWrapper(content);
+}
+
+export function generateInvoiceEmailHTML(data: any, serviceLabel: string, transactionLabel: string): string {
+  const currentYear = new Date().getFullYear();
+  const formattedDate = formatDateWIB(data.completedAt);
+  
+  const detailRows = [
+    generateDetailRow('ID Invoice', data.orderId, { mono: true }),
+    generateDetailRow('Tanggal', formattedDate),
+    generateDetailRow('Layanan', `${serviceLabel}${data.serviceType === "cryptocurrency" && data.cryptoSymbol ? ` (${data.cryptoSymbol})` : ''}`, { bold: true }),
+    generateTransactionBadge(data.transactionType, transactionLabel),
+    ...(data.cryptoNetwork ? [generateDetailRow('Network', data.cryptoNetwork)] : []),
+    generateDetailRow('Jumlah', getServiceAmount(data), { bold: true }),
+    generateDetailRow('Rate', formatIDR(parseFloat(data.rate))),
+    generateTotalRow('Total IDR', formatIDR(parseFloat(data.amountIdr)), '#10b981')
+  ];
+  
+  const content = `
+    ${generateEmailHeader('Invoice - Transaksi Selesai', '#10b981')}
+    
+    <tr>
+      <td class="content-area" style="padding: 28px 24px; background-color: #ffffff;">
+        
+        ${generateInfoBox('Transaksi Selesai', `Invoice: ${data.orderId}`, 'success')}
+
+        <p class="secondary-text" style="margin: 0 0 24px; color: #4b5563; font-size: 14px;">
+          Terima kasih, <strong class="main-text" style="color: #111827;">${data.customerName}</strong>! Transaksi Anda telah berhasil diselesaikan.
+        </p>
+
+        ${generateSectionTitle('Detail Invoice')}
+        ${generateDetailTable(detailRows)}
+        
+        ${generatePaymentDetails(data)}
+
+        ${data.transactionType === 'sell' ? `
+        ${generateInfoBox('Saldo Dikreditkan', `Saldo akun Anda telah ditambah sebesar ${formatIDR(parseFloat(data.amountIdr))}. Anda dapat melihat saldo di Dashboard atau menggunakannya untuk transaksi berikutnya.`, 'success')}
+        ` : ''}
+
+        ${generateInfoBox('Terima Kasih', 'Terima kasih telah menggunakan layanan Saldopedia!', 'info')}
+
+      </td>
+    </tr>
+
+    ${generateEmailFooter(currentYear, true)}
+  `;
+  
+  return generateEmailWrapper(content);
+}
+
+export function generateAdminEmailHTML(data: any, serviceLabel: string, transactionLabel: string): string {
+  const currentYear = new Date().getFullYear();
+  
+  const customerRows = [
+    generateDetailRow('Nama', data.customerName, { bold: true }),
+    generateDetailRow('Email', data.customerEmail),
+    `<tr class="detail-row" style="border-bottom: 1px solid #f3f4f6;">
+      <td class="detail-label" style="padding: 10px 0; color: #6b7280; font-size: 13px;">WhatsApp</td>
+      <td style="padding: 10px 0; text-align: right;">
+        <a href="https://wa.me/${data.customerPhone.replace(/^0/, '62')}" style="color: #10b981; text-decoration: none; font-size: 13px; font-weight: 600;">${data.customerPhone}</a>
+      </td>
+    </tr>`
+  ];
+  
+  const orderRows = [
+    generateDetailRow('Layanan', `${serviceLabel}${data.serviceType === "cryptocurrency" && data.cryptoSymbol ? ` (${data.cryptoSymbol})` : ''}`, { bold: true }),
+    generateTransactionBadge(data.transactionType, transactionLabel),
+    generateDetailRow('Jumlah', getServiceAmount(data), { bold: true }),
+    generateDetailRow('Rate', formatIDR(parseFloat(data.rate))),
+    generateTotalRow('Total IDR', formatIDR(parseFloat(data.amountIdr)), '#f59e0b')
+  ];
+  
+  const content = `
+    ${generateEmailHeader('Admin - Order Baru', '#f59e0b')}
+    
+    <tr>
+      <td class="content-area" style="padding: 28px 24px; background-color: #ffffff;">
+        
+        ${generateInfoBox(
+          `Order Baru Diterima ${data.paidWithSaldo ? '(DIBAYAR SALDO)' : ''}`,
+          `Order ID: ${data.orderId}${data.paidWithSaldo ? ' | Status: CONFIRMED - Saldo sudah dipotong otomatis' : ''}`,
+          data.paidWithSaldo ? 'success' : 'warning'
+        )}
+
+        ${generateSectionTitle('Info Customer')}
+        ${generateDetailTable(customerRows)}
+
+        ${generateSectionTitle('Detail Order')}
+        ${generateDetailTable(orderRows)}
+        
+        ${generatePaymentDetails(data)}
+
+        <div class="amount-display" style="text-align: center; margin: 24px 0; padding: 20px; background-color: #fffbeb; border-radius: 8px;">
+          <p style="margin: 0 0 16px; color: #78350f; font-size: 13px; font-weight: 600;">
+            Proses order ini sekarang
+          </p>
+          ${generateButton('Complete Order (One-Click)', data.completionUrl, 'success')}
+          <p class="secondary-text" style="margin: 16px 0 0; color: #9ca3af; font-size: 11px;">
+            Klik tombol untuk update status menjadi "completed"
+          </p>
+        </div>
+
+      </td>
+    </tr>
+
+    ${generateEmailFooter(currentYear, false)}
+  `;
+  
+  return generateEmailWrapper(content);
+}
+
+export function generateExpiredEmailHTML(data: any, serviceLabel: string, transactionLabel: string): string {
+  const currentYear = new Date().getFullYear();
+  
+  const summaryRows = [
+    generateDetailRow('Layanan', `${serviceLabel}${data.serviceType === "cryptocurrency" && data.cryptoSymbol ? ` (${data.cryptoSymbol})` : ''}`),
+    generateTransactionBadge(data.transactionType, transactionLabel),
+    generateDetailRow('Total', formatIDR(parseFloat(data.amountIdr)), { bold: true })
+  ];
+  
+  const content = `
+    ${generateEmailHeader('Order Expired', '#ef4444')}
+    
+    <tr>
+      <td class="content-area" style="padding: 28px 24px; background-color: #ffffff;">
+        
+        ${generateInfoBox('Order Telah Expired', `Order ID: ${data.orderId}`, 'error')}
+
+        <p class="main-text" style="margin: 0 0 12px; color: #111827; font-size: 15px;">
+          Halo <strong>${data.customerName}</strong>,
+        </p>
+        <p class="secondary-text" style="margin: 0 0 24px; color: #4b5563; font-size: 14px; line-height: 1.6;">
+          Order Anda telah melewati batas waktu 1 jam dan otomatis expired. Silakan buat order baru jika masih membutuhkan.
+        </p>
+
+        ${generateInfoBox('Informasi', 'Order memiliki batas waktu 1 jam untuk menjaga ketersediaan rate.', 'warning')}
+
+        ${generateSectionTitle('Ringkasan Order yang Expired')}
+        ${generateDetailTable(summaryRows)}
+
+        <div class="amount-display" style="text-align: center; margin: 24px 0; padding: 20px; background-color: #f9fafb; border-radius: 8px;">
+          <p class="secondary-text" style="margin: 0 0 16px; color: #374151; font-size: 13px;">
+            Buat order baru dengan rate terbaru
+          </p>
+          ${generateButton('Buat Order Baru', `https://${getPrimaryDomain()}/order`, 'primary')}
+        </div>
+
+      </td>
+    </tr>
+
+    ${generateEmailFooter(currentYear, true)}
+  `;
+  
+  return generateEmailWrapper(content);
+}
+
+export { formatIDR };

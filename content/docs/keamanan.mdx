@@ -1,0 +1,341 @@
+---
+title: "Keamanan & Perlindungan"
+summary: "Pelajari sistem keamanan berlapis Saldopedia yang melindungi akun dan transaksi Anda."
+kind: "detailed"
+publishedAt: "2025-01-07"
+updatedAt: "2025-12-03"
+---
+
+# Keamanan & Perlindungan
+
+Saldopedia mengutamakan keamanan dalam setiap aspek layanan. Panduan ini menjelaskan sistem keamanan berlapis yang melindungi akun dan transaksi Anda.
+
+## Filosofi Keamanan Saldopedia
+
+Kami menerapkan prinsip **"Security by Design"** - keamanan dibangun sejak awal dalam setiap fitur, bukan ditambahkan belakangan.
+
+### Multi-Layer Security
+Setiap transaksi melewati beberapa lapisan keamanan sebelum diproses.
+
+### Zero Trust
+Tidak ada akses yang dipercaya secara default. Semua harus diverifikasi.
+
+### Data Protection
+Semua data sensitif dienkripsi dan disimpan dengan aman.
+
+## Lapisan Keamanan
+
+### 1. Enkripsi Data (SSL 256-bit)
+
+Semua komunikasi antara browser Anda dan server Saldopedia dienkripsi menggunakan **SSL/TLS 256-bit**.
+
+Apa yang dilindungi:
+- Data login (email, password)
+- Informasi transaksi
+- Data rekening bank
+- Alamat wallet cryptocurrency
+- Semua data pribadi
+
+Cara memverifikasi:
+- Lihat ikon gembok di address bar browser
+- URL dimulai dengan `https://`
+- Sertifikat SSL valid dan terverifikasi
+
+### 2. Password Hashing (bcrypt)
+
+Password Anda tidak disimpan dalam bentuk teks biasa. Kami menggunakan **bcrypt** untuk hashing:
+
+- Password di-hash sebelum disimpan
+- Tidak bisa di-reverse ke password asli
+- Setiap hash unik (dengan salt)
+- Tahan terhadap brute-force attack
+
+> **Catatan**: Karena password di-hash, kami tidak bisa memberitahu password Anda. Gunakan "Lupa Password" untuk reset.
+
+### 3. Session Management
+
+Sesi login Anda dikelola dengan aman:
+
+**HTTP-Only Cookies**
+- Token sesi disimpan di cookie HTTP-only
+- Tidak bisa diakses oleh JavaScript (mencegah XSS)
+- Secure flag untuk HTTPS only
+
+**Session Expiry**
+- Sesi berlaku 7 hari
+- Auto-logout setelah tidak aktif 10 menit
+- Logout otomatis saat browser ditutup (opsional)
+
+**Session Token**
+- Token acak yang aman secara kriptografis
+- Unik untuk setiap sesi
+- Tidak bisa diprediksi
+
+### 4. Verifikasi Email
+
+Email verifikasi melindungi dari:
+- Pendaftaran dengan email orang lain
+- Akun palsu atau spam
+- Akses tidak sah
+
+Proses verifikasi:
+1. Link verifikasi dikirim ke email
+2. Link berlaku 24 jam
+3. Akun aktif setelah verifikasi
+4. Link hanya bisa digunakan sekali
+
+### 5. Password Reset Security
+
+Reset password dilindungi dengan:
+
+**JWT Token**
+- Token reset menggunakan JSON Web Token
+- Berlaku hanya 1 jam
+- Berisi ID user terenkripsi
+- Tidak bisa dipalsukan
+
+**One-Time Use**
+- Token hanya bisa digunakan sekali
+- Langsung dihapus setelah digunakan
+- Request baru membatalkan token lama
+
+### 6. Transaksi Atomik
+
+Semua transaksi keuangan menggunakan **atomic operations**:
+
+**Row-Level Locking**
+- Saldo dikunci saat transaksi
+- Mencegah race condition
+- Tidak ada double-spending
+
+**Database Transaction**
+- Semua perubahan dalam satu transaksi
+- Rollback otomatis jika gagal
+- Konsistensi data terjamin
+
+Contoh:
+```
+Saldo: Rp 100.000
+Order BUY: Rp 80.000
+
+1. Lock saldo
+2. Cek saldo >= 80.000 (TRUE)
+3. Potong saldo: 100.000 - 80.000 = 20.000
+4. Buat order
+5. Commit transaksi
+6. Unlock saldo
+
+Jika langkah 4 gagal:
+- Rollback ke langkah 1
+- Saldo kembali Rp 100.000
+```
+
+### 7. SQL Injection Prevention
+
+Kami menggunakan **Drizzle ORM** yang mencegah SQL injection:
+- Query parameterized
+- Input di-sanitize
+- Tidak ada raw SQL dari user input
+
+### 8. XSS Prevention
+
+Cross-Site Scripting dicegah dengan:
+- React auto-escaping
+- Content Security Policy
+- Input validation
+- Output encoding
+
+### 9. API Security
+
+Semua API endpoint dilindungi:
+
+**Authentication Required**
+- Akses memerlukan sesi valid
+- Token divalidasi setiap request
+
+**Rate Limiting**
+- Batasan request per menit
+- Mencegah brute-force
+- Mencegah DDoS
+
+**Input Validation**
+- Semua input divalidasi
+- Type checking
+- Format validation
+
+## Keamanan Akun
+
+### Tips Menjaga Keamanan Akun
+
+**1. Gunakan Password Kuat**
+- Minimal 8 karakter
+- Kombinasi huruf, angka, simbol
+- Jangan gunakan password yang sama dengan akun lain
+
+**2. Jaga Kerahasiaan**
+- Jangan bagikan password ke siapapun
+- Logout dari perangkat bersama
+- Jangan simpan password di browser publik
+
+**3. Waspada Phishing**
+- Akses hanya melalui saldopedia.com
+- Jangan klik link mencurigakan
+- Verifikasi email pengirim
+
+**4. Update Browser**
+- Gunakan browser versi terbaru
+- Aktifkan update otomatis
+- Jangan gunakan browser jadul
+
+**5. Periksa Aktivitas**
+- Cek riwayat transaksi secara berkala
+- Laporkan aktivitas mencurigakan
+- Ubah password jika curiga ada akses tidak sah
+
+### Apa yang Harus Dilakukan Jika:
+
+**Lupa Password?**
+1. Klik "Lupa Password" di halaman login
+2. Masukkan email terdaftar
+3. Cek email untuk link reset
+4. Buat password baru
+
+**Akun Dicurigai Diakses Orang Lain?**
+1. Segera ganti password
+2. Cek riwayat transaksi
+3. Hubungi customer service
+4. Logout dari semua perangkat
+
+**Menerima Email Mencurigakan?**
+1. Jangan klik link apapun
+2. Jangan balas email
+3. Laporkan ke customer service
+4. Block pengirim
+
+## Keamanan Transaksi
+
+### Transaksi Cryptocurrency
+
+**Alamat Wallet Terverifikasi**
+- Semua alamat wallet admin terverifikasi
+- Hanya gunakan alamat dari sistem
+
+**Konfirmasi Blockchain**
+- Menunggu konfirmasi network
+- Bitcoin: 1-3 konfirmasi
+- Ethereum: 12-35 konfirmasi
+- Tidak ada manipulasi
+
+**Audit Trail**
+- Semua transaksi tercatat di blockchain
+- Bisa diverifikasi di explorer
+- Transparan dan immutable
+
+### Transaksi PayPal/Skrill
+
+**Tidak Meminta Password**
+- Kami tidak pernah minta password PayPal/Skrill
+- Hanya butuh email akun
+- Transfer dilakukan oleh Anda sendiri
+
+**Verifikasi Manual**
+- Setiap transaksi diverifikasi tim
+- Konfirmasi saldo diterima
+- Proses aman dan terkontrol
+
+### Transaksi Saldo
+
+**Deposit**
+- Rekening admin terverifikasi
+- Kode unik untuk identifikasi
+- Bukti transfer wajib upload
+
+**Withdraw**
+- Verifikasi data rekening
+- Proses manual oleh admin
+- Notifikasi email
+
+**Transfer**
+- Validasi email penerima
+- Proses atomik
+- Tidak bisa dibatalkan
+
+## Yang TIDAK AKAN Kami Lakukan
+
+Tim Saldopedia **TIDAK AKAN PERNAH**:
+
+1. **Meminta password akun Saldopedia**
+2. **Meminta password PayPal/Skrill**
+3. **Meminta private key wallet crypto**
+4. **Meminta OTP atau kode verifikasi**
+5. **Meminta PIN ATM atau kartu kredit**
+6. **Menghubungi via nomor tidak resmi**
+7. **Meminta transfer ke rekening pribadi**
+
+Jika ada yang mengaku tim Saldopedia dan meminta hal-hal di atas, **itu adalah PENIPUAN**.
+
+## Melaporkan Masalah Keamanan
+
+### Bug Bounty
+
+Kami menghargai kontribusi keamanan dari komunitas. Jika menemukan celah keamanan:
+
+1. Jangan eksploitasi celah tersebut
+2. Dokumentasikan dengan detail
+3. Laporkan ke: security@saldopedia.com
+4. Tunggu respon dalam 48 jam
+
+### Melaporkan Penipuan
+
+Jika menemukan penipuan mengatasnamakan Saldopedia:
+
+1. Screenshot bukti (chat, email, website palsu)
+2. Catat waktu dan detail kejadian
+3. Hubungi customer service resmi
+4. Jangan transfer apapun
+
+## Compliance & Privacy
+
+### Data Protection
+
+Kami mematuhi prinsip perlindungan data:
+- Data hanya digunakan untuk layanan
+- Tidak dijual ke pihak ketiga
+- Enkripsi data sensitif
+- Backup terenkripsi
+
+### Legal Compliance
+
+Saldopedia beroperasi sesuai hukum Indonesia:
+- Patuh pada UU ITE
+- Menjaga privasi pengguna
+- Kerjasama dengan otoritas jika diperlukan
+
+Baca [Kebijakan Privasi](/privacy-policy) untuk detail lengkap.
+
+## Pertanyaan Umum
+
+### Apakah data saya aman?
+Ya. Semua data dienkripsi dengan SSL 256-bit dan disimpan dengan keamanan tingkat tinggi.
+
+### Apakah password saya bisa dilihat admin?
+Tidak. Password di-hash dengan bcrypt dan tidak bisa di-reverse.
+
+### Apa yang terjadi jika ada breach?
+Kami akan segera menginformasikan pengguna yang terdampak dan mengambil langkah mitigasi.
+
+### Bagaimana cara logout dari semua perangkat?
+Saat ini, ubah password untuk memaksa logout dari semua sesi aktif.
+
+### Apakah Saldopedia bisa di-hack?
+Kami menerapkan keamanan berlapis untuk mencegah serangan. Namun, keamanan akun juga tergantung pada Anda (password kuat, tidak sharing, dll).
+
+## Butuh Bantuan?
+
+Untuk pertanyaan terkait keamanan:
+
+- **Email Keamanan**: security@saldopedia.com
+- **WhatsApp**: [08119666620](https://wa.me/628119666620)
+- **Email Support**: support@saldopedia.com
+
+Laporkan segera jika ada aktivitas mencurigakan!

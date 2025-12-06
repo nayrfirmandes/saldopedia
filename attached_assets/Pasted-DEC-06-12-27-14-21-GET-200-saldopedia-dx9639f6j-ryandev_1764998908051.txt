@@ -1,0 +1,213 @@
+DEC 06 12:27:14.21
+GET
+200
+saldopedia-dx9639f6j-ryandevs.vercel.app
+/
+DEC 06 12:27:13.07
+GET
+304
+saldopedia.com
+/
+DEC 06 12:27:13.04
+GET
+304
+saldopedia.com
+/
+DEC 06 12:27:13.01
+GET
+304
+saldopedia.com
+/forgot-password
+DEC 06 12:27:12.99
+GET
+304
+saldopedia.com
+/forgot-password
+DEC 06 12:27:12.99
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:27:12.99
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:27:12.96
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:27:12.90
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:27:12.90
+GET
+304
+saldopedia.com
+/forgot-password
+DEC 06 12:27:12.90
+GET
+304
+saldopedia.com
+/
+DEC 06 12:27:12.90
+GET
+304
+saldopedia.com
+/
+DEC 06 12:27:12.80
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:27:12.80
+GET
+304
+saldopedia.com
+/
+DEC 06 12:27:12.80
+GET
+304
+saldopedia.com
+/forgot-password
+DEC 06 12:27:12.76
+GET
+401
+saldopedia.com
+/api/user/profile
+DEC 06 12:27:12.68
+GET
+304
+saldopedia.com
+/manifest.webmanifest
+DEC 06 12:27:12.59
+GET
+200
+saldopedia.com
+/login
+DEC 06 12:27:12.39
+GET
+307
+saldopedia.com
+/dashboard
+DEC 06 12:27:12.09
+GET
+200
+saldopedia.com
+/api/auth/google/callback
+DEC 06 12:27:06.32
+GET
+307
+saldopedia.com
+/api/auth/google
+DEC 06 12:27:02.90
+GET
+304
+saldopedia.com
+/
+DEC 06 12:27:02.81
+GET
+304
+saldopedia.com
+/
+DEC 06 12:27:02.77
+GET
+304
+saldopedia.com
+/
+DEC 06 12:27:02.74
+GET
+304
+saldopedia.com
+/forgot-password
+DEC 06 12:27:02.71
+GET
+304
+saldopedia.com
+/forgot-password
+DEC 06 12:27:02.71
+GET
+304
+saldopedia.com
+/forgot-password
+DEC 06 12:27:02.60
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:27:02.48
+GET
+200
+saldopedia.com
+/register
+DEC 06 12:27:02.48
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:27:02.48
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:27:02.48
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:27:02.38
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:27:02.38
+GET
+304
+saldopedia.com
+/forgot-password
+DEC 06 12:27:02.38
+GET
+304
+saldopedia.com
+/
+DEC 06 12:27:02.33
+GET
+401
+saldopedia.com
+/api/user/profile
+DEC 06 12:27:02.31
+GET
+304
+saldopedia.com
+/manifest.webmanifest
+DEC 06 12:27:02.17
+GET
+200
+saldopedia.com
+/login
+DEC 06 12:27:01.40
+GET
+307
+saldopedia.com
+/dashboard
+DEC 06 12:27:00.56
+GET
+200
+saldopedia.com
+/api/auth/google/callback
+DEC 06 12:26:48.24
+GET
+307
+saldopedia.com
+/api/auth/google
+DEC 06 12:26:45.00
+GET
+304
+saldopedia.com
+/
+DEC 06 12:26:45.00
+GET
+30

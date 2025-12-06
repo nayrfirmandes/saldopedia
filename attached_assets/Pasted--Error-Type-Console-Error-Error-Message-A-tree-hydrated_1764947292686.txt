@@ -1,0 +1,80 @@
+## Error Type
+Console Error
+
+## Error Message
+A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+      <SegmentViewNode type="layout" pagePath="(default)/...">
+        <SegmentTrieNode>
+        <DefaultLayout>
+          <DefaultLayout>
+            <Header>
+              <header className="fixed top-...">
+                <div className="mx-auto ma...">
+                  <div className="relative f...">
+                    <div>
+                    <nav>
+                    <ul className="flex flex-...">
+                      <li>
+                        <ThemeToggle>
+                          <button type="button" onClick={function onClick} className="group rela..." style={{...}} ...>
+                            <div className="relative h...">
+                              <svg
+                                className="absolute inset-0 h-6 w-6 text-yellow-500 group-hover:text-yellow-600"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "1"
++                                 transform: "scale(0.5) rotate(-90deg)"
+-                                 transform: "scale(1) rotate(0deg)"
++                                 transition: "opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(..."
++                                 pointerEvents: "none"
+-                                 transition-duration: "0.5s, 0.5s"
+-                                 transition-timing-function: "cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.34, 1.56, ..."
+-                                 transition-delay: "0s, 0s"
+-                                 transition-behavior: "normal, normal"
+-                                 transition-property: "opacity, transform"
+-                                 pointer-events: "auto"
+                                }}
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                              <svg
+                                className="absolute inset-0 h-6 w-6 text-yellow-400 group-hover:text-yellow-300"
+                                style={{
++                                 opacity: 1
+-                                 opacity: "0"
++                                 transform: "scale(1) rotate(0deg)"
+-                                 transform: "scale(0.5) rotate(90deg)"
++                                 transition: "opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(..."
++                                 pointerEvents: "auto"
+-                                 transition-duration: "0.5s, 0.5s"
+-                                 transition-timing-function: "cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.34, 1.56, ..."
+-                                 transition-delay: "0s, 0s"
+-                                 transition-behavior: "normal, normal"
+-                                 transition-property: "opacity, transform"
+-                                 pointer-events: "none"
+                                }}
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                      ...
+                    ...
+          ...
+
+
+
+    at svg (unknown:0:0)
+
+Next.js version: 16.0.7 (Webpack)

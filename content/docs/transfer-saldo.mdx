@@ -1,0 +1,248 @@
+---
+title: "Transfer Saldo"
+summary: "Panduan lengkap cara transfer saldo antar pengguna Saldopedia dengan proses instant dan aman."
+kind: "detailed"
+publishedAt: "2025-01-06"
+updatedAt: "2025-12-03"
+---
+
+# Transfer Saldo
+
+Transfer saldo adalah fitur untuk mengirim saldo Rupiah dari akun Saldopedia Anda ke pengguna Saldopedia lain. Proses transfer dilakukan secara **instant** dan **gratis**.
+
+## Keunggulan Transfer Saldo
+
+### Proses Instant
+Saldo langsung masuk ke akun penerima dalam hitungan detik.
+
+### Tanpa Biaya
+Tidak ada biaya transfer antar pengguna Saldopedia.
+
+### Aman & Tercatat
+Semua transfer tercatat di sistem dan bisa dilacak.
+
+### Mudah
+Cukup dengan email penerima, transfer langsung terkirim.
+
+## Syarat Transfer
+
+Sebelum melakukan transfer, pastikan:
+- Akun Anda sudah terverifikasi
+- Saldo mencukupi untuk nominal transfer
+- Mengetahui email akun penerima yang terdaftar di Saldopedia
+- Penerima adalah akun Saldopedia yang valid dan aktif
+
+## Batas Transfer
+
+| Parameter | Nilai |
+|-----------|-------|
+| Minimal Transfer | Rp 10.000 |
+| Maksimal Transfer | Sesuai saldo tersedia |
+| Biaya Transfer | **Gratis** |
+
+## Cara Melakukan Transfer
+
+### Langkah 1: Buka Halaman Transfer
+
+1. Login ke akun Saldopedia
+2. Klik tombol "Transfer" di dashboard
+3. Atau kunjungi langsung [/dashboard/transfer](/dashboard/transfer)
+
+### Langkah 2: Masukkan Email Penerima
+
+Masukkan alamat email akun Saldopedia yang akan menerima transfer:
+- Harus email yang terdaftar di Saldopedia
+- Pastikan email benar (typo bisa menyebabkan transfer gagal)
+- Tidak bisa transfer ke email sendiri
+
+> **Catatan**: Sistem akan memvalidasi apakah email terdaftar sebagai pengguna Saldopedia.
+
+### Langkah 3: Masukkan Nominal Transfer
+
+Masukkan jumlah saldo yang ingin ditransfer:
+- Minimal: Rp 10.000
+- Maksimal: Saldo tersedia di akun Anda
+
+### Langkah 4: Konfirmasi Transfer
+
+1. Periksa kembali detail transfer:
+   - Email penerima
+   - Nominal transfer
+
+2. Pastikan semua informasi benar
+
+3. Klik tombol "Transfer Sekarang"
+
+### Langkah 5: Transfer Selesai
+
+Setelah konfirmasi:
+- Saldo Anda langsung dipotong
+- Saldo penerima langsung bertambah
+- Kedua pihak menerima notifikasi email
+- Transfer tercatat di riwayat transaksi
+
+## Contoh Skenario
+
+### Contoh 1: Transfer ke Teman
+
+Anda ingin mengirim Rp 50.000 ke teman dengan email friend@email.com:
+
+1. Buka halaman Transfer
+2. Masukkan email: friend@email.com
+3. Masukkan nominal: Rp 50.000
+4. Klik Transfer Sekarang
+
+Hasil:
+- Saldo Anda berkurang Rp 50.000
+- Saldo teman bertambah Rp 50.000
+- Tidak ada biaya
+
+### Contoh 2: Pembayaran ke Seller
+
+Anda membeli sesuatu dari seller Saldopedia seharga Rp 200.000:
+
+1. Minta email akun Saldopedia seller
+2. Buka halaman Transfer
+3. Masukkan email seller
+4. Masukkan nominal: Rp 200.000
+5. Konfirmasi transfer
+
+Seller langsung menerima saldo dan bisa langsung digunakan.
+
+## Status Transfer
+
+Transfer saldo bersifat instant, jadi status hanya ada:
+
+| Status | Keterangan |
+|--------|------------|
+| completed | Transfer berhasil (instant) |
+| failed | Transfer gagal (email tidak valid, saldo kurang) |
+
+## Keamanan Transfer
+
+### Validasi Email
+Sistem memvalidasi email penerima harus terdaftar di Saldopedia.
+
+### Proses Atomik
+Transfer menggunakan transaksi database atomik. Artinya:
+- Saldo pengirim dipotong DAN saldo penerima ditambah dalam satu transaksi
+- Jika salah satu gagal, seluruh transaksi dibatalkan
+- Tidak ada saldo yang "hilang"
+
+### Tidak Bisa Dibatalkan
+Transfer yang sudah sukses tidak bisa dibatalkan. Pastikan data benar sebelum konfirmasi.
+
+### Audit Trail
+Semua transfer tercatat dengan detail:
+- ID Transfer unik
+- Email pengirim dan penerima
+- Nominal transfer
+- Waktu transfer
+
+## Troubleshooting
+
+### Email Tidak Ditemukan?
+
+Jika muncul pesan "Email tidak terdaftar":
+1. Pastikan tidak ada typo
+2. Minta penerima mengecek email akun Saldopedia-nya
+3. Penerima mungkin belum punya akun (minta daftar dulu)
+
+### Saldo Tidak Cukup?
+
+Jika nominal melebihi saldo:
+1. Kurangi nominal transfer
+2. Atau top up saldo terlebih dahulu
+3. Lalu lakukan transfer ulang
+
+### Transfer ke Diri Sendiri?
+
+Sistem tidak mengizinkan transfer ke email akun sendiri. Ini mencegah penyalahgunaan sistem.
+
+### Penerima Belum Menerima?
+
+Karena transfer instant, saldo langsung masuk. Jika penerima mengaku belum menerima:
+1. Minta refresh halaman dashboard
+2. Cek riwayat transaksi Anda untuk konfirmasi
+3. Jika status "completed", transfer pasti sudah masuk
+4. Hubungi customer service jika perlu investigasi
+
+## Riwayat Transfer
+
+Lihat semua riwayat transfer di dashboard:
+- Tanggal dan waktu transfer
+- Transfer keluar (yang Anda kirim)
+- Transfer masuk (yang Anda terima)
+- Email pengirim/penerima
+- Nominal
+- Status
+
+## Use Cases Transfer Saldo
+
+### 1. Berbagi dengan Teman/Keluarga
+Kirim saldo ke teman atau keluarga yang juga pengguna Saldopedia.
+
+### 2. Pembayaran P2P
+Bayar pembelian dari sesama pengguna Saldopedia tanpa perlu transfer bank.
+
+### 3. Splitting Bill
+Bagi-bagi tagihan dengan teman secara mudah dan gratis.
+
+### 4. Gift
+Kirim saldo sebagai hadiah ke pengguna lain.
+
+## Tips Transfer
+
+### 1. Verifikasi Email Terlebih Dahulu
+Sebelum transfer nominal besar, coba transfer nominal kecil dulu untuk memastikan email benar.
+
+### 2. Simpan Bukti Transfer
+Screenshot konfirmasi transfer sebagai bukti.
+
+### 3. Komunikasi dengan Penerima
+Konfirmasi dengan penerima setelah transfer untuk memastikan sudah diterima.
+
+### 4. Jangan Transfer ke Orang Tidak Dikenal
+Waspada penipuan. Transfer hanya ke orang yang Anda kenal dan percaya.
+
+## Perbedaan Transfer vs Withdraw
+
+| Aspek | Transfer | Withdraw |
+|-------|----------|----------|
+| Tujuan | Pengguna Saldopedia lain | Rekening bank/e-wallet |
+| Waktu | Instant | 1-24 jam |
+| Biaya | Gratis | Rp 17.000 (< Rp 1 juta) atau Gratis (>= Rp 1 juta) |
+| Minimal | Rp 10.000 | Rp 50.000 |
+| Cara | Email penerima | Nomor rekening |
+
+## Pertanyaan Umum
+
+### Berapa lama proses transfer?
+Instant. Saldo langsung masuk ke akun penerima.
+
+### Apakah ada biaya transfer?
+Tidak. Transfer antar pengguna Saldopedia gratis.
+
+### Bisa transfer ke rekening bank?
+Tidak. Untuk transfer ke rekening bank, gunakan fitur [Withdraw (Tarik Saldo)](/documentation/withdraw).
+
+### Minimal transfer berapa?
+Minimal transfer Rp 10.000.
+
+### Bisa membatalkan transfer?
+Tidak bisa. Transfer yang sukses bersifat final. Pastikan data benar sebelum konfirmasi.
+
+### Apakah penerima harus punya akun Saldopedia?
+Ya. Transfer hanya bisa dilakukan ke email yang terdaftar di Saldopedia.
+
+### Bisa transfer ke email akun sendiri?
+Tidak bisa. Sistem tidak mengizinkan transfer ke diri sendiri.
+
+## Butuh Bantuan?
+
+Jika mengalami kendala transfer:
+
+- **WhatsApp**: [08119666620](https://wa.me/628119666620)
+- **Email**: support@saldopedia.com
+
+Sertakan ID Transfer dan email penerima saat menghubungi.

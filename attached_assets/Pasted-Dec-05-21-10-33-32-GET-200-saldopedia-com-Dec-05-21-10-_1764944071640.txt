@@ -1,0 +1,1002 @@
+Dec 05 21:10:33.32
+GET
+200
+saldopedia.com
+/
+Dec 05 21:10:33.26
+GET
+200
+saldopedia.com
+/
+Dec 05 21:10:33.25
+GET
+200
+saldopedia.com
+/
+Dec 05 21:10:33.23
+GET
+200
+saldopedia.com
+/forgot-password
+Dec 05 21:10:32.98
+GET
+200
+saldopedia.com
+/manifest.webmanifest
+Dec 05 21:10:32.90
+GET
+200
+saldopedia.com
+/forgot-password
+Dec 05 21:10:32.90
+GET
+200
+saldopedia.com
+/forgot-password
+Dec 05 21:10:32.90
+GET
+200
+saldopedia.com
+/register
+Dec 05 21:10:32.55
+GET
+200
+saldopedia.com
+/register
+Dec 05 21:10:32.54
+GET
+200
+saldopedia.com
+/register
+Dec 05 21:10:32.54
+GET
+200
+saldopedia.com
+/register
+Dec 05 21:10:32.54
+GET
+200
+saldopedia.com
+/register
+Dec 05 21:10:32.48
+GET
+304
+saldopedia.com
+/forgot-password
+Dec 05 21:10:32.48
+GET
+304
+saldopedia.com
+/register
+Dec 05 21:10:32.47
+GET
+200
+saldopedia.com
+/
+Dec 05 21:10:32.47
+GET
+401
+saldopedia.com
+/api/user/profile
+Dec 05 21:10:32.05
+GET
+200
+saldopedia.com
+/login
+Dec 05 21:10:31.04
+GET
+200
+saldopedia.com
+/
+Dec 05 21:10:31.04
+GET
+200
+saldopedia.com
+/forgot-password
+Dec 05 21:10:31.04
+GET
+200
+saldopedia.com
+/register
+Dec 05 21:10:02.66
+POST
+200
+saldopedia.com
+/api/orders/check-expired
+Dec 05 21:08:14.20
+POST
+200
+saldopedia.com
+/api/nowpayments/ipn
+NOWPayments IPN: Failed to auto-credit saldo: Error [NeonDbError]: column "payment_note" of relation "orders" does not exist at bv.execute (.next/server/chunks/5171.js:29:3669) at async F (.next/server/app/api/nowpayments/ipn/route.js:17:659) at async k (.next/server/app/api/nowpayments/ipn/route.js:228:3356) at async j (.next/server/app/api/nowpayments/ipn/route.js:228:4365) at async N (.next/server/app/api/nowpayments/ipn/route.js:228:5432) { severity: 'ERROR', code: '42703', detail: undefined, hint: undefined, position: '125', internalPosition: undefined, internalQuery: undefined, where: undefined, schema: undefined, table: undefined, column: undefined, dataType: undefined, constraint: undefined, file: 'analyze.c', line: '2528', routine: 'transformUpdateTargetList', sourceError: undefined }
+Dec 05 21:08:05.21
+POST
+200
+saldopedia.com
+/api/nowpayments/ipn
+Dec 05 21:07:43.07
+POST
+200
+saldopedia.com
+/api/nowpayments/ipn
+NOWPayments IPN: Failed to auto-credit saldo: Error [NeonDbError]: column "payment_note" of relation "orders" does not exist at bv.execute (.next/server/chunks/5171.js:29:3669) at async F (.next/server/app/api/nowpayments/ipn/route.js:17:659) at async k (.next/server/app/api/nowpayments/ipn/route.js:228:3356) at async j (.next/server/app/api/nowpayments/ipn/route.js:228:4365) at async N (.next/server/app/api/nowpayments/ipn/route.js:228:5432) { severity: 'ERROR', code: '42703', detail: undefined, hint: undefined, position: '125', internalPosition: undefined, internalQuery: undefined, where: undefined, schema: undefined, table: undefined, column: undefined, dataType: undefined, constraint: undefined, file: 'analyze.c', line: '2528', routine: 'transformUpdateTargetList', sourceError: undefined }
+Dec 05 21:07:36.08
+POST
+200
+saldopedia.com
+/api/nowpayments/ipn
+Dec 05 21:07:23.94
+POST
+---
+saldopedia.com
+/api/nowpayments/ipn
+Dec 05 21:07:20.85
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:20.74
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:20.67
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:20.61
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:20.54
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:20.48
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:20.40
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:20.35
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:20.30
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:20.16
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:20.10
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.97
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.92
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.85
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.77
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.71
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.66
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.59
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.54
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.49
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.41
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.28
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.21
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.14
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:19.07
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.99
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.94
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.88
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.82
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.69
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.64
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.59
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.53
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.47
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.42
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.35
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.25
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.20
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.15
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:18.01
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.95
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.82
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.76
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.70
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.65
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.59
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.53
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.46
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.40
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.35
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.28
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.22
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.16
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.10
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:17.04
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.99
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.93
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.87
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.81
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.75
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.68
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.63
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.57
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.51
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.46
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.32
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.27
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.18
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.12
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.06
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:16.00
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.95
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.89
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.83
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.78
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.72
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.67
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.61
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.56
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.51
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.43
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.38
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.32
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.27
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.22
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.09
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:15.03
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.90
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.84
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.78
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.72
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.66
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.60
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.54
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.49
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.43
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.37
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.31
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.24
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.18
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.13
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.07
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:14.00
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.92
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.87
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.81
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.76
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.70
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.63
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.49
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.43
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.34
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.28
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.22
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.16
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.11
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:13.02
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.96
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.90
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.84
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.75
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.68
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.57
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.50
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.42
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.28
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.22
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.16
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.08
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:12.02
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.96
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.90
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.84
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.78
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.72
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.66
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.60
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.53
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.46
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.40
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.34
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.28
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.22
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.13
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.07
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:11.02
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.95
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.89
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.83
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.76
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.71
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.66
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.60
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.55
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.49
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.43
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.38
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.32
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.25
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.19
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.14
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.09
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:10.04
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:09.98
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:09.92
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:09.87
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:09.81
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:09.74
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:09.69
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:09.63
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:09.58
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:09.52
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:09.46
+GET
+200
+saldopedia.com
+/api/user/profile
+Dec 05 21:07:09.40
+GET
+200
+saldopedia.com
+/api/user/profile

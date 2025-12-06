@@ -1,0 +1,159 @@
+Dec 03 23:47:19.74
+POST
+500
+saldopedia.com
+/api/orders
+2
+Order creation error: Error [NeonDbError]: invalid input value for enum order_status: "failed" at bv.execute (.next/server/chunks/5171.js:29:3669) at async L (.next/server/app/api/orders/route.js:73:168) at async k (.next/server/app/api/orders/route.js:73:5335) at async j (.next/server/app/api/orders/route.js:73:6344) at async T (.next/server/app/api/orders/route.js:73:7411) { severity: 'ERROR', code: '22P02', detail: undefined, hint: undefined, position: '28', internalPosition: undefined, internalQuery: undefined, where: undefined, schema: undefined, table: undefined, column: undefined, dataType: undefined, constraint: undefined, file: 'enum.c', line: '129', routine: 'enum_in', sourceError: undefined }
+Dec 03 23:47:14.48
+GET
+200
+saldopedia.com
+/crypto
+Dec 03 23:47:14.42
+GET
+200
+saldopedia.com
+/paypal
+Dec 03 23:47:14.39
+GET
+200
+saldopedia.com
+/paypal
+Dec 03 23:47:14.32
+GET
+200
+saldopedia.com
+/paypal
+Dec 03 23:47:14.16
+GET
+200
+saldopedia.com
+/skrill
+Dec 03 23:47:14.11
+GET
+200
+saldopedia.com
+/skrill
+Dec 03 23:47:14.05
+GET
+200
+saldopedia.com
+/skrill
+Dec 03 23:47:13.99
+GET
+200
+saldopedia.com
+/cryptocurrencies
+Dec 03 23:47:13.85
+GET
+200
+saldopedia.com
+/cryptocurrencies
+Dec 03 23:47:13.76
+GET
+200
+saldopedia.com
+/cryptocurrencies
+Dec 03 23:47:13.72
+GET
+200
+saldopedia.com
+/pricing
+Dec 03 23:47:13.69
+GET
+200
+saldopedia.com
+/pricing
+Dec 03 23:47:13.54
+GET
+200
+saldopedia.com
+/pricing
+Dec 03 23:47:13.46
+GET
+200
+saldopedia.com
+/calculator
+Dec 03 23:47:13.41
+GET
+200
+saldopedia.com
+/calculator
+Dec 03 23:47:13.39
+GET
+200
+saldopedia.com
+/calculator
+Dec 03 23:47:13.17
+GET
+200
+saldopedia.com
+/about
+Dec 03 23:47:13.12
+GET
+200
+saldopedia.com
+/about
+Dec 03 23:47:13.07
+GET
+200
+saldopedia.com
+/about
+Dec 03 23:47:13.07
+GET
+200
+saldopedia.com
+/blog
+Dec 03 23:47:12.86
+GET
+200
+saldopedia.com
+/blog
+Dec 03 23:47:12.79
+GET
+200
+saldopedia.com
+/blog
+Dec 03 23:47:12.74
+GET
+200
+saldopedia.com
+/customers
+Dec 03 23:47:12.73
+GET
+200
+saldopedia.com
+/customers
+Dec 03 23:47:12.69
+POST
+500
+saldopedia.com
+/api/orders
+3
+Order creation error: Error [NeonDbError]: invalid input value for enum order_status: "failed" at bv.execute (.next/server/chunks/5171.js:29:3669) at async L (.next/server/app/api/orders/route.js:73:168) at async k (.next/server/app/api/orders/route.js:73:5335) at async j (.next/server/app/api/orders/route.js:73:6344) at async T (.next/server/app/api/orders/route.js:73:7411) { severity: 'ERROR', code: '22P02', detail: undefined, hint: undefined, position: '28', internalPosition: undefined, internalQuery: undefined, where: undefined, schema: undefined, table: undefined, column: undefined, dataType: undefined, constraint: undefined, file: 'enum.c', line: '129', routine: 'enum_in', sourceError: undefined }
+Dec 03 23:47:12.48
+GET
+200
+saldopedia.com
+/customers
+Dec 03 23:47:12.44
+GET
+200
+saldopedia.com
+/site-map
+Dec 03 23:47:12.44
+GET
+200
+saldopedia.com
+/site-map
+Dec 03 23:47:12.44
+GET
+200
+saldopedia.com
+/site-map
+Dec 03 23:47:12.06
+GET
+200
+saldopedia.com
+/terms-of-service

@@ -1,0 +1,47 @@
+00:05:16.868 Running build in Washington, D.C., USA (East) – iad1
+00:05:16.873 Build machine configuration: 2 cores, 8 GB
+00:05:17.031 Cloning github.com/nayrfirmandes/saldopedia (Branch: main, Commit: 8e3c3f1)
+00:05:17.513 Cloning completed: 481.000ms
+00:05:19.671 Restored build cache from previous deployment (Ft4XQtmDZWyqKxPsrVH6t9CcDVrR)
+00:05:20.454 Running "vercel build"
+00:05:20.964 Vercel CLI 49.0.0
+00:05:21.318 Running "install" command: `npm install`...
+00:05:23.133 
+00:05:23.134 > saldopedia@1.0.0 postinstall
+00:05:23.134 > echo 'Setup complete! Run: npm run db:push to initialize database'
+00:05:23.134 
+00:05:23.140 Setup complete! Run: npm run db:push to initialize database
+00:05:23.148 
+00:05:23.148 up to date, audited 657 packages in 2s
+00:05:23.149 
+00:05:23.149 286 packages are looking for funding
+00:05:23.149   run `npm fund` for details
+00:05:23.150 
+00:05:23.150 found 0 vulnerabilities
+00:05:23.183 Detected Next.js version: 16.0.7
+00:05:23.184 Running "npm run build"
+00:05:23.316 
+00:05:23.316 > saldopedia@1.0.0 build
+00:05:23.316 > next build --webpack
+00:05:23.316 
+00:05:24.113    ▲ Next.js 16.0.7 (webpack)
+00:05:24.114    - Experiments (use with caution):
+00:05:24.114      · optimizePackageImports
+00:05:24.114 
+00:05:24.190    Creating an optimized production build ...
+00:05:39.817  ✓ Compiled successfully in 15.2s
+00:05:39.830    Running TypeScript ...
+00:05:59.280 Failed to compile.
+00:05:59.280 
+00:05:59.281 ./app/(default)/order/[orderId]/page.tsx:57:33
+00:05:59.281 Type error: Property 'completed_at' does not exist on type 'Order'.
+00:05:59.281 
+00:05:59.281 [0m [90m 55 |[39m   [36mconst[39m expiresAtDate [33m=[39m order[33m.[39mexpires_at [36minstanceof[39m [33mDate[39m [33m?[39m order[33m.[39mexpires_at [33m:[39m (order[33m.[39mexpires_at [33m?[39m [36mnew[39m [33mDate[39m(order[33m.[39mexpires_at) [33m:[39m [36mnull[39m)[33m;[39m
+00:05:59.281  [90m 56 |[39m   
+00:05:59.282 [31m[1m>[22m[39m[90m 57 |[39m   [36mconst[39m completedAtDate [33m=[39m order[33m.[39mcompleted_at [36minstanceof[39m [33mDate[39m 
+00:05:59.282  [90m    |[39m                                 [31m[1m^[22m[39m
+00:05:59.282  [90m 58 |[39m     [33m?[39m order[33m.[39mcompleted_at 
+00:05:59.282  [90m 59 |[39m     [33m:[39m (order[33m.[39mcompleted_at [33m?[39m [36mnew[39m [33mDate[39m(order[33m.[39mcompleted_at) [33m:[39m [36mnull[39m)[33m;[39m
+00:05:59.282  [90m 60 |[39m   [0m
+00:05:59.332 Next.js build worker exited with code: 1 and signal: null
+00:05:59.365 Error: Command "npm run build" exited with 1

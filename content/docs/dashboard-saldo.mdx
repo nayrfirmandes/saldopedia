@@ -1,0 +1,248 @@
+---
+title: "Dashboard & Saldo"
+summary: "Panduan menggunakan dashboard, memahami saldo akun, dan mengelola keuangan di Saldopedia."
+kind: "detailed"
+publishedAt: "2025-01-03"
+updatedAt: "2025-12-03"
+---
+
+# Dashboard & Saldo
+
+Dashboard Saldopedia adalah pusat kontrol untuk semua aktivitas akun Anda. Panduan ini menjelaskan cara menggunakan dashboard dan mengelola saldo akun.
+
+## Mengakses Dashboard
+
+Setelah login, Anda akan otomatis diarahkan ke dashboard. Atau akses langsung melalui [/dashboard](/dashboard).
+
+## Tampilan Dashboard
+
+### Header Dashboard
+- Nama pengguna
+- Email akun
+- Tombol logout
+
+### Panel Saldo
+Bagian utama yang menampilkan:
+- **Saldo Tersedia**: Jumlah Rupiah yang bisa digunakan untuk transaksi
+- **Tombol Aksi Cepat**:
+  - Buat Order
+  - Top Up
+  - Tarik Saldo
+  - Transfer
+
+### Riwayat Transaksi
+Tabel yang menampilkan semua transaksi dengan informasi:
+- Tanggal dan waktu
+- Jenis transaksi (BUY/SELL/DEPOSIT/WITHDRAW/TRANSFER)
+- Aset yang ditransaksikan
+- Nominal
+- Status
+
+## Memahami Saldo Akun
+
+### Apa itu Saldo Akun?
+
+Saldo akun adalah dana Rupiah yang tersimpan di akun Saldopedia Anda. Saldo ini digunakan untuk:
+- Membeli cryptocurrency (transaksi BUY)
+- Membeli saldo PayPal/Skrill (transaksi BUY)
+- Ditransfer ke pengguna lain
+
+### Cara Mendapatkan Saldo
+
+Ada 3 cara untuk mengisi saldo:
+
+1. **Deposit (Top Up)**
+   - Transfer dari rekening bank atau e-wallet
+   - Minimal Rp 25.000, maksimal Rp 5.000.000
+   - Proses 5-15 menit setelah verifikasi
+
+2. **Jual Cryptocurrency (SELL)**
+   - Jual crypto dan terima saldo Rupiah
+   - Otomatis masuk setelah order selesai
+
+3. **Terima Transfer**
+   - Menerima saldo dari pengguna Saldopedia lain
+   - Masuk secara instant
+
+### Cara Menggunakan Saldo
+
+Saldo dapat digunakan untuk:
+
+1. **Beli Cryptocurrency (BUY)**
+   - Pilih crypto yang diinginkan
+   - Masukkan nominal Rupiah
+   - Saldo otomatis dipotong saat order dibuat
+
+2. **Beli PayPal/Skrill (BUY)**
+   - Pilih layanan
+   - Masukkan nominal USD
+   - Saldo dipotong sesuai rate yang berlaku
+
+3. **Tarik Saldo (Withdraw)**
+   - Cairkan saldo ke rekening bank
+   - Minimal Rp 50.000
+   - Proses 1-24 jam
+
+4. **Transfer Saldo**
+   - Kirim ke pengguna Saldopedia lain
+   - Minimal Rp 10.000
+   - Proses instant
+
+## Sistem Pemrosesan Saldo
+
+### Transaksi BUY
+
+Saat Anda membuat order BUY:
+1. Sistem memeriksa saldo tersedia
+2. Jika cukup, saldo dipotong secara atomik (aman dari error)
+3. Order otomatis dikonfirmasi
+4. Cryptocurrency/saldo dikirim ke alamat tujuan
+
+> **Catatan**: Jika saldo tidak mencukupi, order tidak bisa dibuat. Top up saldo terlebih dahulu.
+
+### Transaksi SELL
+
+Saat order SELL selesai:
+1. Anda mengirim cryptocurrency ke alamat yang diberikan
+2. Sistem mendeteksi dan memverifikasi transaksi
+3. Setelah konfirmasi blockchain, saldo Rupiah ditambahkan ke akun
+
+### Keamanan Saldo
+
+Sistem Saldopedia menggunakan **row-level locking** untuk mencegah race condition. Artinya:
+- Saldo tidak bisa dipotong melebihi jumlah yang tersedia
+- Transaksi bersamaan ditangani dengan aman
+- Tidak ada double-spending
+
+## Menu Dashboard
+
+### 1. Dashboard Utama
+Halaman: `/dashboard`
+
+Menampilkan:
+- Ringkasan saldo
+- Statistik transaksi
+- Transaksi terbaru
+- Tombol aksi cepat
+
+### 2. Deposit (Top Up Saldo)
+Halaman: `/dashboard/deposit`
+
+Fitur:
+- Pilih metode pembayaran
+- Masukkan nominal
+- Upload bukti transfer
+- Lihat riwayat deposit
+
+### 3. Withdraw (Tarik Saldo)
+Halaman: `/dashboard/withdraw`
+
+Fitur:
+- Pilih bank/e-wallet tujuan
+- Masukkan nominal penarikan
+- Lihat estimasi fee
+- Lihat riwayat withdraw
+
+### 4. Transfer Saldo
+Halaman: `/dashboard/transfer`
+
+Fitur:
+- Masukkan email penerima
+- Masukkan nominal transfer
+- Konfirmasi transaksi
+- Lihat riwayat transfer
+
+### 5. Profil
+Halaman: `/dashboard/profile`
+
+Fitur:
+- Edit nama
+- Ubah password
+- Lihat informasi akun
+
+## Riwayat Transaksi
+
+### Filter Transaksi
+
+Dashboard menyediakan filter untuk mempermudah pencarian:
+- **Semua**: Tampilkan semua transaksi
+- **Order**: Hanya transaksi BUY/SELL
+- **Deposit**: Hanya top up saldo
+- **Withdraw**: Hanya penarikan
+- **Transfer**: Hanya transfer antar pengguna
+
+### Status Transaksi
+
+Setiap transaksi memiliki status:
+
+| Status | Keterangan |
+|--------|------------|
+| Pending | Menunggu pembayaran/konfirmasi |
+| Confirmed | Pembayaran dikonfirmasi, sedang diproses |
+| Completed | Transaksi selesai |
+| Expired | Waktu habis, transaksi dibatalkan |
+| Cancelled | Dibatalkan oleh pengguna/admin |
+
+### Detail Transaksi
+
+Klik pada transaksi untuk melihat detail:
+- ID Order unik
+- Tanggal dan waktu
+- Jenis dan aset
+- Nominal dan rate
+- Status lengkap
+- Invoice (jika tersedia)
+
+## Notifikasi
+
+Dashboard memberikan notifikasi untuk:
+- Order baru dikonfirmasi
+- Deposit berhasil
+- Withdraw selesai
+- Transfer diterima/dikirim
+- Order expired
+
+Notifikasi juga dikirim via email yang terdaftar.
+
+## Tips Menggunakan Dashboard
+
+### 1. Cek Saldo Sebelum Order
+Pastikan saldo mencukupi sebelum membuat order BUY. Jika kurang, top up terlebih dahulu.
+
+### 2. Monitor Riwayat Transaksi
+Periksa riwayat secara berkala untuk memastikan semua transaksi tercatat dengan benar.
+
+### 3. Simpan Invoice
+Download atau screenshot invoice transaksi penting sebagai bukti.
+
+### 4. Jaga Keamanan Akun
+Selalu logout setelah menggunakan dashboard di perangkat bersama.
+
+### 5. Update Profil
+Pastikan nama dan informasi profil selalu terbaru untuk kemudahan verifikasi.
+
+## Pertanyaan Umum
+
+### Berapa lama saldo dari SELL masuk?
+Saldo otomatis masuk dalam 5-15 menit setelah cryptocurrency diterima dan dikonfirmasi blockchain.
+
+### Apakah ada batas maksimal saldo?
+Tidak ada batas maksimal saldo yang bisa disimpan di akun.
+
+### Saldo bisa expired?
+Tidak. Saldo tidak memiliki tanggal kadaluarsa.
+
+### Bagaimana jika saldo terpotong tapi order gagal?
+Sistem akan otomatis mengembalikan saldo jika order gagal diproses. Jika tidak kembali dalam 1 jam, hubungi customer service.
+
+### Apakah saldo mendapat bunga?
+Tidak. Saldo di Saldopedia tidak menghasilkan bunga.
+
+## Butuh Bantuan?
+
+Jika mengalami kendala dengan dashboard atau saldo:
+
+- **WhatsApp**: [08119666620](https://wa.me/628119666620)
+- **Email**: support@saldopedia.com
+
+Tim support siap membantu 09:00 - 21:00 WIB.

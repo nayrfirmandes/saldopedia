@@ -1,0 +1,307 @@
+---
+title: "Kalkulator Rate"
+summary: "Hitung estimasi transaksi cryptocurrency, PayPal, dan Skrill dengan kalkulator rate interaktif Saldopedia."
+kind: "detailed"
+publishedAt: "2025-01-01"
+updatedAt: "2025-12-03"
+---
+
+# Panduan Kalkulator Rate
+
+Kalkulator Rate Saldopedia membantu Anda menghitung estimasi transaksi sebelum membuat order. Rate yang ditampilkan **100% sinkron** dengan sistem order.
+
+## Mengakses Kalkulator
+
+### Via Menu Navigasi
+1. Klik **"Pricing & Rates"** di header website
+2. Pilih **"Kalkulator"** dari dropdown
+3. Atau klik langsung link di footer
+
+### Link Langsung
+Akses: [/calculator](/calculator)
+
+## Fitur Utama
+
+### Rate Real-Time
+
+Rate cryptocurrency diambil dari **CoinGecko API** dan di-update setiap 3 menit. Rate yang Anda lihat di kalkulator sama persis dengan yang akan Anda dapat saat order.
+
+### Multi-Service
+
+Kalkulator mendukung 3 layanan:
+- **Cryptocurrency** - 19 crypto dengan rate market
+- **PayPal** - Dengan sistem tiered rates
+- **Skrill** - Dengan sistem tiered rates
+
+### Mode Jual & Beli
+
+Setiap layanan memiliki 2 mode:
+- **Jual / Convert**: Untuk menjual aset dan menerima Rupiah
+- **Beli / Top-up**: Untuk membeli aset dengan Rupiah
+
+### Perhitungan Otomatis
+
+Masukkan nominal, sistem langsung menghitung:
+- Rate yang berlaku
+- Tier (untuk PayPal/Skrill)
+- Total yang diterima/dibayar
+- Detail perhitungan transparan
+
+## Menggunakan Kalkulator Cryptocurrency
+
+### Mode Jual/Convert
+
+Untuk menghitung hasil penjualan cryptocurrency:
+
+**Langkah-langkah:**
+1. Pilih tab **"Cryptocurrency"**
+2. Klik **"Jual / Convert"**
+3. Pilih cryptocurrency dari dropdown (19 pilihan)
+4. Masukkan **jumlah coin** yang ingin dijual
+5. Klik **"Hitung"**
+
+**Hasil:**
+- Rate: Harga pasar - 5%
+- Total Rupiah yang akan diterima
+- Detail perhitungan
+
+**Contoh:**
+```
+Jual 0.001 BTC
+Harga pasar: Rp 1.500.000.000
+Rate jual: Rp 1.425.000.000 (-5%)
+Hasil: 0.001 x Rp 1.425.000.000 = Rp 1.425.000
+```
+
+### Mode Beli/Top-up
+
+Untuk menghitung cryptocurrency yang didapat:
+
+**Langkah-langkah:**
+1. Pilih tab **"Cryptocurrency"**
+2. Klik **"Beli / Top-up"**
+3. Pilih cryptocurrency dari dropdown
+4. Masukkan **nominal Rupiah** yang ingin dibelanjakan
+5. Klik **"Hitung"**
+
+**Hasil:**
+- Rate: Harga pasar + 5%
+- Jumlah coin yang akan diterima
+- Detail perhitungan
+
+**Contoh:**
+```
+Beli dengan Rp 1.000.000
+Harga pasar ETH: Rp 50.000.000
+Rate beli: Rp 52.500.000 (+5%)
+Hasil: Rp 1.000.000 / Rp 52.500.000 = 0.019 ETH
+```
+
+### Rate Stablecoin
+
+Untuk USDT dan USDC, rate tetap (tidak mengikuti market):
+- **Jual**: Rp 14.000 per coin
+- **Beli**: Rp 16.999 per coin
+
+## Menggunakan Kalkulator PayPal
+
+### Sistem Tiered Rates
+
+PayPal menggunakan tier berdasarkan nominal. Semakin besar, semakin bagus rate-nya.
+
+**Tier Jual/Convert:**
+
+| Tier | Nominal | Rate |
+|------|---------|------|
+| 1 | $20 - $49 | Rp 12.499/USD |
+| 2 | $50 - $499 | Rp 14.099/USD |
+| 3 | $500 - $2.000 | Rp 15.499/USD |
+
+**Rate Beli/Top-up:**
+- Semua nominal: Rp 17.399/USD
+
+### Cara Menggunakan
+
+1. Pilih tab **"PayPal"**
+2. Pilih mode (Jual/Beli)
+3. Masukkan **nominal USD** ($20 - $5.000)
+4. Klik **"Hitung"**
+
+**Hasil menampilkan:**
+- Tier yang berlaku
+- Rate per USD
+- Total Rupiah
+- Breakdown perhitungan
+
+### Contoh Perhitungan
+
+**Jual $100 PayPal:**
+```
+Nominal: $100
+Tier: $50 - $499
+Rate: Rp 14.099/USD
+Total: $100 x Rp 14.099 = Rp 1.409.900
+```
+
+**Beli $200 PayPal:**
+```
+Nominal: $200
+Rate: Rp 17.399/USD
+Total: $200 x Rp 17.399 = Rp 3.479.800
+```
+
+## Menggunakan Kalkulator Skrill
+
+### Sistem Tiered Rates
+
+Skrill juga menggunakan sistem tier serupa:
+
+**Tier Jual/Convert:**
+
+| Tier | Nominal | Rate |
+|------|---------|------|
+| 1 | $20 - $49 | Rp 12.499/USD |
+| 2 | $50 - $499 | Rp 13.499/USD |
+| 3 | $500 - $2.000 | Rp 14.199/USD |
+
+**Rate Beli/Top-up:**
+- Semua nominal: Rp 18.699/USD
+
+### Cara Menggunakan
+
+Sama dengan PayPal:
+1. Pilih tab **"Skrill"**
+2. Pilih mode
+3. Masukkan nominal USD
+4. Klik "Hitung"
+
+## Batas Transaksi
+
+| Layanan | Mode | Minimal | Maksimal |
+|---------|------|---------|----------|
+| Crypto | Beli | Rp 25.000 | Tidak terbatas |
+| Crypto | Jual | Rp 50.000 | Tidak terbatas |
+| PayPal | Jual | $20 | $2.000 |
+| PayPal | Beli | $20 | $5.000 |
+| Skrill | Jual | $20 | $2.000 |
+| Skrill | Beli | $20 | $5.000 |
+
+## Fitur UX
+
+### Auto-Reset Input
+Input otomatis dikosongkan saat:
+- Pindah tab (Crypto/PayPal/Skrill)
+- Toggle mode (Jual/Beli)
+- Ganti cryptocurrency
+
+### Validasi Real-time
+Sistem menampilkan error jika:
+- Input kosong
+- Di bawah minimal
+- Di atas maksimal
+- Format tidak valid
+
+### Pesan Informatif
+Setiap mode memiliki info box dengan:
+- Cara input yang benar
+- Tips mendapat rate terbaik
+- Penjelasan sistem tier
+- Catatan penting
+
+## Sinkronisasi dengan Order
+
+### 100% Sinkron
+
+Kalkulator menggunakan sumber data yang **identik** dengan sistem order:
+- Rate dari API yang sama
+- Formula perhitungan sama
+- Tier breaks sama
+- Batas minimal/maksimal sama
+
+### Perbedaan Kecil
+
+Hasil kalkulator adalah **estimasi**. Rate final di order mungkin sedikit berbeda karena:
+- Fluktuasi crypto (update setiap 3 menit)
+- Timing antara hitung dan order
+
+> **Tips**: Untuk hasil paling akurat, hitung dan langsung buat order.
+
+## Tips Menggunakan Kalkulator
+
+### 1. Cek Sebelum Order
+Selalu hitung estimasi di kalkulator sebelum membuat order untuk tahu ekspektasi.
+
+### 2. Bandingkan Tier
+Untuk PayPal/Skrill, coba berbagai nominal untuk melihat tier mana yang optimal.
+
+Contoh:
+- $45 → Tier 1 (Rp 12.499) = Rp 562.455
+- $55 → Tier 2 (Rp 14.099) = Rp 775.445
+
+Tambah $10 tapi dapat rate lebih baik!
+
+### 3. Screenshot Hasil
+Simpan screenshot hasil perhitungan sebagai referensi.
+
+### 4. Refresh untuk Update
+Untuk cryptocurrency, refresh halaman untuk mendapat rate terbaru.
+
+### 5. Bandingkan Layanan
+Bandingkan rate antar layanan untuk memilih yang paling sesuai.
+
+## Cryptocurrency yang Didukung
+
+Kalkulator mendukung **19 cryptocurrency**:
+
+1. Bitcoin (BTC)
+2. Ethereum (ETH)
+3. Tether (USDT)
+4. USD Coin (USDC)
+5. BNB (BNB)
+6. Solana (SOL)
+7. Polygon (MATIC)
+8. Cardano (ADA)
+9. Avalanche (AVAX)
+10. Chainlink (LINK)
+11. Polkadot (DOT)
+12. Litecoin (LTC)
+13. Bitcoin Cash (BCH)
+14. Uniswap (UNI)
+15. Stellar (XLM)
+16. Cosmos (ATOM)
+17. Filecoin (FIL)
+18. Tron (TRX)
+19. Algorand (ALGO)
+
+## Pertanyaan Umum
+
+### Apakah rate di kalkulator sama dengan order?
+Ya, 100% sinkron. Kalkulator menggunakan sumber dan formula yang sama.
+
+### Berapa sering rate diupdate?
+Cryptocurrency: Setiap 3 menit dari CoinGecko.
+PayPal/Skrill: Rate fixed (tidak berubah kecuali ada update).
+
+### Kenapa hasil bisa berbeda dengan order?
+Untuk crypto, rate bisa berubah dalam 3 menit. Untuk hasil paling akurat, hitung dan langsung order.
+
+### Apakah ada biaya menggunakan kalkulator?
+Tidak! Kalkulator 100% gratis tanpa perlu login.
+
+### Bisa order langsung dari kalkulator?
+Kalkulator hanya untuk estimasi. Untuk order, kunjungi halaman [Order](/order).
+
+### Minimal transaksi berapa?
+- Crypto Beli: Rp 25.000
+- Crypto Jual: Rp 50.000
+- PayPal/Skrill: $20
+
+## Mulai Hitung!
+
+Coba kalkulator sekarang:
+
+[Buka Kalkulator Rate](/calculator)
+
+Setelah mendapat estimasi, lanjutkan:
+
+[Buat Order](/order)

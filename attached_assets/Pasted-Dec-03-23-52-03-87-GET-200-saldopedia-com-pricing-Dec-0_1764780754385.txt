@@ -1,0 +1,167 @@
+Dec 03 23:52:03.87
+GET
+200
+saldopedia.com
+/pricing
+Dec 03 23:52:03.87
+GET
+200
+saldopedia.com
+/pricing
+Dec 03 23:52:03.87
+GET
+200
+saldopedia.com
+/cryptocurrencies
+Dec 03 23:52:03.87
+GET
+200
+saldopedia.com
+/pricing
+Dec 03 23:52:03.46
+GET
+200
+saldopedia.com
+/about
+Dec 03 23:52:03.46
+GET
+200
+saldopedia.com
+/about
+Dec 03 23:52:03.46
+GET
+200
+saldopedia.com
+/calculator
+Dec 03 23:52:03.46
+GET
+200
+saldopedia.com
+/calculator
+Dec 03 23:52:03.11
+GET
+200
+saldopedia.com
+/about
+Dec 03 23:52:03.07
+GET
+200
+saldopedia.com
+/documentation
+Dec 03 23:52:03.05
+GET
+200
+saldopedia.com
+/documentation
+Dec 03 23:52:03.04
+GET
+200
+saldopedia.com
+/documentation
+Dec 03 23:52:02.74
+GET
+200
+saldopedia.com
+/terms-of-service
+Dec 03 23:52:02.74
+GET
+200
+saldopedia.com
+/site-map
+Dec 03 23:52:02.74
+GET
+200
+saldopedia.com
+/site-map
+Dec 03 23:52:02.74
+GET
+200
+saldopedia.com
+/site-map
+Dec 03 23:52:02.33
+GET
+200
+saldopedia.com
+/terms-of-service
+Dec 03 23:52:02.33
+GET
+200
+saldopedia.com
+/privacy-policy
+Dec 03 23:52:02.33
+GET
+200
+saldopedia.com
+/terms-of-service
+Dec 03 23:52:02.33
+GET
+200
+saldopedia.com
+/privacy-policy
+Dec 03 23:52:01.99
+GET
+200
+saldopedia.com
+/privacy-policy
+Dec 03 23:52:01.95
+GET
+200
+saldopedia.com
+/cookie-policy
+Dec 03 23:52:01.95
+GET
+200
+saldopedia.com
+/cookie-policy
+Dec 03 23:52:01.95
+GET
+200
+saldopedia.com
+/cookie-policy
+Dec 03 23:52:01.93
+POST
+500
+saldopedia.com
+/api/orders
+2
+NOWPayments payout error: Error: NOWPayments API error: 400 {"status":false,"statusCode":400,"code":"INVALID_REQUEST_PARAMS","message":"two_factor_code is not allowed"} at f.requestWithAuth (.next/server/app/api/orders/route.js:73:12463) at async L (.next/server/app/api/orders/route.js:66:1695) at async k (.next/server/app/api/orders/route.js:73:5338) at async j (.next/server/app/api/orders/route.js:73:6347) at async T (.next/server/app/api/orders/route.js:73:7414)
+Dec 03 23:52:01.62
+GET
+200
+saldopedia.com
+/documentation
+Dec 03 23:52:01.62
+GET
+200
+saldopedia.com
+/about
+Dec 03 23:52:01.61
+GET
+200
+saldopedia.com
+/customers
+Dec 03 23:52:01.61
+GET
+200
+saldopedia.com
+/blog
+Dec 03 23:52:01.26
+GET
+200
+saldopedia.com
+/site-map
+Dec 03 23:52:01.25
+GET
+200
+saldopedia.com
+/terms-of-service
+Dec 03 23:52:01.25
+GET
+200
+saldopedia.com
+/cookie-policy
+Dec 03 23:52:01.25
+GET
+200
+saldopedia.com
+/privacy-policy

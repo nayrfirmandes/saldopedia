@@ -1,0 +1,155 @@
+23:26:41.571 Running build in Washington, D.C., USA (East) – iad1
+23:26:41.572 Build machine configuration: 2 cores, 8 GB
+23:26:41.599 Cloning github.com/nayrfirmandes/saldopedia (Branch: main, Commit: 87eb4c9)
+23:26:41.600 Skipping build cache, deployment was triggered without cache.
+23:26:42.941 Cloning completed: 1.341s
+23:26:43.565 Warning: Detected "engines": { "node": ">=20.0.0" } in your `package.json` that will automatically upgrade when a new major Node.js Version is released. Learn More: http://vercel.link/node-version
+23:26:43.565 Running "vercel build"
+23:26:44.005 Vercel CLI 49.0.0
+23:26:44.362 Warning: Detected "engines": { "node": ">=20.0.0" } in your `package.json` that will automatically upgrade when a new major Node.js Version is released. Learn More: http://vercel.link/node-version
+23:26:44.372 Running "install" command: `npm install`...
+23:26:47.395 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+23:26:48.227 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+23:26:48.305 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+23:26:50.002 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+23:26:50.047 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+23:26:50.078 npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+23:26:50.184 npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+23:26:54.071 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+23:27:01.867 
+23:27:01.868 > saldopedia@1.0.0 postinstall
+23:27:01.868 > echo 'Setup complete! Run: npm run db:push to initialize database'
+23:27:01.868 
+23:27:01.874 Setup complete! Run: npm run db:push to initialize database
+23:27:01.893 
+23:27:01.894 added 656 packages, and audited 657 packages in 17s
+23:27:01.894 
+23:27:01.894 286 packages are looking for funding
+23:27:01.895   run `npm fund` for details
+23:27:01.896 
+23:27:01.896 1 high severity vulnerability
+23:27:01.896 
+23:27:01.896 To address all issues, run:
+23:27:01.898   npm audit fix
+23:27:01.898 
+23:27:01.898 Run `npm audit` for details.
+23:27:02.213 Detected Next.js version: 16.0.7
+23:27:02.214 Running "npm run build"
+23:27:02.450 
+23:27:02.451 > saldopedia@1.0.0 build
+23:27:02.451 > next build --webpack
+23:27:02.451 
+23:27:03.503 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+23:27:03.506 This information is used to shape Next.js' roadmap and prioritize features.
+23:27:03.507 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+23:27:03.507 https://nextjs.org/telemetry
+23:27:03.507 
+23:27:03.621    ▲ Next.js 16.0.7 (webpack)
+23:27:03.622    - Experiments (use with caution):
+23:27:03.623      · optimizePackageImports
+23:27:03.623 
+23:27:03.772    Creating an optimized production build ...
+23:27:29.944  ✓ Compiled successfully in 25.8s
+23:27:29.950    Running TypeScript ...
+23:27:44.162    Collecting page data using 1 worker ...
+23:27:48.723    Generating static pages using 1 worker (0/61) ...
+23:27:50.096    Generating static pages using 1 worker (15/61) 
+23:27:51.122    Generating static pages using 1 worker (30/61) 
+23:27:51.123    Generating static pages using 1 worker (45/61) 
+23:27:51.230  ✓ Generating static pages using 1 worker (61/61) in 2.5s
+23:27:51.779    Finalizing page optimization ...
+23:27:51.781    Collecting build traces ...
+23:27:59.345 
+23:27:59.352 Route (app)                                   Revalidate  Expire
+23:27:59.352 ┌ ○ /                                                 3m      1y
+23:27:59.353 ├ ○ /_not-found
+23:27:59.354 ├ ○ /about
+23:27:59.354 ├ ƒ /api/auth/forgot-password
+23:27:59.354 ├ ƒ /api/auth/login
+23:27:59.354 ├ ƒ /api/auth/logout
+23:27:59.354 ├ ƒ /api/auth/register
+23:27:59.354 ├ ƒ /api/auth/resend-verification
+23:27:59.354 ├ ƒ /api/auth/reset-password
+23:27:59.354 ├ ƒ /api/auth/verify-email
+23:27:59.354 ├ ƒ /api/crypto-rates
+23:27:59.354 ├ ƒ /api/crypto/minimums
+23:27:59.354 ├ ƒ /api/dashboard/orders
+23:27:59.354 ├ ƒ /api/dashboard/orders/list
+23:27:59.354 ├ ƒ /api/deposits/confirm/[depositId]
+23:27:59.354 ├ ƒ /api/deposits/create
+23:27:59.354 ├ ƒ /api/deposits/upload-proof
+23:27:59.354 ├ ƒ /api/newsletter
+23:27:59.354 ├ ƒ /api/nowpayments/ipn
+23:27:59.354 ├ ƒ /api/nowpayments/payout-ipn
+23:27:59.354 ├ ƒ /api/orders
+23:27:59.355 ├ ƒ /api/orders/check-expired
+23:27:59.355 ├ ƒ /api/orders/complete/[orderId]
+23:27:59.355 ├ ƒ /api/testimonials
+23:27:59.355 ├ ƒ /api/transactions
+23:27:59.355 ├ ƒ /api/transactions/stream
+23:27:59.355 ├ ƒ /api/transfers
+23:27:59.355 ├ ƒ /api/user/change-password
+23:27:59.355 ├ ƒ /api/user/orders
+23:27:59.355 ├ ƒ /api/user/profile
+23:27:59.355 ├ ƒ /api/user/update-profile
+23:27:59.355 ├ ƒ /api/withdrawals
+23:27:59.355 ├ ƒ /api/withdrawals/complete/[withdrawalId]
+23:27:59.355 ├ ○ /apple-icon.png
+23:27:59.355 ├ ○ /blog
+23:27:59.355 ├ ƒ /blog/[slug]
+23:27:59.355 ├ ○ /calculator
+23:27:59.355 ├ ○ /cookie-policy
+23:27:59.355 ├ ○ /crypto
+23:27:59.355 ├ ○ /cryptocurrencies
+23:27:59.355 ├ ○ /customers
+23:27:59.356 ├ ƒ /dashboard
+23:27:59.356 ├ ƒ /dashboard/deposit
+23:27:59.356 ├ ƒ /dashboard/deposits/[depositId]
+23:27:59.356 ├ ƒ /dashboard/orders
+23:27:59.356 ├ ƒ /dashboard/profile
+23:27:59.356 ├ ƒ /dashboard/settings
+23:27:59.356 ├ ƒ /dashboard/transfer
+23:27:59.356 ├ ƒ /dashboard/transfers/[transferId]
+23:27:59.356 ├ ƒ /dashboard/withdraw
+23:27:59.356 ├ ƒ /dashboard/withdrawals/[withdrawalId]
+23:27:59.356 ├ ƒ /deposit/error
+23:27:59.356 ├ ƒ /deposit/success
+23:27:59.356 ├ ○ /documentation
+23:27:59.356 ├ ƒ /documentation/[slug]
+23:27:59.356 ├ ○ /forgot-password
+23:27:59.356 ├ ○ /icon.png
+23:27:59.356 ├ ○ /login
+23:27:59.356 ├ ○ /manifest.webmanifest
+23:27:59.356 ├ ○ /order
+23:27:59.356 ├ ƒ /order/[orderId]
+23:27:59.356 ├ ○ /order/complete/error
+23:27:59.357 ├ ○ /order/complete/success
+23:27:59.357 ├ ○ /order/expired
+23:27:59.357 ├ ƒ /order/instructions/[orderId]
+23:27:59.357 ├ ○ /paypal
+23:27:59.358 ├ ○ /pricing
+23:27:59.358 ├ ○ /privacy-policy
+23:27:59.358 ├ ○ /register
+23:27:59.358 ├ ○ /reset-password
+23:27:59.358 ├ ○ /robots.txt
+23:27:59.358 ├ ○ /site-map
+23:27:59.358 ├ ○ /sitemap.xml
+23:27:59.358 ├ ○ /skrill
+23:27:59.358 ├ ○ /support
+23:27:59.358 ├ ○ /terms-of-service
+23:27:59.358 ├ ○ /verify-email
+23:27:59.359 ├ ƒ /withdrawal/complete/error
+23:27:59.359 └ ƒ /withdrawal/complete/success
+23:27:59.359 
+23:27:59.359 
+23:27:59.359 ○  (Static)   prerendered as static content
+23:27:59.359 ƒ  (Dynamic)  server-rendered on demand
+23:27:59.359 
+23:27:59.714 Traced Next.js server files in: 77.321ms
+23:28:00.625 WARNING: Unable to find source file for page /manifest.webmanifest/route with extensions: js, jsx, mdx, ts, tsx, this can cause functions config from `vercel.json` to not be applied
+23:28:00.668 Created all serverless functions in: 953.87ms
+23:28:00.746 Collected static files (public/, static/, .next/static): 35.021ms
+23:28:01.316 Build Completed in /vercel/output [1m]
+23:28:01.641 Deploying outputs...
+23:28:15.458 Deployment completed
+23:28:16.069 Creating build cache...

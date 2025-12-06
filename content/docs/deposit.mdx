@@ -1,0 +1,253 @@
+---
+title: "Deposit (Top Up Saldo)"
+summary: "Panduan lengkap cara deposit atau top up saldo akun Saldopedia melalui transfer bank dan e-wallet."
+kind: "detailed"
+publishedAt: "2025-01-04"
+updatedAt: "2025-12-03"
+---
+
+# Deposit (Top Up Saldo)
+
+Deposit adalah proses mengisi saldo akun Saldopedia Anda. Saldo ini digunakan untuk melakukan transaksi pembelian (BUY) cryptocurrency, PayPal, atau Skrill.
+
+## Mengapa Perlu Deposit?
+
+Sistem Saldopedia menggunakan saldo akun untuk transaksi BUY:
+- Proses lebih cepat dan otomatis
+- Tidak perlu transfer manual setiap transaksi
+- Keamanan terjamin dengan sistem atomik
+- Bisa transaksi kapan saja selama saldo tersedia
+
+## Metode Pembayaran
+
+### Transfer Bank
+
+Kami menerima transfer dari bank-bank utama Indonesia:
+
+| Bank | Waktu Verifikasi |
+|------|------------------|
+| BCA | 5-15 menit |
+| Mandiri | 5-15 menit |
+| BNI | 5-15 menit |
+| BRI | 5-15 menit |
+
+### E-Wallet
+
+Kami juga menerima pembayaran melalui e-wallet:
+
+| E-Wallet | Waktu Verifikasi |
+|----------|------------------|
+| DANA | 5-15 menit |
+| OVO | 5-15 menit |
+| GoPay | 5-15 menit |
+
+## Batas Deposit
+
+| Parameter | Nilai |
+|-----------|-------|
+| Minimal Deposit | Rp 25.000 |
+| Maksimal Deposit | Rp 5.000.000 |
+| Biaya Admin | Rp 1.500 |
+| Kode Unik | Rp 100 - Rp 999 |
+
+> **Catatan**: Kode unik ditambahkan untuk memudahkan verifikasi transfer. Total yang harus ditransfer = Nominal + Biaya Admin + Kode Unik.
+
+## Cara Deposit (2 Langkah)
+
+### Langkah 1: Buat Request Deposit
+
+1. **Login ke Dashboard**
+   Pastikan Anda sudah login ke akun Saldopedia
+
+2. **Buka Halaman Deposit**
+   Klik tombol "Top Up" di dashboard atau kunjungi [/dashboard/deposit](/dashboard/deposit)
+
+3. **Pilih Metode Pembayaran**
+   - Pilih tab "Bank Transfer" atau "E-Wallet"
+   - Pilih bank/e-wallet yang Anda gunakan
+
+4. **Masukkan Nominal**
+   - Masukkan jumlah yang ingin di-deposit
+   - Minimal Rp 25.000, maksimal Rp 5.000.000
+   - Sistem akan menampilkan total yang harus ditransfer
+
+5. **Klik "Lanjutkan"**
+   Sistem akan membuat request deposit dan menampilkan detail pembayaran
+
+### Langkah 2: Transfer & Upload Bukti
+
+1. **Lihat Detail Pembayaran**
+   Setelah request dibuat, Anda akan melihat:
+   - Nama bank/e-wallet tujuan
+   - Nomor rekening/akun admin
+   - Nama pemilik rekening
+   - **Total yang harus ditransfer** (termasuk kode unik)
+
+2. **Lakukan Transfer**
+   - Buka aplikasi mobile banking atau e-wallet Anda
+   - Transfer **tepat sesuai nominal** yang tertera
+   - **PENTING**: Jangan bulatkan nominal!
+   
+   Contoh:
+   - Nominal deposit: Rp 100.000
+   - Biaya admin: Rp 1.500
+   - Kode unik: Rp 456
+   - **Total transfer: Rp 101.956**
+
+3. **Simpan Bukti Transfer**
+   - Screenshot atau simpan bukti transfer
+   - Pastikan terlihat: nominal, waktu, status berhasil
+
+4. **Upload Bukti Transfer**
+   - Klik tombol "Upload Bukti Transfer"
+   - Pilih file gambar bukti transfer
+   - Format yang diterima: JPG, PNG, PDF
+   - Maksimal ukuran: 5MB
+
+5. **Tunggu Verifikasi**
+   - Status deposit berubah menjadi "Pending"
+   - Tim akan memverifikasi dalam 5-15 menit
+   - Saldo otomatis ditambahkan setelah verifikasi
+
+## Status Deposit
+
+| Status | Keterangan |
+|--------|------------|
+| pending_proof | Menunggu upload bukti transfer |
+| pending | Bukti diterima, menunggu verifikasi |
+| completed | Deposit berhasil, saldo ditambahkan |
+| rejected | Deposit ditolak (nominal salah, bukti tidak valid) |
+| expired | Waktu upload bukti habis (24 jam) |
+
+## Contoh Perhitungan
+
+### Contoh 1: Deposit Rp 100.000
+
+```
+Nominal deposit: Rp 100.000
+Biaya admin:     Rp   1.500
+Kode unik:       Rp     789
+------------------------
+Total transfer:  Rp 102.289
+
+Saldo diterima:  Rp 100.000
+```
+
+### Contoh 2: Deposit Rp 500.000
+
+```
+Nominal deposit: Rp 500.000
+Biaya admin:     Rp   1.500
+Kode unik:       Rp     234
+------------------------
+Total transfer:  Rp 501.734
+
+Saldo diterima:  Rp 500.000
+```
+
+## Tips Deposit Sukses
+
+### 1. Transfer Tepat Nominal
+Selalu transfer **persis** sesuai nominal yang tertera termasuk kode unik. Nominal berbeda akan menyulitkan verifikasi.
+
+### 2. Gunakan Rekening Pribadi
+Sebaiknya transfer dari rekening/e-wallet atas nama sendiri untuk kemudahan verifikasi.
+
+### 3. Upload Bukti Jelas
+Pastikan bukti transfer:
+- Terlihat jelas (tidak blur)
+- Menampilkan nominal transfer
+- Menampilkan waktu/tanggal
+- Status transaksi berhasil
+
+### 4. Jangan Double Transfer
+Satu request deposit = satu kali transfer. Jangan transfer ulang sebelum request pertama selesai.
+
+### 5. Catat Kode Unik
+Simpan kode unik sebagai referensi jika ada kendala verifikasi.
+
+## Troubleshooting
+
+### Deposit Belum Masuk Setelah 30 Menit?
+
+1. Cek status deposit di dashboard
+2. Pastikan bukti transfer sudah di-upload
+3. Verifikasi nominal transfer sesuai (termasuk kode unik)
+4. Hubungi customer service dengan informasi:
+   - ID Deposit
+   - Bukti transfer
+   - Waktu transfer
+
+### Salah Transfer Nominal?
+
+Jika nominal yang ditransfer berbeda:
+1. Jangan transfer ulang
+2. Hubungi customer service segera
+3. Berikan bukti transfer yang benar
+4. Tim akan membantu rekonsiliasi
+
+### Bukti Gagal Upload?
+
+1. Periksa ukuran file (maks 5MB)
+2. Pastikan format file benar (JPG, PNG, PDF)
+3. Coba kompres gambar jika terlalu besar
+4. Gunakan browser berbeda jika masih gagal
+
+### Request Expired?
+
+Jika belum transfer dalam 24 jam:
+1. Request deposit akan expired
+2. Buat request deposit baru
+3. Jangan transfer ke request yang sudah expired
+
+## Keamanan Deposit
+
+### Rekening Terverifikasi
+Semua rekening admin Saldopedia terverifikasi resmi. Jangan transfer ke rekening yang tidak ditampilkan di sistem.
+
+### Tidak Ada Biaya Tersembunyi
+Biaya yang tertera sudah final. Tidak ada potongan tambahan.
+
+### Konfirmasi Otomatis
+Setelah verifikasi, saldo langsung masuk ke akun Anda secara otomatis.
+
+### Bukti Tersimpan
+Semua bukti transfer tersimpan aman di sistem untuk referensi.
+
+## Riwayat Deposit
+
+Lihat semua riwayat deposit Anda di [/dashboard/deposit](/dashboard/deposit):
+- Tanggal dan waktu deposit
+- Nominal yang di-deposit
+- Metode pembayaran
+- Status deposit
+- Kode unik yang digunakan
+
+## Pertanyaan Umum
+
+### Berapa lama deposit diproses?
+Deposit diproses dalam 5-15 menit setelah bukti transfer di-upload.
+
+### Apakah ada biaya deposit?
+Ya, biaya admin Rp 1.500 per deposit ditambah kode unik (Rp 100-999).
+
+### Bisa deposit dari rekening orang lain?
+Bisa, tapi disarankan menggunakan rekening atas nama sendiri untuk mempercepat verifikasi.
+
+### Deposit minimal berapa?
+Minimal Rp 25.000, maksimal Rp 5.000.000 per transaksi.
+
+### Bisa deposit lebih dari 1x dalam sehari?
+Ya, tidak ada batasan frekuensi deposit selama dalam batas maksimal per transaksi.
+
+### Apa itu kode unik?
+Kode unik adalah 3 digit angka (Rp 100-999) yang ditambahkan untuk memudahkan sistem mengidentifikasi transfer Anda.
+
+## Butuh Bantuan?
+
+Jika mengalami kendala deposit:
+
+- **WhatsApp**: [08119666620](https://wa.me/628119666620)
+- **Email**: support@saldopedia.com
+
+Sertakan ID Deposit dan bukti transfer saat menghubungi.

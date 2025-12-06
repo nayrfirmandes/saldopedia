@@ -1,0 +1,414 @@
+DEC 06 12:09:00.27
+GET
+304
+saldopedia.com
+/login
+DEC 06 12:09:00.27
+GET
+304
+saldopedia.com
+/login
+DEC 06 12:09:00.24
+GET
+304
+saldopedia.com
+/login
+DEC 06 12:09:00.20
+GET
+304
+saldopedia.com
+/order
+DEC 06 12:09:00.20
+GET
+304
+saldopedia.com
+/order
+DEC 06 12:09:00.20
+GET
+304
+saldopedia.com
+/order
+DEC 06 12:09:00.14
+GET
+304
+saldopedia.com
+/login
+DEC 06 12:09:00.14
+GET
+304
+saldopedia.com
+/order
+DEC 06 12:08:57.95
+GET
+304
+saldopedia.com
+/
+DEC 06 12:08:57.91
+GET
+200
+saldopedia.com
+/
+DEC 06 12:08:57.88
+GET
+304
+saldopedia.com
+/forgot-password
+DEC 06 12:08:57.85
+GET
+304
+saldopedia.com
+/forgot-password
+DEC 06 12:08:57.82
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:08:57.82
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:08:57.77
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:08:57.64
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:08:57.64
+GET
+304
+saldopedia.com
+/forgot-password
+DEC 06 12:08:57.64
+GET
+304
+saldopedia.com
+/
+DEC 06 12:08:57.64
+GET
+200
+saldopedia.com
+/
+DEC 06 12:08:57.57
+GET
+304
+saldopedia.com
+/
+DEC 06 12:08:57.57
+GET
+304
+saldopedia.com
+/register
+DEC 06 12:08:57.57
+GET
+304
+saldopedia.com
+/forgot-password
+DEC 06 12:08:57.53
+GET
+401
+saldopedia.com
+/api/user/profile
+DEC 06 12:08:57.50
+GET
+304
+saldopedia.com
+/manifest.webmanifest
+DEC 06 12:08:57.40
+GET
+200
+saldopedia.com
+/login
+DEC 06 12:08:57.23
+GET
+307
+saldopedia.com
+/dashboard
+DEC 06 12:08:57.02
+GET
+307
+saldopedia.com
+/api/auth/google/callback
+DEC 06 12:08:52.66
+GET
+307
+saldopedia.com
+/api/auth/google
+DEC 06 12:08:49.64
+GET
+200
+saldopedia.com
+/
+DEC 06 12:08:49.51
+GET
+200
+saldopedia.com
+/
+DEC 06 12:08:49.38
+GET
+200
+saldopedia.com
+/
+DEC 06 12:08:49.33
+GET
+200
+saldopedia.com
+/forgot-password
+DEC 06 12:08:49.28
+GET
+200
+saldopedia.com
+/forgot-password
+DEC 06 12:08:49.28
+GET
+200
+saldopedia.com
+/forgot-password
+DEC 06 12:08:49.28
+GET
+200
+saldopedia.com
+/register
+DEC 06 12:08:47.56
+GET
+200
+saldopedia.com
+/register
+DEC 06 12:08:47.41
+GET
+200
+saldopedia.com
+/register
+DEC 06 12:08:47.41
+GET
+200
+saldopedia.com
+/register
+DEC 06 12:08:47.36
+GET
+200
+saldopedia.com
+/register
+DEC 06 12:08:47.28
+GET
+200
+saldopedia.com
+/forgot-password
+DEC 06 12:08:47.28
+GET
+200
+saldopedia.com
+/register
+DEC 06 12:08:47.28
+GET
+200
+saldopedia.com
+/
+DEC 06 12:08:47.14
+GET
+401
+saldopedia.com
+/api/user/profile
+DEC 06 12:08:47.14
+GET
+304
+saldopedia.com
+/manifest.webmanifest
+DEC 06 12:08:46.68
+GET
+200
+saldopedia.com
+/login
+DEC 06 12:08:45.96
+GET
+307
+saldopedia.com
+/dashboard
+DEC 06 12:08:45.29
+GET
+307
+saldopedia.com
+/api/auth/google/callback
+DEC 06 12:08:40.69
+GET
+307
+saldopedia.com
+/api/auth/google
+DEC 06 12:08:25.01
+GET
+200
+saldopedia.com
+/
+DEC 06 12:08:24.90
+GET
+200
+saldopedia.com
+/
+DEC 06 12:08:24.62
+GET
+200
+saldopedia.com
+/order
+DEC 06 12:08:24.58
+GET
+200
+saldopedia.com
+/order
+DEC 06 12:08:24.58
+GET
+200
+saldopedia.com
+/order
+DEC 06 12:08:24.56
+GET
+200
+saldopedia.com
+/order
+DEC 06 12:08:24.22
+GET
+200
+saldopedia.com
+/login
+DEC 06 12:08:24.18
+GET
+200
+saldopedia.com
+/login
+DEC 06 12:08:24.16
+GET
+200
+saldopedia.com
+/register
+DEC 06 12:08:24.16
+GET
+200
+saldopedia.com
+/register
+DEC 06 12:08:23.80
+GET
+200
+saldopedia-lr3wn2y1d-ryandevs.vercel.app
+/
+DEC 06 12:08:23.79
+GET
+200
+saldopedia.com
+/register
+DEC 06 12:08:23.73
+GET
+200
+saldopedia.com
+/login
+DEC 06 12:08:23.68
+GET
+200
+saldopedia.com
+/login
+DEC 06 12:08:23.68
+GET
+200
+saldopedia.com
+/login
+DEC 06 12:08:23.31
+GET
+200
+saldopedia.com
+/
+DEC 06 12:08:23.31
+GET
+200
+saldopedia.com
+/register
+DEC 06 12:08:23.31
+GET
+200
+saldopedia.com
+/order
+DEC 06 12:08:23.31
+GET
+200
+saldopedia.com
+/login
+DEC 06 12:08:21.95
+GET
+200
+saldopedia.com
+/api/testimonials
+DEC 06 12:08:21.11
+GET
+401
+saldopedia.com
+/api/user/profile
+DEC 06 12:08:15.43
+GET
+200
+saldopedia.com
+/manifest.webmanifest
+DEC 06 12:08:14.75
+GET
+200
+saldopedia.com
+/
+DEC 06 12:07:25.10
+GET
+200
+saldopedia-lr3wn2y1d-ryandevs.vercel.app
+/register
+DEC 06 12:07:25.05
+GET
+200
+saldopedia-lr3wn2y1d-ryandevs.vercel.app
+/
+DEC 06 12:07:25.03
+GET
+200
+saldopedia-lr3wn2y1d-ryandevs.vercel.app
+/crypto
+DEC 06 12:07:25.02
+GET
+200
+saldopedia-lr3wn2y1d-ryandevs.vercel.app
+/paypal
+DEC 06 12:07:24.92
+GET
+200
+saldopedia-lr3wn2y1d-ryandevs.vercel.app
+/skrill
+DEC 06 12:07:24.91
+GET
+200
+saldopedia-lr3wn2y1d-ryandevs.vercel.app
+/pricing
+DEC 06 12:07:24.88
+GET
+200
+saldopedia-lr3wn2y1d-ryandevs.vercel.app
+/login
+DEC 06 12:07:24.88
+GET
+200
+saldopedia-lr3wn2y1d-ryandevs.vercel.app
+/cookie-policy
+DEC 06 12:07:24.88
+GET
+200
+saldopedia-lr3wn2y1d-ryandevs.vercel.app
+/register
+DEC 06 12:07:24.88
+GET
+200
+saldopedia-lr3wn2y1d-ryandevs.vercel.app
+/order
+DEC 06 12:07:24.83
+GET
+200
+saldopedia-lr3wn2y1d-ryandevs.vercel.app
+/api/testimonials
+DEC 06 12:07:24.73
+GET
+401
+sal
