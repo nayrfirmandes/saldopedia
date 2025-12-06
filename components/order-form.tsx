@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import { useLanguage } from "@/contexts/language-context";
 import PageIllustration from "@/components/page-illustration";
 import {
@@ -61,6 +62,7 @@ interface FormData {
 }
 
 export default function OrderForm() {
+  const router = useRouter();
   const { t, language } = useLanguage();
   const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState<FormData>({
@@ -500,43 +502,9 @@ export default function OrderForm() {
 
       const result = await response.json();
 
-      if (response.ok && result.success) {
-        setSubmitSuccess(true);
-        // Reset form
-        setFormData({
-          customerName: "",
-          customerEmail: "",
-          customerPhone: "",
-          serviceType: "cryptocurrency",
-          cryptoSymbol: "BTC",
-          cryptoNetwork: "Bitcoin",
-          transactionType: "buy",
-          amountInput: "",
-          paymentMethod: "",
-          paymentAccountName: "",
-          paymentAccountNumber: "",
-          walletAddress: "",
-          xrpTag: "",
-          paypalEmail: "",
-          skrillEmail: "",
-          notes: "",
-        });
-        
-        // Refresh user saldo after order (for BUY orders, saldo was deducted)
-        if (formData.transactionType === "buy") {
-          try {
-            const profileRes = await fetch("/api/user/profile");
-            const profileResult = await profileRes.json();
-            if (profileResult.success && profileResult.user) {
-              setUserSaldo(parseFloat(profileResult.user.saldo?.toString() || "0"));
-            }
-          } catch (error) {
-            // Silent fail
-          }
-        }
-        
-        // Scroll to top to show success message
-        window.scrollTo({ top: 0, behavior: "smooth" });
+      if (response.ok && result.success && result.orderId) {
+        // Redirect to instructions page
+        router.push(`/order/instructions/${result.orderId}`);
       } else {
         setSubmitError(result.error || t('order.errorMessage'));
       }
