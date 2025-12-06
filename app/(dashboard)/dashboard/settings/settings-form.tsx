@@ -16,9 +16,10 @@ interface SettingsFormProps {
   user: User;
   hasPassword: boolean;
   isGoogleUser: boolean;
+  nameChanged: boolean;
 }
 
-export default function SettingsForm({ user, hasPassword, isGoogleUser }: SettingsFormProps) {
+export default function SettingsForm({ user, hasPassword, isGoogleUser, nameChanged }: SettingsFormProps) {
   const router = useRouter();
   const { refreshAuth } = useAuth();
   const { t } = useLanguage();
@@ -177,13 +178,32 @@ export default function SettingsForm({ user, hasPassword, isGoogleUser }: Settin
             <label className="block text-sm text-gray-600 dark:text-gray-400 mb-2">
               {t('dashboardPages.settings.name')}
             </label>
-            <input
-              type="text"
-              value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full px-3 py-2.5 border border-gray-200 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white text-base"
-              required
-            />
+            {isGoogleUser && !nameChanged ? (
+              <>
+                <input
+                  type="text"
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  className="w-full px-3 py-2.5 border border-gray-200 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white text-base"
+                  required
+                />
+                <p className="mt-1.5 text-xs text-orange-600 dark:text-orange-400">
+                  {t('dashboardPages.settings.nameGoogleOneTimeNote')}
+                </p>
+              </>
+            ) : (
+              <>
+                <input
+                  type="text"
+                  value={formData.name}
+                  disabled
+                  className="w-full px-3 py-2.5 border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 text-base cursor-not-allowed"
+                />
+                <p className="mt-1.5 text-xs text-gray-500 dark:text-gray-400">
+                  {t('dashboardPages.settings.nameLockedNote')}
+                </p>
+              </>
+            )}
           </div>
 
           <div>

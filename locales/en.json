@@ -1908,6 +1908,7 @@
       "title": "Create New Account",
       "subtitle": "Sign up to start crypto, PayPal, and Skrill transactions",
       "fullName": "Full Name",
+      "nameNote": "Make sure the name matches your bank/e-wallet account. Name cannot be changed after registration for withdrawal security.",
       "email": "Email",
       "phone": "WhatsApp Number",
       "password": "Password",
@@ -2092,7 +2093,9 @@
       "changePassword": "Change Password",
       "changing": "Changing...",
       "successUpdate": "Profile updated successfully",
-      "photoMaxSize": "Maximum file size 2MB"
+      "photoMaxSize": "Maximum file size 2MB",
+      "nameLockedNote": "Name cannot be changed for withdrawal security. Name must match your bank/e-wallet account.",
+      "nameGoogleOneTimeNote": "You can change your name once. After changing, name cannot be changed again for withdrawal security."
     },
     "deposit": {
       "backToDashboard": "Back to Dashboard",

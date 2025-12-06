@@ -19,9 +19,23 @@ export async function POST(request: NextRequest) {
 
     const { name, email, phone, photoUrl } = await request.json();
 
-    if (!name || !email) {
-      return NextResponse.json({ error: 'Nama dan email wajib diisi' }, { status: 400 });
+    if (!email) {
+      return NextResponse.json({ error: 'Email wajib diisi' }, { status: 400 });
     }
+
+    const currentUser = await db
+      .select()
+      .from(users)
+      .where(eq(users.id, user.id))
+      .limit(1);
+
+    if (currentUser.length === 0) {
+      return NextResponse.json({ error: 'User tidak ditemukan' }, { status: 404 });
+    }
+
+    const userData = currentUser[0];
+    const isGoogleUser = !!userData.googleId;
+    const hasChangedName = userData.nameChanged;
 
     const existingUser = await db
       .select()
@@ -33,14 +47,29 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Email sudah digunakan' }, { status: 400 });
     }
 
+    const updateData: {
+      email: string;
+      phone: string | null;
+      photoUrl: string | null;
+      name?: string;
+      nameChanged?: boolean;
+    } = {
+      email,
+      phone: phone || null,
+      photoUrl: photoUrl || null,
+    };
+
+    if (name && name !== userData.name) {
+      if (isGoogleUser && !hasChangedName) {
+        updateData.name = name;
+        updateData.nameChanged = true;
+      } else if (!isGoogleUser) {
+      }
+    }
+
     await db
       .update(users)
-      .set({
-        name,
-        email,
-        phone: phone || null,
-        photoUrl: photoUrl || null,
-      })
+      .set(updateData)
       .where(eq(users.id, user.id));
 
     return NextResponse.json({ success: true });

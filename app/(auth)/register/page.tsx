@@ -140,6 +140,9 @@ export default function RegisterPage() {
               className="w-full px-3 py-2.5 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-all text-base"
               required
             />
+            <p className="mt-1.5 text-xs text-gray-500 dark:text-gray-400">
+              {t('auth.register.nameNote')}
+            </p>
           </div>
 
           <div>

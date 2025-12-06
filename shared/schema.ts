@@ -67,6 +67,7 @@ export const users = pgTable("users", {
   verificationToken: varchar("verification_token", { length: 255 }),
   verificationTokenExpiresAt: timestamp("verification_token_expires_at"),
   googleId: varchar("google_id", { length: 255 }),
+  nameChanged: boolean("name_changed").notNull().default(false),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").notNull().defaultNow(),
 }, (table) => {

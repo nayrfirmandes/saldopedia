@@ -1908,6 +1908,7 @@
       "title": "Buat Akun Baru",
       "subtitle": "Daftar untuk mulai transaksi crypto, PayPal, dan Skrill",
       "fullName": "Nama Lengkap",
+      "nameNote": "Pastikan nama sesuai dengan akun bank/e-wallet Anda. Nama tidak dapat diubah setelah mendaftar untuk keamanan withdraw.",
       "email": "Email",
       "phone": "Nomor WhatsApp",
       "password": "Password",
@@ -2092,7 +2093,9 @@
       "changePassword": "Ubah Password",
       "changing": "Mengubah...",
       "successUpdate": "Profil berhasil diupdate",
-      "photoMaxSize": "Ukuran file maksimal 2MB"
+      "photoMaxSize": "Ukuran file maksimal 2MB",
+      "nameLockedNote": "Nama tidak dapat diubah untuk keamanan withdraw. Nama harus sesuai dengan akun bank/e-wallet Anda.",
+      "nameGoogleOneTimeNote": "Anda dapat mengubah nama 1 kali. Setelah diubah, nama tidak dapat diubah lagi untuk keamanan withdraw."
     },
     "deposit": {
       "backToDashboard": "Kembali ke Dashboard",

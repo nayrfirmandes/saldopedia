@@ -21,18 +21,19 @@ export default async function SettingsPage() {
   const db = drizzle(sql);
   
   const [dbUser] = await db
-    .select({ password: users.password, googleId: users.googleId })
+    .select({ password: users.password, googleId: users.googleId, nameChanged: users.nameChanged })
     .from(users)
     .where(eq(users.id, user.id))
     .limit(1);
 
   const hasPassword = !!dbUser?.password;
   const isGoogleUser = !!dbUser?.googleId;
+  const nameChanged = dbUser?.nameChanged ?? false;
 
   return (
     <>
       <SettingsContent />
-      <SettingsForm user={user} hasPassword={hasPassword} isGoogleUser={isGoogleUser} />
+      <SettingsForm user={user} hasPassword={hasPassword} isGoogleUser={isGoogleUser} nameChanged={nameChanged} />
     </>
   );
 }
