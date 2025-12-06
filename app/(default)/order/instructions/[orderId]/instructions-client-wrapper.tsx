@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import { useLanguage } from "@/components/language-context";
+import { useLanguage } from "@/contexts/language-context";
 import { adminPaymentConfig } from "@/lib/payment-config";
 import OrderCountdown from "@/components/order-countdown";
 import { CopyableAddress, CopyableEmail } from "./instructions-content";
