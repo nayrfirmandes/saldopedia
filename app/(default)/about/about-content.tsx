@@ -2,6 +2,7 @@
 
 import PageIllustration from "@/components/page-illustration";
 import Link from "next/link";
+import Image from "next/image";
 import { useLanguage } from "@/contexts/language-context";
 
 export default function AboutContent() {
@@ -150,28 +151,40 @@ export default function AboutContent() {
               <p className="mb-6 text-center text-gray-600 dark:text-gray-400">{t("aboutPage.services.subtitle")}</p>
               <div className="grid gap-4 sm:grid-cols-3">
                 <div className="rounded-xl border border-gray-200 bg-white p-5 text-center dark:border-gray-700 dark:bg-gray-800">
-                  <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 dark:bg-orange-500/20">
-                    <svg className="h-6 w-6 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.244 15.525.362 9.105 1.962 2.67 8.475-1.243 14.9.358c6.43 1.605 10.342 8.115 8.738 14.546z"/>
-                    </svg>
+                  <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center">
+                    <Image
+                      src="/images/bitcoin-logo.png"
+                      width={48}
+                      height={48}
+                      alt="Bitcoin"
+                      className="rounded-full"
+                    />
                   </div>
                   <h3 className="mb-2 font-semibold dark:text-gray-100">{t("aboutPage.services.items.crypto.title")}</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">{t("aboutPage.services.items.crypto.description")}</p>
                 </div>
                 <div className="rounded-xl border border-gray-200 bg-white p-5 text-center dark:border-gray-700 dark:bg-gray-800">
-                  <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-500/20">
-                    <svg className="h-6 w-6 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106z"/>
-                    </svg>
+                  <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center">
+                    <Image
+                      src="/images/paypal-logo.png"
+                      width={48}
+                      height={48}
+                      alt="PayPal"
+                      className="rounded-full"
+                    />
                   </div>
                   <h3 className="mb-2 font-semibold dark:text-gray-100">{t("aboutPage.services.items.paypal.title")}</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">{t("aboutPage.services.items.paypal.description")}</p>
                 </div>
                 <div className="rounded-xl border border-gray-200 bg-white p-5 text-center dark:border-gray-700 dark:bg-gray-800">
-                  <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 dark:bg-purple-500/20">
-                    <svg className="h-6 w-6 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.12l-6.869 4.326-2.96-.924c-.64-.203-.654-.64.135-.954l11.566-4.458c.538-.196 1.006.128.833.939z"/>
-                    </svg>
+                  <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center">
+                    <Image
+                      src="/images/skrill-logo.png"
+                      width={48}
+                      height={48}
+                      alt="Skrill"
+                      className="rounded-full"
+                    />
                   </div>
                   <h3 className="mb-2 font-semibold dark:text-gray-100">{t("aboutPage.services.items.skrill.title")}</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">{t("aboutPage.services.items.skrill.description")}</p>
