@@ -2263,6 +2263,7 @@
       "selectEWalletPlaceholder": "-- Pilih E-Wallet --",
       "accountHolderName": "Nama Pemilik Rekening",
       "accountHolderPlaceholder": "Nama sesuai rekening",
+      "accountNameLockedNote": "Nama diambil dari profil akun Anda dan tidak dapat diubah untuk keamanan transaksi.",
       "accountNumber": "Nomor Rekening",
       "eWalletNumber": "Nomor HP E-Wallet",
       "accountNumberPlaceholder": "Contoh: 1234567890",

@@ -303,10 +303,12 @@ export default function WithdrawContent({ user }: { user: SessionUser }) {
               <input
                 type="text"
                 value={accountName}
-                onChange={(e) => setAccountName(e.target.value)}
-                placeholder={t('dashboardPages.withdraw.accountHolderPlaceholder')}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
+                disabled
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-600 bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 cursor-not-allowed text-base"
               />
+              <p className="mt-1.5 text-xs text-gray-500 dark:text-gray-400">
+                {t('dashboardPages.withdraw.accountNameLockedNote')}
+              </p>
             </div>
 
             <div>

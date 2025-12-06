@@ -2263,6 +2263,7 @@
       "selectEWalletPlaceholder": "-- Select E-Wallet --",
       "accountHolderName": "Account Holder Name",
       "accountHolderPlaceholder": "Name as on account",
+      "accountNameLockedNote": "Name is taken from your account profile and cannot be changed for transaction security.",
       "accountNumber": "Account Number",
       "eWalletNumber": "E-Wallet Phone Number",
       "accountNumberPlaceholder": "Example: 1234567890",
