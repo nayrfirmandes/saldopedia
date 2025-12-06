@@ -44,7 +44,7 @@ export default function Cta() {
                 <span className="relative inline-flex items-center">
                   {t('nav.formOrder')}{" "}
                   <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                    -&gt;
+                    →
                   </span>
                 </span>
               </Link>

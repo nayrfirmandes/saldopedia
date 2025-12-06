@@ -13,7 +13,7 @@ export default function PageNavigation({
       {prevArticle && (
         <div className="flex-col items-start sm:flex sm:w-1/2">
           <Link className="group font-medium" href={prevArticle.slug}>
-            <span className="tracking-normal text-gray-400">&lt;-</span>{" "}
+            <span className="tracking-normal text-gray-400">←</span>{" "}
             <span className="text-gray-700 transition group-hover:text-gray-900 dark:text-gray-300 dark:group-hover:text-gray-100">
               {prevArticle.metadata.title}
             </span>
@@ -27,7 +27,7 @@ export default function PageNavigation({
             <span className="text-gray-700 transition group-hover:text-gray-900 dark:text-gray-300 dark:group-hover:text-gray-100">
               {nextArticle.metadata.title}
             </span>{" "}
-            <span className="tracking-normal text-gray-400">-&gt;</span>
+            <span className="tracking-normal text-gray-400">→</span>
           </Link>
         </div>
       )}

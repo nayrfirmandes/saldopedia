@@ -33,7 +33,7 @@ export default function CtaAlternative({
                 <span className="relative inline-flex items-center">
                   {buttonText}
                   <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                    -&gt;
+                    →
                   </span>
                 </span>
               </a>

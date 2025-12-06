@@ -12,7 +12,7 @@ export default function BackLink() {
         className="text-sm font-medium text-blue-500 transition-colors hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
         href="/blog"
       >
-        <span className="tracking-normal text-blue-300 dark:text-blue-500">&lt;-</span>{" "}
+        <span className="tracking-normal text-blue-300 dark:text-blue-500">←</span>{" "}
         {t('blogPage.backToBlog')}
       </Link>
     </div>
