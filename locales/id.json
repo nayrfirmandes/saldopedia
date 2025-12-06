@@ -1872,6 +1872,7 @@
   },
   "auth": {
     "backToHome": "Kembali ke Beranda",
+    "home": "Beranda",
     "copyrightText": "Saldopedia. Seluruh hak cipta dilindungi.",
     "captcha": {
       "error": "Mohon selesaikan verifikasi reCAPTCHA",

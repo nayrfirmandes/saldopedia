@@ -1872,6 +1872,7 @@
   },
   "auth": {
     "backToHome": "Back to Home",
+    "home": "Home",
     "copyrightText": "Saldopedia. All rights reserved.",
     "captcha": {
       "error": "Please complete the reCAPTCHA verification",
