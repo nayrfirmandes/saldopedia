@@ -2277,7 +2277,12 @@
       "received": "Received",
       "sentLabel": "Send Balance",
       "receivedLabel": "Receive Balance",
-      "statusSuccess": "Successful"
+      "statusSuccess": "Successful",
+      "savedRecipients": "Saved Recipients",
+      "recentLabel": "Recent",
+      "favoriteLabel": "Favorite",
+      "saveRecipientCheckbox": "Save this recipient for next transfer",
+      "recipientLabelPlaceholder": "Label (e.g.: Mom, Brother, Friend)"
     },
     "transferDetail": {
       "backToHistory": "Back to History",

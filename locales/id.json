@@ -2277,7 +2277,12 @@
       "received": "Diterima",
       "sentLabel": "Kirim Saldo",
       "receivedLabel": "Terima Saldo",
-      "statusSuccess": "Berhasil"
+      "statusSuccess": "Berhasil",
+      "savedRecipients": "Penerima Tersimpan",
+      "recentLabel": "Terakhir",
+      "favoriteLabel": "Favorit",
+      "saveRecipientCheckbox": "Simpan penerima ini untuk transfer berikutnya",
+      "recipientLabelPlaceholder": "Label (contoh: Ibu, Adik, Teman)"
     },
     "transferDetail": {
       "backToHistory": "Kembali ke Riwayat",
