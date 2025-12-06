@@ -1,0 +1,56 @@
+## Error Type
+Recoverable Error
+
+## Error Message
+Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="(default)/...">
+              <SegmentTrieNode>
+              <Home>
+                <script>
+                <script>
+                <script>
+                <HeroHome>
+                <BusinessCategories>
+                <StatsCounter>
+                <TrustBadges>
+                <FeaturesHome>
+                <Suspense>
+                <Suspense>
+                <Home>
+                  <Suspense fallback={<div>}>
+                    <PreloadChunks>
+                    <LoadableComponent>
+                      <TestimonialsCarousel>
+                        <section className="relative b...">
+                          <div className="pt-12 md:p...">
+                            <div className="mx-auto ma...">
+                              <div className="mx-auto ma...">
+                                <h2 className="text-3xl font-bold md:text-4xl">
++                                 Trusted by Thousands
+-                                 Dipercaya Ribuan Pengguna
+                            ...
+                ...
+            ...
+          ...
+
+
+
+    at h2 (unknown:0:0)
+
+Next.js version: 16.0.7 (Webpack)
