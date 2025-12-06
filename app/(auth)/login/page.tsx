@@ -217,16 +217,11 @@ function LoginForm() {
           {t('auth.login.googleButton')}
         </a>
 
-        <div className="mt-8 text-center space-y-3">
+        <div className="mt-8 text-center">
           <p className="text-sm text-gray-600 dark:text-gray-400">
             {t('auth.login.noAccount')}{' '}
             <Link href="/register" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold transition-colors">
               {t('auth.login.registerNow')}
-            </Link>
-          </p>
-          <p>
-            <Link href="/" className="text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 transition-colors">
-              {t('auth.home')}
             </Link>
           </p>
         </div>
