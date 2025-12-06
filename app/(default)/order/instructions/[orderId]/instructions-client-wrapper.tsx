@@ -16,10 +16,10 @@ import {
 
 interface OrderData {
   order_id: string;
-  user_id: number;
+  user_id: number | null;
   customer_email: string;
   status: string;
-  expires_at: string | null;
+  expires_at: Date | string | null;
   transaction_type: string;
   service_type: string;
   crypto_symbol: string | null;

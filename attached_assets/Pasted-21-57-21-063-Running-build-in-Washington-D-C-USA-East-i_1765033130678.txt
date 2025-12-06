@@ -1,0 +1,49 @@
+21:57:21.063 Running build in Washington, D.C., USA (East) – iad1
+21:57:21.063 Build machine configuration: 2 cores, 8 GB
+21:57:21.192 Cloning github.com/nayrfirmandes/saldopedia (Branch: main, Commit: 530dacb)
+21:57:21.820 Cloning completed: 627.000ms
+21:57:22.750 Restored build cache from previous deployment (9LxgyFeVsUQAp3i1gSWbNJ8UMQnA)
+21:57:23.694 Running "vercel build"
+21:57:24.137 Vercel CLI 49.0.0
+21:57:24.502 Running "install" command: `npm install`...
+21:57:26.115 
+21:57:26.116 > saldopedia@1.0.0 postinstall
+21:57:26.116 > echo 'Setup complete! Run: npm run db:push to initialize database'
+21:57:26.116 
+21:57:26.122 Setup complete! Run: npm run db:push to initialize database
+21:57:26.131 
+21:57:26.131 up to date, audited 657 packages in 1s
+21:57:26.131 
+21:57:26.132 286 packages are looking for funding
+21:57:26.132   run `npm fund` for details
+21:57:26.133 
+21:57:26.133 found 0 vulnerabilities
+21:57:26.166 Detected Next.js version: 16.0.7
+21:57:26.166 Running "npm run build"
+21:57:26.275 
+21:57:26.276 > saldopedia@1.0.0 build
+21:57:26.276 > next build --webpack
+21:57:26.277 
+21:57:27.066    ▲ Next.js 16.0.7 (webpack)
+21:57:27.067    - Experiments (use with caution):
+21:57:27.067      · optimizePackageImports
+21:57:27.067 
+21:57:27.141    Creating an optimized production build ...
+21:57:43.550  ✓ Compiled successfully in 16.0s
+21:57:43.566    Running TypeScript ...
+21:58:03.215 Failed to compile.
+21:58:03.215 
+21:58:03.215 ./app/(default)/order/instructions/[orderId]/page.tsx:39:37
+21:58:03.215 Type error: Type 'Order' is not assignable to type 'OrderData'.
+21:58:03.215   Types of property 'user_id' are incompatible.
+21:58:03.215     Type 'number | null' is not assignable to type 'number'.
+21:58:03.215       Type 'null' is not assignable to type 'number'.
+21:58:03.215 
+21:58:03.216 [0m [90m 37 |[39m   }
+21:58:03.216  [90m 38 |[39m
+21:58:03.216 [31m[1m>[22m[39m[90m 39 |[39m   [36mreturn[39m [33m<[39m[33mInstructionsClientWrapper[39m order[33m=[39m{order} [33m/[39m[33m>[39m[33m;[39m
+21:58:03.216  [90m    |[39m                                     [31m[1m^[22m[39m
+21:58:03.216  [90m 40 |[39m }
+21:58:03.216  [90m 41 |[39m[0m
+21:58:03.258 Next.js build worker exited with code: 1 and signal: null
+21:58:03.321 Error: Command "npm run build" exited with 1
