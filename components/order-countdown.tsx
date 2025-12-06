@@ -19,8 +19,8 @@ export default function OrderCountdown({ orderId, expiresAt, status }: OrderCoun
   const [isWarning, setIsWarning] = useState(false);
 
   useEffect(() => {
-    // If order is already completed or cancelled, don't show countdown
-    if (status !== 'pending') {
+    // Only show countdown for pending or pending_proof status
+    if (status !== 'pending' && status !== 'pending_proof') {
       return;
     }
 
@@ -64,8 +64,8 @@ export default function OrderCountdown({ orderId, expiresAt, status }: OrderCoun
     };
   }, [expiresAt, status, router]);
 
-  // Don't show countdown if not pending
-  if (status !== 'pending') {
+  // Don't show countdown if not pending or pending_proof
+  if (status !== 'pending' && status !== 'pending_proof') {
     return null;
   }
 
