@@ -26,7 +26,7 @@ export type Order = {
   skrill_email: string | null;
   notes: string | null;
   admin_notes: string | null;
-  status: 'pending' | 'confirmed' | 'processing' | 'completed' | 'cancelled' | 'expired';
+  status: 'pending' | 'pending_proof' | 'confirmed' | 'processing' | 'completed' | 'cancelled' | 'expired';
   created_at: Date | string;
   updated_at: Date | string;
   expires_at: Date | string | null;
@@ -39,6 +39,7 @@ export type Order = {
   payout_status: string | null;
   payout_hash: string | null;
   payout_error: string | null;
+  proof_uploaded_at: Date | string | null;
   paid_with_saldo: boolean;
   payment_note: string | null;
 };
