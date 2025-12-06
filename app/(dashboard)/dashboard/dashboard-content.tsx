@@ -229,12 +229,13 @@ export default function DashboardContent({ user, userOrders, userDeposits, userW
                   completed: { text: t('dashboard.orderStatus.completed'), color: 'text-green-600 dark:text-green-400' },
                   pending: { text: t('dashboard.orderStatus.pending'), color: 'text-yellow-600 dark:text-yellow-400' },
                   processing: { text: t('dashboard.orderStatus.processing'), color: 'text-blue-600 dark:text-blue-400' },
+                  pending_proof: { text: t('dashboard.orderStatus.pendingProof'), color: 'text-orange-600 dark:text-orange-400' },
                   expired: { text: t('dashboard.orderStatus.expired'), color: 'text-gray-400 dark:text-gray-500' },
                   cancelled: { text: t('dashboard.orderStatus.cancelled'), color: 'text-gray-400 dark:text-gray-500' },
                 };
                 const status = statusConfig[order.status] || statusConfig.pending;
                 
-                const targetUrl = (order.status === 'pending' || order.status === 'processing')
+                const targetUrl = (order.status === 'pending' || order.status === 'processing' || order.status === 'pending_proof')
                   ? `/order/instructions/${order.order_id}`
                   : `/order/${order.order_id}`;
 
