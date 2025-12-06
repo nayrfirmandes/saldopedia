@@ -2123,16 +2123,24 @@
         "save": "Save",
         "deleteWalletConfirm": "Delete this wallet?",
         "deleteRecipientConfirm": "Delete this recipient?",
+        "deleteEmailConfirm": "Delete this email?",
         "walletUpdated": "Wallet updated successfully",
         "walletDeleted": "Wallet deleted successfully",
         "recipientUpdated": "Recipient updated successfully",
         "recipientDeleted": "Recipient deleted successfully",
+        "emailUpdated": "Email updated successfully",
+        "emailDeleted": "Email deleted successfully",
         "updateFailed": "Failed to update",
         "deleteFailed": "Failed to delete",
         "errorOccurred": "An error occurred",
         "walletsCount": "wallets saved",
         "recipientsCount": "recipients saved",
-        "labelPlaceholder": "E.g.: Office friend"
+        "emailsCount": "emails saved",
+        "labelPlaceholder": "E.g.: Office friend",
+        "tabEmails": "PayPal/Skrill",
+        "noEmails": "No saved emails yet",
+        "noEmailsDesc": "Emails will be saved automatically when you make PayPal/Skrill transactions",
+        "serviceType": "Service"
       }
     },
     "deposit": {

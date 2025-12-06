@@ -2123,16 +2123,24 @@
         "save": "Simpan",
         "deleteWalletConfirm": "Hapus wallet ini?",
         "deleteRecipientConfirm": "Hapus penerima ini?",
+        "deleteEmailConfirm": "Hapus email ini?",
         "walletUpdated": "Wallet berhasil diperbarui",
         "walletDeleted": "Wallet berhasil dihapus",
         "recipientUpdated": "Penerima berhasil diperbarui",
         "recipientDeleted": "Penerima berhasil dihapus",
+        "emailUpdated": "Email berhasil diperbarui",
+        "emailDeleted": "Email berhasil dihapus",
         "updateFailed": "Gagal memperbarui",
         "deleteFailed": "Gagal menghapus",
         "errorOccurred": "Terjadi kesalahan",
         "walletsCount": "wallet tersimpan",
         "recipientsCount": "penerima tersimpan",
-        "labelPlaceholder": "Contoh: Teman kantor"
+        "emailsCount": "email tersimpan",
+        "labelPlaceholder": "Contoh: Teman kantor",
+        "tabEmails": "PayPal/Skrill",
+        "noEmails": "Belum ada email tersimpan",
+        "noEmailsDesc": "Email akan tersimpan otomatis saat Anda melakukan transaksi PayPal/Skrill",
+        "serviceType": "Layanan"
       }
     },
     "deposit": {

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Wallet, Users, Pencil, Trash2, Check } from 'lucide-react';
+import { ArrowLeft, Wallet, Users, Mail, Pencil, Trash2, Check } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
 
 interface SavedWallet {
@@ -28,7 +28,17 @@ interface SavedRecipient {
   recipientEmail: string;
 }
 
-type ActiveTab = 'wallets' | 'recipients';
+interface SavedEmail {
+  id: number;
+  label: string;
+  serviceType: 'paypal' | 'skrill';
+  email: string;
+  usedCount: number;
+  lastUsedAt: string | null;
+  createdAt: string;
+}
+
+type ActiveTab = 'wallets' | 'recipients' | 'emails';
 
 export default function AddressesContent() {
   const { t } = useLanguage();
@@ -36,17 +46,22 @@ export default function AddressesContent() {
   
   const [wallets, setWallets] = useState<SavedWallet[]>([]);
   const [recipients, setRecipients] = useState<SavedRecipient[]>([]);
+  const [emails, setEmails] = useState<SavedEmail[]>([]);
   const [loadingWallets, setLoadingWallets] = useState(true);
   const [loadingRecipients, setLoadingRecipients] = useState(true);
+  const [loadingEmails, setLoadingEmails] = useState(true);
   
   const [editingWallet, setEditingWallet] = useState<SavedWallet | null>(null);
   const [editingRecipient, setEditingRecipient] = useState<SavedRecipient | null>(null);
+  const [editingEmail, setEditingEmail] = useState<SavedEmail | null>(null);
   
   const [walletForm, setWalletForm] = useState({ label: '', cryptoSymbol: '', network: '', walletAddress: '', xrpTag: '' });
   const [recipientForm, setRecipientForm] = useState({ label: '' });
+  const [emailForm, setEmailForm] = useState({ label: '', serviceType: 'paypal' as 'paypal' | 'skrill', email: '' });
   
   const [savingWallet, setSavingWallet] = useState(false);
   const [savingRecipient, setSavingRecipient] = useState(false);
+  const [savingEmail, setSavingEmail] = useState(false);
   const [deletingId, setDeletingId] = useState<number | null>(null);
   
   const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
@@ -54,6 +69,7 @@ export default function AddressesContent() {
   useEffect(() => {
     fetchWallets();
     fetchRecipients();
+    fetchEmails();
   }, []);
 
   useEffect(() => {
@@ -88,6 +104,20 @@ export default function AddressesContent() {
       console.error('Error fetching recipients:', error);
     } finally {
       setLoadingRecipients(false);
+    }
+  };
+
+  const fetchEmails = async () => {
+    try {
+      const res = await fetch('/api/saved-emails');
+      const data = await res.json();
+      if (data.success) {
+        setEmails(data.emails);
+      }
+    } catch (error) {
+      console.error('Error fetching emails:', error);
+    } finally {
+      setLoadingEmails(false);
     }
   };
 
@@ -201,6 +231,62 @@ export default function AddressesContent() {
     }
   };
 
+  const handleEditEmail = (email: SavedEmail) => {
+    setEditingEmail(email);
+    setEmailForm({
+      label: email.label,
+      serviceType: email.serviceType,
+      email: email.email,
+    });
+  };
+
+  const handleSaveEmail = async () => {
+    if (!editingEmail) return;
+    
+    setSavingEmail(true);
+    try {
+      const res = await fetch(`/api/saved-emails/${editingEmail.id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(emailForm),
+      });
+      const data = await res.json();
+      
+      if (data.success) {
+        setEmails(emails.map(e => e.id === editingEmail.id ? data.email : e));
+        setEditingEmail(null);
+        setMessage({ type: 'success', text: t('dashboardPages.settings.addresses.emailUpdated') });
+      } else {
+        setMessage({ type: 'error', text: data.error || t('dashboardPages.settings.addresses.updateFailed') });
+      }
+    } catch (error) {
+      setMessage({ type: 'error', text: t('dashboardPages.settings.addresses.errorOccurred') });
+    } finally {
+      setSavingEmail(false);
+    }
+  };
+
+  const handleDeleteEmail = async (id: number) => {
+    if (!confirm(t('dashboardPages.settings.addresses.deleteEmailConfirm'))) return;
+    
+    setDeletingId(id);
+    try {
+      const res = await fetch(`/api/saved-emails/${id}`, { method: 'DELETE' });
+      const data = await res.json();
+      
+      if (data.success) {
+        setEmails(emails.filter(e => e.id !== id));
+        setMessage({ type: 'success', text: t('dashboardPages.settings.addresses.emailDeleted') });
+      } else {
+        setMessage({ type: 'error', text: data.error || t('dashboardPages.settings.addresses.deleteFailed') });
+      }
+    } catch (error) {
+      setMessage({ type: 'error', text: t('dashboardPages.settings.addresses.errorOccurred') });
+    } finally {
+      setDeletingId(null);
+    }
+  };
+
   const truncateAddress = (address: string) => {
     if (address.length <= 20) return address;
     return `${address.slice(0, 10)}...${address.slice(-8)}`;
@@ -230,7 +316,7 @@ export default function AddressesContent() {
         </div>
       )}
 
-      <div className="flex gap-2 mb-6">
+      <div className="flex flex-wrap gap-2 mb-6">
         <button
           onClick={() => setActiveTab('wallets')}
           className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
@@ -243,6 +329,20 @@ export default function AddressesContent() {
           {t('dashboardPages.settings.addresses.tabWallets')}
           <span className="ml-1 px-1.5 py-0.5 text-xs rounded-full bg-white/20">
             {wallets.length}
+          </span>
+        </button>
+        <button
+          onClick={() => setActiveTab('emails')}
+          className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+            activeTab === 'emails'
+              ? 'bg-blue-600 text-white'
+              : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+          }`}
+        >
+          <Mail className="h-4 w-4" />
+          {t('dashboardPages.settings.addresses.tabEmails')}
+          <span className="ml-1 px-1.5 py-0.5 text-xs rounded-full bg-white/20">
+            {emails.length}
           </span>
         </button>
         <button
@@ -423,6 +523,141 @@ export default function AddressesContent() {
           {wallets.length > 0 && wallets.length < 20 && (
             <p className="text-xs text-center text-gray-400 dark:text-gray-500 pt-2">
               {wallets.length}/20 {t('dashboardPages.settings.addresses.walletsCount')}
+            </p>
+          )}
+        </div>
+      )}
+
+      {activeTab === 'emails' && (
+        <div className="space-y-3">
+          {loadingEmails ? (
+            <div className="space-y-3">
+              {[1, 2, 3].map(i => (
+                <div key={i} className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 animate-pulse">
+                  <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-1/4 mb-2"></div>
+                  <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-1/2"></div>
+                </div>
+              ))}
+            </div>
+          ) : emails.length === 0 ? (
+            <div className="text-center py-8 text-gray-500 dark:text-gray-400">
+              <Mail className="h-12 w-12 mx-auto mb-3 opacity-50" />
+              <p>{t('dashboardPages.settings.addresses.noEmails')}</p>
+              <p className="text-sm mt-1">
+                {t('dashboardPages.settings.addresses.noEmailsDesc')}
+              </p>
+            </div>
+          ) : (
+            emails.map(email => (
+              <div key={email.id} className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+                {editingEmail?.id === email.id ? (
+                  <div className="space-y-3">
+                    <div>
+                      <label className="block text-xs text-gray-500 dark:text-gray-400 mb-1">
+                        {t('dashboardPages.settings.addresses.label')}
+                      </label>
+                      <input
+                        type="text"
+                        value={emailForm.label}
+                        onChange={(e) => setEmailForm({ ...emailForm, label: e.target.value })}
+                        className="w-full px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-xs text-gray-500 dark:text-gray-400 mb-1">
+                        {t('dashboardPages.settings.addresses.serviceType')}
+                      </label>
+                      <select
+                        value={emailForm.serviceType}
+                        onChange={(e) => setEmailForm({ ...emailForm, serviceType: e.target.value as 'paypal' | 'skrill' })}
+                        className="w-full px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      >
+                        <option value="paypal">PayPal</option>
+                        <option value="skrill">Skrill</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block text-xs text-gray-500 dark:text-gray-400 mb-1">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        value={emailForm.email}
+                        onChange={(e) => setEmailForm({ ...emailForm, email: e.target.value })}
+                        className="w-full px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      />
+                    </div>
+                    <div className="flex justify-end gap-2 pt-2">
+                      <button
+                        onClick={() => setEditingEmail(null)}
+                        className="px-3 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                      >
+                        {t('dashboardPages.settings.addresses.cancel')}
+                      </button>
+                      <button
+                        onClick={handleSaveEmail}
+                        disabled={savingEmail || !emailForm.label || !emailForm.email}
+                        className="px-3 py-1.5 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-1"
+                      >
+                        {savingEmail ? (
+                          <span className="inline-block h-4 w-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+                        ) : (
+                          <Check className="h-4 w-4" />
+                        )}
+                        {t('dashboardPages.settings.addresses.save')}
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex items-start justify-between">
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="font-medium text-gray-900 dark:text-white">{email.label}</span>
+                        <span className={`px-2 py-0.5 text-xs font-medium rounded ${
+                          email.serviceType === 'paypal' 
+                            ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400' 
+                            : 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400'
+                        }`}>
+                          {email.serviceType === 'paypal' ? 'PayPal' : 'Skrill'}
+                        </span>
+                      </div>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        {email.email}
+                      </p>
+                      <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
+                        {t('dashboardPages.settings.addresses.used')} {email.usedCount}x
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-1 ml-2">
+                      <button
+                        onClick={() => handleEditEmail(email)}
+                        className="p-2 text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                        title={t('dashboardPages.settings.addresses.edit')}
+                      >
+                        <Pencil className="h-4 w-4" />
+                      </button>
+                      <button
+                        onClick={() => handleDeleteEmail(email.id)}
+                        disabled={deletingId === email.id}
+                        className="p-2 text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors disabled:opacity-50"
+                        title={t('dashboardPages.settings.addresses.delete')}
+                      >
+                        {deletingId === email.id ? (
+                          <span className="inline-block h-4 w-4 border-2 border-gray-400 border-t-transparent rounded-full animate-spin"></span>
+                        ) : (
+                          <Trash2 className="h-4 w-4" />
+                        )}
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))
+          )}
+          
+          {emails.length > 0 && emails.length < 20 && (
+            <p className="text-xs text-center text-gray-400 dark:text-gray-500 pt-2">
+              {emails.length}/20 {t('dashboardPages.settings.addresses.emailsCount')}
             </p>
           )}
         </div>
