@@ -1967,10 +1967,10 @@
   "dashboard": {
     "welcome": "Selamat datang,",
     "balance": "Saldo",
-    "greetingMorning": "Selamat Pagi",
-    "greetingAfternoon": "Selamat Siang",
-    "greetingEvening": "Selamat Sore",
-    "greetingNight": "Selamat Malam",
+    "greetingMorning": "Selamat Pagi, {name}",
+    "greetingAfternoon": "Selamat Siang, {name}",
+    "greetingEvening": "Selamat Sore, {name}",
+    "greetingNight": "Selamat Malam, {name}",
     "actions": {
       "createOrder": "Buat Order",
       "topUp": "Deposit",

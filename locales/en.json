@@ -1967,10 +1967,10 @@
   "dashboard": {
     "welcome": "Welcome,",
     "balance": "Balance",
-    "greetingMorning": "Good Morning",
-    "greetingAfternoon": "Good Afternoon",
-    "greetingEvening": "Good Evening",
-    "greetingNight": "Good Night",
+    "greetingMorning": "Good Morning, {name}",
+    "greetingAfternoon": "Good Afternoon, {name}",
+    "greetingEvening": "Good Evening, {name}",
+    "greetingNight": "Good Night, {name}",
     "actions": {
       "createOrder": "Create Order",
       "topUp": "Deposit",
