@@ -2066,7 +2066,8 @@
       "prev": "Previous",
       "next": "Next",
       "page": "Page",
-      "of": "of"
+      "of": "of",
+      "filter": "Filter"
     },
     "profile": {
       "backToDashboard": "Back to Dashboard",
@@ -2113,7 +2114,21 @@
       "transferToAccount": "Transfer to This Account",
       "transferExactAmount": "Transfer Exact Amount",
       "uploadProof": "Upload Transfer Proof",
-      "submitProof": "Submit Transfer Proof"
+      "submitProof": "Submit Transfer Proof",
+      "estimateTotal": "Estimated Total",
+      "uniqueCodeNote": "Unique code will be determined after submit to facilitate payment verification.",
+      "processing": "Processing...",
+      "continue": "Continue",
+      "bank": "Bank",
+      "eWallet": "E-Wallet",
+      "accountNumber": "Account Number",
+      "accountName": "Account Name",
+      "fileFormatError": "File format not supported. Use JPG, PNG, WebP, or PDF.",
+      "fileSizeError": "Maximum file size is 10MB.",
+      "selectBankError": "Select destination bank/e-wallet",
+      "minDepositError": "Minimum deposit",
+      "maxDepositError": "Maximum deposit",
+      "createDepositError": "Failed to create deposit"
     },
     "depositDetail": {
       "backToHistory": "Back to History",
@@ -2129,7 +2144,22 @@
       "uploadProof": "Upload Transfer Proof",
       "submitProof": "Submit Transfer Proof",
       "waitingConfirmation": "Pending Confirmation",
-      "waitingConfirmationDesc": "Transfer proof submitted. Admin will verify within 5-15 minutes."
+      "waitingConfirmationDesc": "Transfer proof submitted. Admin will verify within 5-15 minutes.",
+      "paymentMethod": "Payment Method",
+      "createdDate": "Created Date",
+      "deadline": "Deadline",
+      "completedDate": "Completed Date",
+      "adminNotes": "Admin Notes",
+      "bank": "Bank",
+      "eWallet": "E-Wallet",
+      "accountNumber": "Account Number",
+      "accountName": "Account Name",
+      "back": "Back",
+      "fileFormatError": "File format not supported. Use JPG, PNG, WebP, or PDF.",
+      "fileSizeError": "Maximum file size is 10MB.",
+      "uploadProofError": "Upload transfer proof",
+      "uploadError": "Failed to upload proof",
+      "genericError": "An error occurred"
     },
     "riwayat": {
       "title": "Deposit History",

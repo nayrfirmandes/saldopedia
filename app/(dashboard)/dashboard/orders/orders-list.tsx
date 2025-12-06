@@ -218,7 +218,7 @@ export default function OrdersList({ orders: initialOrders, deposits: initialDep
               }`}
             >
               <SlidersHorizontal className="h-4 w-4" />
-              <span className="text-sm hidden sm:inline">Filter</span>
+              <span className="text-sm hidden sm:inline">{t('dashboardPages.orders.filter')}</span>
             </button>
             
             {showFilterMenu && (

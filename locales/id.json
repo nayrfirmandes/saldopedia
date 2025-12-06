@@ -2066,7 +2066,8 @@
       "prev": "Sebelumnya",
       "next": "Selanjutnya",
       "page": "Halaman",
-      "of": "dari"
+      "of": "dari",
+      "filter": "Filter"
     },
     "profile": {
       "backToDashboard": "Kembali ke Dashboard",
@@ -2113,7 +2114,21 @@
       "transferToAccount": "Transfer ke Rekening Ini",
       "transferExactAmount": "Transfer Tepat Sebesar",
       "uploadProof": "Upload Bukti Transfer",
-      "submitProof": "Kirim Bukti Transfer"
+      "submitProof": "Kirim Bukti Transfer",
+      "estimateTotal": "Estimasi Total",
+      "uniqueCodeNote": "Kode unik akan ditentukan setelah submit untuk memudahkan verifikasi pembayaran.",
+      "processing": "Memproses...",
+      "continue": "Lanjutkan",
+      "bank": "Bank",
+      "eWallet": "E-Wallet",
+      "accountNumber": "Nomor Rekening",
+      "accountName": "Atas Nama",
+      "fileFormatError": "Format file tidak didukung. Gunakan JPG, PNG, WebP, atau PDF.",
+      "fileSizeError": "Ukuran file maksimal 10MB.",
+      "selectBankError": "Pilih bank/e-wallet tujuan",
+      "minDepositError": "Minimum deposit",
+      "maxDepositError": "Maksimum deposit",
+      "createDepositError": "Gagal membuat deposit"
     },
     "depositDetail": {
       "backToHistory": "Kembali ke Riwayat",
@@ -2129,7 +2144,22 @@
       "uploadProof": "Upload Bukti Transfer",
       "submitProof": "Kirim Bukti Transfer",
       "waitingConfirmation": "Menunggu Konfirmasi",
-      "waitingConfirmationDesc": "Bukti transfer sudah dikirim. Admin akan memverifikasi dalam waktu 5-15 menit."
+      "waitingConfirmationDesc": "Bukti transfer sudah dikirim. Admin akan memverifikasi dalam waktu 5-15 menit.",
+      "paymentMethod": "Metode Pembayaran",
+      "createdDate": "Tanggal Dibuat",
+      "deadline": "Batas Waktu",
+      "completedDate": "Tanggal Selesai",
+      "adminNotes": "Catatan Admin",
+      "bank": "Bank",
+      "eWallet": "E-Wallet",
+      "accountNumber": "Nomor Rekening",
+      "accountName": "Atas Nama",
+      "back": "Kembali",
+      "fileFormatError": "Format file tidak didukung. Gunakan JPG, PNG, WebP, atau PDF.",
+      "fileSizeError": "Ukuran file maksimal 10MB.",
+      "uploadProofError": "Upload bukti transfer",
+      "uploadError": "Gagal upload bukti",
+      "genericError": "Terjadi kesalahan"
     },
     "riwayat": {
       "title": "Riwayat Deposit",
