@@ -1,11 +1,34 @@
 'use client';
 
-import { memo } from "react";
+import { memo, useState, useEffect } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/contexts/language-context";
 
 function LargeTestimonial() {
   const { t } = useLanguage();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <section>
+        <div className="mx-auto max-w-2xl px-4 sm:px-6">
+          <div className="py-12 md:py-20">
+            <div className="space-y-3 text-center">
+              <div className="relative inline-flex">
+                <div className="h-12 w-12 rounded-full bg-gray-200 dark:bg-gray-700 animate-pulse" />
+              </div>
+              <div className="h-8 w-3/4 mx-auto bg-gray-200 dark:bg-gray-700 rounded animate-pulse" />
+              <div className="h-4 w-1/2 mx-auto bg-gray-200 dark:bg-gray-700 rounded animate-pulse" />
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
   
   return (
     <section>
