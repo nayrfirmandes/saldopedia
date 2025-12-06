@@ -115,6 +115,17 @@ export default function OrderForm() {
   const [loadingSavedWallets, setLoadingSavedWallets] = useState(false);
   const [saveThisWallet, setSaveThisWallet] = useState(false);
   const [walletLabel, setWalletLabel] = useState("");
+  
+  // Saved emails state (for PayPal/Skrill)
+  const [savedEmails, setSavedEmails] = useState<Array<{
+    id: number;
+    label: string;
+    serviceType: string;
+    email: string;
+  }>>([]);
+  const [loadingSavedEmails, setLoadingSavedEmails] = useState(false);
+  const [saveThisEmail, setSaveThisEmail] = useState(false);
+  const [emailLabel, setEmailLabel] = useState("");
 
   // Fetch logged-in user info and auto-fill form
   useEffect(() => {
@@ -238,6 +249,34 @@ export default function OrderForm() {
     fetchSavedWallets();
   }, [formData.cryptoSymbol, formData.serviceType, formData.transactionType, isLoggedIn]);
 
+  // Fetch saved emails when PayPal/Skrill is selected (only for logged in users)
+  useEffect(() => {
+    const fetchSavedEmails = async () => {
+      if (!isLoggedIn || formData.serviceType === "cryptocurrency") {
+        setSavedEmails([]);
+        return;
+      }
+
+      setLoadingSavedEmails(true);
+      try {
+        const response = await fetch(`/api/saved-emails?service=${formData.serviceType}`);
+        const result = await response.json();
+        if (result.success && result.emails) {
+          setSavedEmails(result.emails);
+        } else {
+          setSavedEmails([]);
+        }
+      } catch (error) {
+        console.error("Failed to fetch saved emails:", error);
+        setSavedEmails([]);
+      } finally {
+        setLoadingSavedEmails(false);
+      }
+    };
+
+    fetchSavedEmails();
+  }, [formData.serviceType, isLoggedIn]);
+
   // Calculate total
   const getCalculation = () => {
     const numAmount = parseFloat(formData.amountInput);
@@ -327,6 +366,29 @@ export default function OrderForm() {
     }
   };
 
+  // Handle selecting a saved email (PayPal/Skrill)
+  const handleSavedEmailSelect = (emailId: string) => {
+    if (!emailId) {
+      // User selected "Enter manually"
+      return;
+    }
+    
+    const savedEmail = savedEmails.find(e => e.id === parseInt(emailId));
+    if (savedEmail) {
+      const field = formData.serviceType === "paypal" ? "paypalEmail" : "skrillEmail";
+      setFormData(prev => ({
+        ...prev,
+        [field]: savedEmail.email
+      }));
+      // Don't enable save checkbox for already-saved email
+      setSaveThisEmail(false);
+      setEmailLabel("");
+      if (errors[field]) {
+        setErrors(prev => ({ ...prev, [field]: "" }));
+      }
+    }
+  };
+
   // Handle service type change with comprehensive field reset
   const handleServiceTypeChange = (newServiceType: ServiceType) => {
     setFormData(prev => {
@@ -359,6 +421,9 @@ export default function OrderForm() {
     });
     // Clear all errors when switching service
     setErrors({});
+    // Reset save email checkbox
+    setSaveThisEmail(false);
+    setEmailLabel("");
   };
 
   // Validate form with auto-scroll to first error
@@ -589,6 +654,27 @@ export default function OrderForm() {
           } catch (err) {
             // Silently ignore save wallet errors - order was successful
             console.error("Failed to save wallet:", err);
+          }
+        }
+        
+        // Save email if checkbox was checked (for PayPal/Skrill orders)
+        if (saveThisEmail && (formData.serviceType === "paypal" || formData.serviceType === "skrill")) {
+          const emailToSave = formData.serviceType === "paypal" ? formData.paypalEmail : formData.skrillEmail;
+          if (emailToSave) {
+            try {
+              await fetch("/api/saved-emails", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  label: emailLabel.trim() || `${formData.serviceType === "paypal" ? "PayPal" : "Skrill"} Email`,
+                  serviceType: formData.serviceType,
+                  email: emailToSave
+                })
+              });
+            } catch (err) {
+              // Silently ignore save email errors - order was successful
+              console.error("Failed to save email:", err);
+            }
           }
         }
         
@@ -1298,11 +1384,52 @@ export default function OrderForm() {
                               <label className="mb-2 block text-sm font-semibold text-gray-700 dark:text-gray-200">
                                 {t('order.emailService')} {formData.serviceType === "paypal" ? "PayPal" : "Skrill"} <span className="text-red-500">*</span>
                               </label>
+                              
+                              {/* Saved emails dropdown */}
+                              {isLoggedIn && savedEmails.length > 0 && (
+                                <div className="mb-3">
+                                  <select
+                                    onChange={(e) => handleSavedEmailSelect(e.target.value)}
+                                    className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-700 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200"
+                                    defaultValue=""
+                                  >
+                                    <option value="">
+                                      {language === 'id' ? '-- Pilih email tersimpan --' : '-- Select saved email --'}
+                                    </option>
+                                    {savedEmails.map((email) => (
+                                      <option key={email.id} value={email.id}>
+                                        {email.label} - {email.email}
+                                      </option>
+                                    ))}
+                                  </select>
+                                  <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                                    {language === 'id' ? 'Pilih dari daftar email tersimpan atau masukkan baru di bawah' : 'Select from saved emails or enter new below'}
+                                  </p>
+                                </div>
+                              )}
+                              
+                              {/* Loading saved emails indicator */}
+                              {loadingSavedEmails && (
+                                <p className="mb-2 text-xs text-gray-500 dark:text-gray-400 animate-pulse">
+                                  {language === 'id' ? 'Memuat email tersimpan...' : 'Loading saved emails...'}
+                                </p>
+                              )}
+                              
                               <input
                                 type="email"
                                 name={formData.serviceType === "paypal" ? "paypalEmail" : "skrillEmail"}
                                 value={formData.serviceType === "paypal" ? formData.paypalEmail : formData.skrillEmail}
-                                onChange={handleChange}
+                                onChange={(e) => {
+                                  handleChange(e);
+                                  // Enable save option when typing new email
+                                  const currentEmail = e.target.value;
+                                  if (currentEmail && !savedEmails.some(em => em.email === currentEmail)) {
+                                    // Allow saving new email
+                                  } else {
+                                    setSaveThisEmail(false);
+                                    setEmailLabel("");
+                                  }
+                                }}
                                 className={`w-full rounded-lg border ${errors[formData.serviceType === "paypal" ? "paypalEmail" : "skrillEmail"] ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'} bg-white px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500`}
                                 placeholder={language === 'id' ? `Email akun ${formData.serviceType === "paypal" ? "PayPal" : "Skrill"} Anda` : `Your ${formData.serviceType === "paypal" ? "PayPal" : "Skrill"} account email`}
                               />
@@ -1314,6 +1441,36 @@ export default function OrderForm() {
                               <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
                                 {language === 'id' ? 'Saldo akan ditransfer ke email ini' : 'Balance will be transferred to this email'}
                               </p>
+                              
+                              {/* Save email checkbox (only for logged in users with new email) */}
+                              {isLoggedIn && (formData.serviceType === "paypal" ? formData.paypalEmail : formData.skrillEmail) && !savedEmails.some(em => em.email === (formData.serviceType === "paypal" ? formData.paypalEmail : formData.skrillEmail)) && (
+                                <div className="mt-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700/50">
+                                  <label className="flex items-center gap-2 cursor-pointer">
+                                    <input
+                                      type="checkbox"
+                                      checked={saveThisEmail}
+                                      onChange={(e) => setSaveThisEmail(e.target.checked)}
+                                      className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700"
+                                    />
+                                    <span className="text-sm text-gray-700 dark:text-gray-200">
+                                      {language === 'id' ? 'Simpan email ini untuk transaksi berikutnya' : 'Save this email for future transactions'}
+                                    </span>
+                                  </label>
+                                  
+                                  {saveThisEmail && (
+                                    <div className="mt-2">
+                                      <input
+                                        type="text"
+                                        value={emailLabel}
+                                        onChange={(e) => setEmailLabel(e.target.value)}
+                                        placeholder={language === 'id' ? 'Label (contoh: Utama, Bisnis)' : 'Label (e.g., Main, Business)'}
+                                        className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500"
+                                        maxLength={50}
+                                      />
+                                    </div>
+                                  )}
+                                </div>
+                              )}
                             </div>
 
                             {/* Payment Info - BUY orders use saldo */}
@@ -1362,11 +1519,52 @@ export default function OrderForm() {
                               <label className="mb-2 block text-sm font-semibold text-gray-700 dark:text-gray-200">
                                 {t('order.emailService')} {formData.serviceType === "paypal" ? "PayPal" : "Skrill"} <span className="text-red-500">*</span>
                               </label>
+                              
+                              {/* Saved emails dropdown */}
+                              {isLoggedIn && savedEmails.length > 0 && (
+                                <div className="mb-3">
+                                  <select
+                                    onChange={(e) => handleSavedEmailSelect(e.target.value)}
+                                    className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-700 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200"
+                                    defaultValue=""
+                                  >
+                                    <option value="">
+                                      {language === 'id' ? '-- Pilih email tersimpan --' : '-- Select saved email --'}
+                                    </option>
+                                    {savedEmails.map((email) => (
+                                      <option key={email.id} value={email.id}>
+                                        {email.label} - {email.email}
+                                      </option>
+                                    ))}
+                                  </select>
+                                  <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                                    {language === 'id' ? 'Pilih dari daftar email tersimpan atau masukkan baru di bawah' : 'Select from saved emails or enter new below'}
+                                  </p>
+                                </div>
+                              )}
+                              
+                              {/* Loading saved emails indicator */}
+                              {loadingSavedEmails && (
+                                <p className="mb-2 text-xs text-gray-500 dark:text-gray-400 animate-pulse">
+                                  {language === 'id' ? 'Memuat email tersimpan...' : 'Loading saved emails...'}
+                                </p>
+                              )}
+                              
                               <input
                                 type="email"
                                 name={formData.serviceType === "paypal" ? "paypalEmail" : "skrillEmail"}
                                 value={formData.serviceType === "paypal" ? formData.paypalEmail : formData.skrillEmail}
-                                onChange={handleChange}
+                                onChange={(e) => {
+                                  handleChange(e);
+                                  // Enable save option when typing new email
+                                  const currentEmail = e.target.value;
+                                  if (currentEmail && !savedEmails.some(em => em.email === currentEmail)) {
+                                    // Allow saving new email
+                                  } else {
+                                    setSaveThisEmail(false);
+                                    setEmailLabel("");
+                                  }
+                                }}
                                 className={`w-full rounded-lg border ${errors[formData.serviceType === "paypal" ? "paypalEmail" : "skrillEmail"] ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'} bg-white px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500`}
                                 placeholder={language === 'id' ? `Email akun ${formData.serviceType === "paypal" ? "PayPal" : "Skrill"} yang akan transfer` : `Your ${formData.serviceType === "paypal" ? "PayPal" : "Skrill"} account email`}
                               />
@@ -1378,6 +1576,36 @@ export default function OrderForm() {
                               <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
                                 {language === 'id' ? 'Email akun yang akan Anda gunakan untuk transfer' : 'Email account you will use to transfer'}
                               </p>
+                              
+                              {/* Save email checkbox (only for logged in users with new email) */}
+                              {isLoggedIn && (formData.serviceType === "paypal" ? formData.paypalEmail : formData.skrillEmail) && !savedEmails.some(em => em.email === (formData.serviceType === "paypal" ? formData.paypalEmail : formData.skrillEmail)) && (
+                                <div className="mt-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700/50">
+                                  <label className="flex items-center gap-2 cursor-pointer">
+                                    <input
+                                      type="checkbox"
+                                      checked={saveThisEmail}
+                                      onChange={(e) => setSaveThisEmail(e.target.checked)}
+                                      className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700"
+                                    />
+                                    <span className="text-sm text-gray-700 dark:text-gray-200">
+                                      {language === 'id' ? 'Simpan email ini untuk transaksi berikutnya' : 'Save this email for future transactions'}
+                                    </span>
+                                  </label>
+                                  
+                                  {saveThisEmail && (
+                                    <div className="mt-2">
+                                      <input
+                                        type="text"
+                                        value={emailLabel}
+                                        onChange={(e) => setEmailLabel(e.target.value)}
+                                        placeholder={language === 'id' ? 'Label (contoh: Utama, Bisnis)' : 'Label (e.g., Main, Business)'}
+                                        className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500"
+                                        maxLength={50}
+                                      />
+                                    </div>
+                                  )}
+                                </div>
+                              )}
                             </div>
 
                             {/* Saldo Credit Info - SELL orders credit to saldo */}
