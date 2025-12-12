@@ -1,0 +1,72 @@
+/* Buttons - Minimalist Design System */
+.btn,
+.btn-sm,
+.btn-lg {
+    @apply font-medium inline-flex items-center justify-center rounded-lg whitespace-nowrap transition-all;
+}
+
+.btn-sm {
+    @apply px-3 py-1.5 text-xs shadow-sm hover:shadow-md;
+}
+
+.btn {
+    @apply px-4 py-2.5 text-sm shadow-sm hover:shadow-md;
+}
+
+.btn-lg {
+    @apply px-4 py-2.5 text-sm shadow-sm hover:shadow-md;
+}
+
+/* Forms */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select,
+.form-checkbox,
+.form-radio {
+    @apply border border-gray-200 shadow-xs rounded-lg focus:ring-0 focus:ring-offset-0;
+}
+
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select {
+    @apply bg-white dark:bg-gray-800 dark:text-white text-sm py-2 px-3 focus:border-blue-300 dark:focus:border-blue-500;
+}
+
+.form-input,
+.form-textarea {
+    @apply placeholder-gray-400;
+}
+
+.form-select {
+    @apply pr-10;
+}
+
+.form-checkbox,
+.form-radio {
+    @apply text-gray-800 checked:bg-blue-500 checked:border-transparent focus-visible:not-checked:border-blue-300;
+}
+
+.form-checkbox {
+    @apply rounded-xs;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

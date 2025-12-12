@@ -1,0 +1,2894 @@
+{
+  "nav": {
+    "cryptocurrency": "Cryptocurrency",
+    "paypal": "PayPal",
+    "skrill": "Skrill",
+    "pricing": "Rate & Harga",
+    "help": "Bantuan",
+    "support": "Pusat Bantuan",
+    "calculator": "Kalkulator",
+    "cryptoList": "Daftar Crypto",
+    "testimonials": "Testimonials",
+    "blog": "Blog",
+    "docs": "Panduan",
+    "formOrder": "Buat Order",
+    "startBot": "Chat WhatsApp",
+    "login": "Masuk",
+    "register": "Daftar"
+  },
+  "header": {
+    "userMenu": {
+      "dashboard": "Dashboard",
+      "orders": "Order",
+      "deposit": "Deposit",
+      "withdraw": "Tarik Saldo",
+      "transfer": "Transfer",
+      "profile": "Profil",
+      "settings": "Pengaturan",
+      "adminPanel": "Admin Panel",
+      "logout": "Keluar",
+      "loggingOut": "Sedang keluar...",
+      "referral": "Referral",
+      "points": "Poin",
+      "wallet": "Dompet",
+      "rewards": "Rewards"
+    }
+  },
+  "hero": {
+    "title": "Jual Beli Crypto, PayPal & Skrill Mulai 25 Ribu",
+    "subtitle": "Transaksi cryptocurrency, PayPal, dan Skrill tercepat di Indonesia. Proses instan 5-15 menit, keamanan berlapis, rate real-time 24/7. Dipercaya ribuan pengguna.",
+    "ctaStart": "Mulai Transaksi",
+    "ctaHow": "Lihat Cara Kerja"
+  },
+  "features": {
+    "title": "Kenapa Memilih Saldopedia?",
+    "subtitle": "Platform jual beli crypto, PayPal & Skrill paling aman dan terpercaya di Indonesia",
+    "telegram": {
+      "title": "Order Online 24/7",
+      "description": "Isi form order, langsung diproses otomatis kapan saja"
+    },
+    "lowMin": {
+      "title": "Mulai dari Rp 25.000",
+      "description": "Nominal kecil cocok untuk semua kalangan"
+    },
+    "fast": {
+      "title": "Proses 5-15 Menit",
+      "description": "Transaksi Anda selesai dalam hitungan menit"
+    },
+    "safe": {
+      "title": "Keamanan Berlapis",
+      "description": "Enkripsi SSL, verifikasi otomatis, data Anda terlindungi"
+    }
+  },
+  "business": {
+    "title": "Layanan Transaksi Kami",
+    "all": "Semua",
+    "crypto": {
+      "title": "Cryptocurrency",
+      "description": "Jual beli Bitcoin, Ethereum, USDT dengan rate real-time"
+    },
+    "paypal": {
+      "title": "PayPal",
+      "description": "Top up dan jual saldo PayPal, langsung masuk ke akun Anda"
+    },
+    "skrill": {
+      "title": "Skrill",
+      "description": "Transaksi saldo Skrill dengan aman dan terpercaya"
+    }
+  },
+  "largeTestimonial": {
+    "quote": "Saldopedia luar biasa! Transaksi crypto diproses dalam hitungan menit. Dari beli USDT sampai",
+    "quoteHighlight": "top up PayPal",
+    "quoteEnd": ", semuanya berjalan lancar. Cepat, aman, dan terpercaya!",
+    "author": "Andi Wijaya",
+    "role": "Trader Crypto"
+  },
+  "featuresPlanet": {
+    "title": "Kenapa Saldopedia Dipilih Ribuan Pengguna",
+    "autoTx": {
+      "title": "Proses Otomatis",
+      "description": "Order via form online, konfirmasi dan instruksi pembayaran langsung dikirim ke email Anda dalam hitungan detik."
+    },
+    "minTx": {
+      "title": "Mulai dari Rp 25.000",
+      "description": "Transaksi crypto, PayPal, atau Skrill bisa dimulai dari nominal kecil. Cocok untuk pemula maupun profesional."
+    },
+    "safe": {
+      "title": "Keamanan Berlapis",
+      "description": "Ribuan transaksi sukses setiap hari. Enkripsi SSL, verifikasi otomatis, dan proteksi saldo terjamin 100%."
+    },
+    "variety": {
+      "title": "19+ Aset Digital",
+      "description": "USDT, Bitcoin, Ethereum, PayPal, Skrill, dan 14+ cryptocurrency lainnya tersedia untuk Anda."
+    },
+    "bestRate": {
+      "title": "Rate Terbaik Real-Time",
+      "description": "Rate mengikuti harga pasar global secara real-time. Transparansi 100%, tanpa biaya tersembunyi."
+    },
+    "fastProcess": {
+      "title": "Proses 5-15 Menit",
+      "description": "Setelah pembayaran dikonfirmasi, crypto atau saldo langsung dikirim ke akun Anda."
+    }
+  },
+  "featuresHome": {
+    "title": "Transaksi Crypto Cepat & Mudah",
+    "subtitle": "Beli cryptocurrency, top up PayPal, atau isi saldo Skrill dengan Saldopedia. Proses instan, aman, tanpa ribet!",
+    "feature1": {
+      "title": "Aktif 24/7",
+      "description": "Order kapan saja, langsung diproses. Tidak perlu menunggu jam kerja."
+    },
+    "feature2": {
+      "title": "Rate Real-Time",
+      "description": "Rate mengikuti pasar global. Transparan, tanpa biaya tersembunyi."
+    },
+    "feature3": {
+      "title": "Mulai Rp 25.000",
+      "description": "Transaksi crypto, PayPal & Skrill bisa dimulai dari nominal kecil."
+    },
+    "feature4": {
+      "title": "Bayar via Bank Lokal",
+      "description": "Transfer via BCA, Mandiri, BRI, BNI, dan e-wallet Indonesia."
+    }
+  },
+  "testimonialsCarousel": {
+    "title": "Dipercaya Ribuan Pengguna",
+    "subtitle": "Baca pengalaman nyata dari pengguna yang sudah merasakan layanan Saldopedia",
+    "shareButton": "Bagikan Pengalaman Anda"
+  },
+  "cta": {
+    "title": "Siap Mulai Transaksi?",
+    "telegram": "Buat Order Sekarang",
+    "howItWorks": "Lihat Cara Kerja"
+  },
+  "footer": {
+    "copyright": "Saldopedia - All rights reserved.",
+    "product": "Layanan",
+    "cryptoBuy": "Jual Beli Crypto",
+    "paypalBuy": "Jual Beli PayPal",
+    "skrillBuy": "Jual Beli Skrill",
+    "feature": "Fitur",
+    "cryptoList": "Daftar Crypto",
+    "checkRate": "Cek Rate",
+    "calculator": "Kalkulator",
+    "company": "Tentang",
+    "about": "Tentang Kami",
+    "contact": "Bantuan",
+    "terms": "Syarat & Ketentuan",
+    "resources": "Informasi",
+    "docs": "Dokumentasi",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "sitemap": "Sitemap",
+    "cookiePolicy": "Kebijakan Cookie",
+    "termsOfService": "Syarat Layanan",
+    "privacyPolicy": "Kebijakan Privasi",
+    "followUs": "Ikuti Kami",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Dapatkan promo dan tips crypto terbaru",
+    "disclaimer": "Disclaimer:",
+    "disclaimerText": "Saldopedia adalah layanan independen untuk jual beli cryptocurrency, PayPal, dan Skrill. Tidak terafiliasi dengan PayPal Inc., Skrill Limited, atau platform cryptocurrency manapun. Semua merek dagang adalah properti pemiliknya masing-masing.",
+    "systemStatus": {
+      "operational": "Semua sistem normal",
+      "degraded": "Sistem terganggu",
+      "down": "Sistem tidak tersedia"
+    }
+  },
+  "statusPage": {
+    "title": "Status Sistem",
+    "subtitle": "Pantau status layanan Saldopedia secara realtime",
+    "services": "Layanan",
+    "lastUpdated": "Terakhir diperbarui",
+    "autoRefresh": "Halaman ini otomatis diperbarui setiap 30 detik",
+    "uptime": "Uptime Saat Ini",
+    "avgResponse": "Rata-rata Response",
+    "overall": {
+      "operational": "Semua Sistem Beroperasi Normal",
+      "degraded": "Beberapa Sistem Mengalami Gangguan",
+      "down": "Sistem Tidak Tersedia",
+      "checking": "Memeriksa Status..."
+    },
+    "status": {
+      "operational": "Normal",
+      "degraded": "Lambat",
+      "down": "Gangguan",
+      "checking": "Memeriksa"
+    },
+    "serviceNames": {
+      "platform": "Platform Saldopedia",
+      "cryptoRates": "Harga Cryptocurrency",
+      "paypalRates": "Kurs PayPal",
+      "skrillRates": "Kurs Skrill",
+      "website": "Website"
+    }
+  },
+  "sitemapPage": {
+    "title": "Sitemap",
+    "description": "Temukan semua halaman dan layanan di",
+    "xmlLink": "Untuk crawler dan mesin pencari, kunjungi",
+    "services": {
+      "title": "Layanan",
+      "crypto": "Jual Beli Crypto",
+      "paypal": "Jual Beli PayPal",
+      "skrill": "Jual Beli Skrill",
+      "pricing": "Rate & Harga"
+    },
+    "features": {
+      "title": "Fitur & Tools",
+      "cryptoList": "Daftar Cryptocurrency",
+      "calculator": "Kalkulator Konversi",
+      "testimonials": "Testimoni Pelanggan"
+    },
+    "content": {
+      "title": "Konten",
+      "blog": "Blog",
+      "docs": "Dokumentasi",
+      "support": "Bantuan"
+    },
+    "company": {
+      "title": "Perusahaan",
+      "about": "Tentang Kami",
+      "terms": "Syarat Layanan",
+      "privacy": "Kebijakan Privasi",
+      "cookie": "Kebijakan Cookie"
+    }
+  },
+  "newsletter": {
+    "placeholder": "Email Anda",
+    "button": "Subscribe",
+    "sending": "Mengirim...",
+    "successMessage": "Berhasil! Anda akan menerima promo terbaru dari kami",
+    "errorMessage": "Terjadi kesalahan. Silakan coba lagi",
+    "connectionError": "Gagal terhubung. Silakan coba lagi"
+  },
+  "tiers": {
+    "basic": "Basic",
+    "pro": "Pro",
+    "premium": "Premium",
+    "gold": "Gold"
+  },
+  "pricing": {
+    "meta": {
+      "title": "Rate & Harga Crypto, PayPal, Skrill Terbaik Indonesia | Saldopedia",
+      "description": "Rate Bitcoin, Ethereum, USDT, PayPal, Skrill terbaik mulai Rp 25.000. Proses 5-15 menit dengan keamanan berlapis di Saldopedia."
+    },
+    "hero": {
+      "title": "Rate Terbaik & Transparan",
+      "subtitle": "Transaksi cryptocurrency, PayPal, dan Skrill dengan rate kompetitif. Mulai Rp 25.000, proses 5-15 menit, keamanan berlapis."
+    },
+    "toggle": {
+      "sell": "Jual / Convert ke IDR",
+      "buy": "Beli / Top-up Saldo"
+    },
+    "tierSystem": {
+      "sectionTitle": "Tier Rate PayPal & Skrill",
+      "sectionSubtitle": "Transaksi lebih besar, rate lebih menguntungkan! Tier otomatis ditentukan berdasarkan jumlah transaksi.",
+      "sellLabel": "Jual (Sell)",
+      "buyLabel": "Beli (Buy)",
+      "basic": {
+        "title": "Basic",
+        "badge": "Mulai",
+        "description": "Rate standar untuk transaksi awal"
+      },
+      "pro": {
+        "title": "Pro",
+        "badge": "Populer",
+        "description": "Rate lebih baik untuk transaksi reguler"
+      },
+      "premium": {
+        "title": "Premium",
+        "badge": "Hemat",
+        "description": "Rate premium untuk transaksi besar"
+      },
+      "gold": {
+        "title": "Gold",
+        "badge": "Terbaik",
+        "description": "Rate terbaik untuk volume tinggi"
+      },
+      "howItWorks": {
+        "title": "Cara Kerja Tier",
+        "step1": {
+          "title": "Deteksi Otomatis",
+          "description": "Masukkan jumlah transaksi, tier Anda langsung terdeteksi"
+        },
+        "step2": {
+          "title": "Rate Menyesuaikan",
+          "description": "Rate terbaik langsung diterapkan sesuai tier Anda"
+        },
+        "step3": {
+          "title": "Hemat Lebih Banyak",
+          "description": "Makin besar transaksi, makin hemat biaya Anda"
+        }
+      },
+      "note": "Tier hanya berlaku untuk PayPal dan Skrill. Cryptocurrency menggunakan rate market dengan spread 5%."
+    },
+    "crypto": {
+      "title": "Cryptocurrency",
+      "sellRate": "Rate yang Anda Terima",
+      "buyRate": "Rate yang Anda Bayar",
+      "marketPrice": "Harga Pasar Live",
+      "discount": "~95% dari harga pasar",
+      "markup": "~105% dari harga pasar",
+      "description": "Bitcoin, Ethereum, USDT, dan crypto lainnya dengan rate transparan. Spread 5% sudah termasuk biaya layanan untuk proses instan dan aman 24/7.",
+      "feature1": "Mulai Rp 25.000",
+      "feature2": "Proses 5-15 menit",
+      "feature3": "19+ cryptocurrency",
+      "feature4": "Rate update real-time"
+    },
+    "paypal": {
+      "title": "PayPal",
+      "sellRate": "Rate Jual",
+      "buyRate": "Rate Beli",
+      "description": "Jual beli saldo PayPal USD dengan rate tier terbaik dan proses instan.",
+      "feature1": "Mulai Rp 25.000",
+      "feature2": "Transfer instan ke PayPal",
+      "feature3": "Support USD balance",
+      "feature4": "Tanpa fee tersembunyi"
+    },
+    "skrill": {
+      "title": "Skrill",
+      "sellRate": "Rate Jual",
+      "buyRate": "Rate Beli",
+      "description": "Jual beli saldo Skrill USD untuk freelance, belanja online, atau bisnis.",
+      "feature1": "Mulai Rp 25.000",
+      "feature2": "Transfer cepat & aman",
+      "feature3": "Support multi currency",
+      "feature4": "Aktif 24/7"
+    },
+    "testimonials": {
+      "title": "Dipercaya Ribuan Pelanggan",
+      "subtitle": "Testimoni nyata dari pengguna yang puas dengan layanan Saldopedia",
+      "paymentMethodsAlt": "Metode Pembayaran: BCA, Mandiri, BNI, BRI, GoPay, OVO, DANA, ShopeePay"
+    },
+    "faq": {
+      "sectionTitle": "Pertanyaan Umum",
+      "sectionSubtitle": "Pelajari lebih lanjut tentang layanan Saldopedia. Tim support kami siap membantu 24/7.",
+      "searchResultFor": "Hasil pencarian untuk:",
+      "viewAllFaq": "Lihat Semua FAQ",
+      "noResults": "Tidak ada hasil untuk",
+      "noResultsCta": ". Coba kata kunci lain atau hubungi customer service kami.",
+      "category1": "Memulai Transaksi",
+      "category2": "Pembayaran & Layanan",
+      "category3": "Akun & Keamanan",
+      "q1": "Bagaimana cara memulai transaksi?",
+      "a1": "Sangat mudah! Isi form order di website, pilih mata uang yang ingin dibeli/dijual (Crypto, PayPal, atau Skrill), lalu ikuti instruksi pembayaran. Transaksi diproses dalam 5-15 menit. Mulai dari Rp 25.000 saja.",
+      "q2": "Berapa minimal dan maksimal transaksi?",
+      "a2": "Minimal transaksi Rp 25.000 untuk semua layanan. Untuk maksimal, silakan hubungi customer service untuk info lebih detail.",
+      "q3": "Berapa lama waktu proses transaksi?",
+      "a3": "Transaksi diproses dalam 5-15 menit setelah pembayaran dikonfirmasi. Untuk nominal besar, mungkin perlu sedikit waktu tambahan untuk verifikasi.",
+      "q4": "Apakah Saldopedia aman?",
+      "a4": "Tentu! Saldopedia menggunakan enkripsi SSL 256-bit, verifikasi otomatis, dan proteksi data 100%. Kami sudah melayani ribuan transaksi dengan tingkat kepuasan tinggi.",
+      "q5": "Cryptocurrency apa saja yang tersedia?",
+      "a5": "Bitcoin (BTC), Ethereum (ETH), USDT, BNB, Solana, MATIC, dan cryptocurrency populer lainnya. Lihat daftar lengkap di halaman Crypto List.",
+      "q6": "Bagaimana cara melakukan pembayaran order?",
+      "a6": "Semua order dibayar menggunakan saldo Saldopedia. Top up saldo terlebih dahulu di menu Deposit, lalu gunakan saldo tersebut untuk order. Hasil penjualan juga masuk ke saldo dan bisa di-withdraw kapan saja.",
+      "q7": "Bisa transaksi PayPal dan Skrill?",
+      "a7": "Ya! Selain crypto, kami juga melayani jual beli PayPal dan Skrill dengan rate kompetitif. Proses cepat untuk top-up nominal kecil maupun besar.",
+      "q8": "Bagaimana cara cek rate terbaru?",
+      "a8": "Rate selalu update mengikuti harga pasar real-time. Cek di halaman Rate atau gunakan Kalkulator di website.",
+      "q9": "Apakah ada biaya tambahan?",
+      "a9": "Tidak ada biaya tersembunyi! Rate yang ditampilkan sudah final. Yang Anda lihat adalah yang Anda bayar.",
+      "q10": "Bagaimana menghubungi customer service?",
+      "a10": "Hubungi WhatsApp 08119666620. Tim kami siap membantu dengan respon cepat dan ramah!",
+      "q11": "Apakah harus mendaftar akun?",
+      "a11": "Ya, Anda perlu mendaftar akun untuk bertransaksi. Proses registrasi mudah dan cepat - cukup isi data diri, verifikasi email, dan akun siap digunakan. Dengan akun, Anda bisa melihat riwayat transaksi, dashboard saldo, dan fitur lainnya.",
+      "q12": "Bagaimana jika transfer terlambat dikonfirmasi?",
+      "a12": "Pembayaran akan terdeteksi otomatis. Jika ada kendala setelah 30 menit, hubungi WhatsApp dengan bukti transfer.",
+      "q13": "Bisa transaksi di luar jam kerja?",
+      "a13": "Ya! Order bisa dikirim 24/7. Customer service aktif 09.00-21.00 WIB, tapi order tetap diproses otomatis kapan saja.",
+      "q14": "Bagaimana cara membatalkan transaksi?",
+      "a14": "Sebelum bayar, cukup abaikan order. Jika sudah bayar, segera hubungi WhatsApp 08119666620.",
+      "q15": "Apakah data saya aman?",
+      "a15": "Keamanan data prioritas kami. Semua informasi dijaga kerahasiaannya dengan enkripsi untuk proteksi maksimal."
+    },
+    "cta": {
+      "title": "Siap Mulai Transaksi?",
+      "button": "Buat Order Sekarang"
+    }
+  },
+  "calculator": {
+    "meta": {
+      "title": "Kalkulator Rate Crypto, PayPal & Skrill | Saldopedia",
+      "description": "Kalkulator rate untuk jual beli cryptocurrency, PayPal, dan Skrill. Rate real-time, transparan, dan akurat."
+    },
+    "hero": {
+      "title": "Kalkulator Rate",
+      "subtitle": "Hitung estimasi transaksi dengan rate real-time. Transparan dan gratis."
+    },
+    "form": {
+      "selectService": "Pilih Layanan",
+      "transactionType": "Jenis Transaksi",
+      "selectCrypto": "Pilih Cryptocurrency",
+      "amountCoin": "Jumlah",
+      "amountIDR": "Jumlah IDR",
+      "amountUSD": "Jumlah USD",
+      "sell": "Jual",
+      "buy": "Beli",
+      "calculate": "Hitung Estimasi",
+      "calculating": "Menghitung...",
+      "minimal": "Minimal:",
+      "lastUpdate": "Update terakhir:"
+    },
+    "info": {
+      "cryptoSell": "Input jumlah coin. Anda terima ~95% dari harga pasar",
+      "cryptoSellDiscount": " (spread 5% untuk layanan instan)",
+      "cryptoSellMin": ". Min.",
+      "cryptoSellStablecoin": ". Stablecoin rate tetap Rp 14.000.",
+      "cryptoBuy": "Input jumlah IDR. Anda bayar ~105% dari harga pasar",
+      "cryptoBuyMarkup": " (spread 5% untuk layanan instan)",
+      "cryptoBuyMin": ". Min.",
+      "cryptoBuyStablecoin": ". Stablecoin rate tetap Rp 16.999.",
+      "paypalSkrill": "Transaksi lebih besar = rate lebih baik. Min.",
+      "paypalSkrillMax": ", Max.",
+      "paypalSkrillTier": ". Rate otomatis berdasarkan tier.",
+      "sellCryptoLabel": "Jual Crypto:",
+      "buyCryptoLabel": "Beli Crypto:",
+      "tipLabel": "Tip:"
+    },
+    "result": {
+      "title": "Hasil Kalkulasi",
+      "emptyState": "Masukkan jumlah untuk melihat estimasi",
+      "rate": "Rate:",
+      "tier": "Tier:",
+      "totalReceive": "Total yang Anda Terima:",
+      "totalGet": "Total yang Anda Dapatkan:",
+      "totalPay": "Total yang Harus Dibayar:",
+      "validTransaction": "Transaksi valid",
+      "telegramButton": "Buat Order",
+      "recalculate": "Hitung Ulang",
+      "noteLabel": "Catatan:",
+      "noteText": "Rate estimasi. Rate final diberikan saat transaksi."
+    },
+    "features": {
+      "realtime": {
+        "title": "Rate Real-Time",
+        "desc": "Update otomatis setiap 3 menit mengikuti pasar global"
+      },
+      "transparent": {
+        "title": "100% Transparan",
+        "desc": "Tanpa biaya tersembunyi, rate yang ditampilkan adalah final"
+      },
+      "competitive": {
+        "title": "Rate Kompetitif",
+        "desc": "Spread rendah 5% untuk proses instan 24/7"
+      }
+    },
+    "trust": {
+      "noHiddenFees": "Tanpa biaya tersembunyi",
+      "autoUpdate": "Update setiap 3 menit",
+      "fastProcess": "Proses 5-15 menit"
+    }
+  },
+  "cryptoPage": {
+    "hero": {
+      "titlePart1": "19 Cryptocurrency",
+      "titleHighlight": "Proses Otomatis",
+      "subtitle": "Jual beli Bitcoin, Ethereum, USDT, BNB, Solana, dan 14 crypto lainnya dengan",
+      "subtitleBrand": "Saldopedia",
+      "subtitleEnd": ". Rate real-time, mulai Rp 25.000, proses 5-15 menit.",
+      "button1": "Mulai Transaksi",
+      "button2": "Hitung Rate"
+    },
+    "categories": {
+      "all": "Semua",
+      "popular": "Popular",
+      "altcoins": "Altcoins",
+      "stablecoins": "Stablecoins",
+      "emerging": "Emerging"
+    },
+    "info": {
+      "title": "Rate Saldopedia",
+      "text": "Rate update setiap 3 menit. Spread 5% untuk proses instan 24/7",
+      "sellDiscount": "",
+      "buyText": "",
+      "buyMarkup": "",
+      "stablecoin": ". Stablecoin rate tetap.",
+      "updateTime": "Update terakhir:",
+      "timezone": "WIB"
+    },
+    "cta": {
+      "title": "Mulai Transaksi Cryptocurrency",
+      "button": "Buat Order Sekarang"
+    },
+    "card": {
+      "badge": "Popular",
+      "currentPrice": "Harga Saat Ini",
+      "change24h": "24 Jam",
+      "minTransaction": "Min. Rp 25rb",
+      "calculateButton": "Hitung Rate"
+    }
+  },
+  "customersPage": {
+    "hero": {
+      "title": "Testimoni Pengguna",
+      "subtitle": "Ribuan pengguna Indonesia mempercayakan transaksi crypto, PayPal, dan Skrill mereka ke",
+      "subtitleBrand": "Saldopedia",
+      "subtitleEnd": ". Baca pengalaman mereka!",
+      "shareButton": "Bagikan Pengalaman Anda",
+      "closeButton": "Tutup Form"
+    },
+    "form": {
+      "title": "Bagikan Testimoni Anda",
+      "successTitle": "Testimoni berhasil dikirim!",
+      "successMessage": "Testimoni Anda akan muncul di halaman dalam beberapa saat.",
+      "errorDefault": "Gagal mengirim testimoni",
+      "errorNetwork": "Terjadi kesalahan. Silakan coba lagi.",
+      "nameLabel": "Nama",
+      "namePlaceholder": "Nama lengkap Anda",
+      "usernameLabel": "Username Sosial Media",
+      "usernamePlaceholder": "@username",
+      "platformLabel": "Platform",
+      "platformPlaceholder": "Pilih platform",
+      "photoLabel": "Foto Profil",
+      "photoHelp": "Format: JPG, PNG, WebP. Maks 5MB",
+      "photoSelected": "Foto dipilih",
+      "photoPreview": "Preview foto profil",
+      "photoRemove": "Hapus",
+      "testimonialLabel": "Testimoni",
+      "testimonialPlaceholder": "Ceritakan pengalaman Anda menggunakan Saldopedia... (min 20 karakter)",
+      "charCount": "karakter",
+      "submitting": "Mengirim...",
+      "submitButton": "Kirim Testimoni",
+      "cancelButton": "Batal",
+      "required": "*",
+      "platformTelegram": "Telegram",
+      "platformTwitter": "Twitter / X",
+      "platformInstagram": "Instagram",
+      "platformFacebook": "Facebook",
+      "platformWhatsApp": "WhatsApp",
+      "photoAlt": "Preview"
+    },
+    "cta": {
+      "title": "Siap Mulai Transaksi?",
+      "button": "Buat Order Sekarang"
+    }
+  },
+  "transactionFeed": {
+    "title": "Aktivitas Transaksi",
+    "titleHighlight": "Real-Time",
+    "subtitle": "Lihat transaksi yang sedang diproses dari pengguna di seluruh Indonesia"
+  },
+  "statsCounter": {
+    "users": "Pengguna Aktif",
+    "volume": "Total Transaksi",
+    "rating": "Rating Pengguna"
+  },
+  "trustBadges": {
+    "ssl": "SSL 256-bit",
+    "verified": "Bisnis Terverifikasi",
+    "secure": "Pembayaran Aman",
+    "privacy": "Data Terproteksi"
+  },
+  "supportBadge": {
+    "status": "Support Aktif",
+    "response": "Respon rata-rata < 5 menit",
+    "chat": "Chat Sekarang"
+  },
+  "blogPage": {
+    "hero": {
+      "title": "Blog",
+      "titleBrand": "Saldopedia",
+      "subtitle": "Panduan crypto, tutorial PayPal & Skrill, tips transaksi, dan update terbaru dari",
+      "subtitleBrand": "Saldopedia"
+    },
+    "categories": {
+      "all": "All",
+      "cryptocurrency": "Cryptocurrency",
+      "paypal": "PayPal",
+      "skrill": "Skrill",
+      "tips": "Tips Transaksi",
+      "update": "Update"
+    },
+    "loadMore": "Muat Lebih Banyak",
+    "noArticles": "Belum ada artikel untuk kategori ini.",
+    "backToBlog": "Kembali ke Blog",
+    "onThisPage": "Di halaman ini"
+  },
+  "docsPage": {
+    "metadata": {
+      "titleSuffix": "- Dokumentasi Saldopedia",
+      "descriptionSuffix": "Panduan lengkap layanan Saldopedia untuk transaksi cryptocurrency, PayPal, dan Skrill mulai 25 ribu rupiah."
+    },
+    "breadcrumb": "Dokumentasi",
+    "sidebarTitle": "Dokumentasi Saldopedia",
+    "viewFullToc": "Lihat daftar isi lengkap",
+    "updated": {
+      "oneDay": "Diupdate 1 hari lalu",
+      "days": "Diupdate {days} hari lalu",
+      "oneMonth": "Diupdate 1 bulan lalu",
+      "months": "Diupdate {months} bulan lalu",
+      "oneYear": "Diupdate 1 tahun lalu",
+      "years": "Diupdate {years} tahun lalu"
+    },
+    "feedback": {
+      "question": "Apakah halaman ini membantu?",
+      "yes": "Ya",
+      "no": "Tidak",
+      "thankYou": "Terima kasih atas feedback Anda!",
+      "whatToImprove": "Apa yang bisa kami perbaiki?",
+      "placeholder": "Ceritakan pengalaman Anda... (opsional)",
+      "cancel": "Batal",
+      "submit": "Kirim Feedback"
+    }
+  },
+  "supportPage": {
+    "hero": {
+      "title": "Pusat Bantuan",
+      "subtitle": "Tim support profesional siap membantu Anda 24/7 untuk transaksi crypto, PayPal, dan Skrill. Respon rata-rata kurang dari 5 menit.",
+      "features": {
+        "fastResponse": "Respon < 5 menit",
+        "support247": "Aktif 24/7",
+        "experiencedTeam": "Tim profesional"
+      }
+    },
+    "search": {
+      "placeholder": "Cari",
+      "placeholderDetail": "pertanyaan (misal: cara transaksi, minimal deposit, dll)"
+    },
+    "commitment": {
+      "title": "Komitmen Kami untuk Anda",
+      "description": "Kami percaya setiap transaksi adalah kepercayaan yang harus dijaga. Tim support kami siap membantu kapan saja dengan respon cepat dan layanan ramah. Tanyakan apapun seputar crypto, PayPal, atau Skrill - kami di sini untuk memandu Anda."
+    },
+    "contactMethods": {
+      "title": "Hubungi Tim Support",
+      "subtitle": "Pilih channel yang paling nyaman untuk Anda. Tim kami siap membantu menjawab pertanyaan seputar crypto, PayPal, dan Skrill.",
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "Chat langsung dengan tim support",
+        "detail": "Respon: < 5 menit",
+        "available": "24/7",
+        "number": "+62 811 9666 620"
+      },
+      "email": {
+        "title": "Email",
+        "description": "Kirim pertanyaan detail via email",
+        "detail": "Respon dalam 1-2 jam kerja",
+        "available": "09:00-21:00 WIB",
+        "address": "support@saldopedia.com"
+      }
+    },
+    "operatingHours": {
+      "title": "Jam Operasional",
+      "subtitle": "Transaksi diproses 24/7. Customer service tersedia di jam berikut:",
+      "automated": {
+        "title": "Proses Transaksi",
+        "hours": "24 Jam / 7 Hari",
+        "description": "Transaksi diproses otomatis kapan saja"
+      },
+      "customerService": {
+        "title": "Customer Service",
+        "hours": "09:00 - 21:00 WIB",
+        "description": "Senin - Minggu (termasuk hari libur)"
+      },
+      "priority": {
+        "title": "Priority Support",
+        "hours": "24/7 via WhatsApp",
+        "description": "Untuk transaksi urgent di luar jam kerja"
+      }
+    },
+    "serviceGuarantee": {
+      "title": "Jaminan Layanan",
+      "guarantees": {
+        "response": {
+          "title": "Respon Cepat",
+          "description": "Kami berkomitmen merespon setiap pertanyaan dalam waktu kurang dari 5 menit"
+        },
+        "solution": {
+          "title": "Solusi Terjamin",
+          "description": "Setiap kendala akan kami bantu selesaikan sampai tuntas"
+        },
+        "professional": {
+          "title": "Tim Profesional",
+          "description": "Customer service berpengalaman di bidang crypto dan digital payment"
+        },
+        "secure": {
+          "title": "Keamanan Data",
+          "description": "Data transaksi Anda dijaga kerahasiaannya dengan enkripsi SSL 256-bit"
+        }
+      }
+    },
+    "quickLinks": {
+      "title": "Panduan & Resource",
+      "subtitle": "Akses cepat ke panduan dan tools yang Anda butuhkan",
+      "viewGuide": "Lihat panduan",
+      "links": {
+        "gettingStarted": {
+          "title": "Panduan Memulai",
+          "description": "Langkah-langkah memulai transaksi crypto, PayPal, dan Skrill"
+        },
+        "calculator": {
+          "title": "Kalkulator Rate",
+          "description": "Hitung estimasi transaksi dengan rate real-time"
+        },
+        "cryptoList": {
+          "title": "Daftar Cryptocurrency",
+          "description": "19+ cryptocurrency dengan harga live"
+        },
+        "pricing": {
+          "title": "Rate & Harga",
+          "description": "Lihat rate terkini untuk semua layanan"
+        }
+      }
+    },
+    "commonIssues": {
+      "title": "Kendala Umum & Solusi",
+      "issues": {
+        "delayed": {
+          "title": "Transaksi belum diterima",
+          "solution": "Pastikan pembayaran sudah sesuai nominal. Jika sudah 30 menit belum diterima, hubungi WhatsApp dengan bukti transfer."
+        },
+        "rate": {
+          "title": "Rate berubah saat transaksi",
+          "solution": "Rate dikunci saat order dibuat. Jika ada perbedaan, hubungi customer service untuk konfirmasi."
+        },
+        "wallet": {
+          "title": "Salah input alamat wallet",
+          "solution": "Segera hubungi customer service sebelum transaksi diproses. Setelah pengiriman, tidak dapat dibatalkan."
+        }
+      }
+    },
+    "cta": {
+      "heading": "Tidak menemukan jawaban?",
+      "subheading": "Tim support siap membantu 24/7",
+      "button": "Chat WhatsApp Sekarang"
+    },
+    "searchModal": {
+      "searchLabel": "Cari",
+      "placeholder": "Cari pertanyaan (misal: minimal transaksi, cara bayar, dll)...",
+      "popularSearches": "Pencarian Populer",
+      "resultsFound": "Ditemukan",
+      "results": "Hasil",
+      "noResults": "Tidak ada hasil untuk",
+      "noResultsHelper": "Coba kata kunci lain atau hubungi customer service",
+      "searchButton": "Cari",
+      "suggestions": {
+        "minimal": "minimal",
+        "howToStart": "cara memulai",
+        "processTime": "waktu proses",
+        "paypal": "paypal",
+        "safe": "aman",
+        "crypto": "cryptocurrency",
+        "tier": "tier",
+        "skrill": "skrill"
+      }
+    }
+  },
+  "aboutPage": {
+    "header": {
+      "title": "Tentang Saldopedia",
+      "subtitle": "Platform jual beli crypto, PayPal, dan Skrill terpercaya di Indonesia sejak 2020"
+    },
+    "stats": {
+      "transactions": {
+        "value": "50.000+",
+        "label": "Transaksi Sukses"
+      },
+      "users": {
+        "value": "10.000+",
+        "label": "Pengguna Aktif"
+      },
+      "satisfaction": {
+        "value": "98%",
+        "label": "Tingkat Kepuasan"
+      },
+      "experience": {
+        "value": "4+ Tahun",
+        "label": "Pengalaman"
+      }
+    },
+    "whoWeAre": {
+      "title": "Siapa Kami?",
+      "paragraph1": "Saldopedia adalah platform fintech Indonesia untuk jual beli cryptocurrency, PayPal, dan Skrill. Didirikan tahun 2020, kami hadir untuk memudahkan transaksi aset digital dengan cepat dan aman.",
+      "paragraph2": "Berawal dari kebutuhan pasar Indonesia akan layanan jual beli aset digital yang mudah diakses, kami membangun Saldopedia dengan satu tujuan: memberikan pengalaman transaksi yang simpel, transparan, dan terpercaya untuk semua kalangan.",
+      "paragraph3": "Tim kami terdiri dari profesional berpengalaman di bidang cryptocurrency, fintech, dan customer service. Kami memahami bahwa setiap transaksi adalah kepercayaan yang harus dijaga, karena itu kami selalu mengutamakan keamanan dan kenyamanan pengguna.",
+      "paragraph4": "Dengan minimal transaksi mulai Rp 25.000, kami membuka akses investasi digital bagi siapa saja - dari pemula yang baru mengenal crypto hingga trader berpengalaman yang membutuhkan layanan cepat dan reliable.",
+      "paragraph5": "Transaksi diproses dalam 5-15 menit dengan keamanan berlapis dan customer service yang responsif. Kami berkomitmen menjadi partner terpercaya Anda dalam dunia aset digital."
+    },
+    "visionMission": {
+      "title": "Visi & Misi",
+      "vision": {
+        "title": "Visi",
+        "content": "Menjadi platform jual beli crypto dan aset digital terpercaya #1 di Indonesia yang memudahkan akses investasi digital bagi semua kalangan."
+      },
+      "mission": {
+        "title": "Misi",
+        "items": {
+          "access": "Memberikan akses mudah dan terjangkau untuk jual beli crypto mulai Rp 25.000",
+          "service": "Menyediakan layanan cepat (5-15 menit), aman (SSL 256-bit), dan transparan",
+          "education": "Mengedukasi masyarakat Indonesia tentang cryptocurrency melalui konten berkualitas",
+          "ecosystem": "Membangun ekosistem jual beli yang inklusif dan terpercaya"
+        }
+      }
+    },
+    "coreValues": {
+      "title": "Nilai Inti",
+      "values": {
+        "trust": {
+          "title": "Kepercayaan",
+          "description": "Menjaga kepercayaan pelanggan adalah prioritas utama. Setiap transaksi dijamin aman dan transparan."
+        },
+        "speed": {
+          "title": "Kecepatan",
+          "description": "Transaksi diproses dalam 5-15 menit, tanpa menunggu lama."
+        },
+        "transparency": {
+          "title": "Transparansi",
+          "description": "Rate yang ditampilkan adalah rate final. Tidak ada biaya tersembunyi."
+        },
+        "security": {
+          "title": "Keamanan",
+          "description": "Enkripsi SSL 256-bit dan verifikasi berlapis untuk proteksi transaksi Anda."
+        }
+      }
+    },
+    "whyChoose": {
+      "title": "Keunggulan Saldopedia",
+      "features": {
+        "automated": {
+          "title": "Proses Otomatis",
+          "description": "Transaksi diproses dalam 5-15 menit setelah pembayaran. Aktif 24/7."
+        },
+        "lowMinimum": {
+          "title": "Mulai Rp 25.000",
+          "description": "Transaksi bisa dimulai dari nominal kecil, cocok untuk pemula maupun profesional."
+        },
+        "secure": {
+          "title": "Keamanan Berlapis",
+          "description": "Enkripsi SSL 256-bit, verifikasi otomatis, proteksi saldo 100%."
+        },
+        "competitive": {
+          "title": "Rate Real-Time",
+          "description": "Rate mengikuti harga pasar global tanpa biaya tersembunyi."
+        },
+        "support": {
+          "title": "Support Profesional",
+          "description": "Tim support siap membantu dengan respon kurang dari 5 menit."
+        },
+        "variety": {
+          "title": "19+ Cryptocurrency",
+          "description": "Bitcoin, Ethereum, USDT, dan cryptocurrency populer lainnya tersedia."
+        }
+      }
+    },
+    "services": {
+      "title": "Layanan Kami",
+      "subtitle": "Berbagai layanan transaksi aset digital untuk kebutuhan Anda",
+      "items": {
+        "crypto": {
+          "title": "Jual Beli Cryptocurrency",
+          "description": "Bitcoin, Ethereum, USDT, dan 16+ crypto lainnya dengan rate real-time. Proses 5-15 menit."
+        },
+        "paypal": {
+          "title": "Jual Beli Saldo PayPal",
+          "description": "Top up dan jual saldo PayPal dengan rate tier kompetitif. Min $20, proses instan."
+        },
+        "skrill": {
+          "title": "Jual Beli Saldo Skrill",
+          "description": "Transaksi saldo Skrill untuk freelance, belanja online, atau bisnis."
+        }
+      }
+    },
+    "commitment": {
+      "title": "Komitmen Kami",
+      "description": "Saldopedia berkomitmen memberikan layanan terbaik dengan mengutamakan:",
+      "stats": {
+        "availability": {
+          "value": "24/7",
+          "label": "Transaksi aktif setiap saat"
+        },
+        "transparency": {
+          "value": "100%",
+          "label": "Transparansi tanpa biaya tersembunyi"
+        },
+        "speed": {
+          "value": "<15 min",
+          "label": "Rata-rata waktu proses"
+        },
+        "satisfaction": {
+          "value": "98%",
+          "label": "Tingkat kepuasan"
+        }
+      }
+    },
+    "legalInfo": {
+      "title": "Informasi Legal",
+      "content": "Saldopedia adalah layanan independen yang beroperasi sesuai hukum Indonesia. Kami berkomitmen menjaga standar etika bisnis dan melindungi kepentingan pengguna.",
+      "disclaimer": "Disclaimer: Saldopedia tidak terafiliasi dengan PayPal Inc., Skrill Limited, atau platform cryptocurrency manapun. Semua merek dagang adalah properti pemiliknya masing-masing."
+    },
+    "cta": {
+      "title": "Siap Mulai Transaksi?",
+      "description": "Bergabung dengan 10.000+ pengguna yang sudah mempercayakan transaksi crypto, PayPal, dan Skrill mereka ke Saldopedia.",
+      "startButton": "Mulai Transaksi",
+      "learnButton": "Pelajari Cara Kerja"
+    }
+  },
+  "order": {
+    "pageTitle": "Form Order - Transaksi Instan & Aman",
+    "title": "Buat Order",
+    "subtitle": "Isi form untuk memulai transaksi. Order Anda akan diproses dalam hitungan menit dengan keamanan terjamin.",
+    "whatsappNotice": "Order diproses setelah pembayaran dikonfirmasi",
+    "successTitle": "Order Berhasil Dibuat!",
+    "successMessage": "Order Anda sudah masuk dan email konfirmasi sudah dikirim. Transaksi akan diproses secara otomatis.",
+    "backButton": "Kembali",
+    "chatWhatsApp": "Chat WhatsApp",
+    "createNewOrder": "Buat Order Baru",
+    "errorMessage": "Gagal mengirim order. Silakan coba lagi atau hubungi customer service.",
+    "customerInfo": "Informasi Pelanggan",
+    "transactionDetails": "Detail Transaksi",
+    "calculationResults": "Hasil Perhitungan",
+    "name": "Nama Lengkap",
+    "email": "Email",
+    "phone": "Nomor WhatsApp",
+    "service": "Pilih Layanan",
+    "cryptocurrency": "Cryptocurrency",
+    "paypal": "PayPal",
+    "skrill": "Skrill",
+    "crypto": "Cryptocurrency",
+    "network": "Jaringan",
+    "transactionType": "Tipe Transaksi",
+    "buy": "Beli",
+    "sell": "Jual",
+    "amount": "Jumlah",
+    "amountIDR": "Jumlah (IDR)",
+    "amountUSD": "Jumlah (USD)",
+    "walletAddress": "Alamat Wallet",
+    "xrpTag": "Tag/Memo XRP",
+    "optional": "Opsional",
+    "paymentMethod": "Metode Pembayaran",
+    "accountName": "Nama Pemilik Rekening",
+    "accountNumber": "Nomor Rekening",
+    "phoneNumber": "Nomor HP",
+    "paymentMethodSelect": "Pilih metode pembayaran",
+    "emailService": "Email",
+    "notes": "Catatan (Opsional)",
+    "notesPlaceholder": "Tambahkan catatan atau pertanyaan",
+    "submitButton": "Kirim Order",
+    "submitting": "Mengirim...",
+    "securityNotice": "Keamanan Berlapis. Data dilindungi enkripsi SSL 256-bit. Transaksi diproses dalam 5-15 menit.",
+    "youPay": "Anda Bayar",
+    "youReceive": "Anda Terima",
+    "rate": "Rate",
+    "tier": "Tier",
+    "networkFee": "Biaya Jaringan",
+    "networkFeeInfo": "Biaya transfer blockchain",
+    "cryptoPrice": "Harga Crypto",
+    "totalPayment": "Total Pembayaran",
+    "minimumAmount": "Minimal transaksi",
+    "errors": {
+      "nameRequired": "Nama lengkap wajib diisi",
+      "emailRequired": "Email wajib diisi",
+      "emailInvalid": "Format email tidak valid",
+      "phoneRequired": "Nomor WhatsApp wajib diisi",
+      "phoneInvalid": "Nomor WhatsApp tidak valid",
+      "amountRequired": "Jumlah wajib diisi",
+      "amountMinimum": "Minimal transaksi Rp 25.000",
+      "networkRequired": "Jaringan wajib dipilih",
+      "walletRequired": "Alamat wallet wajib diisi",
+      "paymentMethodRequired": "Metode pembayaran wajib dipilih",
+      "accountNameRequired": "Nama pemilik rekening wajib diisi",
+      "accountNumberRequired": "Nomor rekening/HP wajib diisi",
+      "serviceEmailRequired": "wajib diisi"
+    }
+  },
+  "cryptoProductPage": {
+    "hero": {
+      "title": "Jual Beli Cryptocurrency",
+      "titleHighlight": "Cepat & Aman",
+      "subtitle": "Jual beli Bitcoin, USDT, Ethereum dengan rate real-time. Mulai Rp 25.000, proses 5-15 menit, keamanan berlapis 100%."
+    },
+    "rateTable": {
+      "title": "Rate Cryptocurrency Hari Ini",
+      "buyHeader": "Beli Crypto",
+      "sellHeader": "Jual Crypto",
+      "buyRate": "Harga Pasar + 5%",
+      "sellRate": "Harga Pasar - 5%",
+      "buyDesc": "Rate mengikuti harga pasar real-time",
+      "sellDesc": "Rate mengikuti harga pasar real-time",
+      "updateNote": "Rate update otomatis"
+    },
+    "supported": {
+      "title": "Cryptocurrency yang Didukung",
+      "bitcoin": {
+        "name": "Bitcoin (BTC)",
+        "description": "Cryptocurrency paling populer dan bernilai tinggi",
+        "minAmount": "Min Rp 25.000",
+        "processTime": "Proses 5-15 menit"
+      },
+      "ethereum": {
+        "name": "Ethereum (ETH)",
+        "description": "Platform blockchain untuk smart contract",
+        "minAmount": "Min Rp 25.000",
+        "processTime": "Proses 5-15 menit"
+      },
+      "usdt": {
+        "name": "Tether (USDT)",
+        "description": "Stablecoin dengan nilai stabil mengikuti USD",
+        "minAmount": "Min Rp 25.000",
+        "processTime": "Proses 5-15 menit"
+      },
+      "moreCoins": "+ Cryptocurrency lainnya: BNB, SOL, MATIC, dan masih banyak lagi"
+    },
+    "whyChoose": {
+      "title": "Keunggulan Transaksi Crypto Saldopedia",
+      "features": {
+        "fast": {
+          "title": "Proses Otomatis",
+          "description": "Transaksi diproses dalam 5-15 menit setelah pembayaran"
+        },
+        "lowMin": {
+          "title": "Mulai Rp 25.000",
+          "description": "Nominal kecil cocok untuk semua kalangan"
+        },
+        "secure": {
+          "title": "Keamanan Berlapis",
+          "description": "Enkripsi SSL 256-bit, verifikasi otomatis, proteksi 100%"
+        },
+        "realtime": {
+          "title": "Rate Real-Time",
+          "description": "Rate mengikuti harga pasar global secara transparan"
+        }
+      }
+    },
+    "howTo": {
+      "title": "Cara Transaksi Cryptocurrency",
+      "step1": {
+        "title": "Buat Order",
+        "description": "Isi form order online atau hubungi WhatsApp, pilih crypto yang diinginkan"
+      },
+      "step2": {
+        "title": "Transfer & Konfirmasi",
+        "description": "Transfer sesuai nominal dan konfirmasi pembayaran"
+      },
+      "step3": {
+        "title": "Terima Crypto",
+        "description": "Crypto masuk ke wallet Anda dalam 5-15 menit"
+      },
+      "ctaButton": "Mulai Transaksi Sekarang"
+    },
+    "faq": {
+      "title": "FAQ Cryptocurrency",
+      "q1": {
+        "question": "Cryptocurrency apa saja yang bisa ditransaksikan?",
+        "answer": "Bitcoin (BTC), Ethereum (ETH), USDT, BNB, Solana (SOL), MATIC, dan cryptocurrency populer lainnya. Rate mengikuti harga pasar real-time."
+      },
+      "q2": {
+        "question": "Berapa minimal transaksi?",
+        "answer": "Minimal Rp 25.000 untuk semua cryptocurrency. Cocok untuk pemula yang ingin mulai investasi dengan modal kecil."
+      },
+      "q3": {
+        "question": "Bagaimana cara mendapatkan rate terbaik?",
+        "answer": "Rate kami mengikuti harga pasar global. Beli crypto +5%, jual crypto -5% dari harga pasar. Tanpa biaya tersembunyi."
+      },
+      "q4": {
+        "question": "Berapa lama proses transaksi?",
+        "answer": "Setelah pembayaran dikonfirmasi, crypto dikirim ke wallet Anda dalam 5-15 menit. Aktif 24/7."
+      }
+    }
+  },
+  "paypalProductPage": {
+    "hero": {
+      "title": "Jual Beli Saldo PayPal",
+      "titleHighlight": "Aman & Terpercaya",
+      "subtitle": "Jual beli saldo PayPal dengan rate tier kompetitif. Min $20, proses 5-15 menit, keamanan berlapis 100%."
+    },
+    "rateTable": {
+      "title": "Rate PayPal Hari Ini",
+      "sellTitle": "Rate Jual PayPal (Anda Jual ke Kami)",
+      "buyTitle": "Rate Beli PayPal (Anda Beli dari Kami)",
+      "amountHeader": "Jumlah Saldo",
+      "rateHeader": "Rate per USD",
+      "updateNote": "Rate update real-time mengikuti kondisi pasar",
+      "sellRates": {
+        "tier1": { "range": "$20 - $49", "rate": "Rp 12.000" },
+        "tier2": { "range": "$50 - $499", "rate": "Rp 14.000" },
+        "tier3": { "range": "$500 - $1.999", "rate": "Rp 15.000" },
+        "tier4": { "range": "$2.000 - $5.000", "rate": "Rp 15.299" }
+      },
+      "buyRates": {
+        "tier1": { "range": "$20 - $49", "rate": "Rp 17.699" },
+        "tier2": { "range": "$50 - $499", "rate": "Rp 17.499" },
+        "tier3": { "range": "$500 - $1.999", "rate": "Rp 17.099" },
+        "tier4": { "range": "$2.000 - $5.000", "rate": "Rp 16.789" }
+      }
+    },
+    "whyChoose": {
+      "title": "Keunggulan Transaksi PayPal Saldopedia",
+      "features": {
+        "tier": {
+          "title": "Rate Tier Otomatis",
+          "description": "Tier otomatis berdasarkan nominal transaksi Anda"
+        },
+        "fast": {
+          "title": "Proses Instan",
+          "description": "Saldo dikirim dalam 5-15 menit"
+        },
+        "secure": {
+          "title": "Keamanan Berlapis",
+          "description": "Enkripsi SSL 256-bit, verifikasi otomatis, proteksi 100%"
+        },
+        "support": {
+          "title": "Aktif 24/7",
+          "description": "Transaksi aktif 24/7 dengan customer support siap bantu"
+        }
+      }
+    },
+    "services": {
+      "title": "Layanan PayPal",
+      "sell": {
+        "title": "Jual Saldo PayPal",
+        "description": "Punya saldo PayPal tidak terpakai? Cairkan jadi Rupiah dengan rate kompetitif. Makin besar saldo, makin bagus rate-nya.",
+        "features": {
+          "minMax": "Min $20, maks $5.000 per transaksi",
+          "rate": "Rate tier: Rp 12.000 - Rp 15.299/USD",
+          "payment": "Transfer bank lokal Indonesia",
+          "process": "Proses 5-15 menit"
+        }
+      },
+      "buy": {
+        "title": "Beli Saldo PayPal",
+        "description": "Butuh saldo PayPal untuk belanja online atau pembayaran internasional? Beli dengan mudah, aman, langsung masuk ke akun Anda.",
+        "features": {
+          "max": "Maks $5000 per transaksi",
+          "rate": "Rate tier: Rp 16.789 - Rp 17.699/USD",
+          "payment": "Bayar via transfer bank Indonesia",
+          "process": "Saldo masuk dalam 5-15 menit"
+        }
+      }
+    },
+    "howTo": {
+      "title": "Cara Transaksi PayPal",
+      "step1": {
+        "title": "Buat Order",
+        "description": "Isi form order online atau hubungi WhatsApp, pilih layanan PayPal"
+      },
+      "step2": {
+        "title": "Isi Data & Transfer",
+        "description": "Masukkan email PayPal dan nominal, lalu transfer"
+      },
+      "step3": {
+        "title": "Terima Saldo",
+        "description": "Saldo PayPal masuk dalam 5-15 menit"
+      },
+      "ctaButton": "Mulai Transaksi Sekarang"
+    },
+    "faq": {
+      "title": "FAQ PayPal",
+      "q1": {
+        "question": "Berapa min dan maks transaksi PayPal?",
+        "answer": "Min $20, maks $5.000 per transaksi untuk jual maupun beli PayPal."
+      },
+      "q2": {
+        "question": "Bagaimana rate tier bekerja?",
+        "answer": "Makin besar transaksi, makin bagus rate. Jual: $20-$49 = Rp 12.000/USD sampai $2.000-$5.000 = Rp 15.299/USD. Beli juga tier, rate makin murah di volume besar."
+      },
+      "q3": {
+        "question": "Apakah aman jual beli PayPal di sini?",
+        "answer": "Sangat aman! Keamanan berlapis dan sudah melayani ribuan transaksi. Proses transparan melalui customer service."
+      },
+      "q4": {
+        "question": "Berapa lama proses transaksi?",
+        "answer": "Setelah pembayaran dikonfirmasi, saldo PayPal dikirim dalam 5-15 menit. Aktif 24/7."
+      },
+      "q5": {
+        "question": "Bagaimana sistem pembayaran order?",
+        "answer": "Order dibayar menggunakan saldo Saldopedia. Top up saldo di menu Deposit, lalu gunakan untuk order. Hasil penjualan masuk ke saldo dan bisa di-withdraw."
+      }
+    }
+  },
+  "skrillProductPage": {
+    "hero": {
+      "title": "Jual Beli Saldo Skrill",
+      "titleHighlight": "Aman & Terpercaya",
+      "subtitle": "Jual beli saldo Skrill dengan rate tier kompetitif. Min $20, proses 5-15 menit, keamanan berlapis 100%."
+    },
+    "rateTable": {
+      "title": "Rate Skrill Hari Ini",
+      "sellTitle": "Rate Jual Skrill (Anda Jual ke Kami)",
+      "buyTitle": "Rate Beli Skrill (Anda Beli dari Kami)",
+      "amountHeader": "Jumlah Saldo",
+      "rateHeader": "Rate per USD",
+      "updateNote": "Rate update real-time mengikuti kondisi pasar",
+      "sellRates": {
+        "tier1": { "range": "$20 - $49", "rate": "Rp 12.000" },
+        "tier2": { "range": "$50 - $499", "rate": "Rp 14.000" },
+        "tier3": { "range": "$500 - $1.999", "rate": "Rp 15.000" },
+        "tier4": { "range": "$2.000 - $5.000", "rate": "Rp 15.299" }
+      },
+      "buyRates": {
+        "tier1": { "range": "$20 - $49", "rate": "Rp 17.699" },
+        "tier2": { "range": "$50 - $499", "rate": "Rp 17.499" },
+        "tier3": { "range": "$500 - $1.999", "rate": "Rp 17.099" },
+        "tier4": { "range": "$2.000 - $5.000", "rate": "Rp 16.789" }
+      }
+    },
+    "whyChoose": {
+      "title": "Keunggulan Transaksi Skrill Saldopedia",
+      "features": {
+        "tier": {
+          "title": "Rate Tier Otomatis",
+          "description": "Tier otomatis berdasarkan nominal transaksi Anda"
+        },
+        "fast": {
+          "title": "Proses Instan",
+          "description": "Saldo dikirim dalam 5-15 menit"
+        },
+        "secure": {
+          "title": "Keamanan Berlapis",
+          "description": "Enkripsi SSL 256-bit, verifikasi otomatis, proteksi 100%"
+        },
+        "support": {
+          "title": "Aktif 24/7",
+          "description": "Transaksi aktif 24/7 dengan customer support siap bantu"
+        }
+      }
+    },
+    "services": {
+      "title": "Layanan Skrill",
+      "sell": {
+        "title": "Jual Saldo Skrill",
+        "description": "Punya saldo Skrill tidak terpakai? Cairkan jadi Rupiah dengan rate kompetitif. Makin besar saldo, makin bagus rate-nya.",
+        "features": {
+          "minMax": "Min $20, maks $5.000 per transaksi",
+          "rate": "Rate tier: Rp 12.000 - Rp 15.299/USD",
+          "payment": "Transfer bank lokal Indonesia",
+          "process": "Proses 5-15 menit"
+        }
+      },
+      "buy": {
+        "title": "Beli Saldo Skrill",
+        "description": "Butuh saldo Skrill untuk transaksi online atau pembayaran internasional? Beli dengan mudah, aman, langsung masuk ke akun Anda.",
+        "features": {
+          "max": "Maks $5000 per transaksi",
+          "rate": "Rate tier: Rp 16.789 - Rp 17.699/USD",
+          "payment": "Bayar via transfer bank Indonesia",
+          "process": "Saldo masuk dalam 5-15 menit"
+        }
+      }
+    },
+    "howTo": {
+      "title": "Cara Transaksi Skrill",
+      "step1": {
+        "title": "Buat Order",
+        "description": "Isi form order online atau hubungi WhatsApp, pilih layanan Skrill"
+      },
+      "step2": {
+        "title": "Isi Data & Transfer",
+        "description": "Masukkan email Skrill dan nominal, lalu transfer"
+      },
+      "step3": {
+        "title": "Terima Saldo",
+        "description": "Saldo Skrill masuk dalam 5-15 menit"
+      },
+      "ctaButton": "Mulai Transaksi Sekarang"
+    },
+    "faq": {
+      "title": "FAQ Skrill",
+      "q1": {
+        "question": "Berapa min dan maks transaksi Skrill?",
+        "answer": "Min $20, maks $5.000 per transaksi untuk jual maupun beli Skrill."
+      },
+      "q2": {
+        "question": "Bagaimana rate tier bekerja?",
+        "answer": "Makin besar transaksi, makin bagus rate. Jual: $20-$49 = Rp 12.000/USD sampai $2.000-$5.000 = Rp 15.299/USD. Beli juga tier, rate makin murah di volume besar."
+      },
+      "q3": {
+        "question": "Apakah aman jual beli Skrill di sini?",
+        "answer": "Sangat aman! Keamanan berlapis dan sudah melayani ribuan transaksi. Proses transparan melalui customer service."
+      },
+      "q4": {
+        "question": "Berapa lama proses transaksi?",
+        "answer": "Setelah pembayaran dikonfirmasi, saldo Skrill dikirim dalam 5-15 menit. Aktif 24/7."
+      },
+      "q5": {
+        "question": "Bagaimana sistem pembayaran order?",
+        "answer": "Order dibayar menggunakan saldo Saldopedia. Top up saldo di menu Deposit, lalu gunakan untuk order. Hasil penjualan masuk ke saldo dan bisa di-withdraw."
+      }
+    }
+  },
+  "cookiePolicy": {
+    "header": {
+      "title": "Kebijakan Cookie",
+      "lastUpdated": "Terakhir diperbarui: 10 Desember 2025"
+    },
+    "commitment": {
+      "title": "Komitmen Transparansi Kami",
+      "content": "Saldopedia berkomitmen untuk bersikap transparan tentang teknologi yang kami gunakan di website kami. Kebijakan Cookie ini menjelaskan secara komprehensif bagaimana kami menggunakan cookie dan teknologi serupa untuk meningkatkan pengalaman Anda, mengamankan layanan, dan memahami bagaimana website kami digunakan. Kami percaya bahwa Anda berhak mengetahui data apa yang dikumpulkan dan memiliki kendali atas preferensi privasi Anda."
+    },
+    "section1": {
+      "title": "1. Pengantar dan Ruang Lingkup",
+      "p1": "Kebijakan Cookie ini merupakan bagian integral dari Kebijakan Privasi Saldopedia dan menjelaskan secara detail tentang cookie dan teknologi pelacakan serupa yang digunakan di website kami. Kebijakan ini berlaku untuk semua pengunjung dan pengguna website Saldopedia, termasuk halaman publik, dashboard pengguna, dan seluruh subdomain yang dioperasikan oleh Saldopedia.",
+      "p2": "Dengan terus menggunakan website kami setelah membaca Kebijakan Cookie ini, Anda menyatakan pemahaman dan persetujuan terhadap penggunaan cookie sebagaimana dijelaskan dalam dokumen ini. Jika Anda tidak menyetujui penggunaan cookie tertentu, Anda memiliki opsi untuk mengontrol dan menonaktifkan cookie tersebut melalui pengaturan browser atau preferensi cookie di website kami.",
+      "p3": "Kami secara berkala memperbarui Kebijakan Cookie ini untuk mencerminkan perubahan dalam teknologi, praktik kami, atau persyaratan hukum. Kami menyarankan Anda untuk meninjau kebijakan ini secara berkala untuk tetap mendapatkan informasi terkini tentang bagaimana kami menggunakan cookie."
+    },
+    "section2": {
+      "title": "2. Apa Itu Cookie dan Teknologi Serupa?",
+      "sub1": {
+        "title": "2.1 Definisi Cookie",
+        "content": "Cookie adalah file teks kecil yang berisi sejumlah data yang disimpan di perangkat Anda (komputer, smartphone, tablet, atau perangkat lainnya) ketika Anda mengunjungi sebuah website. Cookie dikirim oleh server web ke browser Anda dan disimpan di perangkat Anda. Ketika Anda mengunjungi website yang sama lagi, browser mengirim cookie kembali ke server, memungkinkan website untuk mengenali perangkat Anda dan mengingat informasi tentang kunjungan sebelumnya seperti preferensi bahasa, status login, dan pengaturan lainnya."
+      },
+      "sub2": {
+        "title": "2.2 Jenis Cookie Berdasarkan Sumber",
+        "firstParty": "Cookie Pihak Pertama (First-Party Cookies):",
+        "firstPartyDesc": "Cookie yang ditetapkan langsung oleh domain website yang Anda kunjungi (saldopedia.com). Cookie ini dikelola oleh Saldopedia dan digunakan untuk fungsi website inti, pengalaman pengguna, dan keamanan.",
+        "thirdParty": "Cookie Pihak Ketiga (Third-Party Cookies):",
+        "thirdPartyDesc": "Cookie yang ditetapkan oleh domain selain website yang Anda kunjungi. Cookie ini ditempatkan oleh layanan pihak ketiga yang terintegrasi dengan website kami, seperti layanan analitik (Google Analytics), widget media sosial, atau layanan periklanan."
+      },
+      "sub3": {
+        "title": "2.3 Teknologi Pelacakan Serupa",
+        "intro": "Selain cookie, kami mungkin menggunakan teknologi pelacakan serupa lainnya:",
+        "localStorage": "Local Storage dan Session Storage: Mekanisme penyimpanan browser yang memungkinkan website menyimpan data di perangkat Anda, mirip dengan cookie tetapi dengan kapasitas penyimpanan lebih besar dan karakteristik yang berbeda.",
+        "pixel": "Web Beacons dan Pixel Tags: Gambar transparan kecil yang disisipkan di halaman web atau email yang memungkinkan kami melacak apakah halaman telah dilihat atau email telah dibuka.",
+        "fingerprint": "Device Fingerprinting: Teknik yang mengumpulkan informasi tentang konfigurasi perangkat Anda untuk tujuan keamanan dan pencegahan penipuan.",
+        "sdk": "SDK dan API: Software Development Kits dan Application Programming Interfaces yang digunakan untuk mengintegrasikan layanan pihak ketiga ke dalam website kami."
+      }
+    },
+    "section3": {
+      "title": "3. Tujuan Penggunaan Cookie di Saldopedia",
+      "intro": "Saldopedia menggunakan cookie dan teknologi serupa untuk berbagai tujuan yang sah dan bermanfaat bagi pengguna kami. Berikut adalah penjelasan lengkap tentang mengapa kami menggunakan cookie:",
+      "sub1": {
+        "title": "3.1 Operasional Website yang Esensial",
+        "content": "Cookie esensial memungkinkan fungsi dasar website seperti navigasi halaman, akses ke area yang aman, dan pemrosesan transaksi. Tanpa cookie ini, website tidak dapat berfungsi dengan benar. Cookie esensial juga membantu mengamankan website dari aktivitas berbahaya, melindungi data pengguna, dan memastikan integritas sesi login Anda. Cookie esensial tidak dapat dinonaktifkan karena diperlukan untuk operasi dasar website."
+      },
+      "sub2": {
+        "title": "3.2 Personalisasi dan Preferensi Pengguna",
+        "content": "Cookie preferensi memungkinkan website untuk mengingat pilihan yang Anda buat dan menyediakan pengalaman yang lebih personal. Ini termasuk mengingat pilihan bahasa (Indonesia atau English), preferensi tema tampilan (mode terang atau gelap), pengaturan regional, dan preferensi lainnya yang Anda atur. Dengan cookie preferensi, Anda tidak perlu mengatur ulang pilihan Anda setiap kali mengunjungi website, membuat pengalaman browsing lebih nyaman dan efisien."
+      },
+      "sub3": {
+        "title": "3.3 Analisis dan Peningkatan Performa",
+        "content": "Cookie analitik membantu kami memahami bagaimana pengunjung berinteraksi dengan website kami. Cookie ini mengumpulkan informasi secara anonim atau agregat tentang halaman yang dikunjungi, durasi kunjungan, jalur navigasi, sumber traffic, dan metrik performa lainnya. Informasi ini sangat berharga untuk mengidentifikasi halaman yang populer, area yang memerlukan perbaikan, masalah teknis, dan peluang untuk meningkatkan pengalaman pengguna secara keseluruhan. Data analitik membantu kami membuat keputusan berbasis data untuk pengembangan website."
+      },
+      "sub4": {
+        "title": "3.4 Keamanan dan Pencegahan Penipuan",
+        "content": "Cookie keamanan membantu kami melindungi pengguna dan platform dari aktivitas berbahaya. Cookie ini membantu mendeteksi dan mencegah serangan siber, mengidentifikasi aktivitas login yang mencurigakan, memverifikasi bahwa request berasal dari browser yang sah (bukan bot), melindungi formulir dari serangan CSRF (Cross-Site Request Forgery), dan mendukung sistem autentikasi yang aman. Keamanan adalah prioritas utama kami, dan cookie memainkan peran penting dalam melindungi akun dan data Anda."
+      },
+      "sub5": {
+        "title": "3.5 Marketing dan Komunikasi (Opsional)",
+        "content": "Cookie marketing, jika diaktifkan, digunakan untuk melacak pengunjung di seluruh website dan membangun profil minat untuk menampilkan iklan yang lebih relevan. Cookie ini juga membantu mengukur efektivitas kampanye pemasaran kami dan memahami jalur konversi pengguna. Cookie marketing sepenuhnya opsional dan memerlukan persetujuan eksplisit dari Anda. Anda dapat menolak cookie marketing tanpa mempengaruhi fungsionalitas inti website."
+      }
+    },
+    "section4": {
+      "title": "4. Kategori Cookie yang Kami Gunakan",
+      "intro": "Berikut adalah penjelasan terperinci tentang setiap kategori cookie yang digunakan di website Saldopedia:",
+      "necessary": {
+        "title": "4.1 Cookie yang Mutlak Diperlukan (Strictly Necessary Cookies)",
+        "description": "Cookie yang mutlak diperlukan adalah cookie esensial yang memungkinkan fungsi dasar website dan tidak dapat dinonaktifkan dalam sistem kami. Cookie ini biasanya hanya ditetapkan sebagai respons terhadap tindakan yang Anda lakukan yang merupakan permintaan layanan, seperti mengatur preferensi privasi, login ke akun, atau mengisi formulir. Website tidak dapat berfungsi dengan benar tanpa cookie ini.",
+        "examplesTitle": "Cookie esensial yang kami gunakan meliputi:",
+        "examples": {
+          "session": "Cookie Sesi Login: Menjaga Anda tetap login saat navigasi antar halaman dan memastikan keamanan sesi Anda. Cookie ini dihapus ketika Anda logout atau menutup browser.",
+          "consent": "Cookie Persetujuan: Menyimpan pilihan persetujuan cookie Anda sehingga kami tidak menampilkan banner cookie berulang kali.",
+          "security": "Cookie Keamanan: Melindungi website dari serangan siber, memvalidasi request, dan memastikan integritas transaksi.",
+          "csrf": "Token CSRF: Melindungi formulir dari serangan Cross-Site Request Forgery.",
+          "load": "Cookie Load Balancing: Memastikan distribusi traffic yang optimal ke server kami."
+        },
+        "retention": "Masa berlaku: Session (dihapus saat browser ditutup) hingga 24 jam",
+        "consentRequired": "Persetujuan diperlukan:",
+        "consentAnswer": "Tidak (cookie ini esensial dan tidak dapat dinonaktifkan)"
+      },
+      "preference": {
+        "title": "4.2 Cookie Preferensi (Preference/Functionality Cookies)",
+        "description": "Cookie preferensi memungkinkan website untuk mengingat informasi yang mengubah cara website berperilaku atau terlihat. Cookie ini membantu menyediakan pengalaman yang lebih personal dan nyaman dengan mengingat pilihan Anda. Jika Anda menonaktifkan cookie preferensi, beberapa pengaturan mungkin tidak tersimpan dan Anda mungkin perlu mengaturnya kembali setiap kunjungan.",
+        "examplesTitle": "Cookie preferensi yang kami gunakan meliputi:",
+        "examples": {
+          "language": "Preferensi Bahasa: Menyimpan pilihan bahasa Anda (Indonesia atau English) sehingga website ditampilkan dalam bahasa yang Anda pilih.",
+          "theme": "Preferensi Tema: Mengingat pilihan mode tampilan (terang atau gelap) berdasarkan preferensi Anda atau secara otomatis menyesuaikan berdasarkan waktu lokal.",
+          "regional": "Pengaturan Regional: Menyimpan preferensi format tanggal, mata uang, dan pengaturan regional lainnya.",
+          "accessibility": "Pengaturan Aksesibilitas: Menyimpan preferensi aksesibilitas jika tersedia."
+        },
+        "retention": "Masa berlaku: 6 hingga 12 bulan",
+        "consentRequired": "Persetujuan diperlukan:",
+        "consentAnswer": "Ya"
+      },
+      "analytics": {
+        "title": "4.3 Cookie Analitik dan Statistik (Analytics Cookies)",
+        "description": "Cookie analitik membantu kami memahami bagaimana pengunjung berinteraksi dengan website dengan mengumpulkan dan melaporkan informasi secara anonim atau pseudonim. Cookie ini memungkinkan kami menganalisis traffic website, mengidentifikasi halaman yang paling populer, memahami jalur navigasi pengguna, dan mendeteksi masalah teknis. Data yang dikumpulkan digunakan untuk meningkatkan performa dan pengalaman pengguna secara keseluruhan.",
+        "examplesTitle": "Cookie analitik yang mungkin kami gunakan:",
+        "examples": {
+          "visitors": "Statistik Pengunjung: Melacak jumlah pengunjung unik, pageviews, durasi sesi, dan metrik engagement lainnya.",
+          "source": "Sumber Traffic: Mengidentifikasi dari mana pengunjung berasal (mesin pencari, media sosial, referral, atau kunjungan langsung).",
+          "behavior": "Perilaku Pengguna: Memahami bagaimana pengguna menavigasi website, halaman mana yang dikunjungi, dan fitur mana yang digunakan.",
+          "performance": "Performa Website: Mengukur waktu loading halaman, error rate, dan metrik teknis lainnya.",
+          "googleAnalytics": "Google Analytics: Layanan analitik web dari Google yang menyediakan insight tentang traffic dan perilaku pengunjung (jika diaktifkan)."
+        },
+        "retention": "Masa berlaku: 1 hingga 24 bulan tergantung layanan analitik",
+        "consentRequired": "Persetujuan diperlukan:",
+        "consentAnswer": "Ya"
+      },
+      "marketing": {
+        "title": "4.4 Cookie Marketing dan Periklanan (Marketing Cookies)",
+        "description": "Cookie marketing digunakan untuk melacak pengunjung di seluruh website dengan tujuan menampilkan iklan yang relevan dan menarik bagi pengguna individu. Cookie ini juga membantu mengukur efektivitas kampanye iklan dan membatasi frekuensi tampilan iklan yang sama. Cookie marketing biasanya ditempatkan oleh jaringan periklanan dengan izin operator website.",
+        "examplesTitle": "Cookie marketing yang mungkin digunakan:",
+        "examples": {
+          "relevantAds": "Penargetan Iklan: Membangun profil minat berdasarkan perilaku browsing untuk menampilkan iklan yang lebih relevan.",
+          "retargeting": "Retargeting: Menampilkan iklan kepada pengunjung yang sebelumnya telah mengunjungi website kami saat mereka menjelajahi website lain.",
+          "conversion": "Pelacakan Konversi: Mengukur efektivitas kampanye dengan melacak tindakan yang diambil setelah melihat iklan.",
+          "social": "Widget Media Sosial: Cookie dari platform media sosial yang memungkinkan berbagi konten dan menampilkan konten sosial.",
+          "thirdParty": "Facebook Pixel dan Google Ads: Layanan periklanan pihak ketiga untuk penargetan dan pengukuran (jika diaktifkan)."
+        },
+        "retention": "Masa berlaku: 1 hingga 24 bulan tergantung penyedia layanan",
+        "consentRequired": "Persetujuan diperlukan:",
+        "consentAnswer": "Ya"
+      }
+    },
+    "section5": {
+      "title": "5. Cookie Pihak Ketiga dan Layanan Terintegrasi",
+      "intro": "Selain cookie yang kami tetapkan langsung (cookie pihak pertama), website kami mungkin menyertakan cookie dari layanan pihak ketiga yang terintegrasi. Kami bekerja sama dengan penyedia layanan yang terpercaya, tetapi penting untuk dipahami bahwa kami tidak memiliki kendali penuh atas cookie yang mereka tetapkan.",
+      "sub1": {
+        "title": "5.1 Layanan Analitik",
+        "content": "Kami mungkin menggunakan layanan analitik pihak ketiga seperti Google Analytics untuk mengumpulkan dan menganalisis data tentang penggunaan website. Layanan ini menetapkan cookie mereka sendiri untuk mengidentifikasi pengunjung unik, melacak sesi, dan mengumpulkan data perilaku. Data yang dikumpulkan umumnya bersifat anonim atau pseudonim dan digunakan untuk tujuan statistik dan peningkatan website."
+      },
+      "sub2": {
+        "title": "5.2 Widget Media Sosial",
+        "content": "Website kami mungkin menyertakan widget atau tombol berbagi dari platform media sosial seperti Facebook, Twitter, atau Instagram. Widget ini memungkinkan Anda berbagi konten dan berinteraksi dengan platform sosial. Ketika Anda berinteraksi dengan widget ini, platform media sosial dapat menetapkan cookie untuk tujuan mereka sendiri, termasuk penargetan iklan."
+      },
+      "sub3": {
+        "title": "5.3 Layanan Pembayaran dan Keamanan",
+        "content": "Untuk memproses transaksi cryptocurrency dan melindungi platform dari penipuan, kami mengintegrasikan layanan pembayaran dan keamanan pihak ketiga. Layanan ini mungkin menggunakan cookie atau teknologi serupa untuk verifikasi, pencegahan penipuan, dan pemrosesan transaksi yang aman."
+      },
+      "sub4": {
+        "title": "5.4 Tautan ke Kebijakan Privasi Pihak Ketiga",
+        "intro": "Untuk informasi lebih lanjut tentang praktik privasi dan cookie dari penyedia layanan pihak ketiga, silakan kunjungi kebijakan privasi mereka:",
+        "vendors": {
+          "google": "Google Privacy Policy: policies.google.com/privacy",
+          "googleAnalytics": "Google Analytics: support.google.com/analytics",
+          "facebook": "Facebook Cookie Policy: www.facebook.com/policies/cookies"
+        }
+      }
+    },
+    "section6": {
+      "title": "6. Cara Mengontrol dan Mengelola Cookie",
+      "intro": "Anda memiliki kendali penuh atas cookie yang diterima oleh perangkat Anda. Ada beberapa cara untuk mengelola preferensi cookie:",
+      "sub1": {
+        "title": "6.1 Pengaturan Cookie di Website Kami",
+        "content": "Saat pertama kali mengunjungi website Saldopedia, Anda akan melihat banner atau popup yang menginformasikan tentang penggunaan cookie dan meminta persetujuan Anda. Banner ini memungkinkan Anda untuk menerima semua cookie, menolak cookie non-esensial, atau menyesuaikan preferensi Anda berdasarkan kategori. Anda dapat mengubah preferensi cookie kapan saja dengan mengakses pengaturan cookie melalui link di footer website atau ikon pengaturan cookie jika tersedia."
+      },
+      "sub2": {
+        "title": "6.2 Pengaturan Browser",
+        "intro": "Sebagian besar browser web memungkinkan Anda untuk mengontrol cookie melalui pengaturan browser. Anda dapat mengatur browser untuk menolak semua cookie, menerima semua cookie, memberitahu Anda ketika cookie ditetapkan, atau menghapus cookie yang sudah ada. Cara mengakses pengaturan cookie berbeda-beda untuk setiap browser:",
+        "chrome": "Google Chrome: Buka Pengaturan > Privasi dan keamanan > Cookie dan data situs lainnya. Di sini Anda dapat memblokir cookie pihak ketiga, menghapus cookie saat keluar, atau mengelola pengecualian untuk situs tertentu.",
+        "firefox": "Mozilla Firefox: Buka Pengaturan > Privasi & Keamanan. Di bagian Cookie dan Data Situs, Anda dapat memilih tingkat perlindungan dan mengelola cookie secara detail.",
+        "safari": "Apple Safari: Buka Preferensi > Privasi. Anda dapat memblokir semua cookie, mencegah pelacakan lintas situs, dan mengelola data website.",
+        "edge": "Microsoft Edge: Buka Pengaturan > Cookie dan izin situs > Cookie dan data tersimpan. Anda dapat memblokir cookie pihak ketiga dan mengelola preferensi cookie."
+      },
+      "sub3": {
+        "title": "6.3 Alat Opt-Out Pihak Ketiga",
+        "content": "Beberapa layanan periklanan dan analitik menyediakan mekanisme opt-out langsung. Misalnya, Google menyediakan plugin browser untuk menonaktifkan pelacakan Google Analytics, dan Digital Advertising Alliance menyediakan alat untuk opt-out dari iklan bertarget dari anggota mereka. Anda dapat menggunakan alat-alat ini untuk mengelola preferensi privasi Anda di berbagai website."
+      },
+      "sub4": {
+        "title": "6.4 Dampak Menonaktifkan Cookie",
+        "content": "Penting untuk dipahami bahwa menonaktifkan cookie tertentu dapat mempengaruhi fungsionalitas website. Jika Anda menonaktifkan cookie esensial, website mungkin tidak berfungsi dengan benar dan beberapa fitur mungkin tidak tersedia. Menonaktifkan cookie preferensi berarti pengaturan Anda tidak akan tersimpan antar kunjungan. Menonaktifkan cookie analitik tidak akan mempengaruhi pengalaman Anda, tetapi akan membatasi kemampuan kami untuk meningkatkan website. Menonaktifkan cookie marketing berarti Anda mungkin masih melihat iklan, tetapi iklan tersebut tidak akan dipersonalisasi berdasarkan minat Anda."
+      }
+    },
+    "section7": {
+      "title": "7. Durasi Penyimpanan Cookie",
+      "intro": "Cookie memiliki periode penyimpanan yang berbeda-beda tergantung pada jenis dan tujuannya:",
+      "sub1": {
+        "title": "7.1 Session Cookies (Cookie Sesi)",
+        "content": "Session cookies adalah cookie sementara yang hanya ada selama sesi browsing Anda. Cookie ini disimpan di memori browser dan secara otomatis dihapus ketika Anda menutup browser atau sesi berakhir. Session cookies digunakan untuk fungsi-fungsi seperti menjaga Anda tetap login saat navigasi antar halaman dan menyimpan item dalam keranjang belanja sementara."
+      },
+      "sub2": {
+        "title": "7.2 Persistent Cookies (Cookie Persisten)",
+        "content": "Persistent cookies adalah cookie yang tetap tersimpan di perangkat Anda setelah browser ditutup dan bertahan untuk periode waktu tertentu atau sampai Anda menghapusnya secara manual. Masa berlaku persistent cookies bervariasi tergantung pada tujuannya. Cookie preferensi mungkin bertahan 6-12 bulan, cookie analitik mungkin bertahan 1-24 bulan, dan cookie periklanan mungkin bertahan beberapa bulan hingga 2 tahun."
+      },
+      "sub3": {
+        "title": "7.3 Tabel Durasi Cookie",
+        "table": {
+          "category": "Kategori Cookie",
+          "duration": "Durasi Tipikal",
+          "essential": "Cookie Esensial: Session - 24 jam",
+          "preference": "Cookie Preferensi: 6 - 12 bulan",
+          "analytics": "Cookie Analitik: 1 - 24 bulan",
+          "marketing": "Cookie Marketing: 3 - 24 bulan"
+        }
+      }
+    },
+    "section8": {
+      "title": "8. Pembaruan Kebijakan Cookie",
+      "p1": "Saldopedia dapat memperbarui Kebijakan Cookie ini dari waktu ke waktu untuk mencerminkan perubahan dalam teknologi yang kami gunakan, praktik privasi kami, persyaratan hukum yang berlaku, atau untuk meningkatkan transparansi. Setiap perubahan pada kebijakan ini akan berlaku efektif sejak tanggal yang tertera di bagian \"Terakhir diperbarui\" di atas.",
+      "p2": "Untuk perubahan yang signifikan atau material, kami akan berusaha memberikan pemberitahuan yang lebih menonjol, seperti menampilkan banner di website, mengirim email pemberitahuan kepada pengguna terdaftar, atau meminta persetujuan ulang melalui popup cookie. Kami menyarankan Anda untuk meninjau Kebijakan Cookie ini secara berkala untuk tetap mendapatkan informasi tentang bagaimana kami menggunakan cookie.",
+      "p3": "Penggunaan berkelanjutan website kami setelah perubahan berlaku menunjukkan penerimaan Anda terhadap Kebijakan Cookie yang diperbarui. Jika Anda tidak menyetujui perubahan, Anda dapat menggunakan opsi kontrol cookie yang dijelaskan di atas untuk mengelola preferensi Anda atau berhenti menggunakan website kami."
+    },
+    "section9": {
+      "title": "9. Hak Anda Terkait Cookie dan Privasi",
+      "p1": "Sebagai pengguna website Saldopedia, Anda memiliki hak-hak tertentu terkait data yang dikumpulkan melalui cookie. Sesuai dengan Undang-Undang Perlindungan Data Pribadi Indonesia dan prinsip privasi internasional, Anda berhak mengetahui cookie apa yang digunakan dan untuk tujuan apa, menerima atau menolak cookie non-esensial, mengubah preferensi cookie Anda kapan saja, meminta informasi tentang data yang dikumpulkan melalui cookie, dan meminta penghapusan data yang terkait dengan cookie (dengan batasan tertentu).",
+      "p2": "Untuk menggunakan hak-hak ini, Anda dapat mengelola preferensi cookie melalui pengaturan di website kami, mengatur preferensi di browser Anda, atau menghubungi tim support kami untuk permintaan yang lebih spesifik. Kami berkomitmen untuk merespons permintaan Anda dalam waktu yang wajar."
+    },
+    "section10": {
+      "title": "10. Hubungi Kami",
+      "intro": "Jika Anda memiliki pertanyaan, kekhawatiran, atau permintaan terkait Kebijakan Cookie ini atau praktik privasi kami, jangan ragu untuk menghubungi kami melalui saluran resmi berikut:",
+      "email": "Email: support@saldopedia.com",
+      "whatsapp": "WhatsApp:",
+      "hours": "Jam Operasional Customer Service: 09:00 - 21:00 WIB setiap hari",
+      "response": "Kami berkomitmen untuk merespons pertanyaan Anda dalam waktu 1-3 hari kerja."
+    },
+    "footer": "Dengan terus menggunakan website Saldopedia setelah membaca Kebijakan Cookie ini, Anda menyatakan pemahaman dan persetujuan terhadap penggunaan cookie dan teknologi serupa sebagaimana dijelaskan dalam dokumen ini. Terima kasih telah mempercayai Saldopedia untuk kebutuhan transaksi cryptocurrency, PayPal, dan Skrill Anda."
+  },
+  "termsOfService": {
+    "header": {
+      "title": "Syarat dan Ketentuan Layanan",
+      "lastUpdated": "Terakhir diperbarui: 10 Desember 2025"
+    },
+    "notice": {
+      "title": "Penting:",
+      "content": "Dengan menggunakan layanan Saldopedia, Anda menyatakan telah membaca, memahami, dan menyetujui seluruh Syarat dan Ketentuan ini. Jika Anda tidak menyetujui ketentuan ini, mohon untuk tidak menggunakan layanan kami."
+    },
+    "footer": "Dokumen ini merupakan perjanjian yang sah dan mengikat secara hukum antara Anda dan Saldopedia.",
+    "section1": {
+      "title": "1. Pendahuluan dan Ruang Lingkup",
+      "p1": "Selamat datang di Saldopedia, platform fintech Indonesia yang menyediakan layanan jual beli cryptocurrency, saldo PayPal, dan saldo Skrill. Dokumen Syarat dan Ketentuan Layanan ini merupakan perjanjian hukum yang mengikat antara Anda sebagai pengguna dengan Saldopedia sebagai penyedia layanan. Dengan mengakses atau menggunakan platform kami melalui website, aplikasi, atau saluran komunikasi resmi lainnya, Anda menyatakan persetujuan penuh terhadap seluruh ketentuan yang tercantum dalam dokumen ini.",
+      "p2": "Saldopedia beroperasi sebagai platform pertukaran aset digital yang memfasilitasi transaksi antara pengguna dengan layanan kami. Platform ini dirancang untuk memberikan kemudahan akses terhadap cryptocurrency dan layanan pembayaran digital internasional seperti PayPal dan Skrill dengan proses yang cepat, aman, dan transparan. Layanan kami menggunakan sistem saldo internal (balance) yang memungkinkan pengguna untuk melakukan deposit, melakukan order, menerima hasil penjualan, dan melakukan penarikan dana dengan lebih efisien.",
+      "p3": "Syarat dan Ketentuan ini berlaku untuk seluruh layanan yang disediakan oleh Saldopedia, termasuk namun tidak terbatas pada: pembelian dan penjualan cryptocurrency, transaksi saldo PayPal dan Skrill, sistem deposit dan withdrawal, program referral dan poin, serta seluruh fitur yang tersedia di dashboard pengguna. Kami menyarankan Anda untuk membaca dokumen ini secara menyeluruh dan menyimpannya untuk referensi di kemudian hari."
+    },
+    "section2": {
+      "title": "2. Definisi dan Interpretasi",
+      "intro": "Dalam Syarat dan Ketentuan ini, istilah-istilah berikut memiliki arti sebagai berikut kecuali konteks kalimat menentukan lain:",
+      "we": "\"Kami\", \"Saldopedia\", \"Platform\"",
+      "weDesc": "merujuk pada Saldopedia sebagai platform layanan jual beli cryptocurrency, PayPal, dan Skrill, termasuk seluruh layanan, fitur, dan fasilitas yang dioperasikan di bawah merek Saldopedia.",
+      "user": "\"Pengguna\", \"Anda\", \"Member\"",
+      "userDesc": "merujuk pada setiap individu atau entitas yang mengakses, mendaftar, atau menggunakan layanan Saldopedia, baik sebagai pengguna terdaftar maupun pengunjung platform.",
+      "service": "\"Layanan\"",
+      "serviceDesc": "merujuk pada seluruh produk, fitur, dan fasilitas yang disediakan oleh Saldopedia termasuk jual beli cryptocurrency, transaksi PayPal dan Skrill, sistem deposit dan withdrawal, dashboard pengguna, dan layanan pendukung lainnya.",
+      "crypto": "\"Cryptocurrency\", \"Aset Digital\"",
+      "cryptoDesc": "merujuk pada mata uang kripto dan aset digital termasuk namun tidak terbatas pada Bitcoin (BTC), Ethereum (ETH), Tether (USDT), Binance Coin (BNB), Solana (SOL), Polygon (MATIC), dan cryptocurrency lainnya yang didukung oleh platform.",
+      "bot": "\"Saldo\", \"Balance\"",
+      "botDesc": "merujuk pada saldo internal pengguna di platform Saldopedia yang dapat digunakan untuk melakukan order, menerima hasil penjualan, dan ditarik ke rekening bank. Saldo dalam mata uang Rupiah Indonesia (IDR).",
+      "balance": "\"Deposit\"",
+      "balanceDesc": "merujuk pada proses penambahan saldo dengan mentransfer dana dari rekening bank pengguna ke akun Saldopedia.",
+      "withdrawal": "\"Withdrawal\", \"Penarikan\"",
+      "withdrawalDesc": "merujuk pada proses penarikan saldo dari akun Saldopedia ke rekening bank pengguna.",
+      "order": "\"Order\", \"Transaksi\"",
+      "orderDesc": "merujuk pada instruksi pembelian atau penjualan yang dibuat oleh pengguna melalui platform Saldopedia."
+    },
+    "section3": {
+      "title": "3. Persyaratan dan Kelayakan Pengguna",
+      "sub1": {
+        "title": "3.1 Kriteria Kelayakan",
+        "intro": "Untuk dapat menggunakan layanan Saldopedia secara sah dan valid, Anda harus memenuhi seluruh kriteria berikut tanpa terkecuali:",
+        "age": "Berusia minimal 18 (delapan belas) tahun atau telah mencapai usia dewasa menurut hukum yang berlaku di yurisdiksi tempat tinggal Anda. Jika Anda belum mencapai usia dewasa, Anda harus mendapatkan persetujuan dari orang tua atau wali yang sah",
+        "info": "Bersedia memberikan informasi yang akurat, lengkap, terkini, dan dapat diverifikasi saat melakukan pendaftaran akun dan transaksi. Informasi palsu atau menyesatkan dapat mengakibatkan penolakan layanan atau penutupan akun",
+        "legal": "Tidak menggunakan layanan Saldopedia untuk aktivitas yang melanggar hukum, termasuk namun tidak terbatas pada pencucian uang (money laundering), pendanaan terorisme, penipuan, atau aktivitas kriminal lainnya",
+        "payment": "Memiliki rekening bank Indonesia yang valid dan terdaftar atas nama sendiri, atau metode pembayaran sah lainnya yang dapat diverifikasi oleh Saldopedia",
+        "telegram": "Memiliki alamat email aktif yang dapat diakses untuk keperluan verifikasi akun, notifikasi transaksi, dan komunikasi penting lainnya. Akses ke WhatsApp juga diperlukan untuk konfirmasi transaksi tertentu"
+      },
+      "sub2": {
+        "title": "3.2 Pendaftaran Akun dan Verifikasi",
+        "content": "Untuk mengakses layanan lengkap Saldopedia, Anda diwajibkan untuk membuat akun melalui proses pendaftaran di website kami. Pendaftaran dapat dilakukan menggunakan alamat email atau melalui opsi login sosial seperti Google OAuth. Setelah pendaftaran berhasil, Anda akan mendapatkan akses ke dashboard pengguna yang memungkinkan Anda untuk melihat saldo, riwayat transaksi, melakukan deposit dan withdrawal, serta mengakses fitur-fitur lainnya. Saldopedia berhak meminta verifikasi identitas tambahan (Know Your Customer/KYC) untuk transaksi tertentu atau ketika diperlukan untuk memenuhi kewajiban regulasi. Dengan mendaftar, Anda menyetujui untuk menjaga kerahasiaan kredensial akun Anda dan bertanggung jawab penuh atas seluruh aktivitas yang terjadi di akun Anda."
+      },
+      "sub3": {
+        "title": "3.3 Keamanan dan Perlindungan Akun",
+        "intro": "Keamanan akun Anda merupakan tanggung jawab bersama antara Saldopedia dan Anda sebagai pengguna. Anda bertanggung jawab penuh untuk menjaga keamanan akun dengan cara:",
+        "secure": "Membuat dan menggunakan password yang kuat, unik, dan tidak mudah ditebak. Password yang baik minimal terdiri dari 8 karakter dengan kombinasi huruf besar, huruf kecil, angka, dan simbol",
+        "confidential": "Menjaga kerahasiaan informasi login termasuk email dan password, serta tidak membagikannya kepada siapapun termasuk pihak yang mengaku sebagai perwakilan Saldopedia",
+        "noShare": "Tidak memberikan akses akun kepada pihak ketiga. Jika Anda mencurigai adanya akses tidak sah ke akun Anda, segera ubah password dan hubungi tim support",
+        "report": "Segera melaporkan kepada Saldopedia melalui WhatsApp atau email resmi jika terjadi aktivitas mencurigakan, transaksi yang tidak dikenali, atau indikasi pelanggaran keamanan lainnya"
+      }
+    },
+    "section4": {
+      "title": "4. Sistem Saldo dan Mekanisme Transaksi",
+      "sub1": {
+        "title": "4.1 Sistem Saldo (Balance System)",
+        "intro": "Saldopedia menggunakan sistem saldo internal yang menjadi pusat dari seluruh aktivitas transaksi di platform. Memahami cara kerja sistem ini sangat penting untuk pengalaman transaksi yang optimal:",
+        "step1": "Deposit: Untuk memulai transaksi, Anda perlu melakukan deposit terlebih dahulu. Proses deposit dilakukan dengan mentransfer dana dari rekening bank Anda ke rekening resmi Saldopedia sesuai nominal yang diinginkan. Setelah transfer dikonfirmasi oleh admin (5-15 menit), saldo akan ditambahkan ke akun Anda",
+        "step2": "Order/Pembelian: Ketika Anda melakukan order pembelian (BUY) cryptocurrency, PayPal, atau Skrill, sistem akan mengurangi saldo Anda sesuai dengan total nilai order. Pastikan saldo mencukupi sebelum membuat order",
+        "step3": "Penjualan: Ketika Anda melakukan penjualan (SELL) cryptocurrency, PayPal, atau Skrill, hasil penjualan akan ditambahkan ke saldo akun Anda setelah transaksi dikonfirmasi",
+        "step4": "Withdrawal: Anda dapat menarik saldo kapan saja ke rekening bank yang terdaftar di akun Anda. Proses withdrawal memerlukan verifikasi dan akan diproses dalam waktu 5-15 menit pada jam operasional",
+        "step5": "Transfer Saldo: Fitur transfer memungkinkan Anda mengirim saldo ke sesama pengguna Saldopedia dengan minimal transfer Rp 10.000",
+        "step6": "Saldo tidak dapat ditransfer ke platform lain atau dikonversi ke mata uang selain IDR kecuali melalui proses order yang tersedia",
+        "step7": "Saldo yang tidak digunakan akan tetap tersimpan di akun Anda tanpa batas waktu selama akun masih aktif dan tidak melanggar ketentuan layanan"
+      },
+      "sub2": {
+        "title": "4.2 Batas dan Ketentuan Transaksi",
+        "min": "Minimal Deposit:",
+        "minValue": "Rp 25.000 per transaksi. Deposit di bawah batas minimal tidak dapat diproses dan akan dikembalikan dengan potongan biaya administrasi.",
+        "max": "Minimal Withdrawal:",
+        "maxValue": "Rp 50.000 per transaksi. Withdrawal dapat dilakukan ke seluruh bank Indonesia dengan waktu proses 5-15 menit.",
+        "note": "Minimal Order: Rp 25.000 untuk semua jenis layanan (Crypto, PayPal, Skrill). Maksimal transaksi bervariasi tergantung layanan dan ketersediaan likuiditas. Batas dapat berubah sewaktu-waktu sesuai kebijakan platform."
+      },
+      "sub3": {
+        "title": "4.3 Proses Deposit dan Metode Pembayaran",
+        "content": "Deposit dilakukan dengan mentransfer dana ke rekening resmi Saldopedia yang ditampilkan di halaman deposit. Kami menerima transfer dari seluruh bank Indonesia (BCA, Mandiri, BNI, BRI, dan bank lainnya). Setelah transfer, Anda diwajibkan untuk mengunggah bukti transfer melalui dashboard. Admin akan memverifikasi dan mengkonfirmasi deposit dalam waktu 5-15 menit pada jam operasional. Pastikan nominal transfer sesuai dengan permintaan deposit untuk mempercepat proses verifikasi. Deposit dengan nominal berbeda akan diproses sesuai nominal yang diterima."
+      },
+      "sub4": {
+        "title": "4.4 Rate, Spread, dan Biaya",
+        "realtime": "Rate cryptocurrency mengikuti harga pasar global (CoinGecko) secara real-time. Saldopedia menerapkan spread yang kompetitif antara harga beli dan jual",
+        "inclusive": "Untuk cryptocurrency, network fee (biaya jaringan blockchain) ditampilkan secara terpisah dan transparan saat Anda membuat order BUY. Fee ini adalah biaya aktual yang dikenakan oleh jaringan blockchain",
+        "noHidden": "Tidak ada biaya tersembunyi. Seluruh biaya ditampilkan secara jelas sebelum Anda mengkonfirmasi transaksi",
+        "variable": "Rate dapat berfluktuasi mengikuti pergerakan pasar. Rate yang berlaku adalah rate saat order dikonfirmasi oleh sistem",
+        "applies": "Untuk PayPal dan Skrill, kami menerapkan sistem rate tier berdasarkan volume transaksi. Semakin besar transaksi, semakin kompetitif rate yang Anda dapatkan"
+      },
+      "sub5": {
+        "title": "4.5 Proses dan Waktu Pemrosesan Order",
+        "content": "Setelah order dibuat dan saldo dipotong dari akun Anda, tim kami akan memproses order dalam waktu 5-15 menit. Untuk order BUY cryptocurrency, aset akan dikirim ke alamat wallet yang Anda cantumkan. Untuk order SELL, saldo IDR akan ditambahkan ke akun Anda setelah kami menerima aset yang Anda kirim. Status order dapat dipantau secara real-time melalui halaman Order History di dashboard. Jika order memerlukan waktu lebih dari 30 menit tanpa update status, silakan hubungi customer service melalui WhatsApp dengan menyertakan nomor order."
+      }
+    },
+    "section5": {
+      "title": "5. Kebijakan Pembatalan, Pengembalian, dan Penyelesaian Sengketa",
+      "sub1": {
+        "title": "5.1 Pembatalan Order",
+        "content": "Order yang telah dibuat dan menggunakan saldo pada dasarnya tidak dapat dibatalkan karena sistem memproses transaksi secara otomatis. Namun, untuk order yang masih dalam status PENDING dan belum diproses, Anda dapat menghubungi customer service untuk meminta pembatalan. Jika pembatalan disetujui, saldo akan dikembalikan ke akun Anda. Order yang sudah dalam status PROCESSING atau COMPLETED tidak dapat dibatalkan."
+      },
+      "sub2": {
+        "title": "5.2 Kondisi Pengembalian Dana",
+        "intro": "Pengembalian dana (refund) dapat dipertimbangkan dalam kondisi-kondisi berikut:",
+        "noCancel": "Terjadi kesalahan sistem ",
+        "conditions": "yang menyebabkan saldo terpotong namun order tidak tercatat atau tidak dapat diproses. Dalam kasus ini, saldo akan dikembalikan sepenuhnya setelah investigasi selesai.",
+        "systemError": "Deposit dengan nominal yang berbeda dari permintaan. Selisih nominal akan disesuaikan dengan jumlah yang benar-benar diterima",
+        "overpay": "Order yang tidak dapat dipenuhi karena keterbatasan likuiditas atau alasan operasional dari pihak Saldopedia. Saldo akan dikembalikan penuh",
+        "notReceived": "Cryptocurrency tidak sampai ke wallet tujuan dalam waktu 24 jam karena kesalahan dari pihak Saldopedia (bukan karena kesalahan alamat wallet dari pengguna)",
+        "refund": "Proses pengembalian dana akan dilakukan ke saldo akun Saldopedia Anda. Anda kemudian dapat melakukan withdrawal ke rekening bank."
+      },
+      "sub3": {
+        "title": "5.3 Kesalahan Pengguna dan Batasan Tanggung Jawab",
+        "intro": "Saldopedia tidak bertanggung jawab atas kerugian yang disebabkan oleh kesalahan pengguna. Berikut adalah contoh kesalahan yang menjadi tanggung jawab pengguna sepenuhnya:",
+        "wrongAddress": "Memasukkan alamat wallet cryptocurrency yang salah, tidak valid, atau tidak sesuai dengan jaringan yang dipilih. Transaksi ke alamat yang salah tidak dapat dibatalkan atau dikembalikan",
+        "wrongAmount": "Melakukan deposit dengan nominal berbeda dari yang diminta tanpa konfirmasi sebelumnya",
+        "wrongBank": "Transfer deposit ke rekening yang bukan rekening resmi Saldopedia",
+        "lostAccess": "Kehilangan akses ke wallet cryptocurrency, akun PayPal, akun Skrill, atau akun Saldopedia karena kelalaian dalam menjaga keamanan akun"
+      }
+    },
+    "section6": {
+      "title": "6. Risiko, Disclaimer, dan Batasan Tanggung Jawab",
+      "sub1": {
+        "title": "6.1 Risiko Terkait Cryptocurrency",
+        "content": "Anda memahami dan menerima sepenuhnya bahwa cryptocurrency dan aset digital adalah instrumen yang sangat volatil dengan risiko tinggi. Nilai cryptocurrency dapat mengalami fluktuasi signifikan dalam waktu singkat, termasuk kemungkinan kehilangan seluruh nilai. Saldopedia tidak memberikan saran investasi, rekomendasi keuangan, atau jaminan keuntungan. Keputusan untuk melakukan transaksi cryptocurrency sepenuhnya merupakan keputusan dan tanggung jawab Anda. Saldopedia tidak bertanggung jawab atas kerugian yang timbul akibat perubahan nilai pasar, keputusan investasi, atau faktor eksternal lainnya di luar kendali platform."
+      },
+      "sub2": {
+        "title": "6.2 Batasan Tanggung Jawab Platform",
+        "intro": "Saldopedia tidak bertanggung jawab atas kerugian langsung maupun tidak langsung yang timbul akibat:",
+        "downtime": "Gangguan layanan platform akibat maintenance terjadwal, pembaruan sistem, atau perbaikan teknis yang diperlukan untuk menjaga kualitas layanan",
+        "internet": "Masalah koneksi internet, perangkat pengguna, atau infrastruktur jaringan yang berada di luar kendali Saldopedia",
+        "blockchain": "Keterlambatan konfirmasi transaksi di jaringan blockchain, network congestion, atau masalah teknis pada jaringan cryptocurrency",
+        "delay": "Keterlambatan proses yang disebabkan oleh pihak ketiga termasuk bank, payment gateway, atau penyedia layanan blockchain",
+        "footer": "Dalam kondisi apapun, tanggung jawab maksimal Saldopedia terbatas pada nilai transaksi yang dipermasalahkan atau saldo yang tersimpan di akun pengguna, mana yang lebih kecil."
+      },
+      "sub3": {
+        "title": "6.3 Keadaan Kahar (Force Majeure)",
+        "content": "Saldopedia tidak bertanggung jawab atas kegagalan atau keterlambatan dalam memenuhi kewajiban yang disebabkan oleh keadaan di luar kendali kami yang wajar, termasuk namun tidak terbatas pada: bencana alam (gempa bumi, banjir, tsunami), perang atau konflik bersenjata, tindakan pemerintah atau perubahan regulasi mendadak, pandemi atau wabah penyakit, serangan siber yang tidak dapat dicegah dengan upaya keamanan yang wajar, kegagalan infrastruktur teknologi global, atau gangguan pada jaringan blockchain utama."
+      }
+    },
+    "section7": {
+      "title": "7. Hak, Kewajiban, dan Kebijakan Saldopedia",
+      "sub1": {
+        "title": "7.1 Hak-Hak Saldopedia",
+        "intro": "Untuk menjaga keamanan platform dan mematuhi regulasi yang berlaku, Saldopedia memiliki hak untuk:",
+        "verify": "Meminta verifikasi identitas tambahan (KYC/AML) untuk transaksi dengan nominal tertentu, pola transaksi yang tidak biasa, atau ketika diwajibkan oleh regulasi",
+        "reject": "Menolak, membatalkan, atau membekukan transaksi yang dicurigai melanggar ketentuan layanan, hukum yang berlaku, atau berpotensi merugikan platform dan pengguna lain",
+        "report": "Melaporkan aktivitas mencurigakan atau transaksi yang terindikasi melanggar hukum kepada otoritas penegak hukum atau regulator yang berwenang",
+        "close": "Menangguhkan sementara atau menutup permanen akses layanan bagi pengguna yang terbukti melanggar Syarat dan Ketentuan ini atau hukum yang berlaku"
+      },
+      "sub2": {
+        "title": "7.2 Aktivitas Terlarang",
+        "intro": "Pengguna dilarang keras menggunakan platform Saldopedia untuk aktivitas-aktivitas berikut:",
+        "fraud": "Penipuan, pemalsuan identitas, phishing, social engineering, atau aktivitas menipu lainnya yang bertujuan merugikan pihak lain",
+        "laundering": "Pencucian uang (money laundering), pendanaan terorisme, atau aktivitas yang melanggar undang-undang tindak pidana pencucian uang",
+        "manipulation": "Manipulasi pasar, wash trading, front-running, atau praktik perdagangan tidak etis yang dapat mempengaruhi integritas pasar",
+        "spam": "Pengiriman spam, penyalahgunaan sistem komunikasi, atau upaya mengganggu operasional platform",
+        "ip": "Pelanggaran hak kekayaan intelektual termasuk merek dagang, hak cipta, atau hak kepemilikan lainnya milik Saldopedia atau pihak ketiga",
+        "illegal": "Aktivitas ilegal lainnya berdasarkan hukum Republik Indonesia, hukum internasional, atau yurisdiksi tempat tinggal pengguna"
+      }
+    },
+    "section8": {
+      "title": "8. Perlindungan Data dan Keamanan Informasi",
+      "sub1": {
+        "title": "8.1 Jenis Data yang Dikumpulkan",
+        "intro": "Dalam menjalankan layanan, Saldopedia mengumpulkan dan memproses berbagai jenis data pengguna untuk keperluan operasional, keamanan, dan kepatuhan regulasi:",
+        "transaction": "Data identitas dan akun: nama lengkap, alamat email, nomor telepon, informasi verifikasi, dan kredensial login",
+        "wallet": "Data transaksi: riwayat order, deposit, withdrawal, transfer saldo, alamat wallet cryptocurrency, dan detail transaksi lainnya",
+        "payment": "Data keuangan: informasi rekening bank, bukti transfer, dan riwayat pembayaran",
+        "contact": "Data teknis: alamat IP, informasi perangkat, browser fingerprint, dan log aktivitas untuk keperluan keamanan"
+      },
+      "sub2": {
+        "title": "8.2 Tujuan Penggunaan Data",
+        "intro": "Data yang dikumpulkan digunakan untuk tujuan-tujuan yang sah dan diperlukan, meliputi:",
+        "process": "Memproses, memverifikasi, dan menyelesaikan transaksi yang Anda lakukan di platform",
+        "prevent": "Mendeteksi, mencegah, dan menginvestigasi aktivitas penipuan, pencucian uang, dan pelanggaran keamanan lainnya",
+        "law": "Mematuhi kewajiban hukum, regulasi, dan permintaan sah dari otoritas yang berwenang"
+      }
+    },
+    "section9": {
+      "title": "9. Hak Kekayaan Intelektual",
+      "content": "Seluruh konten yang terdapat di platform Saldopedia termasuk namun tidak terbatas pada nama \"Saldopedia\", logo, desain website, teks, grafis, gambar, ikon, software, database, dan materi lainnya dilindungi oleh hak cipta, merek dagang, dan hak kekayaan intelektual lainnya berdasarkan hukum Indonesia dan konvensi internasional. Pengguna dilarang keras untuk menyalin, mereproduksi, mendistribusikan, memodifikasi, membuat karya turunan, menampilkan secara publik, atau menggunakan materi tersebut untuk tujuan komersial tanpa izin tertulis dari Saldopedia. Pelanggaran terhadap ketentuan ini dapat mengakibatkan tuntutan hukum perdata dan/atau pidana."
+    },
+    "section10": {
+      "title": "10. Perubahan dan Pembaruan Ketentuan",
+      "p1": "Saldopedia berhak untuk mengubah, memperbarui, atau merevisi Syarat dan Ketentuan ini kapan saja sesuai kebutuhan operasional, perubahan regulasi, atau pertimbangan lainnya. Perubahan akan diumumkan melalui website dan/atau notifikasi email kepada pengguna terdaftar. Perubahan berlaku efektif sejak tanggal publikasi atau tanggal yang ditentukan dalam pengumuman.",
+      "p2": "Penggunaan layanan Saldopedia setelah tanggal efektif perubahan dianggap sebagai persetujuan Anda terhadap Syarat dan Ketentuan yang telah diperbarui. Jika Anda tidak menyetujui perubahan, Anda berhak untuk menghentikan penggunaan layanan dan menarik saldo yang tersisa di akun Anda."
+    },
+    "section11": {
+      "title": "11. Penangguhan dan Pengakhiran Layanan",
+      "intro": "Saldopedia berhak untuk menangguhkan sementara atau mengakhiri akses pengguna ke layanan dalam kondisi-kondisi berikut:",
+      "violate": "Pengguna terbukti atau dicurigai kuat melanggar Syarat dan Ketentuan ini",
+      "false": "Pengguna memberikan informasi palsu, tidak akurat, atau menyesatkan saat pendaftaran atau transaksi",
+      "suspect": "Terdapat indikasi aktivitas penipuan, pencucian uang, atau aktivitas ilegal lainnya yang terkait dengan akun pengguna",
+      "authority": "Adanya permintaan atau perintah dari otoritas penegak hukum, regulator, atau pengadilan yang berwenang"
+    },
+    "section12": {
+      "title": "12. Hukum yang Berlaku dan Penyelesaian Sengketa",
+      "content": "Syarat dan Ketentuan ini dibuat, diatur, dan ditafsirkan berdasarkan hukum Republik Indonesia. Setiap sengketa yang timbul dari atau terkait dengan Syarat dan Ketentuan ini atau penggunaan layanan Saldopedia akan diselesaikan melalui musyawarah untuk mencapai mufakat. Apabila musyawarah tidak mencapai kesepakatan dalam waktu 30 (tiga puluh) hari kalender, para pihak sepakat untuk menyelesaikan sengketa melalui Badan Arbitrase Nasional Indonesia (BANI) atau pengadilan negeri yang berwenang di Indonesia sesuai dengan prosedur yang berlaku."
+    },
+    "section13": {
+      "title": "13. Informasi Kontak dan Layanan Pelanggan",
+      "intro": "Tim Saldopedia berkomitmen untuk memberikan layanan pelanggan terbaik. Jika Anda memiliki pertanyaan, keluhan, atau membutuhkan bantuan terkait layanan kami, silakan hubungi melalui saluran resmi berikut:",
+      "hours": "Jam Layanan Customer Service:",
+      "hoursValue": "09.00 - 21.00 WIB setiap hari. Layanan order dan sistem otomatis tersedia 24/7."
+    },
+    "section14": {
+      "title": "14. Ketentuan Umum dan Penutup",
+      "content": "Syarat dan Ketentuan ini merupakan keseluruhan perjanjian antara Anda dan Saldopedia terkait penggunaan layanan dan menggantikan seluruh perjanjian, pemahaman, atau komunikasi sebelumnya baik tertulis maupun lisan. Jika ada ketentuan dalam dokumen ini yang dinyatakan tidak sah, tidak berlaku, atau tidak dapat dilaksanakan oleh pengadilan atau otoritas yang berwenang, ketentuan tersebut akan dipisahkan dan tidak mempengaruhi keabsahan ketentuan lainnya yang tetap berlaku penuh. Kegagalan Saldopedia untuk menegakkan hak atau ketentuan dalam perjanjian ini pada waktu tertentu tidak merupakan pengabaian hak tersebut dan tidak menghalangi penegakan di kemudian hari. Saldopedia dapat mengalihkan hak dan kewajibannya berdasarkan Syarat dan Ketentuan ini kepada pihak lain tanpa persetujuan Anda, dengan catatan bahwa hak-hak Anda berdasarkan perjanjian ini tidak akan dikurangi."
+    }
+  },
+  "privacyPolicy": {
+    "header": {
+      "title": "Kebijakan Privasi",
+      "lastUpdated": "Terakhir diperbarui: 10 Desember 2025"
+    },
+    "commitment": {
+      "title": "Komitmen Kami terhadap Privasi Anda",
+      "content": "Saldopedia berkomitmen penuh untuk melindungi privasi dan keamanan data pribadi Anda dengan standar tertinggi. Sebagai platform fintech yang memproses transaksi cryptocurrency, PayPal, dan Skrill, kami memahami bahwa kepercayaan Anda adalah fondasi dari layanan kami. Kami menangani setiap informasi pribadi dengan penuh tanggung jawab, transparansi, dan integritas, serta sesuai dengan standar perlindungan data internasional dan regulasi yang berlaku di Indonesia. Tim kami secara konsisten mengevaluasi dan meningkatkan praktik keamanan data untuk memastikan informasi Anda selalu terlindungi dari akses tidak sah, penyalahgunaan, atau kebocoran data."
+    },
+    "footer": "Dengan menggunakan layanan Saldopedia, Anda menyatakan telah membaca, memahami, dan menyetujui praktik pengumpulan, penggunaan, penyimpanan, dan perlindungan data yang dijelaskan dalam Kebijakan Privasi ini. Dokumen ini merupakan bagian integral dari perjanjian layanan antara Anda dan Saldopedia.",
+    "section1": {
+      "title": "1. Pendahuluan dan Ruang Lingkup",
+      "p1": "Kebijakan Privasi ini menjelaskan secara komprehensif dan mendetail bagaimana Saldopedia mengumpulkan, menggunakan, menyimpan, memproses, membagikan, dan melindungi informasi pribadi Anda ketika Anda mengakses dan menggunakan platform kami untuk transaksi cryptocurrency, PayPal, dan Skrill. Saldopedia mengoperasikan sistem saldo internal (balance system) yang memfasilitasi deposit dana, pembuatan order pembelian dan penjualan, penerimaan hasil transaksi, transfer antar pengguna, dan penarikan dana (withdrawal). Mengingat sifat sensitif dari layanan keuangan digital yang kami sediakan, pengelolaan data yang tepat, aman, dan transparan menjadi sangat penting untuk melindungi kepentingan dan keamanan transaksi Anda.",
+      "p2": "Dengan mengakses website Saldopedia, mendaftarkan akun, menggunakan dashboard pengguna, berkomunikasi dengan layanan pelanggan, atau memanfaatkan layanan kami dalam bentuk apapun, Anda secara eksplisit menyetujui pengumpulan dan penggunaan informasi pribadi sesuai dengan ketentuan yang diuraikan dalam Kebijakan Privasi ini. Jika Anda tidak menyetujui sebagian atau seluruh ketentuan dalam kebijakan ini, mohon untuk segera menghentikan penggunaan layanan kami dan menghubungi tim support untuk proses penutupan akun jika diperlukan. Kebijakan ini berlaku untuk semua pengguna platform Saldopedia tanpa terkecuali, termasuk pengguna terdaftar, pengunjung website, dan pihak yang berinteraksi dengan kami melalui saluran komunikasi resmi.",
+      "p3": "Saldopedia beroperasi di bawah yurisdiksi hukum Republik Indonesia dan mematuhi seluruh peraturan perundang-undangan yang berlaku terkait perlindungan data pribadi, termasuk namun tidak terbatas pada Undang-Undang Nomor 27 Tahun 2022 tentang Perlindungan Data Pribadi (UU PDP) dan regulasi terkait layanan keuangan digital. Kami juga mengadopsi praktik terbaik internasional dalam perlindungan data untuk memastikan standar keamanan yang optimal bagi seluruh pengguna kami."
+    },
+    "section2": {
+      "title": "2. Jenis Informasi yang Kami Kumpulkan",
+      "intro": "Untuk menyediakan layanan jual beli cryptocurrency, PayPal, dan Skrill yang aman dan efisien, Saldopedia mengumpulkan berbagai jenis informasi dari pengguna. Kami hanya mengumpulkan data yang diperlukan untuk operasional layanan, kepatuhan hukum, dan peningkatan pengalaman pengguna. Berikut adalah kategori lengkap informasi yang kami kumpulkan:",
+      "sub1": {
+        "title": "2.1 Informasi Identitas dan Kontak yang Anda Berikan Secara Langsung",
+        "intro": "Ketika Anda mendaftar akun, melakukan transaksi, atau berkomunikasi dengan kami, Anda memberikan informasi berikut secara sukarela:",
+        "contact": "Informasi Identitas Dasar:",
+        "contactDesc": "Nama lengkap sesuai dokumen identitas resmi (KTP/Paspor), yang digunakan untuk verifikasi akun dan kecocokan dengan rekening bank untuk keperluan withdrawal. Nama tidak dapat diubah setelah pendaftaran untuk alasan keamanan dan pencegahan penipuan.",
+        "email": "Alamat Email:",
+        "emailDesc": "Email aktif yang digunakan untuk login, verifikasi akun, notifikasi transaksi, reset password, dan komunikasi penting lainnya terkait layanan.",
+        "phone": "Nomor Telepon/WhatsApp:",
+        "phoneDesc": "Nomor telepon aktif yang digunakan untuk verifikasi OTP, notifikasi order, konfirmasi transaksi, dan komunikasi dengan customer service.",
+        "payment": "Informasi Keuangan dan Pembayaran:",
+        "paymentDesc": "Alamat wallet cryptocurrency untuk berbagai jaringan (Bitcoin, Ethereum, BNB Chain, Polygon, Solana, TRON, dll.), alamat email akun PayPal, alamat email akun Skrill, dan informasi rekening bank Indonesia (nama bank, nomor rekening, nama pemilik rekening) yang digunakan untuk deposit dan withdrawal.",
+        "transaction": "Data Transaksi dan Order:",
+        "transactionDesc": "Seluruh riwayat transaksi termasuk deposit saldo, order pembelian dan penjualan, transfer antar pengguna, withdrawal, jumlah transaksi dalam IDR dan cryptocurrency, rate yang berlaku, status transaksi, timestamp, dan catatan atau notes yang Anda tambahkan pada transaksi.",
+        "communication": "Rekaman Komunikasi:",
+        "communicationDesc": "Seluruh pesan, pertanyaan, keluhan, dan komunikasi yang Anda kirim melalui WhatsApp, email support, formulir kontak di website, atau saluran komunikasi resmi lainnya, termasuk attachment dan media yang dikirim.",
+        "newsletter": "Preferensi Marketing:",
+        "newsletterDesc": "Alamat email dan preferensi jika Anda berlangganan newsletter kami untuk menerima informasi promo, update rate, tips crypto, dan informasi terbaru tentang layanan kami.",
+        "referral": "Data Program Referral:",
+        "referralDesc": "Kode referral Anda, kode referral yang Anda gunakan saat pendaftaran, riwayat poin yang diperoleh, dan riwayat penukaran poin menjadi saldo."
+      },
+      "sub2": {
+        "title": "2.2 Informasi yang Dikumpulkan Secara Otomatis oleh Sistem",
+        "intro": "Ketika Anda mengakses dan menggunakan platform Saldopedia, sistem kami secara otomatis mengumpulkan informasi teknis berikut untuk keamanan, analisis, dan peningkatan layanan:",
+        "device": "Informasi Perangkat dan Browser:",
+        "deviceDesc": "Jenis perangkat (desktop, mobile, tablet), merek dan model perangkat, sistem operasi dan versinya, jenis browser dan versinya, resolusi layar, pengaturan bahasa perangkat, zona waktu, dan pengaturan regional lainnya.",
+        "usage": "Data Penggunaan dan Aktivitas:",
+        "usageDesc": "Halaman yang Anda kunjungi di website kami, urutan navigasi, waktu akses setiap halaman, durasi kunjungan, fitur yang digunakan, tombol yang diklik, formulir yang diisi, pencarian yang dilakukan, dan pola interaksi dengan dashboard pengguna.",
+        "ip": "Alamat IP dan Data Jaringan:",
+        "ipDesc": "Alamat IP publik Anda yang digunakan untuk keamanan akun, deteksi aktivitas mencurigakan, pencegahan penipuan, analisis geografis, dan kepatuhan terhadap regulasi. Data IP juga membantu kami mengidentifikasi dan memblokir akses dari lokasi yang tidak diizinkan atau mencurigakan.",
+        "cookie": "Cookie dan Teknologi Pelacakan:",
+        "cookieDesc": "Cookie esensial untuk fungsi website, cookie preferensi untuk menyimpan pengaturan Anda (bahasa, tema tampilan), cookie analitik untuk memahami pola penggunaan, dan pixel atau teknologi serupa untuk mengukur efektivitas konten. Detail lengkap tersedia di Kebijakan Cookie kami.",
+        "session": "Data Sesi dan Autentikasi:",
+        "sessionDesc": "Token sesi yang aman untuk menjaga Anda tetap login, timestamp login dan logout, riwayat aktivitas sesi, dan informasi autentikasi terenkripsi.",
+        "security": "Log Keamanan dan Audit:",
+        "logDesc": "Catatan login berhasil dan gagal, perubahan pengaturan akun, perubahan password, aktivitas transaksi, dan event keamanan lainnya untuk audit trail dan investigasi jika diperlukan."
+      },
+      "sub3": {
+        "title": "2.3 Informasi yang Diperoleh dari Sumber Pihak Ketiga",
+        "intro": "Dalam beberapa situasi, kami menerima atau mengakses informasi dari sumber pihak ketiga yang terpercaya untuk melengkapi data yang kami miliki dan meningkatkan keamanan layanan:",
+        "provider": "Penyedia Layanan Pembayaran: Informasi status pembayaran, konfirmasi transfer, dan data transaksi dari gateway pembayaran cryptocurrency seperti NOWPayments, serta informasi verifikasi dari layanan PayPal dan Skrill.",
+        "blockchain": "Data Blockchain Publik: Informasi transaksi yang tercatat di blockchain publik termasuk alamat wallet, hash transaksi, jumlah transfer, konfirmasi blok, dan timestamp transaksi untuk verifikasi dan pelacakan order.",
+        "social": "Platform Autentikasi Sosial: Jika Anda memilih login menggunakan Google OAuth, kami menerima informasi dasar profil seperti nama, alamat email, dan foto profil yang Anda izinkan untuk dibagikan.",
+        "kyc": "Layanan Verifikasi Identitas: Jika diperlukan verifikasi KYC tambahan, kami dapat menerima hasil verifikasi dari penyedia layanan identifikasi pihak ketiga yang mencakup kecocokan nama, validitas dokumen, dan skor risiko.",
+        "analytics": "Layanan Analitik: Data agregat dan anonim dari layanan analitik pihak ketiga yang membantu kami memahami tren penggunaan dan meningkatkan platform."
+      },
+      "sub4": {
+        "title": "2.4 Informasi Sensitif dan Perlindungan Khusus",
+        "content": "Saldopedia tidak dengan sengaja mengumpulkan informasi sensitif seperti data biometrik, informasi kesehatan, orientasi seksual, afiliasi politik, atau keyakinan agama. Kami juga tidak mengumpulkan data pribadi dari anak-anak di bawah usia 18 tahun. Jika Anda yakin bahwa kami secara tidak sengaja telah mengumpulkan informasi tersebut, silakan hubungi kami segera untuk penghapusan data."
+      }
+    },
+    "section3": {
+      "title": "3. Tujuan Penggunaan Informasi Pribadi Anda",
+      "intro": "Saldopedia menggunakan informasi yang dikumpulkan untuk berbagai tujuan yang sah dan diperlukan dalam menyediakan layanan keuangan digital yang aman, efisien, dan berkualitas. Setiap penggunaan data didasarkan pada kepentingan yang sah dan proporsional dengan kebutuhan layanan:",
+      "sub1": {
+        "title": "3.1 Pemrosesan dan Manajemen Transaksi Keuangan",
+        "intro": "Sebagai inti dari layanan kami, informasi Anda digunakan untuk memfasilitasi seluruh aktivitas transaksi:",
+        "process": "Memproses permintaan deposit saldo dengan memverifikasi bukti transfer dan mengkreditkan saldo ke akun Anda secara akurat dan tepat waktu sesuai dengan nominal yang diterima",
+        "order": "Memproses order pembelian (BUY) cryptocurrency, PayPal, dan Skrill dengan mengurangi saldo, memverifikasi alamat tujuan, menghitung rate dan fee yang berlaku, serta mengirim aset ke wallet atau akun Anda",
+        "sell": "Memproses order penjualan (SELL) dengan memverifikasi penerimaan aset dari Anda, menghitung nilai dalam IDR, dan mengkreditkan hasil penjualan ke saldo akun Anda",
+        "withdraw": "Memproses permintaan withdrawal dengan memverifikasi kecocokan nama rekening bank dengan nama akun, mengurangi saldo, dan mentransfer dana ke rekening bank Anda",
+        "transfer": "Memfasilitasi transfer saldo antar pengguna Saldopedia dengan verifikasi akun penerima dan pemrosesan yang aman",
+        "notify": "Mengirimkan notifikasi real-time tentang status transaksi melalui dashboard, email, termasuk konfirmasi deposit, update status order, konfirmasi penerimaan cryptocurrency, dan konfirmasi withdrawal",
+        "support": "Menyediakan dukungan pelanggan yang responsif untuk menyelesaikan masalah transaksi, menjawab pertanyaan, membantu pemulihan akun, dan menangani keluhan dengan profesional",
+        "manage": "Mengelola dan menampilkan saldo akun secara real-time, menyimpan riwayat transaksi lengkap yang dapat diakses melalui dashboard, dan memungkinkan Anda mengunduh laporan transaksi"
+      },
+      "sub2": {
+        "title": "3.2 Keamanan Platform dan Pencegahan Penipuan",
+        "intro": "Perlindungan keamanan adalah prioritas utama kami dalam mengelola platform keuangan digital:",
+        "detect": "Mendeteksi, mencegah, dan menginvestigasi aktivitas penipuan, pencucian uang, atau penyalahgunaan layanan melalui analisis pola transaksi yang mencurigakan, monitoring real-time, dan sistem deteksi anomali",
+        "verify": "Memverifikasi identitas pengguna sesuai dengan regulasi Know Your Customer (KYC) dan Anti-Money Laundering (AML) yang berlaku di Indonesia, termasuk verifikasi kecocokan nama dengan dokumen identitas",
+        "access": "Menerapkan kontrol akses yang ketat untuk memastikan hanya Anda yang dapat mengakses akun dan melakukan transaksi, termasuk autentikasi dua faktor dan verifikasi email",
+        "monitor": "Memantau aktivitas akun secara real-time untuk mendeteksi login mencurigakan, transaksi tidak biasa, atau indikasi pembobolan akun, dan mengambil tindakan pencegahan yang diperlukan",
+        "protect": "Melindungi hak, properti, data, dan keselamatan Saldopedia, pengguna kami, dan masyarakat umum dari aktivitas berbahaya atau ilegal",
+        "block": "Memblokir atau membatasi akses dari alamat IP, perangkat, atau akun yang teridentifikasi sebagai sumber aktivitas berbahaya atau melanggar ketentuan layanan"
+      },
+      "sub3": {
+        "title": "3.3 Kepatuhan Hukum dan Regulasi",
+        "intro": "Sebagai penyedia layanan keuangan digital, kami memiliki kewajiban hukum yang harus dipenuhi:",
+        "comply": "Mematuhi seluruh peraturan perundang-undangan yang berlaku di Indonesia termasuk UU Perlindungan Data Pribadi, regulasi layanan keuangan digital, peraturan perpajakan, dan regulasi anti pencucian uang",
+        "report": "Menyimpan catatan transaksi dan menyusun laporan yang diwajibkan oleh otoritas pengawas, regulator keuangan, atau otoritas pajak sesuai dengan ketentuan yang berlaku",
+        "respond": "Merespons permintaan informasi yang sah dari penegak hukum, pengadilan, atau otoritas pemerintah yang berwenang sesuai dengan prosedur hukum yang berlaku",
+        "audit": "Memfasilitasi audit internal dan eksternal untuk memastikan kepatuhan terhadap standar keamanan, privasi, dan operasional yang berlaku"
+      },
+      "sub4": {
+        "title": "3.4 Peningkatan dan Pengembangan Layanan",
+        "intro": "Kami terus berupaya meningkatkan kualitas layanan berdasarkan data dan insight yang kami kumpulkan:",
+        "analyze": "Menganalisis pola penggunaan website dan dashboard untuk mengidentifikasi area yang perlu ditingkatkan, fitur yang paling digunakan, dan hambatan dalam pengalaman pengguna",
+        "develop": "Mengembangkan fitur-fitur baru, menambah dukungan cryptocurrency baru, dan meningkatkan fungsionalitas platform berdasarkan kebutuhan dan feedback pengguna",
+        "optimize": "Mengoptimalkan performa website, mempercepat waktu loading, meningkatkan responsivitas, dan memastikan stabilitas platform dalam berbagai kondisi traffic",
+        "research": "Melakukan penelitian dan analisis pasar untuk memahami tren cryptocurrency, preferensi pengguna, dan peluang peningkatan layanan",
+        "test": "Menguji fitur baru, perubahan desain, dan peningkatan fungsionalitas melalui A/B testing atau pengujian terbatas sebelum peluncuran umum",
+        "measure": "Mengukur efektivitas layanan, waktu respons, tingkat kepuasan pelanggan, dan metrik kinerja lainnya untuk evaluasi berkelanjutan"
+      },
+      "sub5": {
+        "title": "3.5 Komunikasi dan Layanan Pelanggan",
+        "intro": "Informasi kontak Anda digunakan untuk berkomunikasi tentang hal-hal penting terkait layanan:",
+        "service": "Mengirim notifikasi penting tentang layanan termasuk perubahan kebijakan, pembaruan Syarat dan Ketentuan, maintenance terjadwal, dan pengumuman keamanan yang memerlukan perhatian Anda",
+        "transaction": "Mengirim konfirmasi dan update status untuk setiap transaksi yang Anda lakukan, termasuk deposit, order, transfer, dan withdrawal",
+        "rate": "Memberikan informasi tentang perubahan rate, promo khusus, penawaran terbatas, dan peluang yang mungkin menarik bagi Anda (jika Anda berlangganan newsletter)",
+        "survey": "Mengirim survei kepuasan pelanggan, permintaan feedback, dan undangan untuk berpartisipasi dalam pengembangan produk",
+        "respond": "Merespons pertanyaan, keluhan, saran, dan permintaan bantuan yang Anda kirim melalui saluran komunikasi resmi kami dengan cepat dan profesional",
+        "education": "Menyediakan konten edukatif tentang cryptocurrency, tips keamanan, dan informasi yang membantu Anda menggunakan layanan kami dengan lebih baik"
+      }
+    },
+    "section4": {
+      "title": "4. Dasar Hukum Pemrosesan Data Pribadi",
+      "intro": "Saldopedia memproses data pribadi Anda berdasarkan satu atau lebih dasar hukum yang sah sebagaimana diatur dalam peraturan perlindungan data yang berlaku. Berikut adalah penjelasan lengkap mengenai dasar hukum yang kami gunakan untuk setiap jenis pemrosesan data:",
+      "sub1": {
+        "title": "4.1 Persetujuan Eksplisit dari Anda",
+        "content": "Ketika Anda mendaftarkan akun di Saldopedia dan menyetujui Syarat dan Ketentuan serta Kebijakan Privasi ini, Anda memberikan persetujuan eksplisit untuk pengumpulan dan pemrosesan data pribadi Anda. Persetujuan ini mencakup penggunaan data untuk tujuan yang dijelaskan dalam kebijakan ini. Untuk aktivitas pemasaran seperti newsletter dan promo, kami meminta persetujuan terpisah yang dapat Anda tarik kapan saja. Persetujuan Anda bersifat sukarela, dan penarikan persetujuan tidak mempengaruhi keabsahan pemrosesan yang telah dilakukan sebelumnya."
+      },
+      "sub2": {
+        "title": "4.2 Pelaksanaan Kontrak dan Penyediaan Layanan",
+        "content": "Pemrosesan data pribadi Anda diperlukan untuk memenuhi kontrak layanan antara Anda dan Saldopedia. Ini mencakup pemrosesan deposit, order pembelian dan penjualan cryptocurrency, PayPal, dan Skrill, withdrawal dana, serta seluruh aktivitas yang berkaitan dengan pengoperasian akun Anda. Tanpa pemrosesan data ini, kami tidak dapat menyediakan layanan yang Anda minta. Dasar hukum ini juga mencakup langkah-langkah pra-kontraktual seperti proses pendaftaran akun dan verifikasi identitas awal."
+      },
+      "sub3": {
+        "title": "4.3 Kepatuhan terhadap Kewajiban Hukum",
+        "content": "Sebagai penyedia layanan keuangan digital di Indonesia, Saldopedia tunduk pada berbagai kewajiban hukum yang mengharuskan pemrosesan data pribadi tertentu. Ini termasuk kewajiban berdasarkan Undang-Undang Perlindungan Data Pribadi, regulasi anti pencucian uang (AML), peraturan Know Your Customer (KYC), kewajiban pelaporan kepada otoritas pajak, dan kewajiban merespons permintaan yang sah dari penegak hukum. Pemrosesan berdasarkan dasar hukum ini tidak memerlukan persetujuan Anda karena diwajibkan oleh hukum."
+      },
+      "sub4": {
+        "title": "4.4 Kepentingan Sah (Legitimate Interest)",
+        "content": "Dalam situasi tertentu, kami memproses data pribadi Anda berdasarkan kepentingan sah kami atau pihak ketiga, dengan mempertimbangkan bahwa kepentingan atau hak fundamental Anda tidak lebih besar dari kepentingan tersebut. Contoh kepentingan sah termasuk: pencegahan penipuan dan penyalahgunaan layanan, peningkatan keamanan platform, pengembangan dan peningkatan layanan, analisis penggunaan untuk optimasi, dan perlindungan hak legal kami. Kami selalu melakukan penilaian keseimbangan (balancing test) untuk memastikan pemrosesan ini tidak merugikan hak-hak Anda."
+      },
+      "sub5": {
+        "title": "4.5 Perlindungan Kepentingan Vital",
+        "content": "Dalam keadaan darurat yang jarang terjadi, kami mungkin memproses data pribadi untuk melindungi kepentingan vital Anda atau orang lain, misalnya untuk mencegah kerugian finansial yang signifikan akibat pembobolan akun atau aktivitas penipuan yang mengancam keselamatan finansial Anda."
+      }
+    },
+    "section5": {
+      "title": "5. Berbagi, Pengungkapan, dan Transfer Informasi Pribadi",
+      "intro": "Saldopedia sangat menghormati privasi Anda dan berkomitmen untuk tidak menjual, menyewakan, atau memperdagangkan informasi pribadi Anda kepada pihak ketiga untuk tujuan pemasaran mereka sendiri. Namun, dalam situasi tertentu yang diperlukan untuk menyediakan layanan atau memenuhi kewajiban hukum, kami mungkin membagikan atau mengungkapkan informasi Anda kepada pihak-pihak berikut dengan perlindungan yang memadai:",
+      "sub1": {
+        "title": "5.1 Penyedia Layanan dan Mitra Bisnis Terpercaya",
+        "intro": "Kami bekerja sama dengan penyedia layanan pihak ketiga yang terpilih dan terpercaya untuk mendukung operasional platform kami. Setiap penyedia layanan terikat dengan perjanjian kerahasiaan dan pemrosesan data yang ketat, dan hanya dapat mengakses data yang diperlukan untuk tugas mereka:",
+        "payment": "Penyedia Layanan Pembayaran Cryptocurrency: Kami bermitra dengan NOWPayments dan gateway pembayaran cryptocurrency lainnya untuk memproses transaksi cryptocurrency Anda. Data yang dibagikan mencakup alamat wallet, jumlah transaksi, dan informasi yang diperlukan untuk memverifikasi dan menyelesaikan transaksi.",
+        "cloud": "Layanan Infrastruktur dan Hosting: Kami menggunakan layanan hosting cloud yang aman dan andal untuk menyimpan data dan menjalankan platform kami. Penyedia hosting ini memiliki sertifikasi keamanan yang diakui secara internasional dan mematuhi standar perlindungan data yang ketat.",
+        "email": "Layanan Komunikasi Email: Kami menggunakan Brevo (sebelumnya Sendinblue) untuk mengirimkan email transaksional seperti verifikasi akun, konfirmasi transaksi, dan notifikasi penting lainnya. Penyedia ini hanya menerima alamat email dan nama Anda untuk keperluan pengiriman email.",
+        "customer": "Platform Komunikasi Pelanggan: Kami menggunakan WhatsApp Business untuk menyediakan layanan pelanggan yang responsif. Komunikasi melalui WhatsApp mencakup bantuan transaksi, konfirmasi order, dan dukungan teknis.",
+        "analytics": "Layanan Analitik: Kami dapat menggunakan layanan analitik untuk memahami pola penggunaan website dan meningkatkan pengalaman pengguna. Data analitik umumnya bersifat agregat dan anonim.",
+        "footer": "Semua penyedia layanan pihak ketiga menandatangani Data Processing Agreement (DPA) yang mengatur kewajiban mereka dalam melindungi data Anda, membatasi penggunaan hanya untuk tujuan yang ditentukan, dan memastikan standar keamanan yang memadai."
+      },
+      "sub2": {
+        "title": "5.2 Pengungkapan untuk Kepatuhan Hukum dan Perlindungan",
+        "intro": "Kami mungkin mengungkapkan informasi pribadi Anda jika diwajibkan atau diizinkan oleh hukum, atau jika kami yakin dengan itikad baik bahwa pengungkapan tersebut diperlukan untuk:",
+        "court": "Merespons perintah pengadilan, surat panggilan (subpoena), permintaan informasi resmi dari otoritas pemerintah, atau proses hukum lainnya yang sah dan mengikat",
+        "law": "Bekerja sama dengan otoritas penegak hukum, Kepolisian, Kejaksaan, atau badan investigasi resmi dalam penyelidikan tindak pidana atau aktivitas ilegal yang dicurigai",
+        "aml": "Mematuhi kewajiban berdasarkan peraturan anti pencucian uang (Anti-Money Laundering/AML), pencegahan pendanaan terorisme (Counter-Terrorism Financing/CTF), dan regulasi keuangan lainnya yang berlaku di Indonesia",
+        "tax": "Memenuhi kewajiban pelaporan kepada otoritas pajak atau regulator keuangan sesuai dengan peraturan yang berlaku",
+        "protect": "Melindungi hak, keselamatan, properti, dan kepentingan sah Saldopedia, pengguna kami, atau masyarakat umum dari ancaman, penipuan, atau aktivitas berbahaya lainnya",
+        "emergency": "Merespons situasi darurat yang mengancam keselamatan atau kesejahteraan finansial seseorang"
+      },
+      "sub3": {
+        "title": "5.3 Transaksi Bisnis dan Restrukturisasi Perusahaan",
+        "content": "Jika Saldopedia terlibat dalam merger, akuisisi, konsolidasi, penjualan aset, reorganisasi, kebangkrutan, atau transaksi bisnis serupa lainnya, informasi pribadi pengguna mungkin ditransfer atau diungkapkan sebagai bagian dari transaksi tersebut. Dalam situasi seperti ini, kami akan mengambil langkah-langkah yang wajar untuk memastikan bahwa pihak penerima mematuhi standar privasi yang setara atau lebih tinggi dari yang dijelaskan dalam Kebijakan Privasi ini. Kami akan memberitahu Anda melalui email atau pemberitahuan di website sebelum informasi Anda menjadi tunduk pada kebijakan privasi yang berbeda secara material, memberikan Anda kesempatan untuk mengajukan keberatan atau menutup akun jika diinginkan."
+      },
+      "sub4": {
+        "title": "5.4 Data Publik di Jaringan Blockchain",
+        "content": "Penting untuk Anda pahami bahwa transaksi cryptocurrency dicatat secara permanen pada blockchain publik yang bersifat terbuka dan transparan. Ini berarti alamat wallet cryptocurrency, hash transaksi, jumlah transfer, dan timestamp transaksi dapat dilihat oleh siapa saja yang memiliki akses ke blockchain explorer. Saldopedia tidak memiliki kendali atas visibilitas data blockchain ini dan tidak bertanggung jawab atas pengungkapan informasi yang merupakan karakteristik inheren dari teknologi blockchain. Kami menyarankan Anda untuk memahami implikasi privasi dari penggunaan cryptocurrency sebelum melakukan transaksi."
+      },
+      "sub5": {
+        "title": "5.5 Pengungkapan dengan Persetujuan Anda",
+        "content": "Selain situasi yang dijelaskan di atas, kami mungkin membagikan informasi pribadi Anda kepada pihak ketiga jika Anda telah memberikan persetujuan eksplisit untuk pengungkapan tersebut. Kami akan selalu menginformasikan tujuan dan penerima data sebelum meminta persetujuan Anda, dan Anda memiliki hak untuk menolak atau menarik persetujuan kapan saja."
+      }
+    },
+    "section6": {
+      "title": "6. Langkah-Langkah Keamanan Data yang Komprehensif",
+      "intro": "Sebagai platform yang menangani transaksi keuangan digital, Saldopedia menerapkan langkah-langkah keamanan berlapis yang komprehensif untuk melindungi data pribadi dan transaksi Anda. Kami secara berkelanjutan mengevaluasi, memperbarui, dan meningkatkan infrastruktur keamanan kami untuk menghadapi ancaman siber yang terus berkembang.",
+      "sub1": {
+        "title": "6.1 Keamanan Infrastruktur dan Jaringan",
+        "intro": "Infrastruktur teknis kami dilengkapi dengan perlindungan keamanan tingkat enterprise:",
+        "encryption": "Enkripsi Data dalam Transit:",
+        "encryptionDesc": "Seluruh data yang ditransmisikan antara browser Anda dan server kami dilindungi dengan enkripsi SSL/TLS 256-bit, standar enkripsi tertinggi yang digunakan oleh institusi keuangan global. Ini memastikan bahwa data Anda tidak dapat dibaca oleh pihak yang tidak berwenang selama transmisi.",
+        "storage": "Enkripsi Data saat Tersimpan:",
+        "storageDesc": "Data sensitif seperti password dienkripsi menggunakan algoritma bcrypt dengan salt yang unik sebelum disimpan di database. Data keuangan dan informasi sensitif lainnya juga dienkripsi menggunakan standar industri.",
+        "firewall": "Firewall dan Sistem Deteksi Intrusi:",
+        "firewallDesc": "Infrastruktur kami dilindungi dengan firewall canggih yang memfilter traffic berbahaya dan Intrusion Detection System (IDS) yang memantau aktivitas mencurigakan secara real-time.",
+        "ddos": "Proteksi DDoS:",
+        "ddosDesc": "Platform kami dilindungi dari serangan Distributed Denial of Service (DDoS) yang dapat mengganggu ketersediaan layanan.",
+        "backup": "Backup dan Disaster Recovery:",
+        "backupDesc": "Data Anda di-backup secara berkala ke lokasi yang aman dan terpisah secara geografis. Kami memiliki rencana pemulihan bencana (disaster recovery plan) untuk memastikan kelangsungan layanan dalam situasi darurat."
+      },
+      "sub2": {
+        "title": "6.2 Keamanan Akses dan Autentikasi",
+        "intro": "Kami menerapkan kontrol akses yang ketat untuk melindungi akun dan data Anda:",
+        "access": "Kontrol Akses Berbasis Peran:",
+        "accessDesc": "Akses ke data pribadi pengguna dibatasi secara ketat hanya untuk personel yang berwenang dan memerlukan akses tersebut untuk melaksanakan tugas mereka. Setiap akses dicatat untuk keperluan audit.",
+        "session": "Manajemen Sesi yang Aman:",
+        "sessionDesc": "Token sesi dihasilkan secara kriptografis aman dan memiliki masa berlaku terbatas. Sesi akan otomatis berakhir setelah periode tidak aktif untuk mencegah akses tidak sah.",
+        "password": "Kebijakan Password yang Kuat:",
+        "passwordDesc": "Password harus memenuhi persyaratan kompleksitas minimum dan di-hash menggunakan bcrypt sebelum disimpan. Kami tidak pernah menyimpan password dalam bentuk teks biasa.",
+        "verification": "Verifikasi Multi-Faktor:",
+        "verificationDesc": "Verifikasi email wajib untuk pendaftaran akun, dan verifikasi OTP via WhatsApp tersedia untuk operasi sensitif seperti penukaran poin."
+      },
+      "sub3": {
+        "title": "6.3 Pemantauan dan Deteksi Ancaman",
+        "intro": "Sistem keamanan kami secara aktif memantau dan mendeteksi potensi ancaman:",
+        "monitoring": "Pemantauan Real-Time 24/7:",
+        "monitoringDesc": "Sistem keamanan kami dipantau secara real-time sepanjang waktu untuk mendeteksi aktivitas mencurigakan, percobaan pembobolan, atau anomali yang memerlukan investigasi.",
+        "logging": "Logging dan Audit Trail:",
+        "loggingDesc": "Seluruh aktivitas penting dicatat dalam log yang tidak dapat diubah untuk keperluan audit, investigasi insiden, dan kepatuhan regulasi.",
+        "alert": "Sistem Peringatan Otomatis:",
+        "alertDesc": "Sistem kami secara otomatis memberikan peringatan kepada tim keamanan ketika terdeteksi aktivitas yang mencurigakan atau melebihi ambang batas normal."
+      },
+      "sub4": {
+        "title": "6.4 Penanganan Insiden dan Pelanggaran Data",
+        "p1": "Meskipun kami menerapkan langkah keamanan terbaik yang tersedia, kami memahami bahwa tidak ada sistem yang 100% kebal terhadap serangan siber. Jika terjadi pelanggaran data (data breach) yang mempengaruhi informasi pribadi Anda, kami akan mengambil langkah-langkah berikut sesuai dengan kewajiban hukum dan komitmen transparansi kami:",
+        "p2": "Kami akan segera menginvestigasi insiden untuk menentukan ruang lingkup dan dampaknya, mengambil tindakan untuk menghentikan pelanggaran dan mencegah kerusakan lebih lanjut, memberitahu Anda secara langsung melalui email dalam waktu yang wajar setelah pelanggaran teridentifikasi, melaporkan insiden kepada otoritas perlindungan data yang berwenang sesuai dengan hukum yang berlaku, dan menyediakan informasi tentang langkah-langkah yang dapat Anda ambil untuk melindungi diri.",
+        "p3": "Kami juga menyarankan Anda untuk menjaga keamanan kredensial akun Anda dengan tidak membagikan password kepada siapapun, menggunakan password yang kuat dan unik, segera menghubungi kami jika mencurigai adanya akses tidak sah ke akun Anda, dan secara berkala memeriksa aktivitas akun dan riwayat transaksi Anda."
+      }
+    },
+    "section7": {
+      "title": "7. Kebijakan Retensi dan Penyimpanan Data",
+      "intro": "Saldopedia menyimpan data pribadi Anda hanya selama diperlukan untuk memenuhi tujuan pengumpulan, menyediakan layanan yang Anda minta, dan mematuhi kewajiban hukum yang berlaku. Kami menerapkan kebijakan retensi data yang jelas untuk memastikan data tidak disimpan lebih lama dari yang diperlukan.",
+      "sub1": {
+        "title": "7.1 Prinsip Umum Penyimpanan Data",
+        "content": "Data pribadi Anda disimpan selama diperlukan untuk menyediakan layanan, memenuhi kewajiban kontraktual, dan mematuhi persyaratan hukum dan regulasi. Periode retensi ditentukan berdasarkan jenis data, tujuan pemrosesan, keperluan bisnis yang sah, dan kewajiban hukum yang berlaku. Kami secara berkala meninjau data yang kami simpan dan menghapus data yang tidak lagi diperlukan sesuai dengan kebijakan retensi kami."
+      },
+      "sub2": {
+        "title": "7.2 Periode Retensi Berdasarkan Jenis Data",
+        "intro": "Berikut adalah periode retensi yang berlaku untuk berbagai jenis data yang kami kumpulkan:",
+        "transaction": "Data Transaksi Keuangan:",
+        "transactionDesc": "Seluruh riwayat transaksi termasuk deposit, order, transfer, dan withdrawal disimpan minimal 10 (sepuluh) tahun sesuai dengan peraturan perpajakan Indonesia dan regulasi anti pencucian uang. Data ini mencakup jumlah, tanggal, pihak yang terlibat, dan bukti transaksi.",
+        "account": "Data Akun dan Identitas:",
+        "accountDesc": "Informasi akun dasar seperti nama, email, nomor telepon, dan informasi rekening bank disimpan selama akun Anda aktif dan hingga 5 (lima) tahun setelah penutupan akun untuk keperluan audit, penyelesaian sengketa, dan kepatuhan regulasi.",
+        "communication": "Rekaman Komunikasi:",
+        "communicationDesc": "Riwayat komunikasi dengan customer service melalui WhatsApp, email, dan saluran lainnya disimpan selama 3 (tiga) tahun untuk keperluan penyelesaian masalah, audit kualitas layanan, dan dokumentasi.",
+        "security": "Log Keamanan dan Akses:",
+        "securityDesc": "Data log akses, login, aktivitas akun, dan event keamanan disimpan selama 2 (dua) tahun untuk keperluan keamanan, investigasi insiden, dan audit.",
+        "marketing": "Data Preferensi Marketing:",
+        "marketingDesc": "Preferensi newsletter dan informasi marketing disimpan selama Anda berlangganan dan dihapus dalam waktu 30 hari setelah Anda berhenti berlangganan atau meminta penghapusan.",
+        "legal": "Data untuk Kepatuhan Hukum:",
+        "legalDesc": "Data tertentu mungkin disimpan lebih lama dari periode standar jika diwajibkan oleh hukum, peraturan, atau untuk keperluan litigasi yang sedang berlangsung atau yang dapat diantisipasi."
+      },
+      "sub3": {
+        "title": "7.3 Prosedur Penghapusan dan Anonimisasi Data",
+        "content": "Setelah periode retensi berakhir atau ketika data tidak lagi diperlukan untuk tujuan yang sah, data Anda akan dihapus secara aman menggunakan metode penghapusan yang tidak dapat dipulihkan, atau dianonimkan sedemikian rupa sehingga tidak dapat lagi dikaitkan dengan identitas Anda. Data yang telah dianonimkan tidak lagi dianggap sebagai data pribadi dan mungkin digunakan untuk analisis statistik, penelitian, dan peningkatan layanan tanpa batasan waktu. Proses penghapusan dilakukan secara sistematis dan terdokumentasi untuk memastikan kepatuhan."
+      },
+      "sub4": {
+        "title": "7.4 Pengecualian Periode Retensi",
+        "content": "Dalam situasi tertentu, kami mungkin menyimpan data lebih lama dari periode standar jika diperlukan untuk memenuhi kewajiban hukum, merespons permintaan dari otoritas pemerintah, menegakkan Syarat dan Ketentuan kami, menyelesaikan sengketa, melindungi hak legal kami, atau jika Anda memberikan persetujuan untuk penyimpanan lebih lama."
+      }
+    },
+    "section8": {
+      "title": "8. Hak-Hak Anda sebagai Subjek Data",
+      "intro": "Sesuai dengan Undang-Undang Perlindungan Data Pribadi Indonesia dan prinsip perlindungan data internasional, Anda memiliki sejumlah hak terkait data pribadi Anda yang kami proses. Saldopedia berkomitmen untuk menghormati dan memfasilitasi pelaksanaan hak-hak ini. Berikut adalah penjelasan lengkap mengenai hak-hak Anda:",
+      "sub1": {
+        "title": "8.1 Hak untuk Mengakses Informasi",
+        "content": "Anda berhak untuk mengetahui apakah kami memproses data pribadi Anda dan meminta akses ke salinan data tersebut. Atas permintaan Anda, kami akan memberikan informasi tentang: jenis data pribadi yang kami simpan tentang Anda, tujuan pemrosesan data tersebut, pihak-pihak kepada siapa data mungkin telah diungkapkan, periode retensi yang berlaku, dan sumber data jika tidak dikumpulkan langsung dari Anda. Kami akan memberikan informasi ini dalam format yang jelas dan dapat dibaca dalam waktu 30 (tiga puluh) hari kerja sejak permintaan diterima."
+      },
+      "sub2": {
+        "title": "8.2 Hak untuk Memperbaiki dan Memperbarui Data",
+        "content": "Anda berhak meminta koreksi data pribadi yang tidak akurat, tidak lengkap, atau sudah usang. Anda dapat memperbarui sebagian informasi akun langsung melalui halaman pengaturan di dashboard pengguna, termasuk alamat email, nomor telepon, dan informasi rekening bank. Untuk perubahan yang tidak dapat dilakukan secara mandiri seperti koreksi nama, silakan hubungi tim support kami dengan menyertakan bukti identitas yang valid. Kami berkomitmen untuk memproses permintaan koreksi dalam waktu yang wajar."
+      },
+      "sub3": {
+        "title": "8.3 Hak untuk Menghapus Data (Hak untuk Dilupakan)",
+        "content": "Anda berhak meminta penghapusan data pribadi Anda dalam situasi tertentu, termasuk: ketika data tidak lagi diperlukan untuk tujuan pengumpulan awal, ketika Anda menarik persetujuan dan tidak ada dasar hukum lain untuk pemrosesan, atau ketika data telah diproses secara tidak sah. Namun, hak penghapusan ini tidak absolut dan mungkin ditolak jika pemrosesan diperlukan untuk memenuhi kewajiban hukum (seperti regulasi perpajakan atau anti pencucian uang), untuk menegakkan atau membela klaim hukum, untuk kepentingan arsip atau penelitian, atau untuk menyelesaikan transaksi atau sengketa yang sedang berlangsung."
+      },
+      "sub4": {
+        "title": "8.4 Hak untuk Membatasi Pemrosesan",
+        "content": "Anda berhak meminta pembatasan pemrosesan data pribadi Anda dalam situasi berikut: ketika Anda mempertanyakan keakuratan data dan kami sedang memverifikasinya, ketika pemrosesan tidak sah tetapi Anda memilih pembatasan daripada penghapusan, ketika kami tidak lagi memerlukan data tetapi Anda memerlukannya untuk klaim hukum, atau ketika Anda mengajukan keberatan dan kami sedang mempertimbangkannya. Selama periode pembatasan, kami akan terus menyimpan data tetapi tidak akan memprosesnya untuk tujuan lain tanpa persetujuan Anda."
+      },
+      "sub5": {
+        "title": "8.5 Hak untuk Memindahkan Data (Portabilitas)",
+        "content": "Anda berhak menerima data pribadi yang telah Anda berikan kepada kami dalam format terstruktur, umum digunakan, dan dapat dibaca mesin (seperti CSV atau JSON). Anda juga berhak meminta kami untuk mentransmisikan data tersebut langsung ke penyedia layanan lain jika secara teknis memungkinkan. Hak ini berlaku untuk data yang diproses berdasarkan persetujuan atau pelaksanaan kontrak dan yang diproses secara otomatis. Untuk menggunakan hak ini, silakan hubungi tim support kami."
+      },
+      "sub6": {
+        "title": "8.6 Hak untuk Menolak Pemrosesan",
+        "content": "Anda berhak menolak pemrosesan data pribadi Anda dalam situasi tertentu, termasuk: pemrosesan untuk tujuan pemasaran langsung (termasuk profiling untuk pemasaran), dan pemrosesan berdasarkan kepentingan sah kami. Jika Anda menolak pemrosesan untuk pemasaran langsung, kami akan segera menghentikan pemrosesan tersebut. Untuk keberatan berdasarkan kepentingan sah, kami akan menilai apakah kepentingan kami yang sah lebih besar dari hak Anda."
+      },
+      "sub7": {
+        "title": "8.7 Hak untuk Menarik Persetujuan",
+        "content": "Jika pemrosesan data pribadi Anda didasarkan pada persetujuan, Anda berhak menarik persetujuan tersebut kapan saja. Penarikan persetujuan tidak mempengaruhi keabsahan pemrosesan yang telah dilakukan sebelumnya berdasarkan persetujuan tersebut. Untuk menarik persetujuan newsletter, Anda dapat menggunakan tautan unsubscribe di setiap email. Untuk penarikan persetujuan lainnya, silakan hubungi tim support kami."
+      },
+      "sub8": {
+        "title": "8.8 Hak untuk Mengajukan Keluhan",
+        "content": "Jika Anda yakin bahwa pemrosesan data pribadi Anda melanggar hak-hak Anda atau peraturan perlindungan data yang berlaku, Anda berhak mengajukan keluhan kepada otoritas perlindungan data yang berwenang di Indonesia. Namun, kami sangat menganjurkan Anda untuk menghubungi kami terlebih dahulu sehingga kami memiliki kesempatan untuk mengatasi kekhawatiran Anda secara langsung."
+      },
+      "sub9": {
+        "title": "8.9 Cara Menggunakan Hak-Hak Anda",
+        "intro": "Untuk menggunakan salah satu hak-hak di atas, Anda dapat menghubungi kami melalui saluran resmi berikut:",
+        "process": "Setelah menerima permintaan Anda, kami akan memverifikasi identitas Anda untuk memastikan keamanan data. Verifikasi mungkin memerlukan informasi tambahan seperti konfirmasi alamat email terdaftar atau jawaban atas pertanyaan keamanan. Kami akan merespons permintaan Anda dalam waktu 30 (tiga puluh) hari kerja sejak verifikasi identitas berhasil. Jika permintaan Anda kompleks atau kami menerima banyak permintaan, periode ini dapat diperpanjang dengan pemberitahuan kepada Anda.",
+        "footer": "Kami tidak mengenakan biaya untuk penggunaan hak-hak ini, kecuali permintaan bersifat berulang, berlebihan, atau tidak berdasar, dalam hal ini kami dapat mengenakan biaya administrasi yang wajar atau menolak permintaan."
+      }
+    },
+    "section9": {
+      "title": "9. Cookie dan Teknologi Pelacakan",
+      "intro": "Kami menggunakan cookie dan teknologi serupa untuk meningkatkan pengalaman Anda. Untuk informasi lengkap, silakan baca",
+      "linkText": "Kebijakan Cookie",
+      "kami": " kami.",
+      "sub1": {
+        "title": "9.1 Jenis Cookie yang Digunakan",
+        "necessary": "Cookie Esensial:",
+        "necessaryDesc": "Diperlukan untuk fungsi dasar website seperti keamanan dan navigasi.",
+        "preference": "Cookie Preferensi:",
+        "preferenceDesc": "Menyimpan pilihan Anda seperti bahasa dan tema tampilan.",
+        "analytics": "Cookie Analitik:",
+        "analyticsDesc": "Membantu kami memahami bagaimana pengunjung berinteraksi dengan website.",
+        "marketing": "Cookie Pemasaran:",
+        "marketingDesc": "Digunakan untuk menampilkan iklan yang relevan berdasarkan minat Anda."
+      },
+      "sub2": {
+        "title": "9.2 Mengelola Cookie",
+        "content": "Anda dapat mengelola preferensi cookie melalui banner cookie di website atau pengaturan browser Anda. Menonaktifkan cookie tertentu mungkin mempengaruhi fungsionalitas website."
+      }
+    },
+    "section10": {
+      "title": "10. Privasi Anak-Anak",
+      "content": "Layanan Saldopedia tidak ditujukan untuk anak-anak di bawah 18 tahun. Kami tidak dengan sengaja mengumpulkan data pribadi dari anak-anak. Jika Anda mengetahui bahwa anak telah memberikan data pribadi kepada kami, silakan hubungi kami untuk penghapusan data tersebut."
+    },
+    "section11": {
+      "title": "11. Transfer Data Internasional",
+      "p1": "Data Anda mungkin ditransfer dan disimpan di server yang berlokasi di luar Indonesia untuk keperluan pemrosesan dan penyimpanan.",
+      "p2": "Kami memastikan bahwa transfer data internasional dilakukan sesuai dengan standar perlindungan data yang memadai melalui perjanjian kontraktual dengan penyedia layanan.",
+      "p3": "Dengan menggunakan layanan kami, Anda menyetujui transfer data ke luar wilayah Indonesia untuk tujuan yang dijelaskan dalam kebijakan ini."
+    },
+    "section12": {
+      "title": "12. Tautan ke Situs Pihak Ketiga",
+      "p1": "Website kami mungkin berisi tautan ke situs pihak ketiga. Kami tidak bertanggung jawab atas praktik privasi situs-situs tersebut.",
+      "p2": "Kami menyarankan Anda untuk membaca kebijakan privasi setiap situs yang Anda kunjungi. Kebijakan privasi ini hanya berlaku untuk informasi yang dikumpulkan oleh Saldopedia."
+    },
+    "section13": {
+      "title": "13. Perubahan Kebijakan Privasi",
+      "p1": "Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu untuk mencerminkan perubahan dalam praktik kami atau kewajiban hukum.",
+      "p2": "Perubahan signifikan akan diumumkan melalui pemberitahuan di website atau email. Tanggal \"Terakhir diperbarui\" di bagian atas menunjukkan kapan kebijakan ini terakhir direvisi.",
+      "p3": "Penggunaan layanan kami setelah perubahan berarti Anda menerima kebijakan yang diperbarui. Jika Anda tidak menyetujui perubahan, mohon untuk menghentikan penggunaan layanan kami."
+    },
+    "section14": {
+      "title": "14. Hubungi Kami",
+      "intro": "Jika Anda memiliki pertanyaan, komentar, atau permintaan terkait Kebijakan Privasi ini, silakan hubungi kami melalui:",
+      "hours": "Jam Operasional:",
+      "hoursValue": "09:00 - 21:00 WIB (Customer Service)"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Hubungi Kami",
+      "subtitle": "Tim Saldopedia siap membantu Anda untuk transaksi crypto, PayPal, dan Skrill"
+    },
+    "contacts": {
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "Chat langsung dengan tim support",
+        "value": "+62 811 9666 620"
+      },
+      "email": {
+        "title": "Email",
+        "description": "Kirim pertanyaan via email",
+        "value": "support@saldopedia.com"
+      }
+    },
+    "hours": {
+      "title": "Jam Operasional",
+      "automated": "Transaksi: 24/7",
+      "support": "Customer Service: 09:00 - 21:00 WIB"
+    },
+    "cta": {
+      "title": "Siap Mulai Transaksi?",
+      "button": "Buat Order Sekarang"
+    }
+  },
+  "auth": {
+    "backToHome": "Kembali ke Beranda",
+    "home": "Beranda",
+    "copyrightText": "Saldopedia. Seluruh hak cipta dilindungi.",
+    "captcha": {
+      "error": "Mohon selesaikan verifikasi reCAPTCHA",
+      "errorVerify": "Gagal memverifikasi reCAPTCHA. Silakan coba lagi",
+      "expired": "reCAPTCHA kedaluwarsa. Silakan verifikasi ulang"
+    },
+    "recaptcha": {
+      "protectedBy": "Halaman ini dilindungi oleh reCAPTCHA Google. Berlaku",
+      "privacyPolicy": "Kebijakan Privasi",
+      "and": "dan",
+      "termsOfService": "Ketentuan Layanan",
+      "apply": "Saldopedia."
+    },
+    "login": {
+      "title": "Masuk ke Akun",
+      "subtitle": "Masuk untuk melanjutkan transaksi crypto, PayPal, dan Skrill",
+      "emailLabel": "Email",
+      "emailPlaceholder": "nama@email.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Min. 8 karakter",
+      "forgotPassword": "Lupa password?",
+      "loginButton": "Masuk",
+      "loading": "Memproses...",
+      "noAccount": "Belum punya akun?",
+      "registerNow": "Daftar sekarang",
+      "orDivider": "atau",
+      "googleButton": "Masuk dengan Google",
+      "facebookButton": "Masuk dengan Facebook",
+      "sessionTimeout": "Sesi Anda telah berakhir. Silakan masuk kembali",
+      "resendVerification": "Kirim Ulang Verifikasi",
+      "resending": "Mengirim...",
+      "errorLogin": "Gagal masuk. Silakan periksa email dan password",
+      "errorNotVerified": "belum diverifikasi",
+      "errorGeneral": "Terjadi kesalahan. Silakan coba lagi"
+    },
+    "register": {
+      "title": "Buat Akun Baru",
+      "subtitle": "Daftar untuk mulai transaksi crypto, PayPal, dan Skrill",
+      "fullName": "Nama Lengkap",
+      "fullNamePlaceholder": "Budi Santoso",
+      "nameNote": "Pastikan nama sesuai dengan akun bank/e-wallet Anda. Nama tidak dapat diubah setelah mendaftar untuk keamanan withdraw.",
+      "email": "Email",
+      "emailPlaceholder": "nama@email.com",
+      "phone": "Nomor WhatsApp",
+      "phonePlaceholder": "08123456789",
+      "password": "Password",
+      "passwordPlaceholder": "Min. 8 karakter",
+      "confirmPassword": "Konfirmasi Password",
+      "confirmPasswordPlaceholder": "Ulangi password",
+      "registerButton": "Daftar",
+      "registering": "Memproses...",
+      "haveAccount": "Sudah punya akun?",
+      "loginLink": "Masuk",
+      "orDivider": "atau",
+      "googleButton": "Daftar dengan Google",
+      "facebookButton": "Daftar dengan Facebook",
+      "backToLogin": "Kembali ke halaman login",
+      "successTitle": "Pendaftaran Berhasil!",
+      "successMessage": "Kami sudah mengirim link verifikasi ke",
+      "successDescription": "Silakan cek inbox atau folder spam untuk mengaktifkan akun Anda.",
+      "errorRegister": "Gagal mendaftar. Silakan coba lagi",
+      "errorGeneral": "Terjadi kesalahan. Silakan coba lagi",
+      "passwordStrength": {
+        "weak": "Lemah",
+        "fair": "Cukup",
+        "good": "Baik",
+        "strong": "Kuat"
+      },
+      "passwordChecks": {
+        "length": "Min. 8 karakter",
+        "lowercase": "Huruf kecil",
+        "uppercase": "Huruf besar",
+        "number": "Angka",
+        "special": "Simbol (!@#$%)"
+      },
+      "referralCode": "Kode Referral (Opsional)",
+      "referralCodePlaceholder": "Contoh: BUDI123",
+      "referralCodeNote": "Punya kode referral dari teman? Masukkan di sini untuk bonus poin."
+    },
+    "forgotPassword": {
+      "title": "Lupa Password",
+      "subtitle": "Masukkan email Anda untuk menerima link reset password",
+      "emailLabel": "Email",
+      "emailPlaceholder": "nama@email.com",
+      "sendButton": "Kirim Link Reset",
+      "sending": "Mengirim...",
+      "backToLogin": "Kembali ke halaman login",
+      "successTitle": "Email Terkirim!",
+      "successMessage": "Kami sudah mengirim link reset password ke",
+      "successDescription": "Silakan cek inbox atau folder spam.",
+      "errorSend": "Gagal mengirim email. Silakan coba lagi",
+      "errorGeneral": "Terjadi kesalahan. Silakan coba lagi"
+    },
+    "resetPassword": {
+      "title": "Reset Password",
+      "subtitle": "Masukkan password baru Anda",
+      "newPassword": "Password Baru",
+      "passwordHint": "Minimal 8 karakter",
+      "confirmPassword": "Konfirmasi Password Baru",
+      "resetButton": "Reset Password",
+      "resetting": "Memproses...",
+      "backToLogin": "Kembali ke halaman login",
+      "successTitle": "Password Berhasil Direset!",
+      "successMessage": "Password Anda sudah diubah. Silakan login dengan password baru.",
+      "errorInvalidToken": "Link reset tidak valid atau sudah kadaluarsa",
+      "errorReset": "Gagal reset password. Silakan coba lagi",
+      "errorGeneral": "Terjadi kesalahan. Silakan coba lagi"
+    },
+    "verifyEmail": {
+      "title": "Verifikasi Email",
+      "subtitle": "Memverifikasi email Anda...",
+      "successTitle": "Email Terverifikasi!",
+      "goToDashboard": "Masuk ke Dashboard",
+      "redirecting": "Mengalihkan ke dashboard...",
+      "errorTitle": "Verifikasi Gagal",
+      "errorNoToken": "Token verifikasi tidak ditemukan",
+      "errorGeneral": "Terjadi kesalahan saat verifikasi"
+    }
+  },
+  "dashboard": {
+    "welcome": "Selamat datang,",
+    "balance": "Saldo",
+    "points": "Poin",
+    "pointsUnit": "poin",
+    "greetingMorning": "Selamat Pagi, {name}",
+    "greetingAfternoon": "Selamat Siang, {name}",
+    "greetingEvening": "Selamat Sore, {name}",
+    "greetingNight": "Selamat Malam, {name}",
+    "actions": {
+      "createOrder": "Buat Order",
+      "topUp": "Deposit",
+      "withdraw": "Tarik Saldo",
+      "withdrawShort": "Tarik",
+      "transfer": "Transfer",
+      "depositShort": "Deposit"
+    },
+    "quickActions": {
+      "title": "Menu Cepat",
+      "createOrder": "Buat Order",
+      "topUp": "Deposit",
+      "allOrders": "Semua Order"
+    },
+    "recentActivity": {
+      "title": "Aktivitas Terbaru",
+      "subtitle": "Transaksi order Anda",
+      "viewAll": "Lihat Semua",
+      "noTransactions": "Belum ada transaksi",
+      "noTransactionsDesc": "Mulai dengan membuat order pertama",
+      "createFirst": "Buat Order Baru"
+    },
+    "quickLinks": {
+      "profile": "Profil",
+      "profileDesc": "Kelola informasi akun",
+      "settings": "Pengaturan",
+      "settingsDesc": "Keamanan & password",
+      "help": "Bantuan",
+      "helpDesc": "Hubungi support"
+    },
+    "orderStatus": {
+      "completed": "Selesai",
+      "pending": "Pending",
+      "pendingProof": "Menunggu Bukti",
+      "processing": "Proses",
+      "verifying": "Sedang Diverifikasi",
+      "expired": "Expired",
+      "cancelled": "Dibatalkan"
+    },
+    "orderType": {
+      "buy": "Beli",
+      "sell": "Jual"
+    },
+    "serviceLabels": {
+      "cryptocurrency": "Cryptocurrency",
+      "paypal": "PayPal",
+      "skrill": "Skrill"
+    },
+    "depositStatus": {
+      "completed": "Berhasil",
+      "pending": "Menunggu",
+      "pendingProof": "Menunggu Bukti",
+      "expired": "Expired",
+      "rejected": "Ditolak"
+    },
+    "withdrawalStatus": {
+      "completed": "Berhasil",
+      "pending": "Menunggu",
+      "rejected": "Ditolak"
+    },
+    "activityLabels": {
+      "depositBalance": "Deposit Saldo",
+      "withdrawBalance": "Tarik Saldo",
+      "sendBalance": "Kirim Saldo",
+      "receiveBalance": "Terima Saldo",
+      "to": "Ke",
+      "from": "Dari",
+      "transactions": "transaksi",
+      "success": "Berhasil"
+    },
+    "referral": {
+      "title": "Program Referral",
+      "subtitle": "Ajak teman dan dapatkan bonus poin",
+      "yourCode": "Kode Referral Anda",
+      "copyCode": "Salin Kode",
+      "copyLink": "Salin Link",
+      "copied": "Tersalin!",
+      "shareWhatsApp": "Bagikan via WhatsApp",
+      "whatsappShareMessage": "Hai! Daftar di Saldopedia pakai kode referral saya \"{code}\" dan dapatkan bonus 27.000 poin! {link}",
+      "bonusInfo": "Bonus Referral",
+      "yourBonus": "Bonus Anda",
+      "friendBonus": "Bonus Teman",
+      "points": "Poin",
+      "perReferral": "per teman yang mendaftar",
+      "whenSignUp": "saat mendaftar via referral",
+      "totalReferrals": "Total Referral",
+      "totalEarned": "Total Poin Didapat",
+      "referralHistory": "Riwayat Referral",
+      "noReferrals": "Belum ada referral",
+      "shareToStart": "Bagikan kode Anda untuk mulai mengumpulkan poin"
+    },
+    "points": {
+      "title": "Poin Saya",
+      "subtitle": "Kelola dan tukarkan poin Anda",
+      "pointsUnit": "poin",
+      "currentBalance": "Saldo Poin",
+      "exchangeRate": "Nilai Tukar",
+      "exchangeRateValue": "10.000 Poin = Rp 5.000",
+      "redeemTitle": "Tukar Poin",
+      "redeemDescription": "Minimum penukaran 100.000 poin",
+      "redeemButton": "Tukar ke Saldo",
+      "redeeming": "Memproses...",
+      "redeemSuccess": "Berhasil! Saldo Anda telah bertambah",
+      "insufficientPoints": "Poin tidak mencukupi. Minimum 100.000 poin.",
+      "pointsHistory": "Riwayat Poin",
+      "noHistory": "Belum ada riwayat poin",
+      "typeReferralBonus": "Bonus Referral",
+      "typeReferredBonus": "Bonus Pendaftaran",
+      "typeRedeem": "Penukaran Poin",
+      "redeemDesc": "Tukar {points} poin ke Rp {idr}",
+      "typeExpired": "Poin Kadaluarsa",
+      "typeAdjustment": "Penyesuaian",
+      "backToPoints": "Kembali ke Poin",
+      "viewAllPoints": "Lihat Semua Poin",
+      "pointsAmount": "Jumlah Poin",
+      "transactionId": "ID Transaksi",
+      "transactionTime": "Waktu Transaksi",
+      "transactionType": "Tipe Transaksi",
+      "convertedTo": "Ditukar menjadi",
+      "referredFriend": "Teman yang Diajak",
+      "invitedBy": "Diundang Oleh",
+      "notes": "Catatan",
+      "descReferralBonus": "Bonus yang didapat karena mengajak teman mendaftar menggunakan kode referral Anda.",
+      "descReferredBonus": "Bonus selamat datang yang didapat saat mendaftar menggunakan kode referral.",
+      "descRedeem": "Penukaran poin menjadi saldo yang dapat digunakan untuk transaksi.",
+      "descExpired": "Poin yang hangus karena tidak digunakan dalam periode tertentu.",
+      "descAdjustment": "Penyesuaian poin oleh sistem atau admin.",
+      "redeemFailed": "Gagal menukarkan poin",
+      "genericError": "Terjadi kesalahan. Silakan coba lagi."
+    }
+  },
+  "dashboardPages": {
+    "orders": {
+      "backToDashboard": "Kembali ke Dashboard",
+      "title": "Order Saya",
+      "subtitle": "Kelola semua transaksi order Anda",
+      "createOrder": "Buat Order Baru",
+      "filterAll": "Semua Transaksi",
+      "filterCompleted": "Selesai",
+      "filterPending": "Pending",
+      "filterPendingProof": "Menunggu Bukti",
+      "filterExpired": "Expired",
+      "filterDeposit": "Deposit",
+      "filterWithdrawal": "Tarik Saldo",
+      "filterTransfer": "Transfer",
+      "filterPoints": "Poin",
+      "noOrders": "Belum ada order",
+      "noOrdersDesc": "Mulai dengan membuat order baru",
+      "noOrdersDesc2": "Order Anda akan muncul di sini",
+      "noTransactions": "Belum ada transaksi",
+      "noDeposit": "Belum ada deposit",
+      "noPendingProof": "Tidak ada transaksi yang menunggu bukti",
+      "noWithdrawal": "Belum ada penarikan saldo",
+      "noTransfer": "Belum ada transfer",
+      "noPoints": "Belum ada riwayat poin",
+      "topUpBalance": "Top Up Saldo",
+      "transferBalance": "Transfer Saldo",
+      "loadMore": "Muat Lebih Banyak",
+      "remaining": "lagi",
+      "prev": "Sebelumnya",
+      "next": "Selanjutnya",
+      "page": "Halaman",
+      "of": "dari",
+      "filter": "Filter"
+    },
+    "profile": {
+      "backToDashboard": "Kembali ke Dashboard",
+      "title": "Profil",
+      "subtitle": "Informasi akun Anda"
+    },
+    "settings": {
+      "backToDashboard": "Kembali ke Dashboard",
+      "title": "Pengaturan",
+      "subtitle": "Kelola profil dan keamanan akun",
+      "profileSection": "Profil",
+      "photoProfile": "Foto Profil",
+      "name": "Nama",
+      "email": "Email",
+      "phone": "No. Telepon",
+      "phonePlaceholder": "08xxxxxxxxxx",
+      "otpPlaceholder": "000000",
+      "saveChanges": "Simpan Perubahan",
+      "saving": "Menyimpan...",
+      "passwordSection": "Ganti Password",
+      "currentPassword": "Password Saat Ini",
+      "newPassword": "Password Baru",
+      "confirmPassword": "Konfirmasi Password Baru",
+      "changePassword": "Ubah Password",
+      "changing": "Mengubah...",
+      "successUpdate": "Profil berhasil diupdate",
+      "photoMaxSize": "Ukuran file maksimal 2MB",
+      "nameLockedNote": "Nama tidak dapat diubah untuk keamanan withdraw. Nama harus sesuai dengan akun bank/e-wallet Anda.",
+      "nameGoogleOneTimeNote": "Anda dapat mengubah nama 1 kali. Setelah diubah, nama tidak dapat diubah lagi untuk keamanan withdraw.",
+      "savedAddresses": "Alamat Tersimpan",
+      "manageAddresses": "Kelola Alamat",
+      "manageAddressesDesc": "Wallet crypto dan penerima transfer tersimpan",
+      "addresses": {
+        "backToSettings": "Kembali ke Pengaturan",
+        "title": "Alamat Tersimpan",
+        "tabWallets": "Wallet Crypto",
+        "tabRecipients": "Penerima Transfer",
+        "noWallets": "Belum ada wallet tersimpan",
+        "noWalletsDesc": "Wallet akan tersimpan otomatis saat Anda melakukan pembelian crypto",
+        "noRecipients": "Belum ada penerima tersimpan",
+        "noRecipientsDesc": "Penerima akan tersimpan otomatis saat Anda melakukan transfer",
+        "label": "Label",
+        "crypto": "Crypto",
+        "network": "Network",
+        "walletAddress": "Alamat Wallet",
+        "destinationTag": "Destination Tag",
+        "optional": "Opsional",
+        "used": "Digunakan",
+        "times": "kali",
+        "edit": "Edit",
+        "delete": "Hapus",
+        "cancel": "Batal",
+        "save": "Simpan",
+        "deleteWalletConfirm": "Hapus wallet ini?",
+        "deleteRecipientConfirm": "Hapus penerima ini?",
+        "deleteEmailConfirm": "Hapus email ini?",
+        "walletUpdated": "Wallet berhasil diperbarui",
+        "walletDeleted": "Wallet berhasil dihapus",
+        "recipientUpdated": "Penerima berhasil diperbarui",
+        "recipientDeleted": "Penerima berhasil dihapus",
+        "emailUpdated": "Email berhasil diperbarui",
+        "emailDeleted": "Email berhasil dihapus",
+        "updateFailed": "Gagal memperbarui",
+        "deleteFailed": "Gagal menghapus",
+        "errorOccurred": "Terjadi kesalahan",
+        "walletsCount": "wallet tersimpan",
+        "recipientsCount": "penerima tersimpan",
+        "emailsCount": "email tersimpan",
+        "labelPlaceholder": "Contoh: Teman kantor",
+        "tabEmails": "PayPal/Skrill",
+        "noEmails": "Belum ada email tersimpan",
+        "noEmailsDesc": "Email akan tersimpan otomatis saat Anda melakukan transaksi PayPal/Skrill",
+        "serviceType": "Layanan"
+      }
+    },
+    "deposit": {
+      "backToDashboard": "Kembali ke Dashboard",
+      "title": "Deposit Saldo",
+      "subtitle": "Isi saldo akun Anda",
+      "howToTitle": "Cara Deposit Saldo",
+      "step1": "1. Hubungi admin via WhatsApp",
+      "step2": "2. Transfer sesuai nominal",
+      "step3": "3. Kirim bukti transfer ke admin",
+      "step4": "4. Saldo masuk setelah konfirmasi",
+      "contactAdmin": "Hubungi Admin WhatsApp",
+      "paymentMethods": "Metode Pembayaran",
+      "selectMethod": "Pilih Metode",
+      "transferAndUpload": "Transfer & Upload",
+      "paymentMethod": "Metode Pembayaran",
+      "bankTransfer": "Bank Transfer",
+      "nominalDeposit": "Nominal Deposit",
+      "amountPlaceholder": "0",
+      "requestCreated": "Deposit Request Dibuat",
+      "transferToAccount": "Transfer ke Rekening Ini",
+      "transferExactAmount": "Transfer Tepat Sebesar",
+      "uploadProof": "Upload Bukti Transfer",
+      "submitProof": "Kirim Bukti Transfer",
+      "estimateTotal": "Estimasi Total",
+      "uniqueCodeNote": "Kode unik akan ditentukan setelah submit untuk memudahkan verifikasi pembayaran.",
+      "processing": "Memproses...",
+      "continue": "Lanjutkan",
+      "bank": "Bank",
+      "eWallet": "E-Wallet",
+      "accountNumber": "Nomor Rekening",
+      "accountName": "Atas Nama",
+      "fileFormatError": "Format file tidak didukung. Gunakan JPG, PNG, WebP, atau PDF.",
+      "fileSizeError": "Ukuran file maksimal 10MB.",
+      "selectBankError": "Pilih bank/e-wallet tujuan",
+      "minDepositError": "Minimum deposit {amount}",
+      "maxDepositError": "Maksimum deposit {amount}",
+      "createDepositError": "Gagal membuat deposit",
+      "estimateFee": "Estimasi Biaya",
+      "adminFee": "Biaya Admin",
+      "uniqueCode": "Kode Unik (3 digit)",
+      "timeRemaining": "Sisa Waktu",
+      "hours": "jam",
+      "minutes": "menit",
+      "seconds": "detik",
+      "depositExpired": "Deposit Kadaluarsa",
+      "depositExpiredDesc": "Waktu deposit telah habis. Silakan buat deposit baru.",
+      "createNewDeposit": "Buat Deposit Baru",
+      "completeTransferSoon": "Segera selesaikan transfer Anda",
+      "genericError": "Terjadi kesalahan",
+      "uploadProofRequired": "Upload bukti transfer",
+      "depositNotFound": "Data deposit tidak ditemukan",
+      "uploadProofFailed": "Gagal upload bukti",
+      "enterCustomAmount": "Atau masukkan nominal lain"
+    },
+    "depositDetail": {
+      "backToHistory": "Kembali ke Riwayat",
+      "pendingConfirmation": "Menunggu Konfirmasi",
+      "pendingProof": "Menunggu Bukti",
+      "rejected": "Ditolak",
+      "rejectedDesc": "Deposit Anda telah ditolak oleh admin. Silakan hubungi kami jika ada pertanyaan atau buat deposit baru.",
+      "completed": "Selesai",
+      "expired": "Kadaluarsa",
+      "depositAmount": "Jumlah Deposit",
+      "transferDetails": "Detail Transfer",
+      "totalTransfer": "Total Transfer",
+      "nominalDeposit": "Nominal Deposit",
+      "uploadProof": "Upload Bukti Transfer",
+      "submitProof": "Kirim Bukti Transfer",
+      "waitingConfirmation": "Menunggu Konfirmasi",
+      "waitingConfirmationDesc": "Bukti transfer sudah dikirim. Admin akan memverifikasi dalam waktu 5-15 menit.",
+      "paymentMethod": "Metode Pembayaran",
+      "createdDate": "Tanggal Dibuat",
+      "deadline": "Batas Waktu",
+      "completedDate": "Tanggal Selesai",
+      "adminNotes": "Catatan Admin",
+      "bank": "Bank",
+      "eWallet": "E-Wallet",
+      "accountNumber": "Nomor Rekening",
+      "accountName": "Atas Nama",
+      "back": "Kembali",
+      "fileFormatError": "Format file tidak didukung. Gunakan JPG, PNG, WebP, atau PDF.",
+      "fileSizeError": "Ukuran file maksimal 10MB.",
+      "uploadProofError": "Upload bukti transfer",
+      "uploadError": "Gagal upload bukti",
+      "genericError": "Terjadi kesalahan",
+      "adminFee": "Biaya Admin",
+      "uniqueCode": "Kode Unik",
+      "clickToUpload": "Klik untuk upload bukti transfer",
+      "fileFormats": "JPG, PNG, WebP, atau PDF (max 10MB)",
+      "uploading": "Mengupload..."
+    },
+    "riwayat": {
+      "title": "Riwayat Deposit",
+      "subtitle": "History dan status deposit Anda",
+      "statusPending": "Menunggu",
+      "statusApproved": "Disetujui",
+      "statusRejected": "Ditolak",
+      "noHistory": "Belum ada riwayat deposit",
+      "note": "Catatan: "
+    },
+    "transfer": {
+      "backToDashboard": "Kembali ke Dashboard",
+      "back": "Kembali",
+      "history": "Riwayat",
+      "title": "Transfer Saldo",
+      "subtitle": "Kirim saldo ke pengguna Saldopedia lainnya",
+      "stepRecipient": "Penerima",
+      "stepAmount": "Jumlah",
+      "stepReview": "Review",
+      "recipientEmail": "Email Penerima",
+      "recipientEmailPlaceholder": "email@example.com",
+      "recipientHint": "Masukkan email pengguna Saldopedia yang terdaftar",
+      "verifying": "Memverifikasi...",
+      "continue": "Lanjutkan",
+      "securityNote": "Transfer aman dengan enkripsi end-to-end",
+      "enterAmount": "Masukkan jumlah transfer",
+      "amountPlaceholder": "0",
+      "availableBalance": "Saldo tersedia",
+      "notes": "Catatan",
+      "optional": "opsional",
+      "notesPlaceholder": "Contoh: Pembayaran invoice...",
+      "reviewTransfer": "Review Transfer",
+      "minimumNote": "Minimum transfer Rp {amount}",
+      "confirmTransfer": "Konfirmasi Transfer",
+      "reviewDetails": "Pastikan semua detail sudah benar",
+      "sendingAmount": "Jumlah yang dikirim",
+      "from": "Dari",
+      "to": "Kepada",
+      "amount": "Jumlah",
+      "fee": "Biaya",
+      "free": "GRATIS",
+      "remainingBalance": "Sisa saldo",
+      "processing": "Memproses...",
+      "sendNow": "Kirim Sekarang",
+      "instantTransfer": "Transfer instan, saldo langsung masuk",
+      "successTitle": "Transfer Berhasil!",
+      "successMessage": "Saldo berhasil dikirim ke {name}",
+      "transferId": "ID Transfer",
+      "sendAnother": "Kirim Lagi",
+      "historyTitle": "Riwayat Transfer",
+      "noHistory": "Belum ada riwayat transfer",
+      "errorEnterEmail": "Masukkan email penerima",
+      "errorSelfTransfer": "Tidak dapat transfer ke diri sendiri",
+      "errorUserNotFound": "Pengguna tidak ditemukan",
+      "errorNetwork": "Terjadi kesalahan jaringan",
+      "errorMinimum": "Minimum transfer Rp {amount}",
+      "errorInsufficientBalance": "Saldo tidak mencukupi",
+      "errorGeneral": "Terjadi kesalahan",
+      "sent": "Terkirim",
+      "received": "Diterima",
+      "sentLabel": "Kirim Saldo",
+      "receivedLabel": "Terima Saldo",
+      "statusSuccess": "Berhasil",
+      "savedRecipients": "Penerima Tersimpan",
+      "recentLabel": "Terakhir",
+      "favoriteLabel": "Favorit",
+      "saveRecipientCheckbox": "Simpan penerima ini untuk transfer berikutnya",
+      "recipientLabelPlaceholder": "Label (contoh: Ibu, Adik, Teman)"
+    },
+    "transferDetail": {
+      "backToHistory": "Kembali ke Riwayat",
+      "back": "Kembali",
+      "outgoingTransfer": "Transfer Keluar",
+      "incomingTransfer": "Transfer Masuk",
+      "completed": "Selesai",
+      "transferAmount": "Jumlah Transfer",
+      "sentTo": "Dikirim ke",
+      "receivedFrom": "Diterima dari",
+      "date": "Tanggal",
+      "notes": "Catatan"
+    },
+    "admin": {
+      "deposits": {
+        "title": "Kelola Deposit",
+        "subtitle": "Review dan approve deposit requests"
+      }
+    },
+    "withdraw": {
+      "backToDashboard": "Kembali ke Dashboard",
+      "title": "Tarik Saldo",
+      "withdrawMethod": "Metode Penarikan",
+      "bankTransfer": "Bank Transfer",
+      "eWallet": "E-Wallet",
+      "selectBank": "Pilih Bank",
+      "selectBankPlaceholder": "-- Pilih Bank --",
+      "selectEWallet": "Pilih E-Wallet",
+      "selectEWalletPlaceholder": "-- Pilih E-Wallet --",
+      "accountHolderName": "Nama Pemilik Rekening",
+      "accountHolderPlaceholder": "Nama sesuai rekening",
+      "accountNameLockedNote": "Nama diambil dari profil akun Anda dan tidak dapat diubah untuk keamanan transaksi.",
+      "accountNumber": "Nomor Rekening",
+      "eWalletNumber": "Nomor HP E-Wallet",
+      "accountNumberPlaceholder": "Contoh: 1234567890",
+      "eWalletNumberPlaceholder": "Contoh: 08123456789",
+      "withdrawAmountLabel": "Jumlah Penarikan (IDR)",
+      "minimumPlaceholder": "Minimum Rp 50.000",
+      "feeNote": "Biaya Rp 17.000 untuk penarikan di bawah Rp 1.000.000",
+      "withdrawAmount": "Jumlah Penarikan",
+      "adminFee": "Biaya Admin",
+      "free": "GRATIS",
+      "amountReceived": "Yang Diterima",
+      "remainingBalance": "Sisa Saldo",
+      "processing": "Memproses...",
+      "submitWithdraw": "Ajukan Penarikan",
+      "history": "Riwayat Penarikan",
+      "noHistory": "Belum ada riwayat penarikan",
+      "minimumError": "Minimum penarikan Rp {amount}",
+      "insufficientBalance": "Saldo tidak mencukupi",
+      "completeAccountData": "Lengkapi data rekening/e-wallet",
+      "selectBankError": "Pilih bank tujuan",
+      "selectEWalletError": "Pilih e-wallet tujuan",
+      "genericError": "Terjadi kesalahan",
+      "networkError": "Terjadi kesalahan jaringan",
+      "successMessage": "Permintaan penarikan {id} berhasil dibuat",
+      "status": {
+        "completed": "Berhasil",
+        "processing": "Diproses",
+        "pending": "Menunggu",
+        "rejected": "Ditolak"
+      }
+    },
+    "withdrawDetail": {
+      "backToHistory": "Kembali ke Riwayat",
+      "back": "Kembali",
+      "title": "Tarik Saldo",
+      "withdrawAmount": "Jumlah Penarikan",
+      "amount": "Jumlah",
+      "adminFee": "Biaya Admin",
+      "amountReceived": "Jumlah Diterima",
+      "method": "Metode",
+      "accountName": "Nama Rekening",
+      "accountNumber": "Nomor Rekening",
+      "createdDate": "Tanggal Dibuat",
+      "processedDate": "Tanggal Diproses",
+      "completedDate": "Tanggal Selesai",
+      "adminNotes": "Catatan Admin",
+      "rejected": "Ditolak",
+      "rejectedDesc": "Penarikan Anda telah ditolak oleh admin. Saldo telah dikembalikan ke akun Anda. Silakan hubungi kami jika ada pertanyaan.",
+      "status": {
+        "completed": "Selesai",
+        "processing": "Diproses",
+        "pending": "Menunggu",
+        "rejected": "Ditolak"
+      }
+    }
+  },
+  "orderPages": {
+    "expired": {
+      "title": "Order Telah Expired",
+      "description": "Order Anda telah melewati batas waktu 1 jam.",
+      "reason": "Order memiliki batas waktu",
+      "reasonDuration": "1 jam",
+      "reasonDesc": "untuk menjaga ketersediaan rate.",
+      "needHelp": "Butuh bantuan? WhatsApp: 08119666620",
+      "backToHome": "Kembali ke Beranda",
+      "createNew": "Buat Order Baru",
+      "contactAdmin": "Hubungi Admin"
+    },
+    "complete": {
+      "successTitle": "Order Berhasil Diselesaikan!",
+      "successDesc": "Status order diupdate dan invoice dikirim ke email customer.",
+      "alreadyCompletedTitle": "Order Sudah Diselesaikan",
+      "alreadyCompletedDesc": "Order ini sudah diselesaikan. Invoice sudah terkirim ke customer.",
+      "statusLabel": "Status",
+      "invoiceSent": "Invoice terkirim ke customer",
+      "viewOrders": "Lihat Daftar Order"
+    },
+    "error": {
+      "invalidToken": "Link Tidak Valid",
+      "invalidTokenDesc": "Link yang Anda gunakan tidak valid atau sudah kadaluarsa.",
+      "notFound": "Order Tidak Ditemukan",
+      "notFoundDesc": "Order dengan ID tersebut tidak ditemukan.",
+      "serverError": "Terjadi Kesalahan Server",
+      "serverErrorDesc": "Mohon maaf, terjadi kesalahan. Silakan coba lagi nanti.",
+      "unknown": "Terjadi Kesalahan",
+      "unknownDesc": "Terjadi kesalahan yang tidak terduga. Silakan hubungi admin.",
+      "errorCode": "Kode Error",
+      "helpText": "Jika masalah berlanjut, hubungi admin via WhatsApp.",
+      "contactAdmin": "Hubungi Admin"
+    },
+    "countdown": {
+      "expired": "Order Expired",
+      "redirecting": "Waktu order habis. Redirect ke halaman expired...",
+      "timeRemaining": "Waktu Tersisa",
+      "completeSoon": "Segera Selesaikan!",
+      "adminMustProcess": "Admin harus segera memproses order ini",
+      "hours": "j",
+      "minutes": "m",
+      "seconds": "d"
+    },
+    "detail": {
+      "backToOrders": "Kembali ke Daftar Order",
+      "orderId": "Order ID",
+      "transactionDetails": "Detail Transaksi",
+      "transactionTypeLabel": "Tipe Transaksi",
+      "amount": "Jumlah",
+      "totalIDR": "Total IDR",
+      "rate": "Rate",
+      "paymentMethod": "Metode Pembayaran",
+      "timeInfo": "Informasi Waktu",
+      "created": "Tanggal Order",
+      "expires": "Batas Waktu",
+      "expiredAt": "Kadaluarsa Pada",
+      "completedAt": "Tanggal Selesai",
+      "notes": "Catatan",
+      "back": "Kembali",
+      "viewInstructions": "Lihat Instruksi Pembayaran",
+      "status": {
+        "completed": "Selesai",
+        "pending": "Pending",
+        "processing": "Proses",
+        "expired": "Expired",
+        "cancelled": "Dibatalkan"
+      },
+      "transactionType": {
+        "buy": "Beli",
+        "sell": "Jual"
+      },
+      "perUnit": "per 1",
+      "paymentNote": {
+        "exact": "Pembayaran Tepat",
+        "overpaid": "Kelebihan Bayar",
+        "underpaid": "Kurang Bayar",
+        "partialExpired": "Partial (Expired)"
+      },
+      "network": "Network",
+      "amountReceived": "Jumlah Diterima",
+      "amountSent": "Crypto Terkirim",
+      "tier": "Tier",
+      "accountName": "Nama Rekening",
+      "accountNumber": "No. Rekening",
+      "walletInfo": "Informasi Wallet",
+      "accountInfo": "Informasi Akun",
+      "destinationWallet": "Wallet Tujuan",
+      "destinationTag": "Destination Tag",
+      "depositAddress": "Alamat Deposit",
+      "paypalEmail": "Email PayPal",
+      "skrillEmail": "Email Skrill",
+      "blockchainInfo": "Informasi Transaksi Blockchain",
+      "txHash": "TX Hash",
+      "paymentId": "Payment ID",
+      "paymentStatus": "Status Pembayaran",
+      "sendingStatus": "Status Pengiriman",
+      "customerInfo": "Informasi Customer",
+      "name": "Nama",
+      "email": "Email",
+      "phone": "Telepon",
+      "paymentMethodLabel": "Metode Pembayaran",
+      "saldoPayment": "Saldo Saldopedia",
+      "orderNotes": "Catatan Order",
+      "error": "Error"
+    }
+  },
+  "components": {
+    "postItem": {
+      "readingTime": "menit baca",
+      "readMore": "Baca Selengkapnya"
+    }
+  },
+  "orderInstructions": {
+    "buyTitle": "Order Sedang Diproses",
+    "sellTitle": "Instruksi Pembayaran",
+    "statusPending": "Menunggu Pembayaran",
+    "statusConfirmed": "Saldo Terpotong",
+    "statusCompleted": "Selesai",
+    "service": "Layanan",
+    "transaction": "Transaksi",
+    "amount": "Jumlah",
+    "total": "Total",
+    "buy": "Beli",
+    "sell": "Jual",
+    "paymentSuccess": "Pembayaran Berhasil",
+    "saldoDeducted": "Saldo Anda sudah dipotong sebesar",
+    "processingAuto": "Order sedang diproses otomatis (5-15 menit)",
+    "paidWithSaldo": "Dibayar menggunakan saldo akun Saldopedia",
+    "whatYouReceive": "Yang Akan Anda Terima",
+    "sentToWallet": "Dikirim ke Wallet",
+    "sentToEmail": "Dikirim ke Email",
+    "noAction": "Tidak ada yang perlu Anda lakukan:",
+    "autoProcess": "Order diproses otomatis dalam 5-15 menit",
+    "emailNotification": "Anda akan menerima email notifikasi saat selesai",
+    "cryptoSentTo": "akan dikirim ke wallet Anda",
+    "saldoSentTo": "akan dikirim ke akun Anda",
+    "cryptoInstructions": "Instruksi Pengiriman Crypto",
+    "sellVia": "Jual {symbol} via {network}",
+    "sendAmount": "Kirim sebesar:",
+    "sendExact": "Kirim tepat sesuai nominal",
+    "depositAddressLabel": "Alamat Deposit (Kirim ke sini)",
+    "network": "Network",
+    "saldoCredit": "Setelah transaksi selesai, saldo sebesar {amount} akan otomatis dikreditkan ke akun Saldopedia Anda",
+    "paymentViaSaldo": "Pembayaran via Saldo Akun",
+    "nextSteps": "Langkah Selanjutnya:",
+    "sendCryptoTo": "Kirim {symbol} ke alamat deposit di atas",
+    "ensureNetwork": "Pastikan network yang digunakan:",
+    "waitBlockchain": "Tunggu konfirmasi blockchain",
+    "saldoCredited": "Saldo {amount} akan dikreditkan ke akun Anda",
+    "sellInstructions": "Instruksi Penjualan",
+    "sellBalance": "Jual saldo {service}",
+    "targetEmail": "Email {service} Tujuan",
+    "sendToEmail": "Kirim ke email",
+    "accountName": "Atas Nama",
+    "loginTo": "Login ke akun {service} ({email})",
+    "sendAmountTo": "Kirim {amount} ke:",
+    "screenshotProof": "Screenshot bukti transfer",
+    "sendViaWhatsApp": "Kirim via WhatsApp ke {phone} dengan Order ID:",
+    "saldoCreditedAmount": "Saldo {amount} akan dikreditkan ke akun Anda",
+    "needHelp": "Butuh bantuan?",
+    "backToDashboard": "Kembali ke Dashboard",
+    "copied": "Tersalin!",
+    "copy": "Salin",
+    "statusPendingProof": "Menunggu Bukti",
+    "uploadProofTitle": "Upload Bukti Pengiriman {service}",
+    "uploadProofDesc": "Setelah mengirim saldo ke email di atas, upload bukti screenshot pengiriman untuk verifikasi.",
+    "selectFile": "Pilih file (JPG, PNG, WebP, PDF - Max 10MB)",
+    "uploadButton": "Upload Bukti",
+    "uploading": "Mengupload...",
+    "uploadSuccess": "Bukti Berhasil Diupload!",
+    "uploadSuccessDesc": "Pesanan Anda sedang diverifikasi. Anda akan menerima notifikasi email saat admin mengkonfirmasi pembayaran.",
+    "uploadProofStep": "Upload bukti pengiriman di atas",
+    "paypalWarningTitle": "Penting: Metode Pengiriman PayPal",
+    "paypalWarningDesc": "Kirim saldo dengan metode Teman & Keluarga (Friends & Family) dan kosongkan note/catatan pengiriman.",
+    "statusVerifying": "Sedang Diverifikasi",
+    "verifyingPayment": "Memverifikasi Pembayaran",
+    "proofReceived": "Bukti pembayaran sudah diterima",
+    "youWillReceive": "Anda Akan Menerima",
+    "whatsNext": "Apa Selanjutnya?",
+    "adminVerifying": "Admin sedang memverifikasi bukti pembayaran Anda"
+  }
+}

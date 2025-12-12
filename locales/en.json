@@ -1,0 +1,2894 @@
+{
+  "nav": {
+    "cryptocurrency": "Cryptocurrency",
+    "paypal": "PayPal",
+    "skrill": "Skrill",
+    "pricing": "Rates & Pricing",
+    "help": "Help",
+    "support": "Support Center",
+    "calculator": "Calculator",
+    "cryptoList": "Crypto List",
+    "testimonials": "Testimonials",
+    "blog": "Blog",
+    "docs": "Guides",
+    "formOrder": "Create Order",
+    "startBot": "Chat WhatsApp",
+    "login": "Login",
+    "register": "Sign Up"
+  },
+  "header": {
+    "userMenu": {
+      "dashboard": "Dashboard",
+      "orders": "Orders",
+      "deposit": "Deposit",
+      "withdraw": "Withdraw",
+      "transfer": "Transfer",
+      "profile": "Profile",
+      "settings": "Settings",
+      "adminPanel": "Admin Panel",
+      "logout": "Logout",
+      "loggingOut": "Logging out...",
+      "referral": "Referral",
+      "points": "Points",
+      "wallet": "Wallet",
+      "rewards": "Rewards"
+    }
+  },
+  "hero": {
+    "title": "Buy Sell Crypto, PayPal & Skrill from $2",
+    "subtitle": "The fastest crypto, PayPal, and Skrill transactions in Indonesia. Instant 5-15 minute processing, multi-layer security, real-time rates 24/7. Trusted by thousands.",
+    "ctaStart": "Buy & Sell Now",
+    "ctaHow": "How It Works"
+  },
+  "features": {
+    "title": "Why Choose Saldopedia?",
+    "subtitle": "The most secure and trusted crypto, PayPal & Skrill platform in Indonesia",
+    "telegram": {
+      "title": "Online Ordering 24/7",
+      "description": "Fill the order form, get processed instantly anytime"
+    },
+    "lowMin": {
+      "title": "Starting from Rp 25,000",
+      "description": "Small amounts perfect for everyone"
+    },
+    "fast": {
+      "title": "5-15 Minute Processing",
+      "description": "Your transaction completed in minutes"
+    },
+    "safe": {
+      "title": "Multi-Layer Security",
+      "description": "SSL encryption, automatic verification, protected data"
+    }
+  },
+  "business": {
+    "title": "Our Transaction Services",
+    "all": "All",
+    "crypto": {
+      "title": "Cryptocurrency",
+      "description": "Buy and sell Bitcoin, Ethereum, USDT with real-time rates"
+    },
+    "paypal": {
+      "title": "PayPal",
+      "description": "Top up and sell PayPal balance, instantly to your account"
+    },
+    "skrill": {
+      "title": "Skrill",
+      "description": "Skrill balance transactions with safe and trusted service"
+    }
+  },
+  "largeTestimonial": {
+    "quote": "Saldopedia is amazing! Crypto transactions processed in minutes. From buying USDT to",
+    "quoteHighlight": "PayPal top-up",
+    "quoteEnd": ", everything runs smoothly. Fast, secure, and trusted!",
+    "author": "Andi Wijaya",
+    "role": "Crypto Trader"
+  },
+  "featuresPlanet": {
+    "title": "Why Thousands Choose Saldopedia",
+    "autoTx": {
+      "title": "Automatic Processing",
+      "description": "Order via online form, confirmation and payment instructions sent to your email in seconds."
+    },
+    "minTx": {
+      "title": "Starting from Rp 25,000",
+      "description": "Crypto, PayPal, or Skrill transactions can start from small amounts. Perfect for beginners and professionals."
+    },
+    "safe": {
+      "title": "Multi-Layer Security",
+      "description": "Thousands of successful transactions daily. SSL encryption, automatic verification, and 100% guaranteed balance protection."
+    },
+    "variety": {
+      "title": "19+ Digital Assets",
+      "description": "USDT, Bitcoin, Ethereum, PayPal, Skrill, and 14+ other cryptocurrencies available for you."
+    },
+    "bestRate": {
+      "title": "Best Real-Time Rates",
+      "description": "Rates follow global market prices in real-time. 100% transparency, no hidden fees."
+    },
+    "fastProcess": {
+      "title": "5-15 Minute Processing",
+      "description": "After payment confirmation, crypto or balance is sent directly to your account."
+    }
+  },
+  "featuresHome": {
+    "title": "Fast & Easy Crypto Transactions",
+    "subtitle": "Buy cryptocurrency, top up PayPal, or load Skrill balance with Saldopedia. Instant, secure, hassle-free!",
+    "feature1": {
+      "title": "Active 24/7",
+      "description": "Order anytime, processed immediately. No need to wait for business hours."
+    },
+    "feature2": {
+      "title": "Real-Time Rates",
+      "description": "Rates follow global market. Transparent, no hidden fees."
+    },
+    "feature3": {
+      "title": "From Rp 25,000",
+      "description": "Crypto, PayPal & Skrill transactions can start from small amounts."
+    },
+    "feature4": {
+      "title": "Local Bank Payments",
+      "description": "Transfer via BCA, Mandiri, BRI, BNI, and Indonesian e-wallets."
+    }
+  },
+  "testimonialsCarousel": {
+    "title": "Trusted by Thousands",
+    "subtitle": "Read real experiences from users who have tried Saldopedia services",
+    "shareButton": "Share Your Experience"
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "telegram": "Create Order Now",
+    "howItWorks": "How It Works"
+  },
+  "footer": {
+    "copyright": "Saldopedia - All rights reserved.",
+    "product": "Services",
+    "cryptoBuy": "Buy & Sell Crypto",
+    "paypalBuy": "Buy & Sell PayPal",
+    "skrillBuy": "Buy & Sell Skrill",
+    "feature": "Features",
+    "cryptoList": "Crypto List",
+    "checkRate": "Check Rates",
+    "calculator": "Calculator",
+    "company": "Company",
+    "about": "About Us",
+    "contact": "Support",
+    "terms": "Terms & Conditions",
+    "resources": "Resources",
+    "docs": "Documentation",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "sitemap": "Sitemap",
+    "cookiePolicy": "Cookie Policy",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Get the latest crypto promos and tips",
+    "disclaimer": "Disclaimer:",
+    "disclaimerText": "Saldopedia is an independent service for buying and selling cryptocurrency, PayPal, and Skrill. Not affiliated with PayPal Inc., Skrill Limited, or any cryptocurrency platform. All trademarks are properties of their respective owners.",
+    "systemStatus": {
+      "operational": "All systems normal",
+      "degraded": "System degraded",
+      "down": "System unavailable"
+    }
+  },
+  "statusPage": {
+    "title": "System Status",
+    "subtitle": "Monitor Saldopedia service status in realtime",
+    "services": "Services",
+    "lastUpdated": "Last updated",
+    "autoRefresh": "This page auto-refreshes every 30 seconds",
+    "uptime": "Current Uptime",
+    "avgResponse": "Avg Response",
+    "overall": {
+      "operational": "All Systems Operational",
+      "degraded": "Some Systems Degraded",
+      "down": "System Unavailable",
+      "checking": "Checking Status..."
+    },
+    "status": {
+      "operational": "Operational",
+      "degraded": "Slow",
+      "down": "Down",
+      "checking": "Checking"
+    },
+    "serviceNames": {
+      "platform": "Saldopedia Platform",
+      "cryptoRates": "Cryptocurrency Prices",
+      "paypalRates": "PayPal Rates",
+      "skrillRates": "Skrill Rates",
+      "website": "Website"
+    }
+  },
+  "sitemapPage": {
+    "title": "Sitemap",
+    "description": "Find all pages and services at",
+    "xmlLink": "For crawlers and search engines, visit",
+    "services": {
+      "title": "Services",
+      "crypto": "Buy & Sell Crypto",
+      "paypal": "Buy & Sell PayPal",
+      "skrill": "Buy & Sell Skrill",
+      "pricing": "Rates & Pricing"
+    },
+    "features": {
+      "title": "Features & Tools",
+      "cryptoList": "Cryptocurrency List",
+      "calculator": "Conversion Calculator",
+      "testimonials": "Customer Testimonials"
+    },
+    "content": {
+      "title": "Content",
+      "blog": "Blog",
+      "docs": "Documentation",
+      "support": "Support"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "cookie": "Cookie Policy"
+    }
+  },
+  "newsletter": {
+    "placeholder": "Your Email",
+    "button": "Subscribe",
+    "sending": "Sending...",
+    "successMessage": "Success! You will receive our latest promotions",
+    "errorMessage": "An error occurred. Please try again",
+    "connectionError": "Connection failed. Please try again"
+  },
+  "tiers": {
+    "basic": "Basic",
+    "pro": "Pro",
+    "premium": "Premium",
+    "gold": "Gold"
+  },
+  "pricing": {
+    "meta": {
+      "title": "Best Crypto, PayPal, Skrill Rates & Pricing Indonesia | Saldopedia",
+      "description": "Best Bitcoin, Ethereum, USDT, PayPal, Skrill rates starting from Rp 25,000. 5-15 minute processing with multi-layer security at Saldopedia."
+    },
+    "hero": {
+      "title": "Best & Transparent Rates",
+      "subtitle": "Cryptocurrency, PayPal, and Skrill transactions with competitive rates. From Rp 25,000, 5-15 minute processing, multi-layer security."
+    },
+    "toggle": {
+      "sell": "Sell / Convert to IDR",
+      "buy": "Buy / Top-up Balance"
+    },
+    "tierSystem": {
+      "sectionTitle": "PayPal & Skrill Tier Rates",
+      "sectionSubtitle": "Bigger transactions, better rates! Tier is automatically determined based on transaction amount.",
+      "sellLabel": "Sell",
+      "buyLabel": "Buy",
+      "basic": {
+        "title": "Basic",
+        "badge": "Start",
+        "description": "Standard rate for initial transactions"
+      },
+      "pro": {
+        "title": "Pro",
+        "badge": "Popular",
+        "description": "Better rate for regular transactions"
+      },
+      "premium": {
+        "title": "Premium",
+        "badge": "Save More",
+        "description": "Premium rate for large transactions"
+      },
+      "gold": {
+        "title": "Gold",
+        "badge": "Best Deal",
+        "description": "Best rate for high volume"
+      },
+      "howItWorks": {
+        "title": "How Tiers Work",
+        "step1": {
+          "title": "Automatic Detection",
+          "description": "Enter transaction amount, your tier is detected instantly"
+        },
+        "step2": {
+          "title": "Rate Adjusts",
+          "description": "Best rate applied automatically for your tier"
+        },
+        "step3": {
+          "title": "Save More",
+          "description": "Bigger transactions, more savings"
+        }
+      },
+      "note": "Tiers only apply to PayPal and Skrill. Cryptocurrency uses market rate with 5% spread."
+    },
+    "crypto": {
+      "title": "Cryptocurrency",
+      "sellRate": "Your Payout Rate",
+      "buyRate": "Your Payment Rate",
+      "marketPrice": "Live Market Price",
+      "discount": "~95% of market price",
+      "markup": "~105% of market price",
+      "description": "Bitcoin, Ethereum, USDT, and other crypto with transparent rates. 5% spread includes service fee for instant and secure processing 24/7.",
+      "feature1": "From Rp 25,000",
+      "feature2": "5-15 minute processing",
+      "feature3": "19+ cryptocurrencies",
+      "feature4": "Real-time rate updates"
+    },
+    "paypal": {
+      "title": "PayPal",
+      "sellRate": "Selling Rate",
+      "buyRate": "Buying Rate",
+      "description": "Buy and sell PayPal USD balance with best tier rates and instant processing.",
+      "feature1": "From Rp 25,000",
+      "feature2": "Instant transfer to PayPal",
+      "feature3": "USD balance support",
+      "feature4": "No hidden fees"
+    },
+    "skrill": {
+      "title": "Skrill",
+      "sellRate": "Selling Rate",
+      "buyRate": "Buying Rate",
+      "description": "Buy and sell Skrill USD balance for freelance, online shopping, or business.",
+      "feature1": "From Rp 25,000",
+      "feature2": "Fast & secure transfer",
+      "feature3": "Multi-currency support",
+      "feature4": "Active 24/7"
+    },
+    "testimonials": {
+      "title": "Trusted by Thousands",
+      "subtitle": "Real testimonials from users satisfied with Saldopedia services",
+      "paymentMethodsAlt": "Payment Methods: BCA, Mandiri, BNI, BRI, GoPay, OVO, DANA, ShopeePay"
+    },
+    "faq": {
+      "sectionTitle": "Common Questions",
+      "sectionSubtitle": "Learn more about Saldopedia services. Our support team is ready 24/7.",
+      "searchResultFor": "Search results for:",
+      "viewAllFaq": "View All FAQ",
+      "noResults": "No results for",
+      "noResultsCta": ". Try different keywords or contact our customer service.",
+      "category1": "Getting Started",
+      "category2": "Payment & Services",
+      "category3": "Account & Security",
+      "q1": "How do I start a transaction?",
+      "a1": "Very easy! Fill out the order form, choose the currency to buy/sell (Crypto, PayPal, or Skrill), then follow payment instructions. Transactions processed in 5-15 minutes. Starting from Rp 25,000.",
+      "q2": "What are the min and max transaction amounts?",
+      "a2": "Minimum transaction is Rp 25,000 for all services. For maximum, contact customer service for details.",
+      "q3": "How long does processing take?",
+      "a3": "Transactions are processed in 5-15 minutes after payment confirmation. Large amounts may need extra time for verification.",
+      "q4": "Is Saldopedia safe?",
+      "a4": "Absolutely! Saldopedia uses SSL 256-bit encryption, automatic verification, and 100% data protection. We've served thousands of transactions with high satisfaction.",
+      "q5": "Which cryptocurrencies are available?",
+      "a5": "Bitcoin (BTC), Ethereum (ETH), USDT, BNB, Solana, MATIC, and other popular cryptocurrencies. See full list on Crypto List page.",
+      "q6": "How do I pay for orders?",
+      "a6": "All orders are paid using Saldopedia balance. Top up your balance first via the Deposit menu, then use it to place orders. Sales proceeds also go to your balance and can be withdrawn anytime.",
+      "q7": "Can I trade PayPal and Skrill?",
+      "a7": "Yes! Besides crypto, we also offer PayPal and Skrill buy & sell services with competitive rates. Fast processing for small or large amounts.",
+      "q8": "How do I check the latest rates?",
+      "a8": "Rates are always updated following real-time market prices. Check the Rates page or use the Calculator on website.",
+      "q9": "Are there additional fees?",
+      "a9": "No hidden fees! The displayed rate is final. What you see is what you pay.",
+      "q10": "How do I contact customer service?",
+      "a10": "Contact WhatsApp 08119666620. Our team is ready to help with fast and friendly response!",
+      "q11": "Do I need to register an account?",
+      "a11": "Yes, you need to register an account to transact. Registration is easy and fast - just fill in your details, verify your email, and your account is ready. With an account, you can view transaction history, balance dashboard, and other features.",
+      "q12": "What if my transfer is confirmed late?",
+      "a12": "Payments are detected automatically. If issues persist after 30 minutes, contact WhatsApp with transfer proof.",
+      "q13": "Can I transact outside business hours?",
+      "a13": "Yes! Orders can be sent 24/7. Customer service is active 09:00-21:00 WIB, but orders are still processed automatically anytime.",
+      "q14": "How do I cancel a transaction?",
+      "a14": "Before paying, just ignore the order. If already paid, contact WhatsApp 08119666620 immediately.",
+      "q15": "Is my data safe?",
+      "a15": "Data security is our priority. All information is kept confidential with encryption for maximum protection."
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "button": "Create Order Now"
+    }
+  },
+  "calculator": {
+    "meta": {
+      "title": "Crypto, PayPal & Skrill Rate Calculator | Saldopedia",
+      "description": "Rate calculator for buying and selling cryptocurrency, PayPal, and Skrill. Real-time, transparent, and accurate rates."
+    },
+    "hero": {
+      "title": "Rate Calculator",
+      "subtitle": "Calculate transaction estimates with real-time rates. Transparent and free."
+    },
+    "form": {
+      "selectService": "Select Service",
+      "transactionType": "Transaction Type",
+      "selectCrypto": "Select Cryptocurrency",
+      "amountCoin": "Amount",
+      "amountIDR": "Amount IDR",
+      "amountUSD": "Amount USD",
+      "sell": "Sell",
+      "buy": "Buy",
+      "calculate": "Calculate Estimate",
+      "calculating": "Calculating...",
+      "minimal": "Minimum:",
+      "lastUpdate": "Last updated:"
+    },
+    "info": {
+      "cryptoSell": "Input coin amount. You receive ~95% of market price",
+      "cryptoSellDiscount": " (5% spread for instant service)",
+      "cryptoSellMin": ". Min.",
+      "cryptoSellStablecoin": ". Stablecoin fixed rate Rp 14,000.",
+      "cryptoBuy": "Input IDR amount. You pay ~105% of market price",
+      "cryptoBuyMarkup": " (5% spread for instant service)",
+      "cryptoBuyMin": ". Min.",
+      "cryptoBuyStablecoin": ". Stablecoin fixed rate Rp 16,999.",
+      "paypalSkrill": "Larger transactions = better rates. Min.",
+      "paypalSkrillMax": ", Max.",
+      "paypalSkrillTier": ". Automatic rates based on tier.",
+      "sellCryptoLabel": "Sell Crypto:",
+      "buyCryptoLabel": "Buy Crypto:",
+      "tipLabel": "Tip:"
+    },
+    "result": {
+      "title": "Calculation Result",
+      "emptyState": "Enter amount to see estimate",
+      "rate": "Rate:",
+      "tier": "Tier:",
+      "totalReceive": "Total You Receive:",
+      "totalGet": "Total You Get:",
+      "totalPay": "Total to Pay:",
+      "validTransaction": "Valid transaction",
+      "telegramButton": "Create Order",
+      "recalculate": "Recalculate",
+      "noteLabel": "Note:",
+      "noteText": "Estimated rate. Final rate provided during transaction."
+    },
+    "features": {
+      "realtime": {
+        "title": "Real-Time Rates",
+        "desc": "Auto-updates every 3 minutes following global markets"
+      },
+      "transparent": {
+        "title": "100% Transparent",
+        "desc": "No hidden fees, the displayed rate is final"
+      },
+      "competitive": {
+        "title": "Competitive Rates",
+        "desc": "Low 5% spread for instant 24/7 processing"
+      }
+    },
+    "trust": {
+      "noHiddenFees": "No hidden fees",
+      "autoUpdate": "Updates every 3 minutes",
+      "fastProcess": "5-15 minute processing"
+    }
+  },
+  "cryptoPage": {
+    "hero": {
+      "titlePart1": "19 Cryptocurrencies",
+      "titleHighlight": "Auto Processing",
+      "subtitle": "Buy and sell Bitcoin, Ethereum, USDT, BNB, Solana, and 14 other cryptos with",
+      "subtitleBrand": "Saldopedia",
+      "subtitleEnd": ". Real-time rates, from Rp 25,000, 5-15 minute processing.",
+      "button1": "Buy & Sell Now",
+      "button2": "Calculate Rates"
+    },
+    "categories": {
+      "all": "All",
+      "popular": "Popular",
+      "altcoins": "Altcoins",
+      "stablecoins": "Stablecoins",
+      "emerging": "Emerging"
+    },
+    "info": {
+      "title": "Saldopedia Rates",
+      "text": "Rates update every 3 minutes. 5% spread for instant processing 24/7",
+      "sellDiscount": "",
+      "buyText": "",
+      "buyMarkup": "",
+      "stablecoin": ". Stablecoin fixed rate.",
+      "updateTime": "Last updated:",
+      "timezone": "WIB"
+    },
+    "cta": {
+      "title": "Start Buying & Selling Crypto",
+      "button": "Create Order Now"
+    },
+    "card": {
+      "badge": "Popular",
+      "currentPrice": "Current Price",
+      "change24h": "24 Hours",
+      "minTransaction": "Min. Rp 25k",
+      "calculateButton": "Calculate Rate"
+    }
+  },
+  "customersPage": {
+    "hero": {
+      "title": "User Testimonials",
+      "subtitle": "Thousands of Indonesian users trust",
+      "subtitleBrand": "Saldopedia",
+      "subtitleEnd": "for their crypto, PayPal, and Skrill transactions. Read their experiences!",
+      "shareButton": "Share Your Experience",
+      "closeButton": "Close Form"
+    },
+    "form": {
+      "title": "Share Your Testimonial",
+      "successTitle": "Testimonial submitted successfully!",
+      "successMessage": "Your testimonial will appear on the page shortly.",
+      "errorDefault": "Failed to submit testimonial",
+      "errorNetwork": "An error occurred. Please try again.",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your full name",
+      "usernameLabel": "Social Media Username",
+      "usernamePlaceholder": "@username",
+      "platformLabel": "Platform",
+      "platformPlaceholder": "Select platform",
+      "photoLabel": "Profile Photo",
+      "photoHelp": "Format: JPG, PNG, WebP. Max 5MB",
+      "photoSelected": "Photo selected",
+      "photoPreview": "Profile photo preview",
+      "photoRemove": "Remove",
+      "testimonialLabel": "Testimonial",
+      "testimonialPlaceholder": "Tell us about your experience using Saldopedia... (min 20 characters)",
+      "charCount": "characters",
+      "submitting": "Submitting...",
+      "submitButton": "Submit Testimonial",
+      "cancelButton": "Cancel",
+      "required": "*",
+      "platformTelegram": "Telegram",
+      "platformTwitter": "Twitter / X",
+      "platformInstagram": "Instagram",
+      "platformFacebook": "Facebook",
+      "platformWhatsApp": "WhatsApp",
+      "photoAlt": "Preview"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "button": "Create Order Now"
+    }
+  },
+  "transactionFeed": {
+    "title": "Transaction Activity",
+    "titleHighlight": "Real-Time",
+    "subtitle": "View transactions being processed from users across Indonesia"
+  },
+  "statsCounter": {
+    "users": "Active Users",
+    "volume": "Total Transactions",
+    "rating": "User Rating"
+  },
+  "trustBadges": {
+    "ssl": "SSL 256-bit",
+    "verified": "Verified Business",
+    "secure": "Secure Payments",
+    "privacy": "Protected Data"
+  },
+  "supportBadge": {
+    "status": "Support Active",
+    "response": "Avg response < 5 min",
+    "chat": "Chat Now"
+  },
+  "blogPage": {
+    "hero": {
+      "title": "Blog",
+      "titleBrand": "Saldopedia",
+      "subtitle": "Crypto guides, PayPal & Skrill tutorials, transaction tips, and latest updates from",
+      "subtitleBrand": "Saldopedia"
+    },
+    "categories": {
+      "all": "All",
+      "cryptocurrency": "Cryptocurrency",
+      "paypal": "PayPal",
+      "skrill": "Skrill",
+      "tips": "Transaction Tips",
+      "update": "Updates"
+    },
+    "loadMore": "Load More",
+    "noArticles": "No articles for this category yet.",
+    "backToBlog": "Back to Blog",
+    "onThisPage": "On this page"
+  },
+  "docsPage": {
+    "metadata": {
+      "titleSuffix": "- Saldopedia Documentation",
+      "descriptionSuffix": "Complete guide for Saldopedia cryptocurrency, PayPal, and Skrill transaction services starting from 25 thousand rupiah."
+    },
+    "breadcrumb": "Documentation",
+    "sidebarTitle": "Saldopedia Documentation",
+    "viewFullToc": "View full table of contents",
+    "updated": {
+      "oneDay": "Updated 1 day ago",
+      "days": "Updated {days} days ago",
+      "oneMonth": "Updated 1 month ago",
+      "months": "Updated {months} months ago",
+      "oneYear": "Updated 1 year ago",
+      "years": "Updated {years} years ago"
+    },
+    "feedback": {
+      "question": "Was this page helpful?",
+      "yes": "Yes",
+      "no": "No",
+      "thankYou": "Thank you for your feedback!",
+      "whatToImprove": "What can we improve?",
+      "placeholder": "Share your experience... (optional)",
+      "cancel": "Cancel",
+      "submit": "Submit Feedback"
+    }
+  },
+  "supportPage": {
+    "hero": {
+      "title": "Support Center",
+      "subtitle": "Professional support team ready to help you 24/7 for crypto, PayPal, and Skrill transactions. Average response under 5 minutes.",
+      "features": {
+        "fastResponse": "Response < 5 min",
+        "support247": "Active 24/7",
+        "experiencedTeam": "Professional team"
+      }
+    },
+    "search": {
+      "placeholder": "Search",
+      "placeholderDetail": "questions (e.g.: how to transact, minimum deposit, etc)"
+    },
+    "commitment": {
+      "title": "Our Commitment to You",
+      "description": "We believe every transaction is a trust that must be honored. Our support team is ready to help anytime with fast response and friendly service. Ask anything about crypto, PayPal, or Skrill - we're here to guide you."
+    },
+    "contactMethods": {
+      "title": "Contact Support Team",
+      "subtitle": "Choose the most convenient channel. Our team is ready to answer questions about crypto, PayPal, and Skrill.",
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "Chat directly with support team",
+        "detail": "Response: < 5 min",
+        "available": "24/7",
+        "number": "+62 811 9666 620"
+      },
+      "email": {
+        "title": "Email",
+        "description": "Send detailed questions via email",
+        "detail": "Response in 1-2 business hours",
+        "available": "09:00-21:00 WIB",
+        "address": "support@saldopedia.com"
+      }
+    },
+    "operatingHours": {
+      "title": "Operating Hours",
+      "subtitle": "Transactions processed 24/7. Customer service available at:",
+      "automated": {
+        "title": "Transaction Processing",
+        "hours": "24 Hours / 7 Days",
+        "description": "Transactions processed automatically anytime"
+      },
+      "customerService": {
+        "title": "Customer Service",
+        "hours": "09:00 - 21:00 WIB",
+        "description": "Monday - Sunday (including holidays)"
+      },
+      "priority": {
+        "title": "Priority Support",
+        "hours": "24/7 via WhatsApp",
+        "description": "For urgent transactions outside business hours"
+      }
+    },
+    "serviceGuarantee": {
+      "title": "Service Guarantee",
+      "guarantees": {
+        "response": {
+          "title": "Fast Response",
+          "description": "We commit to responding to every question within 5 minutes"
+        },
+        "solution": {
+          "title": "Guaranteed Solution",
+          "description": "Every issue will be resolved completely"
+        },
+        "professional": {
+          "title": "Professional Team",
+          "description": "Experienced customer service in crypto and digital payment"
+        },
+        "secure": {
+          "title": "Data Security",
+          "description": "Your transaction data is protected with SSL 256-bit encryption"
+        }
+      }
+    },
+    "quickLinks": {
+      "title": "Guides & Resources",
+      "subtitle": "Quick access to guides and tools you need",
+      "viewGuide": "View guide",
+      "links": {
+        "gettingStarted": {
+          "title": "Getting Started",
+          "description": "Steps to start crypto, PayPal, and Skrill transactions"
+        },
+        "calculator": {
+          "title": "Rate Calculator",
+          "description": "Calculate transaction estimates with real-time rates"
+        },
+        "cryptoList": {
+          "title": "Cryptocurrency List",
+          "description": "19+ cryptocurrencies with live prices"
+        },
+        "pricing": {
+          "title": "Rates & Pricing",
+          "description": "View current rates for all services"
+        }
+      }
+    },
+    "commonIssues": {
+      "title": "Common Issues & Solutions",
+      "issues": {
+        "delayed": {
+          "title": "Transaction not received",
+          "solution": "Ensure payment matches the amount. If not received after 30 minutes, contact WhatsApp with transfer proof."
+        },
+        "rate": {
+          "title": "Rate changed during transaction",
+          "solution": "Rate is locked when order is created. If there's a difference, contact customer service."
+        },
+        "wallet": {
+          "title": "Wrong wallet address input",
+          "solution": "Contact customer service immediately before processing. After sending, cannot be cancelled."
+        }
+      }
+    },
+    "cta": {
+      "heading": "Can't find your answer?",
+      "subheading": "Support team ready 24/7",
+      "button": "Chat WhatsApp Now"
+    },
+    "searchModal": {
+      "searchLabel": "Search",
+      "placeholder": "Search questions (e.g.: minimum transaction, how to pay, etc)...",
+      "popularSearches": "Popular Searches",
+      "resultsFound": "Found",
+      "results": "Results",
+      "noResults": "No results for",
+      "noResultsHelper": "Try different keywords or contact customer service",
+      "searchButton": "Search",
+      "suggestions": {
+        "minimal": "minimum",
+        "howToStart": "getting started",
+        "processTime": "processing time",
+        "paypal": "paypal",
+        "safe": "safe",
+        "crypto": "cryptocurrency",
+        "tier": "tier",
+        "skrill": "skrill"
+      }
+    }
+  },
+  "aboutPage": {
+    "header": {
+      "title": "About Saldopedia",
+      "subtitle": "Trusted crypto, PayPal, and Skrill trading platform in Indonesia since 2020"
+    },
+    "stats": {
+      "transactions": {
+        "value": "50,000+",
+        "label": "Successful Transactions"
+      },
+      "users": {
+        "value": "10,000+",
+        "label": "Active Users"
+      },
+      "satisfaction": {
+        "value": "98%",
+        "label": "Satisfaction Rate"
+      },
+      "experience": {
+        "value": "4+ Years",
+        "label": "Experience"
+      }
+    },
+    "whoWeAre": {
+      "title": "Who We Are",
+      "paragraph1": "Saldopedia is an Indonesian fintech platform for buying and selling cryptocurrency, PayPal, and Skrill. Founded in 2020, we make digital asset transactions fast and secure.",
+      "paragraph2": "Born from Indonesia's need for accessible digital asset services, we built Saldopedia with one goal: to provide a simple, transparent, and trusted transaction experience for everyone.",
+      "paragraph3": "Our team consists of experienced professionals in cryptocurrency, fintech, and customer service. We understand that every transaction is a trust that must be honored, which is why we always prioritize user security and comfort.",
+      "paragraph4": "With a minimum transaction of Rp 25,000, we open access to digital investment for anyone - from beginners just learning about crypto to experienced traders who need fast and reliable service.",
+      "paragraph5": "Transactions are processed in 5-15 minutes with multi-layer security and responsive customer service. We are committed to being your trusted partner in the digital asset world."
+    },
+    "visionMission": {
+      "title": "Vision & Mission",
+      "vision": {
+        "title": "Vision",
+        "content": "Become the #1 trusted crypto and digital asset trading platform in Indonesia that enables digital investment access for everyone."
+      },
+      "mission": {
+        "title": "Mission",
+        "items": {
+          "access": "Provide easy and affordable access to crypto trading from Rp 25,000",
+          "service": "Provide fast (5-15 min), secure (SSL 256-bit), and transparent service",
+          "education": "Educate Indonesians about cryptocurrency through quality content",
+          "ecosystem": "Build an inclusive and trusted trading ecosystem"
+        }
+      }
+    },
+    "coreValues": {
+      "title": "Core Values",
+      "values": {
+        "trust": {
+          "title": "Trust",
+          "description": "Maintaining customer trust is our priority. Every transaction is guaranteed safe and transparent."
+        },
+        "speed": {
+          "title": "Speed",
+          "description": "Transactions processed in 5-15 minutes, no long waits."
+        },
+        "transparency": {
+          "title": "Transparency",
+          "description": "The displayed rate is final. No hidden fees."
+        },
+        "security": {
+          "title": "Security",
+          "description": "SSL 256-bit encryption and multi-layer verification for transaction protection."
+        }
+      }
+    },
+    "whyChoose": {
+      "title": "Saldopedia Advantages",
+      "features": {
+        "automated": {
+          "title": "Auto Processing",
+          "description": "Transactions processed in 5-15 minutes after payment. Active 24/7."
+        },
+        "lowMinimum": {
+          "title": "From Rp 25,000",
+          "description": "Transactions can start from small amounts, perfect for beginners and professionals."
+        },
+        "secure": {
+          "title": "Multi-Layer Security",
+          "description": "SSL 256-bit encryption, automatic verification, 100% balance protection."
+        },
+        "competitive": {
+          "title": "Real-Time Rates",
+          "description": "Rates follow global market prices with no hidden fees."
+        },
+        "support": {
+          "title": "Professional Support",
+          "description": "Support team ready to help with response under 5 minutes."
+        },
+        "variety": {
+          "title": "19+ Cryptocurrencies",
+          "description": "Bitcoin, Ethereum, USDT, and other popular cryptocurrencies available."
+        }
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Various digital asset transaction services for your needs",
+      "items": {
+        "crypto": {
+          "title": "Buy & Sell Cryptocurrency",
+          "description": "Bitcoin, Ethereum, USDT, and 16+ other cryptos with real-time rates. 5-15 minute processing."
+        },
+        "paypal": {
+          "title": "Buy & Sell PayPal Balance",
+          "description": "Top up and sell PayPal balance with competitive tier rates. Min $20, instant processing."
+        },
+        "skrill": {
+          "title": "Buy & Sell Skrill Balance",
+          "description": "Skrill balance transactions for freelance, online shopping, or business."
+        }
+      }
+    },
+    "commitment": {
+      "title": "Our Commitment",
+      "description": "Saldopedia commits to best service with priority on:",
+      "stats": {
+        "availability": {
+          "value": "24/7",
+          "label": "Transactions active anytime"
+        },
+        "transparency": {
+          "value": "100%",
+          "label": "Transparency with no hidden fees"
+        },
+        "speed": {
+          "value": "<15 min",
+          "label": "Average processing time"
+        },
+        "satisfaction": {
+          "value": "98%",
+          "label": "Satisfaction rate"
+        }
+      }
+    },
+    "legalInfo": {
+      "title": "Legal Information",
+      "content": "Saldopedia is an independent service operating under Indonesian law. We commit to highest business ethics and protecting user interests.",
+      "disclaimer": "Disclaimer: Saldopedia is not affiliated with PayPal Inc., Skrill Limited, or any cryptocurrency platform. All trademarks are properties of their respective owners."
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Join 10,000+ users who trust Saldopedia for their crypto, PayPal, and Skrill transactions.",
+      "startButton": "Buy & Sell Now",
+      "learnButton": "Learn How It Works"
+    }
+  },
+  "order": {
+    "pageTitle": "Order Form - Instant & Secure Transactions",
+    "title": "Create Order",
+    "subtitle": "Fill the form to start your transaction. Your order will be processed in minutes with guaranteed security.",
+    "whatsappNotice": "Order processed after payment confirmation",
+    "successTitle": "Order Created Successfully!",
+    "successMessage": "Your order is received and confirmation email has been sent. Transaction will be processed automatically.",
+    "backButton": "Back",
+    "chatWhatsApp": "Chat WhatsApp",
+    "createNewOrder": "Create New Order",
+    "errorMessage": "Failed to submit order. Please try again or contact customer service.",
+    "customerInfo": "Customer Information",
+    "transactionDetails": "Transaction Details",
+    "calculationResults": "Calculation Results",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "WhatsApp Number",
+    "service": "Select Service",
+    "cryptocurrency": "Cryptocurrency",
+    "paypal": "PayPal",
+    "skrill": "Skrill",
+    "crypto": "Cryptocurrency",
+    "network": "Network",
+    "transactionType": "Transaction Type",
+    "buy": "Buy",
+    "sell": "Sell",
+    "amount": "Amount",
+    "amountIDR": "Amount (IDR)",
+    "amountUSD": "Amount (USD)",
+    "walletAddress": "Wallet Address",
+    "xrpTag": "XRP Tag/Memo",
+    "optional": "Optional",
+    "paymentMethod": "Payment Method",
+    "accountName": "Account Holder Name",
+    "accountNumber": "Account Number",
+    "phoneNumber": "Phone Number",
+    "paymentMethodSelect": "Select payment method",
+    "emailService": "Email",
+    "notes": "Notes (Optional)",
+    "notesPlaceholder": "Add notes or questions",
+    "submitButton": "Submit Order",
+    "submitting": "Submitting...",
+    "securityNotice": "Multi-Layer Security. Data protected with SSL 256-bit encryption. Transaction processed in 5-15 minutes.",
+    "youPay": "You Pay",
+    "youReceive": "You Receive",
+    "rate": "Rate",
+    "tier": "Tier",
+    "networkFee": "Network Fee",
+    "networkFeeInfo": "Blockchain transfer fee",
+    "cryptoPrice": "Crypto Price",
+    "totalPayment": "Total Payment",
+    "minimumAmount": "Minimum transaction",
+    "errors": {
+      "nameRequired": "Full name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email format",
+      "phoneRequired": "WhatsApp number is required",
+      "phoneInvalid": "Invalid WhatsApp number",
+      "amountRequired": "Amount is required",
+      "amountMinimum": "Minimum transaction Rp 25,000",
+      "networkRequired": "Network is required",
+      "walletRequired": "Wallet address is required",
+      "paymentMethodRequired": "Payment method is required",
+      "accountNameRequired": "Account holder name is required",
+      "accountNumberRequired": "Account/phone number is required",
+      "serviceEmailRequired": "is required"
+    }
+  },
+  "cryptoProductPage": {
+    "hero": {
+      "title": "Buy & Sell Cryptocurrency",
+      "titleHighlight": "Fast & Secure",
+      "subtitle": "Buy and sell Bitcoin, USDT, Ethereum with real-time rates. From Rp 25,000, 5-15 minute processing, 100% multi-layer security."
+    },
+    "rateTable": {
+      "title": "Today's Cryptocurrency Rates",
+      "buyHeader": "Buy Crypto",
+      "sellHeader": "Sell Crypto",
+      "buyRate": "Market Price + 5%",
+      "sellRate": "Market Price - 5%",
+      "buyDesc": "Rate follows real-time market price",
+      "sellDesc": "Rate follows real-time market price",
+      "updateNote": "Rates update automatically"
+    },
+    "supported": {
+      "title": "Supported Cryptocurrencies",
+      "bitcoin": {
+        "name": "Bitcoin (BTC)",
+        "description": "Most popular and valuable cryptocurrency",
+        "minAmount": "Min Rp 25,000",
+        "processTime": "5-15 min processing"
+      },
+      "ethereum": {
+        "name": "Ethereum (ETH)",
+        "description": "Blockchain platform for smart contracts",
+        "minAmount": "Min Rp 25,000",
+        "processTime": "5-15 min processing"
+      },
+      "usdt": {
+        "name": "Tether (USDT)",
+        "description": "Stablecoin with stable value following USD",
+        "minAmount": "Min Rp 25,000",
+        "processTime": "5-15 min processing"
+      },
+      "moreCoins": "+ More cryptocurrencies: BNB, SOL, MATIC, and many more"
+    },
+    "whyChoose": {
+      "title": "Why Choose Saldopedia for Crypto",
+      "features": {
+        "fast": {
+          "title": "Auto Processing",
+          "description": "Transactions processed in 5-15 minutes after payment"
+        },
+        "lowMin": {
+          "title": "From Rp 25,000",
+          "description": "Small amounts perfect for everyone"
+        },
+        "secure": {
+          "title": "Multi-Layer Security",
+          "description": "SSL 256-bit encryption, automatic verification, 100% protection"
+        },
+        "realtime": {
+          "title": "Real-Time Rates",
+          "description": "Rates follow global market prices transparently"
+        }
+      }
+    },
+    "howTo": {
+      "title": "How to Trade Cryptocurrency",
+      "step1": {
+        "title": "Create Order",
+        "description": "Fill the online order form or contact WhatsApp, choose your crypto"
+      },
+      "step2": {
+        "title": "Transfer & Confirm",
+        "description": "Transfer the amount and confirm payment"
+      },
+      "step3": {
+        "title": "Receive Crypto",
+        "description": "Crypto sent to your wallet in 5-15 minutes"
+      },
+      "ctaButton": "Get Started Now"
+    },
+    "faq": {
+      "title": "Cryptocurrency FAQ",
+      "q1": {
+        "question": "Which cryptocurrencies can be traded?",
+        "answer": "Bitcoin (BTC), Ethereum (ETH), USDT, BNB, Solana (SOL), MATIC, and other popular cryptocurrencies. Rates follow real-time market price."
+      },
+      "q2": {
+        "question": "What's the minimum transaction?",
+        "answer": "Minimum Rp 25,000 for all cryptocurrencies. Perfect for beginners starting with small investment."
+      },
+      "q3": {
+        "question": "How to get the best rate?",
+        "answer": "Our rates follow global market prices. Buy crypto +5%, sell crypto -5% from market price. No hidden fees."
+      },
+      "q4": {
+        "question": "How long does processing take?",
+        "answer": "After payment confirmation, crypto is sent to your wallet in 5-15 minutes. Active 24/7."
+      }
+    }
+  },
+  "paypalProductPage": {
+    "hero": {
+      "title": "Buy & Sell PayPal Balance",
+      "titleHighlight": "Safe & Trusted",
+      "subtitle": "Buy and sell PayPal balance with competitive tier rates. Min $20, 5-15 minute processing, 100% multi-layer security."
+    },
+    "rateTable": {
+      "title": "Today's PayPal Rates",
+      "sellTitle": "Sell PayPal Rates (You Sell to Us)",
+      "buyTitle": "Buy PayPal Rates (You Buy from Us)",
+      "amountHeader": "Balance Amount",
+      "rateHeader": "Rate per USD",
+      "updateNote": "Rates update real-time following market conditions",
+      "sellRates": {
+        "tier1": { "range": "$20 - $49", "rate": "Rp 12,000" },
+        "tier2": { "range": "$50 - $499", "rate": "Rp 14,000" },
+        "tier3": { "range": "$500 - $1,999", "rate": "Rp 15,000" },
+        "tier4": { "range": "$2,000 - $5,000", "rate": "Rp 15,299" }
+      },
+      "buyRates": {
+        "tier1": { "range": "$20 - $49", "rate": "Rp 17,699" },
+        "tier2": { "range": "$50 - $499", "rate": "Rp 17,499" },
+        "tier3": { "range": "$500 - $1,999", "rate": "Rp 17,099" },
+        "tier4": { "range": "$2,000 - $5,000", "rate": "Rp 16,789" }
+      }
+    },
+    "whyChoose": {
+      "title": "Why Choose Saldopedia for PayPal",
+      "features": {
+        "tier": {
+          "title": "Auto Tier Rates",
+          "description": "Tier automatically based on your transaction amount"
+        },
+        "fast": {
+          "title": "Instant Processing",
+          "description": "Balance sent in 5-15 minutes"
+        },
+        "secure": {
+          "title": "Multi-Layer Security",
+          "description": "SSL 256-bit encryption, automatic verification, 100% protection"
+        },
+        "support": {
+          "title": "Active 24/7",
+          "description": "Transactions active 24/7 with customer support ready"
+        }
+      }
+    },
+    "services": {
+      "title": "PayPal Services",
+      "sell": {
+        "title": "Sell PayPal Balance",
+        "description": "Have unused PayPal balance? Cash out to Rupiah with competitive rates. Bigger balance, better rate.",
+        "features": {
+          "minMax": "Min $20, max $5,000 per transaction",
+          "rate": "Tier rates: Rp 12,000 - Rp 15,299/USD",
+          "payment": "Indonesia local bank transfer",
+          "process": "5-15 minute processing"
+        }
+      },
+      "buy": {
+        "title": "Buy PayPal Balance",
+        "description": "Need PayPal balance for online shopping or international payments? Buy easily, securely, instantly to your account.",
+        "features": {
+          "max": "Max $5000 per transaction",
+          "rate": "Tier rates: Rp 16,789 - Rp 17,699/USD",
+          "payment": "Pay via Indonesia bank transfer",
+          "process": "Balance received in 5-15 minutes"
+        }
+      }
+    },
+    "howTo": {
+      "title": "How to Trade PayPal",
+      "step1": {
+        "title": "Create Order",
+        "description": "Fill the online order form or contact WhatsApp, select PayPal service"
+      },
+      "step2": {
+        "title": "Fill Details & Transfer",
+        "description": "Enter PayPal email and amount, then transfer"
+      },
+      "step3": {
+        "title": "Receive Balance",
+        "description": "PayPal balance received in 5-15 minutes"
+      },
+      "ctaButton": "Get Started Now"
+    },
+    "faq": {
+      "title": "PayPal FAQ",
+      "q1": {
+        "question": "What's the min and max PayPal transaction?",
+        "answer": "Min $20, max $5,000 per transaction for both buying and selling PayPal."
+      },
+      "q2": {
+        "question": "How do tier rates work?",
+        "answer": "Bigger transactions, better rates. Sell: $20-$49 = Rp 12,000/USD up to $2,000-$5,000 = Rp 15,299/USD. Buy also tiered, rates get cheaper at higher volumes."
+      },
+      "q3": {
+        "question": "Is it safe to trade PayPal here?",
+        "answer": "Very safe! Multi-layer security and we've served thousands of transactions. Transparent process through customer service."
+      },
+      "q4": {
+        "question": "How long does processing take?",
+        "answer": "After payment confirmation, PayPal balance sent in 5-15 minutes. Active 24/7."
+      },
+      "q5": {
+        "question": "How does the order payment system work?",
+        "answer": "Orders are paid using Saldopedia balance. Top up your balance in the Deposit menu, then use it for orders. Sales proceeds go to your balance and can be withdrawn."
+      }
+    }
+  },
+  "skrillProductPage": {
+    "hero": {
+      "title": "Buy & Sell Skrill Balance",
+      "titleHighlight": "Safe & Trusted",
+      "subtitle": "Buy and sell Skrill balance with competitive tier rates. Min $20, 5-15 minute processing, 100% multi-layer security."
+    },
+    "rateTable": {
+      "title": "Today's Skrill Rates",
+      "sellTitle": "Sell Skrill Rates (You Sell to Us)",
+      "buyTitle": "Buy Skrill Rates (You Buy from Us)",
+      "amountHeader": "Balance Amount",
+      "rateHeader": "Rate per USD",
+      "updateNote": "Rates update real-time following market conditions",
+      "sellRates": {
+        "tier1": { "range": "$20 - $49", "rate": "Rp 12,000" },
+        "tier2": { "range": "$50 - $499", "rate": "Rp 14,000" },
+        "tier3": { "range": "$500 - $1,999", "rate": "Rp 15,000" },
+        "tier4": { "range": "$2,000 - $5,000", "rate": "Rp 15,299" }
+      },
+      "buyRates": {
+        "tier1": { "range": "$20 - $49", "rate": "Rp 17,699" },
+        "tier2": { "range": "$50 - $499", "rate": "Rp 17,499" },
+        "tier3": { "range": "$500 - $1,999", "rate": "Rp 17,099" },
+        "tier4": { "range": "$2,000 - $5,000", "rate": "Rp 16,789" }
+      }
+    },
+    "whyChoose": {
+      "title": "Why Choose Saldopedia for Skrill",
+      "features": {
+        "tier": {
+          "title": "Auto Tier Rates",
+          "description": "Tier automatically based on your transaction amount"
+        },
+        "fast": {
+          "title": "Instant Processing",
+          "description": "Balance sent in 5-15 minutes"
+        },
+        "secure": {
+          "title": "Multi-Layer Security",
+          "description": "SSL 256-bit encryption, automatic verification, 100% protection"
+        },
+        "support": {
+          "title": "Active 24/7",
+          "description": "Transactions active 24/7 with customer support ready"
+        }
+      }
+    },
+    "services": {
+      "title": "Skrill Services",
+      "sell": {
+        "title": "Sell Skrill Balance",
+        "description": "Have unused Skrill balance? Cash out to Rupiah with competitive rates. Bigger balance, better rate.",
+        "features": {
+          "minMax": "Min $20, max $5,000 per transaction",
+          "rate": "Tier rates: Rp 12,000 - Rp 15,299/USD",
+          "payment": "Indonesia local bank transfer",
+          "process": "5-15 minute processing"
+        }
+      },
+      "buy": {
+        "title": "Buy Skrill Balance",
+        "description": "Need Skrill balance for online transactions or international payments? Buy easily, securely, instantly to your account.",
+        "features": {
+          "max": "Max $5000 per transaction",
+          "rate": "Tier rates: Rp 16,789 - Rp 17,699/USD",
+          "payment": "Pay via Indonesia bank transfer",
+          "process": "Balance received in 5-15 minutes"
+        }
+      }
+    },
+    "howTo": {
+      "title": "How to Trade Skrill",
+      "step1": {
+        "title": "Create Order",
+        "description": "Fill the online order form or contact WhatsApp, select Skrill service"
+      },
+      "step2": {
+        "title": "Fill Details & Transfer",
+        "description": "Enter Skrill email and amount, then transfer"
+      },
+      "step3": {
+        "title": "Receive Balance",
+        "description": "Skrill balance received in 5-15 minutes"
+      },
+      "ctaButton": "Get Started Now"
+    },
+    "faq": {
+      "title": "Skrill FAQ",
+      "q1": {
+        "question": "What's the min and max Skrill transaction?",
+        "answer": "Min $20, max $5,000 per transaction for both buying and selling Skrill."
+      },
+      "q2": {
+        "question": "How do tier rates work?",
+        "answer": "Bigger transactions, better rates. Sell: $20-$49 = Rp 12,000/USD up to $2,000-$5,000 = Rp 15,299/USD. Buy also tiered, rates get cheaper at higher volumes."
+      },
+      "q3": {
+        "question": "Is it safe to trade Skrill here?",
+        "answer": "Very safe! Multi-layer security and we've served thousands of transactions. Transparent process through customer service."
+      },
+      "q4": {
+        "question": "How long does processing take?",
+        "answer": "After payment confirmation, Skrill balance sent in 5-15 minutes. Active 24/7."
+      },
+      "q5": {
+        "question": "How does the order payment system work?",
+        "answer": "Orders are paid using Saldopedia balance. Top up your balance in the Deposit menu, then use it for orders. Sales proceeds go to your balance and can be withdrawn."
+      }
+    }
+  },
+  "cookiePolicy": {
+    "header": {
+      "title": "Cookie Policy",
+      "lastUpdated": "Last updated: December 10, 2025"
+    },
+    "commitment": {
+      "title": "Our Transparency Commitment",
+      "content": "Saldopedia is committed to being transparent about the technologies we use on our website. This Cookie Policy comprehensively explains how we use cookies and similar technologies to enhance your experience, secure our services, and understand how our website is used. We believe you have the right to know what data is collected and to have control over your privacy preferences."
+    },
+    "section1": {
+      "title": "1. Introduction and Scope",
+      "p1": "This Cookie Policy is an integral part of Saldopedia's Privacy Policy and explains in detail the cookies and similar tracking technologies used on our website. This policy applies to all visitors and users of the Saldopedia website, including public pages, user dashboard, and all subdomains operated by Saldopedia.",
+      "p2": "By continuing to use our website after reading this Cookie Policy, you acknowledge understanding and consent to the use of cookies as described in this document. If you do not consent to the use of certain cookies, you have the option to control and disable those cookies through your browser settings or cookie preferences on our website.",
+      "p3": "We periodically update this Cookie Policy to reflect changes in technology, our practices, or legal requirements. We recommend that you review this policy regularly to stay informed about how we use cookies."
+    },
+    "section2": {
+      "title": "2. What Are Cookies and Similar Technologies?",
+      "sub1": {
+        "title": "2.1 Cookie Definition",
+        "content": "Cookies are small text files containing data that are stored on your device (computer, smartphone, tablet, or other device) when you visit a website. Cookies are sent by the web server to your browser and stored on your device. When you visit the same website again, the browser sends the cookie back to the server, allowing the website to recognize your device and remember information about previous visits such as language preferences, login status, and other settings."
+      },
+      "sub2": {
+        "title": "2.2 Types of Cookies by Source",
+        "firstParty": "First-Party Cookies:",
+        "firstPartyDesc": "Cookies set directly by the website domain you are visiting (saldopedia.com). These cookies are managed by Saldopedia and used for core website functions, user experience, and security.",
+        "thirdParty": "Third-Party Cookies:",
+        "thirdPartyDesc": "Cookies set by domains other than the website you are visiting. These cookies are placed by third-party services integrated with our website, such as analytics services (Google Analytics), social media widgets, or advertising services."
+      },
+      "sub3": {
+        "title": "2.3 Similar Tracking Technologies",
+        "intro": "In addition to cookies, we may use other similar tracking technologies:",
+        "localStorage": "Local Storage and Session Storage: Browser storage mechanisms that allow websites to store data on your device, similar to cookies but with larger storage capacity and different characteristics.",
+        "pixel": "Web Beacons and Pixel Tags: Small transparent images embedded in web pages or emails that allow us to track whether pages have been viewed or emails have been opened.",
+        "fingerprint": "Device Fingerprinting: A technique that collects information about your device configuration for security and fraud prevention purposes.",
+        "sdk": "SDKs and APIs: Software Development Kits and Application Programming Interfaces used to integrate third-party services into our website."
+      }
+    },
+    "section3": {
+      "title": "3. Purposes of Cookie Use at Saldopedia",
+      "intro": "Saldopedia uses cookies and similar technologies for various legitimate and beneficial purposes for our users. The following is a complete explanation of why we use cookies:",
+      "sub1": {
+        "title": "3.1 Essential Website Operations",
+        "content": "Essential cookies enable basic website functions such as page navigation, access to secure areas, and transaction processing. Without these cookies, the website cannot function properly. Essential cookies also help secure the website from harmful activities, protect user data, and ensure the integrity of your login session. Essential cookies cannot be disabled as they are required for basic website operation."
+      },
+      "sub2": {
+        "title": "3.2 Personalization and User Preferences",
+        "content": "Preference cookies allow the website to remember choices you make and provide a more personalized experience. This includes remembering your language choice (Indonesian or English), display theme preference (light or dark mode), regional settings, and other preferences you set. With preference cookies, you don't need to reset your choices every time you visit the website, making your browsing experience more convenient and efficient."
+      },
+      "sub3": {
+        "title": "3.3 Analysis and Performance Improvement",
+        "content": "Analytics cookies help us understand how visitors interact with our website. These cookies collect anonymous or aggregate information about pages visited, visit duration, navigation paths, traffic sources, and other performance metrics. This information is invaluable for identifying popular pages, areas needing improvement, technical issues, and opportunities to enhance the overall user experience. Analytics data helps us make data-driven decisions for website development."
+      },
+      "sub4": {
+        "title": "3.4 Security and Fraud Prevention",
+        "content": "Security cookies help us protect users and the platform from harmful activities. These cookies help detect and prevent cyber attacks, identify suspicious login activities, verify that requests come from legitimate browsers (not bots), protect forms from CSRF (Cross-Site Request Forgery) attacks, and support secure authentication systems. Security is our top priority, and cookies play an important role in protecting your account and data."
+      },
+      "sub5": {
+        "title": "3.5 Marketing and Communication (Optional)",
+        "content": "Marketing cookies, if enabled, are used to track visitors across websites and build interest profiles to display more relevant ads. These cookies also help measure the effectiveness of our marketing campaigns and understand user conversion paths. Marketing cookies are entirely optional and require explicit consent from you. You can decline marketing cookies without affecting core website functionality."
+      }
+    },
+    "section4": {
+      "title": "4. Categories of Cookies We Use",
+      "intro": "The following is a detailed explanation of each category of cookies used on the Saldopedia website:",
+      "necessary": {
+        "title": "4.1 Strictly Necessary Cookies",
+        "description": "Strictly necessary cookies are essential cookies that enable basic website functions and cannot be disabled in our system. These cookies are usually only set in response to actions you take that constitute a service request, such as setting privacy preferences, logging into an account, or filling out forms. The website cannot function properly without these cookies.",
+        "examplesTitle": "Essential cookies we use include:",
+        "examples": {
+          "session": "Login Session Cookies: Keep you logged in while navigating between pages and ensure the security of your session. These cookies are deleted when you log out or close your browser.",
+          "consent": "Consent Cookies: Store your cookie consent choices so we don't display the cookie banner repeatedly.",
+          "security": "Security Cookies: Protect the website from cyber attacks, validate requests, and ensure transaction integrity.",
+          "csrf": "CSRF Tokens: Protect forms from Cross-Site Request Forgery attacks.",
+          "load": "Load Balancing Cookies: Ensure optimal traffic distribution to our servers."
+        },
+        "retention": "Duration: Session (deleted when browser closes) to 24 hours",
+        "consentRequired": "Consent required:",
+        "consentAnswer": "No (these cookies are essential and cannot be disabled)"
+      },
+      "preference": {
+        "title": "4.2 Preference/Functionality Cookies",
+        "description": "Preference cookies allow the website to remember information that changes how the website behaves or looks. These cookies help provide a more personalized and convenient experience by remembering your choices. If you disable preference cookies, some settings may not be saved and you may need to set them again each visit.",
+        "examplesTitle": "Preference cookies we use include:",
+        "examples": {
+          "language": "Language Preference: Stores your language choice (Indonesian or English) so the website displays in your chosen language.",
+          "theme": "Theme Preference: Remembers your display mode choice (light or dark) based on your preference or automatically adjusts based on local time.",
+          "regional": "Regional Settings: Stores date format, currency, and other regional setting preferences.",
+          "accessibility": "Accessibility Settings: Stores accessibility preferences if available."
+        },
+        "retention": "Duration: 6 to 12 months",
+        "consentRequired": "Consent required:",
+        "consentAnswer": "Yes"
+      },
+      "analytics": {
+        "title": "4.3 Analytics and Statistics Cookies",
+        "description": "Analytics cookies help us understand how visitors interact with the website by collecting and reporting information anonymously or pseudonymously. These cookies allow us to analyze website traffic, identify the most popular pages, understand user navigation paths, and detect technical issues. Collected data is used to improve overall performance and user experience.",
+        "examplesTitle": "Analytics cookies we may use:",
+        "examples": {
+          "visitors": "Visitor Statistics: Track unique visitor counts, pageviews, session duration, and other engagement metrics.",
+          "source": "Traffic Sources: Identify where visitors come from (search engines, social media, referrals, or direct visits).",
+          "behavior": "User Behavior: Understand how users navigate the website, which pages are visited, and which features are used.",
+          "performance": "Website Performance: Measure page loading times, error rates, and other technical metrics.",
+          "googleAnalytics": "Google Analytics: A web analytics service from Google that provides insights about traffic and visitor behavior (if enabled)."
+        },
+        "retention": "Duration: 1 to 24 months depending on analytics service",
+        "consentRequired": "Consent required:",
+        "consentAnswer": "Yes"
+      },
+      "marketing": {
+        "title": "4.4 Marketing and Advertising Cookies",
+        "description": "Marketing cookies are used to track visitors across websites with the aim of displaying relevant and interesting ads to individual users. These cookies also help measure the effectiveness of ad campaigns and limit the frequency of the same ad being displayed. Marketing cookies are typically placed by advertising networks with the website operator's permission.",
+        "examplesTitle": "Marketing cookies that may be used:",
+        "examples": {
+          "relevantAds": "Ad Targeting: Build interest profiles based on browsing behavior to display more relevant ads.",
+          "retargeting": "Retargeting: Display ads to visitors who have previously visited our website while they browse other websites.",
+          "conversion": "Conversion Tracking: Measure campaign effectiveness by tracking actions taken after viewing an ad.",
+          "social": "Social Media Widgets: Cookies from social media platforms that enable content sharing and display social content.",
+          "thirdParty": "Facebook Pixel and Google Ads: Third-party advertising services for targeting and measurement (if enabled)."
+        },
+        "retention": "Duration: 1 to 24 months depending on service provider",
+        "consentRequired": "Consent required:",
+        "consentAnswer": "Yes"
+      }
+    },
+    "section5": {
+      "title": "5. Third-Party Cookies and Integrated Services",
+      "intro": "In addition to cookies we set directly (first-party cookies), our website may include cookies from integrated third-party services. We work with trusted service providers, but it is important to understand that we do not have full control over the cookies they set.",
+      "sub1": {
+        "title": "5.1 Analytics Services",
+        "content": "We may use third-party analytics services such as Google Analytics to collect and analyze data about website usage. These services set their own cookies to identify unique visitors, track sessions, and collect behavioral data. Collected data is generally anonymous or pseudonymous and used for statistical purposes and website improvement."
+      },
+      "sub2": {
+        "title": "5.2 Social Media Widgets",
+        "content": "Our website may include widgets or share buttons from social media platforms such as Facebook, Twitter, or Instagram. These widgets allow you to share content and interact with social platforms. When you interact with these widgets, social media platforms may set cookies for their own purposes, including ad targeting."
+      },
+      "sub3": {
+        "title": "5.3 Payment and Security Services",
+        "content": "To process cryptocurrency transactions and protect the platform from fraud, we integrate third-party payment and security services. These services may use cookies or similar technologies for verification, fraud prevention, and secure transaction processing."
+      },
+      "sub4": {
+        "title": "5.4 Links to Third-Party Privacy Policies",
+        "intro": "For more information about the privacy practices and cookies of third-party service providers, please visit their privacy policies:",
+        "vendors": {
+          "google": "Google Privacy Policy: policies.google.com/privacy",
+          "googleAnalytics": "Google Analytics: support.google.com/analytics",
+          "facebook": "Facebook Cookie Policy: www.facebook.com/policies/cookies"
+        }
+      }
+    },
+    "section6": {
+      "title": "6. How to Control and Manage Cookies",
+      "intro": "You have full control over cookies accepted by your device. There are several ways to manage cookie preferences:",
+      "sub1": {
+        "title": "6.1 Cookie Settings on Our Website",
+        "content": "When you first visit the Saldopedia website, you will see a banner or popup informing you about cookie usage and requesting your consent. This banner allows you to accept all cookies, reject non-essential cookies, or customize your preferences by category. You can change your cookie preferences at any time by accessing cookie settings through a link in the website footer or cookie settings icon if available."
+      },
+      "sub2": {
+        "title": "6.2 Browser Settings",
+        "intro": "Most web browsers allow you to control cookies through browser settings. You can set your browser to reject all cookies, accept all cookies, notify you when cookies are set, or delete existing cookies. How to access cookie settings differs for each browser:",
+        "chrome": "Google Chrome: Open Settings > Privacy and security > Cookies and other site data. Here you can block third-party cookies, clear cookies on exit, or manage exceptions for specific sites.",
+        "firefox": "Mozilla Firefox: Open Settings > Privacy & Security. In the Cookies and Site Data section, you can choose protection levels and manage cookies in detail.",
+        "safari": "Apple Safari: Open Preferences > Privacy. You can block all cookies, prevent cross-site tracking, and manage website data.",
+        "edge": "Microsoft Edge: Open Settings > Cookies and site permissions > Cookies and stored data. You can block third-party cookies and manage cookie preferences."
+      },
+      "sub3": {
+        "title": "6.3 Third-Party Opt-Out Tools",
+        "content": "Some advertising and analytics services provide direct opt-out mechanisms. For example, Google provides a browser plugin to disable Google Analytics tracking, and the Digital Advertising Alliance provides tools to opt-out of targeted advertising from their members. You can use these tools to manage your privacy preferences across various websites."
+      },
+      "sub4": {
+        "title": "6.4 Impact of Disabling Cookies",
+        "content": "It is important to understand that disabling certain cookies may affect website functionality. If you disable essential cookies, the website may not function properly and some features may not be available. Disabling preference cookies means your settings will not be saved between visits. Disabling analytics cookies will not affect your experience, but will limit our ability to improve the website. Disabling marketing cookies means you may still see ads, but they will not be personalized based on your interests."
+      }
+    },
+    "section7": {
+      "title": "7. Cookie Storage Duration",
+      "intro": "Cookies have different storage periods depending on their type and purpose:",
+      "sub1": {
+        "title": "7.1 Session Cookies",
+        "content": "Session cookies are temporary cookies that only exist during your browsing session. These cookies are stored in browser memory and are automatically deleted when you close your browser or the session ends. Session cookies are used for functions such as keeping you logged in while navigating between pages and temporarily storing items in a shopping cart."
+      },
+      "sub2": {
+        "title": "7.2 Persistent Cookies",
+        "content": "Persistent cookies are cookies that remain stored on your device after the browser is closed and persist for a specified period of time or until you manually delete them. The duration of persistent cookies varies depending on their purpose. Preference cookies may last 6-12 months, analytics cookies may last 1-24 months, and advertising cookies may last several months up to 2 years."
+      },
+      "sub3": {
+        "title": "7.3 Cookie Duration Table",
+        "table": {
+          "category": "Cookie Category",
+          "duration": "Typical Duration",
+          "essential": "Essential Cookies: Session - 24 hours",
+          "preference": "Preference Cookies: 6 - 12 months",
+          "analytics": "Analytics Cookies: 1 - 24 months",
+          "marketing": "Marketing Cookies: 3 - 24 months"
+        }
+      }
+    },
+    "section8": {
+      "title": "8. Cookie Policy Updates",
+      "p1": "Saldopedia may update this Cookie Policy from time to time to reflect changes in the technology we use, our privacy practices, applicable legal requirements, or to improve transparency. Any changes to this policy will take effect from the date indicated in the \"Last updated\" section above.",
+      "p2": "For significant or material changes, we will endeavor to provide more prominent notice, such as displaying a banner on the website, sending email notification to registered users, or requesting re-consent through a cookie popup. We recommend that you review this Cookie Policy periodically to stay informed about how we use cookies.",
+      "p3": "Continued use of our website after changes take effect indicates your acceptance of the updated Cookie Policy. If you do not agree with the changes, you can use the cookie control options described above to manage your preferences or stop using our website."
+    },
+    "section9": {
+      "title": "9. Your Rights Regarding Cookies and Privacy",
+      "p1": "As a Saldopedia website user, you have certain rights regarding data collected through cookies. In accordance with Indonesia's Personal Data Protection Law and international privacy principles, you have the right to know what cookies are used and for what purposes, to accept or reject non-essential cookies, to change your cookie preferences at any time, to request information about data collected through cookies, and to request deletion of cookie-related data (with certain limitations).",
+      "p2": "To exercise these rights, you can manage cookie preferences through settings on our website, adjust preferences in your browser, or contact our support team for more specific requests. We are committed to responding to your requests within a reasonable time."
+    },
+    "section10": {
+      "title": "10. Contact Us",
+      "intro": "If you have any questions, concerns, or requests regarding this Cookie Policy or our privacy practices, please feel free to contact us through the following official channels:",
+      "email": "Email: support@saldopedia.com",
+      "whatsapp": "WhatsApp:",
+      "hours": "Customer Service Operating Hours: 09:00 - 21:00 WIB every day",
+      "response": "We are committed to responding to your inquiries within 1-3 business days."
+    },
+    "footer": "By continuing to use the Saldopedia website after reading this Cookie Policy, you acknowledge understanding and consent to the use of cookies and similar technologies as described in this document. Thank you for trusting Saldopedia for your cryptocurrency, PayPal, and Skrill transaction needs."
+  },
+  "termsOfService": {
+    "header": {
+      "title": "Terms and Conditions of Service",
+      "lastUpdated": "Last updated: December 10, 2025"
+    },
+    "notice": {
+      "title": "Important:",
+      "content": "By using Saldopedia services, you confirm that you have read, understood, and agreed to all of these Terms and Conditions. If you do not agree to these terms, please do not use our services."
+    },
+    "footer": "This document constitutes a valid and legally binding agreement between you and Saldopedia.",
+    "section1": {
+      "title": "1. Introduction and Scope",
+      "p1": "Welcome to Saldopedia, an Indonesian fintech platform providing cryptocurrency, PayPal balance, and Skrill balance trading services. This Terms and Conditions document constitutes a legally binding agreement between you as a user and Saldopedia as a service provider. By accessing or using our platform through the website, application, or other official communication channels, you confirm your full consent to all terms contained in this document.",
+      "p2": "Saldopedia operates as a digital asset exchange platform that facilitates transactions between users and our services. This platform is designed to provide easy access to cryptocurrency and international digital payment services such as PayPal and Skrill with fast, secure, and transparent processing. Our services use an internal balance system that allows users to deposit, place orders, receive sales proceeds, and withdraw funds more efficiently.",
+      "p3": "These Terms and Conditions apply to all services provided by Saldopedia, including but not limited to: buying and selling cryptocurrency, PayPal and Skrill balance transactions, deposit and withdrawal systems, referral and points programs, and all features available in the user dashboard. We recommend that you read this document thoroughly and keep it for future reference."
+    },
+    "section2": {
+      "title": "2. Definitions and Interpretation",
+      "intro": "In these Terms and Conditions, the following terms have the following meanings unless the context otherwise requires:",
+      "we": "\"We\", \"Saldopedia\", \"Platform\"",
+      "weDesc": "refers to Saldopedia as a cryptocurrency, PayPal, and Skrill trading service platform, including all services, features, and facilities operated under the Saldopedia brand.",
+      "user": "\"User\", \"You\", \"Member\"",
+      "userDesc": "refers to any individual or entity that accesses, registers, or uses Saldopedia services, whether as a registered user or platform visitor.",
+      "service": "\"Service\"",
+      "serviceDesc": "refers to all products, features, and facilities provided by Saldopedia including cryptocurrency trading, PayPal and Skrill transactions, deposit and withdrawal systems, user dashboard, and other supporting services.",
+      "crypto": "\"Cryptocurrency\", \"Digital Asset\"",
+      "cryptoDesc": "refers to cryptocurrencies and digital assets including but not limited to Bitcoin (BTC), Ethereum (ETH), Tether (USDT), Binance Coin (BNB), Solana (SOL), Polygon (MATIC), and other cryptocurrencies supported by the platform.",
+      "bot": "\"Balance\"",
+      "botDesc": "refers to the user's internal balance on the Saldopedia platform that can be used to place orders, receive sales proceeds, and be withdrawn to a bank account. Balance is in Indonesian Rupiah (IDR).",
+      "balance": "\"Deposit\"",
+      "balanceDesc": "refers to the process of adding balance by transferring funds from the user's bank account to their Saldopedia account.",
+      "withdrawal": "\"Withdrawal\"",
+      "withdrawalDesc": "refers to the process of withdrawing balance from the Saldopedia account to the user's bank account.",
+      "order": "\"Order\", \"Transaction\"",
+      "orderDesc": "refers to buy or sell instructions created by users through the Saldopedia platform."
+    },
+    "section3": {
+      "title": "3. User Requirements and Eligibility",
+      "sub1": {
+        "title": "3.1 Eligibility Criteria",
+        "intro": "To legally and validly use Saldopedia services, you must meet all of the following criteria without exception:",
+        "age": "Be at least 18 (eighteen) years old or have reached legal adult age according to the laws applicable in your jurisdiction. If you have not reached adulthood, you must obtain consent from a parent or legal guardian",
+        "info": "Be willing to provide accurate, complete, current, and verifiable information when registering an account and conducting transactions. False or misleading information may result in service denial or account closure",
+        "legal": "Not use Saldopedia services for activities that violate the law, including but not limited to money laundering, terrorism financing, fraud, or other criminal activities",
+        "payment": "Have a valid Indonesian bank account registered in your own name, or other legitimate payment methods that can be verified by Saldopedia",
+        "telegram": "Have an active email address accessible for account verification, transaction notifications, and other important communications. WhatsApp access is also required for certain transaction confirmations"
+      },
+      "sub2": {
+        "title": "3.2 Account Registration and Verification",
+        "content": "To access full Saldopedia services, you are required to create an account through the registration process on our website. Registration can be done using an email address or through social login options such as Google OAuth. After successful registration, you will have access to the user dashboard that allows you to view your balance, transaction history, make deposits and withdrawals, and access other features. Saldopedia reserves the right to request additional identity verification (Know Your Customer/KYC) for certain transactions or when required to meet regulatory obligations. By registering, you agree to maintain the confidentiality of your account credentials and are fully responsible for all activities that occur on your account."
+      },
+      "sub3": {
+        "title": "3.3 Account Security and Protection",
+        "intro": "Your account security is a shared responsibility between Saldopedia and you as a user. You are fully responsible for maintaining account security by:",
+        "secure": "Creating and using a strong, unique, and hard-to-guess password. A good password consists of at least 8 characters with a combination of uppercase letters, lowercase letters, numbers, and symbols",
+        "confidential": "Maintaining the confidentiality of login information including email and password, and not sharing it with anyone including parties claiming to be Saldopedia representatives",
+        "noShare": "Not providing account access to third parties. If you suspect unauthorized access to your account, immediately change your password and contact the support team",
+        "report": "Immediately reporting to Saldopedia via WhatsApp or official email if suspicious activity, unrecognized transactions, or other security breach indications occur"
+      }
+    },
+    "section4": {
+      "title": "4. Balance System and Transaction Mechanism",
+      "sub1": {
+        "title": "4.1 Balance System",
+        "intro": "Saldopedia uses an internal balance system that is central to all transaction activities on the platform. Understanding how this system works is essential for an optimal transaction experience:",
+        "step1": "Deposit: To start transacting, you need to deposit first. The deposit process is done by transferring funds from your bank account to the official Saldopedia account for the desired amount. After the transfer is confirmed by admin (5-15 minutes), the balance will be added to your account",
+        "step2": "Order/Purchase: When you place a BUY order for cryptocurrency, PayPal, or Skrill, the system will deduct your balance according to the total order value. Ensure you have sufficient balance before creating an order",
+        "step3": "Sale: When you SELL cryptocurrency, PayPal, or Skrill, the sale proceeds will be added to your account balance after the transaction is confirmed",
+        "step4": "Withdrawal: You can withdraw your balance at any time to the bank account registered in your account. The withdrawal process requires verification and will be processed within 5-15 minutes during operating hours",
+        "step5": "Balance Transfer: The transfer feature allows you to send balance to fellow Saldopedia users with a minimum transfer of Rp 10,000",
+        "step6": "Balance cannot be transferred to other platforms or converted to currencies other than IDR except through available order processes",
+        "step7": "Unused balance will remain stored in your account indefinitely as long as the account remains active and does not violate service terms"
+      },
+      "sub2": {
+        "title": "4.2 Transaction Limits and Terms",
+        "min": "Minimum Deposit:",
+        "minValue": "Rp 25,000 per transaction. Deposits below the minimum limit cannot be processed and will be returned with administrative fee deduction.",
+        "max": "Minimum Withdrawal:",
+        "maxValue": "Rp 50,000 per transaction. Withdrawals can be made to all Indonesian banks with 5-15 minute processing time.",
+        "note": "Minimum Order: Rp 25,000 for all service types (Crypto, PayPal, Skrill). Maximum transaction varies depending on service and liquidity availability. Limits may change at any time according to platform policy."
+      },
+      "sub3": {
+        "title": "4.3 Deposit Process and Payment Methods",
+        "content": "Deposits are made by transferring funds to the official Saldopedia account displayed on the deposit page. We accept transfers from all Indonesian banks (BCA, Mandiri, BNI, BRI, and others). After transfer, you are required to upload proof of transfer through the dashboard. Admin will verify and confirm the deposit within 5-15 minutes during operating hours. Ensure the transfer amount matches the deposit request to expedite verification. Deposits with different amounts will be processed according to the amount actually received."
+      },
+      "sub4": {
+        "title": "4.4 Rates, Spread, and Fees",
+        "realtime": "Cryptocurrency rates follow global market prices (CoinGecko) in real-time. Saldopedia applies competitive spreads between buy and sell prices",
+        "inclusive": "For cryptocurrency, network fees (blockchain network charges) are displayed separately and transparently when you create a BUY order. This fee is the actual fee charged by the blockchain network",
+        "noHidden": "No hidden fees. All fees are clearly displayed before you confirm a transaction",
+        "variable": "Rates may fluctuate following market movements. The applicable rate is the rate when the order is confirmed by the system",
+        "applies": "For PayPal and Skrill, we apply a tier rate system based on transaction volume. The larger the transaction, the more competitive rate you get"
+      },
+      "sub5": {
+        "title": "4.5 Order Processing and Timing",
+        "content": "After an order is created and balance is deducted from your account, our team will process the order within 5-15 minutes. For cryptocurrency BUY orders, assets will be sent to the wallet address you provided. For SELL orders, IDR balance will be added to your account after we receive the assets you sent. Order status can be monitored in real-time through the Order History page on the dashboard. If an order takes more than 30 minutes without status update, please contact customer service via WhatsApp with the order number."
+      }
+    },
+    "section5": {
+      "title": "5. Cancellation, Refund, and Dispute Resolution Policy",
+      "sub1": {
+        "title": "5.1 Order Cancellation",
+        "content": "Orders that have been created and used balance essentially cannot be cancelled because the system processes transactions automatically. However, for orders still in PENDING status and not yet processed, you can contact customer service to request cancellation. If cancellation is approved, the balance will be returned to your account. Orders already in PROCESSING or COMPLETED status cannot be cancelled."
+      },
+      "sub2": {
+        "title": "5.2 Refund Conditions",
+        "intro": "Refunds may be considered under the following conditions:",
+        "noCancel": "A system error occurs ",
+        "conditions": "that causes balance to be deducted but the order is not recorded or cannot be processed. In this case, the balance will be fully returned after investigation is complete.",
+        "systemError": "Deposit with different amount from request. The difference will be adjusted to the amount actually received",
+        "overpay": "Order that cannot be fulfilled due to liquidity constraints or operational reasons from Saldopedia. Balance will be fully returned",
+        "notReceived": "Cryptocurrency not received at destination wallet within 24 hours due to Saldopedia's error (not due to incorrect wallet address from user)",
+        "refund": "Refund process will be made to your Saldopedia account balance. You can then make a withdrawal to your bank account."
+      },
+      "sub3": {
+        "title": "5.3 User Errors and Liability Limitations",
+        "intro": "Saldopedia is not responsible for losses caused by user errors. The following are examples of errors that are entirely the user's responsibility:",
+        "wrongAddress": "Entering incorrect, invalid, or mismatched cryptocurrency wallet address with the selected network. Transactions to wrong addresses cannot be cancelled or returned",
+        "wrongAmount": "Making a deposit with different amount than requested without prior confirmation",
+        "wrongBank": "Deposit transfer to account that is not an official Saldopedia account",
+        "lostAccess": "Losing access to cryptocurrency wallet, PayPal account, Skrill account, or Saldopedia account due to negligence in maintaining account security"
+      }
+    },
+    "section6": {
+      "title": "6. Risks, Disclaimer, and Limitation of Liability",
+      "sub1": {
+        "title": "6.1 Cryptocurrency-Related Risks",
+        "content": "You fully understand and accept that cryptocurrency and digital assets are highly volatile instruments with high risk. Cryptocurrency values can experience significant fluctuations in a short time, including the possibility of losing all value. Saldopedia does not provide investment advice, financial recommendations, or profit guarantees. The decision to conduct cryptocurrency transactions is entirely your decision and responsibility. Saldopedia is not responsible for losses arising from market value changes, investment decisions, or other external factors beyond the platform's control."
+      },
+      "sub2": {
+        "title": "6.2 Platform Liability Limitations",
+        "intro": "Saldopedia is not responsible for direct or indirect losses arising from:",
+        "downtime": "Platform service disruption due to scheduled maintenance, system updates, or technical repairs necessary to maintain service quality",
+        "internet": "Internet connection problems, user devices, or network infrastructure beyond Saldopedia's control",
+        "blockchain": "Transaction confirmation delays on blockchain networks, network congestion, or technical issues on cryptocurrency networks",
+        "delay": "Processing delays caused by third parties including banks, payment gateways, or blockchain service providers",
+        "footer": "Under any circumstances, Saldopedia's maximum liability is limited to the value of the disputed transaction or the balance stored in the user's account, whichever is less."
+      },
+      "sub3": {
+        "title": "6.3 Force Majeure",
+        "content": "Saldopedia is not responsible for failure or delay in fulfilling obligations caused by circumstances reasonably beyond our control, including but not limited to: natural disasters (earthquakes, floods, tsunamis), war or armed conflict, government actions or sudden regulatory changes, pandemics or disease outbreaks, cyber attacks that cannot be prevented with reasonable security efforts, global technology infrastructure failures, or disruptions to major blockchain networks."
+      }
+    },
+    "section7": {
+      "title": "7. Saldopedia Rights, Obligations, and Policies",
+      "sub1": {
+        "title": "7.1 Saldopedia Rights",
+        "intro": "To maintain platform security and comply with applicable regulations, Saldopedia reserves the right to:",
+        "verify": "Request additional identity verification (KYC/AML) for transactions of certain amounts, unusual transaction patterns, or when required by regulations",
+        "reject": "Reject, cancel, or freeze transactions suspected of violating service terms, applicable law, or potentially harming the platform and other users",
+        "report": "Report suspicious activities or transactions indicated to violate the law to law enforcement or competent regulatory authorities",
+        "close": "Temporarily suspend or permanently terminate service access for users proven to violate these Terms and Conditions or applicable law"
+      },
+      "sub2": {
+        "title": "7.2 Prohibited Activities",
+        "intro": "Users are strictly prohibited from using the Saldopedia platform for the following activities:",
+        "fraud": "Fraud, identity forgery, phishing, social engineering, or other deceptive activities intended to harm others",
+        "laundering": "Money laundering, terrorism financing, or activities that violate money laundering laws",
+        "manipulation": "Market manipulation, wash trading, front-running, or unethical trading practices that may affect market integrity",
+        "spam": "Sending spam, abusing communication systems, or attempts to disrupt platform operations",
+        "ip": "Intellectual property rights violations including trademarks, copyrights, or other proprietary rights of Saldopedia or third parties",
+        "illegal": "Other illegal activities under Indonesian law, international law, or the user's jurisdiction of residence"
+      }
+    },
+    "section8": {
+      "title": "8. Data Protection and Information Security",
+      "sub1": {
+        "title": "8.1 Types of Data Collected",
+        "intro": "In operating services, Saldopedia collects and processes various types of user data for operational, security, and regulatory compliance purposes:",
+        "transaction": "Identity and account data: full name, email address, phone number, verification information, and login credentials",
+        "wallet": "Transaction data: order history, deposits, withdrawals, balance transfers, cryptocurrency wallet addresses, and other transaction details",
+        "payment": "Financial data: bank account information, proof of transfer, and payment history",
+        "contact": "Technical data: IP address, device information, browser fingerprint, and activity logs for security purposes"
+      },
+      "sub2": {
+        "title": "8.2 Purpose of Data Use",
+        "intro": "Collected data is used for legitimate and necessary purposes, including:",
+        "process": "Processing, verifying, and completing transactions you conduct on the platform",
+        "prevent": "Detecting, preventing, and investigating fraud, money laundering, and other security violations",
+        "law": "Complying with legal obligations, regulations, and legitimate requests from competent authorities"
+      }
+    },
+    "section9": {
+      "title": "9. Intellectual Property Rights",
+      "content": "All content on the Saldopedia platform including but not limited to the name \"Saldopedia\", logo, website design, text, graphics, images, icons, software, database, and other materials are protected by copyright, trademarks, and other intellectual property rights under Indonesian law and international conventions. Users are strictly prohibited from copying, reproducing, distributing, modifying, creating derivative works, publicly displaying, or using such materials for commercial purposes without written permission from Saldopedia. Violation of this provision may result in civil and/or criminal legal action."
+    },
+    "section10": {
+      "title": "10. Terms Changes and Updates",
+      "p1": "Saldopedia reserves the right to change, update, or revise these Terms and Conditions at any time according to operational needs, regulatory changes, or other considerations. Changes will be announced through the website and/or email notification to registered users. Changes take effect from the publication date or date specified in the announcement.",
+      "p2": "Use of Saldopedia services after the effective date of changes constitutes your agreement to the updated Terms and Conditions. If you do not agree to the changes, you have the right to discontinue use of services and withdraw remaining balance in your account."
+    },
+    "section11": {
+      "title": "11. Service Suspension and Termination",
+      "intro": "Saldopedia reserves the right to temporarily suspend or terminate user access to services under the following conditions:",
+      "violate": "User is proven or strongly suspected to violate these Terms and Conditions",
+      "false": "User provides false, inaccurate, or misleading information during registration or transactions",
+      "suspect": "There are indications of fraudulent activity, money laundering, or other illegal activities related to the user's account",
+      "authority": "Request or order from law enforcement, regulators, or competent courts"
+    },
+    "section12": {
+      "title": "12. Governing Law and Dispute Resolution",
+      "content": "These Terms and Conditions are made, governed, and interpreted under the laws of the Republic of Indonesia. Any disputes arising from or relating to these Terms and Conditions or use of Saldopedia services will be resolved through deliberation to reach consensus. If deliberation does not reach agreement within 30 (thirty) calendar days, the parties agree to resolve disputes through the Indonesian National Arbitration Board (BANI) or competent district courts in Indonesia according to applicable procedures."
+    },
+    "section13": {
+      "title": "13. Contact Information and Customer Service",
+      "intro": "The Saldopedia team is committed to providing the best customer service. If you have questions, complaints, or need assistance regarding our services, please contact us through the following official channels:",
+      "hours": "Customer Service Hours:",
+      "hoursValue": "09:00 - 21:00 WIB every day. Order services and automated systems available 24/7."
+    },
+    "section14": {
+      "title": "14. General and Closing Provisions",
+      "content": "These Terms and Conditions constitute the entire agreement between you and Saldopedia regarding service use and supersede all prior agreements, understandings, or communications whether written or oral. If any provision in this document is declared invalid, void, or unenforceable by a court or competent authority, such provision shall be severed and shall not affect the validity of other provisions which remain in full force. Saldopedia's failure to enforce any right or provision in this agreement at a particular time does not constitute a waiver of that right and does not preclude future enforcement. Saldopedia may assign its rights and obligations under these Terms and Conditions to another party without your consent, provided that your rights under this agreement shall not be diminished."
+    }
+  },
+  "privacyPolicy": {
+    "header": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated: December 10, 2025"
+    },
+    "commitment": {
+      "title": "Our Commitment to Privacy",
+      "content": "Saldopedia is fully committed to protecting the privacy and security of your personal data. As a digital financial services platform that processes cryptocurrency, PayPal, and Skrill transactions, we understand that your personal information and transaction data are highly sensitive. We handle your information with full responsibility, transparency, and in accordance with applicable data protection standards in Indonesia and international best practices. This Privacy Policy is designed to provide you with a comprehensive understanding of our data practices."
+    },
+    "footer": "By using Saldopedia services, you agree to the data collection and usage practices described in this Privacy Policy. If you have any questions or concerns about our privacy practices, please contact our support team.",
+    "section1": {
+      "title": "1. Introduction and Scope",
+      "p1": "This Privacy Policy comprehensively and thoroughly explains how Saldopedia collects, uses, stores, processes, shares, and protects your personal information when you access and use our platform for cryptocurrency, PayPal, and Skrill transactions. Saldopedia operates an internal balance system that facilitates fund deposits, purchase and sale order processing, receipt of transaction proceeds, transfers between users, and fund withdrawals. Given the sensitive nature of the digital financial services we provide, proper, secure, and transparent data management is essential to protect your interests and transaction security.",
+      "p2": "By accessing the Saldopedia website, registering an account, using the user dashboard, communicating with customer service, or utilizing our services in any form, you explicitly consent to the collection and use of personal information in accordance with the terms outlined in this Privacy Policy. If you do not agree to any or all terms of this policy, please immediately discontinue use of our services and contact our support team for account closure if needed. This policy applies to all Saldopedia platform users without exception, including registered users, website visitors, and parties who interact with us through official communication channels.",
+      "p3": "Saldopedia operates under the jurisdiction of the Republic of Indonesia and complies with all applicable laws and regulations regarding personal data protection, including but not limited to Law Number 27 of 2022 concerning Personal Data Protection (PDP Law) and regulations related to digital financial services. We also adopt international best practices in data protection to ensure optimal security standards for all our users."
+    },
+    "section2": {
+      "title": "2. Types of Information We Collect",
+      "intro": "To provide secure and efficient cryptocurrency, PayPal, and Skrill trading services, Saldopedia collects various types of information from users. We only collect data necessary for service operations, legal compliance, and user experience improvement. The following are the complete categories of information we collect:",
+      "sub1": {
+        "title": "2.1 Identity and Contact Information You Provide Directly",
+        "intro": "When you register an account, conduct transactions, or communicate with us, you voluntarily provide the following information:",
+        "contact": "Basic Identity Information:",
+        "contactDesc": "Full name as per official identity document (ID/Passport), used for account verification and matching with bank account for withdrawal purposes. Name cannot be changed after registration for security and fraud prevention reasons.",
+        "email": "Email Address:",
+        "emailDesc": "Active email used for login, account verification, transaction notifications, password reset, and other important communications related to our services.",
+        "phone": "Phone Number/WhatsApp:",
+        "phoneDesc": "Active phone number used for OTP verification, order notifications, transaction confirmations, and communication with customer service.",
+        "payment": "Financial and Payment Information:",
+        "paymentDesc": "Cryptocurrency wallet addresses for various networks (Bitcoin, Ethereum, BNB Chain, Polygon, Solana, TRON, etc.), PayPal account email address, Skrill account email address, and Indonesian bank account information (bank name, account number, account holder name) used for deposits and withdrawals.",
+        "transaction": "Transaction and Order Data:",
+        "transactionDesc": "Complete transaction history including balance deposits, buy and sell orders, transfers between users, withdrawals, transaction amounts in IDR and cryptocurrency, applicable rates, transaction status, timestamps, and notes you add to transactions.",
+        "communication": "Communication Records:",
+        "communicationDesc": "All messages, questions, complaints, and communications you send via WhatsApp, support email, website contact forms, or other official communication channels, including attachments and media sent.",
+        "newsletter": "Marketing Preferences:",
+        "newsletterDesc": "Email address and preferences if you subscribe to our newsletter to receive promo information, rate updates, crypto tips, and the latest information about our services.",
+        "referral": "Referral Program Data:",
+        "referralDesc": "Your referral code, the referral code you used during registration, history of points earned, and history of point redemptions into balance."
+      },
+      "sub2": {
+        "title": "2.2 Information Automatically Collected by Our System",
+        "intro": "When you access and use the Saldopedia platform, our system automatically collects the following technical information for security, analysis, and service improvement:",
+        "device": "Device and Browser Information:",
+        "deviceDesc": "Device type (desktop, mobile, tablet), device brand and model, operating system and version, browser type and version, screen resolution, device language settings, timezone, and other regional settings.",
+        "usage": "Usage and Activity Data:",
+        "usageDesc": "Pages you visit on our website, navigation sequence, access time for each page, visit duration, features used, buttons clicked, forms filled, searches performed, and interaction patterns with the user dashboard.",
+        "ip": "IP Address and Network Data:",
+        "ipDesc": "Your public IP address used for account security, suspicious activity detection, fraud prevention, geographic analysis, and regulatory compliance. IP data also helps us identify and block access from unauthorized or suspicious locations.",
+        "cookie": "Cookies and Tracking Technologies:",
+        "cookieDesc": "Essential cookies for website functions, preference cookies to save your settings (language, display theme), analytics cookies to understand usage patterns, and pixels or similar technologies to measure content effectiveness. Complete details are available in our Cookie Policy.",
+        "session": "Session and Authentication Data:",
+        "sessionDesc": "Cryptographically secure session tokens to keep you logged in, login and logout timestamps, session activity history, and encrypted authentication information.",
+        "security": "Security and Audit Logs:",
+        "logDesc": "Records of successful and failed logins, account setting changes, password changes, transaction activity, and other security events for audit trail and investigation purposes if needed."
+      },
+      "sub3": {
+        "title": "2.3 Information Obtained from Third-Party Sources",
+        "intro": "In some situations, we receive or access information from trusted third-party sources to complement our data and enhance service security:",
+        "provider": "Payment Service Providers: Payment status information, transfer confirmations, and transaction data from cryptocurrency payment gateways such as NOWPayments, as well as verification information from PayPal and Skrill services.",
+        "blockchain": "Public Blockchain Data: Transaction information recorded on public blockchains including wallet addresses, transaction hashes, transfer amounts, block confirmations, and transaction timestamps for order verification and tracking.",
+        "social": "Social Authentication Platforms: If you choose to login using Google OAuth, we receive basic profile information such as name, email address, and profile photo that you allow to be shared.",
+        "kyc": "Identity Verification Services: If additional KYC verification is required, we may receive verification results from third-party identity service providers including name matching, document validity, and risk scores.",
+        "analytics": "Analytics Services: Aggregate and anonymous data from third-party analytics services that help us understand usage trends and improve the platform."
+      },
+      "sub4": {
+        "title": "2.4 Sensitive Information and Special Protections",
+        "content": "Saldopedia does not intentionally collect sensitive information such as biometric data, health information, sexual orientation, political affiliation, or religious beliefs. We also do not collect personal data from children under 18 years of age. If you believe we have inadvertently collected such information, please contact us immediately for data deletion."
+      }
+    },
+    "section3": {
+      "title": "3. Purposes for Using Your Personal Information",
+      "intro": "Saldopedia uses collected information for various legitimate and necessary purposes in providing secure, efficient, and quality digital financial services. Each use of data is based on legitimate interests and proportional to service needs:",
+      "sub1": {
+        "title": "3.1 Financial Transaction Processing and Management",
+        "intro": "As the core of our services, your information is used to facilitate all transaction activities:",
+        "process": "Process balance deposit requests by verifying transfer evidence and crediting balance to your account accurately and promptly according to the amount received",
+        "order": "Process purchase (BUY) orders for cryptocurrency, PayPal, and Skrill by deducting balance, verifying destination addresses, calculating applicable rates and fees, and sending assets to your wallet or account",
+        "sell": "Process sale (SELL) orders by verifying receipt of assets from you, calculating value in IDR, and crediting sale proceeds to your account balance",
+        "withdraw": "Process withdrawal requests by verifying bank account name matches with account name, deducting balance, and transferring funds to your bank account",
+        "transfer": "Facilitate balance transfers between Saldopedia users with recipient account verification and secure processing",
+        "notify": "Send real-time transaction status notifications through dashboard and email, including deposit confirmations, order status updates, cryptocurrency receipt confirmations, and withdrawal confirmations",
+        "support": "Provide responsive customer support to resolve transaction issues, answer questions, assist with account recovery, and handle complaints professionally",
+        "manage": "Manage and display real-time account balance, store complete transaction history accessible through dashboard, and allow you to download transaction reports"
+      },
+      "sub2": {
+        "title": "3.2 Platform Security and Fraud Prevention",
+        "intro": "Security protection is our top priority in managing a digital financial platform:",
+        "detect": "Detect, prevent, and investigate fraud, money laundering, or service abuse through suspicious transaction pattern analysis, real-time monitoring, and anomaly detection systems",
+        "verify": "Verify user identity in accordance with Know Your Customer (KYC) and Anti-Money Laundering (AML) regulations applicable in Indonesia, including name matching verification with identity documents",
+        "access": "Implement strict access controls to ensure only you can access your account and conduct transactions, including two-factor authentication and email verification",
+        "monitor": "Monitor account activity in real-time to detect suspicious logins, unusual transactions, or account breach indicators, and take necessary preventive actions",
+        "protect": "Protect the rights, property, data, and safety of Saldopedia, our users, and the general public from harmful or illegal activities",
+        "block": "Block or restrict access from IP addresses, devices, or accounts identified as sources of harmful activity or Terms of Service violations"
+      },
+      "sub3": {
+        "title": "3.3 Legal and Regulatory Compliance",
+        "intro": "As a digital financial services provider, we have legal obligations that must be fulfilled:",
+        "comply": "Comply with all applicable laws and regulations in Indonesia including the Personal Data Protection Law, digital financial services regulations, tax regulations, and anti-money laundering regulations",
+        "report": "Maintain transaction records and prepare reports required by supervisory authorities, financial regulators, or tax authorities in accordance with applicable provisions",
+        "respond": "Respond to legitimate information requests from law enforcement, courts, or authorized government authorities in accordance with applicable legal procedures",
+        "audit": "Facilitate internal and external audits to ensure compliance with applicable security, privacy, and operational standards"
+      },
+      "sub4": {
+        "title": "3.4 Service Improvement and Development",
+        "intro": "We continuously strive to improve service quality based on data and insights we collect:",
+        "analyze": "Analyze website and dashboard usage patterns to identify areas needing improvement, most-used features, and barriers in user experience",
+        "develop": "Develop new features, add support for new cryptocurrencies, and enhance platform functionality based on user needs and feedback",
+        "optimize": "Optimize website performance, speed up loading times, improve responsiveness, and ensure platform stability under various traffic conditions",
+        "research": "Conduct market research and analysis to understand cryptocurrency trends, user preferences, and service improvement opportunities",
+        "test": "Test new features, design changes, and functionality improvements through A/B testing or limited testing before general release",
+        "measure": "Measure service effectiveness, response times, customer satisfaction levels, and other performance metrics for continuous evaluation"
+      },
+      "sub5": {
+        "title": "3.5 Communication and Customer Service",
+        "intro": "Your contact information is used to communicate about important service-related matters:",
+        "service": "Send important service notifications including policy changes, Terms and Conditions updates, scheduled maintenance, and security announcements requiring your attention",
+        "transaction": "Send confirmations and status updates for every transaction you conduct, including deposits, orders, transfers, and withdrawals",
+        "rate": "Provide information about rate changes, special promotions, limited offers, and opportunities that may interest you (if you subscribe to newsletter)",
+        "survey": "Send customer satisfaction surveys, feedback requests, and invitations to participate in product development",
+        "respond": "Respond to questions, complaints, suggestions, and assistance requests you send through our official communication channels quickly and professionally",
+        "education": "Provide educational content about cryptocurrency, security tips, and information to help you use our services better"
+      }
+    },
+    "section4": {
+      "title": "4. Legal Basis for Personal Data Processing",
+      "intro": "Saldopedia processes your personal data based on one or more legitimate legal grounds as provided in applicable data protection regulations. The following is a complete explanation of the legal bases we use for each type of data processing:",
+      "sub1": {
+        "title": "4.1 Your Explicit Consent",
+        "content": "When you register an account with Saldopedia and agree to these Terms and Conditions and Privacy Policy, you provide explicit consent for the collection and processing of your personal data. This consent covers the use of data for purposes described in this policy. For marketing activities such as newsletters and promotions, we request separate consent that you can withdraw at any time. Your consent is voluntary, and withdrawal of consent does not affect the lawfulness of processing conducted prior to withdrawal."
+      },
+      "sub2": {
+        "title": "4.2 Contract Performance and Service Provision",
+        "content": "Processing of your personal data is necessary to fulfill the service contract between you and Saldopedia. This includes processing deposits, buy and sell orders for cryptocurrency, PayPal, and Skrill, fund withdrawals, and all activities related to operating your account. Without this data processing, we cannot provide the services you request. This legal basis also covers pre-contractual steps such as account registration and initial identity verification."
+      },
+      "sub3": {
+        "title": "4.3 Compliance with Legal Obligations",
+        "content": "As a digital financial services provider in Indonesia, Saldopedia is subject to various legal obligations that require processing of certain personal data. This includes obligations under the Personal Data Protection Law, anti-money laundering (AML) regulations, Know Your Customer (KYC) requirements, tax authority reporting obligations, and obligations to respond to legitimate requests from law enforcement. Processing based on this legal ground does not require your consent as it is mandated by law."
+      },
+      "sub4": {
+        "title": "4.4 Legitimate Interest",
+        "content": "In certain situations, we process your personal data based on our legitimate interests or those of third parties, considering that your fundamental interests or rights do not override those interests. Examples of legitimate interests include: fraud prevention and service abuse, platform security enhancement, service development and improvement, usage analysis for optimization, and protection of our legal rights. We always conduct a balancing test to ensure this processing does not harm your rights."
+      },
+      "sub5": {
+        "title": "4.5 Vital Interests Protection",
+        "content": "In rare emergency circumstances, we may process personal data to protect your vital interests or those of others, for example, to prevent significant financial loss due to account breach or fraudulent activity threatening your financial safety."
+      }
+    },
+    "section5": {
+      "title": "5. Sharing, Disclosure, and Transfer of Personal Information",
+      "intro": "Saldopedia greatly respects your privacy and is committed to not selling, renting, or trading your personal information to third parties for their own marketing purposes. However, in certain situations necessary to provide services or fulfill legal obligations, we may share or disclose your information to the following parties with adequate protection:",
+      "sub1": {
+        "title": "5.1 Trusted Service Providers and Business Partners",
+        "intro": "We work with selected and trusted third-party service providers to support our platform operations. Each service provider is bound by strict confidentiality and data processing agreements, and can only access data necessary for their tasks:",
+        "payment": "Cryptocurrency Payment Service Providers: We partner with NOWPayments and other cryptocurrency payment gateways to process your cryptocurrency transactions. Shared data includes wallet addresses, transaction amounts, and information necessary to verify and complete transactions.",
+        "cloud": "Infrastructure and Hosting Services: We use secure and reliable cloud hosting services to store data and run our platform. These hosting providers have internationally recognized security certifications and comply with strict data protection standards.",
+        "email": "Email Communication Services: We use Brevo (formerly Sendinblue) to send transactional emails such as account verification, transaction confirmations, and other important notifications. This provider only receives your email address and name for email delivery purposes.",
+        "customer": "Customer Communication Platform: We use WhatsApp Business to provide responsive customer service. Communication via WhatsApp includes transaction assistance, order confirmations, and technical support.",
+        "analytics": "Analytics Services: We may use analytics services to understand website usage patterns and improve user experience. Analytics data is generally aggregate and anonymous.",
+        "footer": "All third-party service providers sign Data Processing Agreements (DPA) governing their obligations to protect your data, limit use only to specified purposes, and ensure adequate security standards."
+      },
+      "sub2": {
+        "title": "5.2 Disclosure for Legal Compliance and Protection",
+        "intro": "We may disclose your personal information if required or permitted by law, or if we believe in good faith that such disclosure is necessary to:",
+        "court": "Respond to court orders, subpoenas, official information requests from government authorities, or other valid and binding legal processes",
+        "law": "Cooperate with law enforcement authorities, Police, Prosecutors, or official investigation agencies in criminal investigations or suspected illegal activities",
+        "aml": "Comply with obligations under Anti-Money Laundering (AML) regulations, Counter-Terrorism Financing (CTF), and other financial regulations applicable in Indonesia",
+        "tax": "Fulfill reporting obligations to tax authorities or financial regulators in accordance with applicable regulations",
+        "protect": "Protect the rights, safety, property, and legitimate interests of Saldopedia, our users, or the general public from threats, fraud, or other harmful activities",
+        "emergency": "Respond to emergencies threatening someone's safety or financial welfare"
+      },
+      "sub3": {
+        "title": "5.3 Business Transactions and Corporate Restructuring",
+        "content": "If Saldopedia is involved in a merger, acquisition, consolidation, asset sale, reorganization, bankruptcy, or similar business transaction, user personal information may be transferred or disclosed as part of that transaction. In such situations, we will take reasonable steps to ensure the receiving party complies with privacy standards equal to or higher than those described in this Privacy Policy. We will notify you via email or website notice before your information becomes subject to a materially different privacy policy, giving you the opportunity to object or close your account if desired."
+      },
+      "sub4": {
+        "title": "5.4 Public Data on Blockchain Networks",
+        "content": "It is important for you to understand that cryptocurrency transactions are permanently recorded on public blockchains that are open and transparent. This means cryptocurrency wallet addresses, transaction hashes, transfer amounts, and transaction timestamps can be viewed by anyone with access to blockchain explorers. Saldopedia has no control over the visibility of this blockchain data and is not responsible for disclosure of information that is an inherent characteristic of blockchain technology. We advise you to understand the privacy implications of cryptocurrency use before conducting transactions."
+      },
+      "sub5": {
+        "title": "5.5 Disclosure with Your Consent",
+        "content": "In addition to the situations described above, we may share your personal information with third parties if you have given explicit consent for such disclosure. We will always inform you of the purpose and recipient of data before requesting your consent, and you have the right to refuse or withdraw consent at any time."
+      }
+    },
+    "section6": {
+      "title": "6. Comprehensive Data Security Measures",
+      "intro": "As a platform handling digital financial transactions, Saldopedia implements comprehensive layered security measures to protect your personal data and transactions. We continuously evaluate, update, and improve our security infrastructure to address evolving cyber threats.",
+      "sub1": {
+        "title": "6.1 Infrastructure and Network Security",
+        "intro": "Our technical infrastructure is equipped with enterprise-level security protections:",
+        "encryption": "Data Encryption in Transit:",
+        "encryptionDesc": "All data transmitted between your browser and our servers is protected with SSL/TLS 256-bit encryption, the highest encryption standard used by global financial institutions. This ensures your data cannot be read by unauthorized parties during transmission.",
+        "storage": "Data Encryption at Rest:",
+        "storageDesc": "Sensitive data such as passwords are encrypted using the bcrypt algorithm with unique salt before being stored in the database. Financial data and other sensitive information are also encrypted using industry standards.",
+        "firewall": "Firewall and Intrusion Detection Systems:",
+        "firewallDesc": "Our infrastructure is protected with advanced firewalls that filter malicious traffic and Intrusion Detection Systems (IDS) that monitor suspicious activity in real-time.",
+        "ddos": "DDoS Protection:",
+        "ddosDesc": "Our platform is protected from Distributed Denial of Service (DDoS) attacks that could disrupt service availability.",
+        "backup": "Backup and Disaster Recovery:",
+        "backupDesc": "Your data is backed up regularly to secure and geographically separate locations. We have a disaster recovery plan to ensure service continuity in emergency situations."
+      },
+      "sub2": {
+        "title": "6.2 Access and Authentication Security",
+        "intro": "We implement strict access controls to protect your account and data:",
+        "access": "Role-Based Access Control:",
+        "accessDesc": "Access to user personal data is strictly limited only to authorized personnel who require such access to perform their duties. Every access is logged for audit purposes.",
+        "session": "Secure Session Management:",
+        "sessionDesc": "Session tokens are cryptographically generated and have limited validity periods. Sessions will automatically expire after periods of inactivity to prevent unauthorized access.",
+        "password": "Strong Password Policy:",
+        "passwordDesc": "Passwords must meet minimum complexity requirements and are hashed using bcrypt before storage. We never store passwords in plain text.",
+        "verification": "Multi-Factor Verification:",
+        "verificationDesc": "Email verification is required for account registration, and OTP verification via WhatsApp is available for sensitive operations such as point redemption."
+      },
+      "sub3": {
+        "title": "6.3 Monitoring and Threat Detection",
+        "intro": "Our security systems actively monitor and detect potential threats:",
+        "monitoring": "24/7 Real-Time Monitoring:",
+        "monitoringDesc": "Our security systems are monitored in real-time around the clock to detect suspicious activity, breach attempts, or anomalies requiring investigation.",
+        "logging": "Logging and Audit Trail:",
+        "loggingDesc": "All important activities are recorded in immutable logs for audit, incident investigation, and regulatory compliance purposes.",
+        "alert": "Automatic Alert System:",
+        "alertDesc": "Our system automatically alerts the security team when suspicious activity is detected or normal thresholds are exceeded."
+      },
+      "sub4": {
+        "title": "6.4 Incident and Data Breach Handling",
+        "p1": "Although we implement the best available security measures, we understand that no system is 100% immune to cyber attacks. If a data breach affecting your personal information occurs, we will take the following steps in accordance with our legal obligations and transparency commitment:",
+        "p2": "We will immediately investigate the incident to determine its scope and impact, take action to stop the breach and prevent further damage, notify you directly via email within a reasonable time after the breach is identified, report the incident to the competent data protection authority in accordance with applicable law, and provide information about steps you can take to protect yourself.",
+        "p3": "We also advise you to maintain the security of your account credentials by not sharing your password with anyone, using a strong and unique password, contacting us immediately if you suspect unauthorized access to your account, and regularly checking your account activity and transaction history."
+      }
+    },
+    "section7": {
+      "title": "7. Data Retention and Storage Policy",
+      "intro": "Saldopedia retains your personal data only as long as necessary to fulfill collection purposes, provide the services you request, and comply with applicable legal obligations. We implement a clear data retention policy to ensure data is not stored longer than necessary.",
+      "sub1": {
+        "title": "7.1 General Data Storage Principles",
+        "content": "Your personal data is stored as long as necessary to provide services, fulfill contractual obligations, and comply with legal and regulatory requirements. Retention periods are determined based on data type, processing purpose, legitimate business needs, and applicable legal obligations. We periodically review the data we store and delete data that is no longer needed in accordance with our retention policy."
+      },
+      "sub2": {
+        "title": "7.2 Retention Periods by Data Type",
+        "intro": "The following are the retention periods applicable to various types of data we collect:",
+        "transaction": "Financial Transaction Data:",
+        "transactionDesc": "Complete transaction history including deposits, orders, transfers, and withdrawals is retained for a minimum of 10 (ten) years in accordance with Indonesian tax regulations and anti-money laundering regulations. This data includes amounts, dates, parties involved, and transaction evidence.",
+        "account": "Account and Identity Data:",
+        "accountDesc": "Basic account information such as name, email, phone number, and bank account information is retained while your account is active and up to 5 (five) years after account closure for audit, dispute resolution, and regulatory compliance purposes.",
+        "communication": "Communication Records:",
+        "communicationDesc": "Customer service communication history via WhatsApp, email, and other channels is retained for 3 (three) years for problem resolution, service quality audit, and documentation purposes.",
+        "security": "Security and Access Logs:",
+        "securityDesc": "Access log data, logins, account activity, and security events are retained for 2 (two) years for security, incident investigation, and audit purposes.",
+        "marketing": "Marketing Preference Data:",
+        "marketingDesc": "Newsletter preferences and marketing information are retained while you subscribe and deleted within 30 days after you unsubscribe or request deletion.",
+        "legal": "Data for Legal Compliance:",
+        "legalDesc": "Certain data may be retained longer than standard periods if required by law, regulations, or for ongoing or anticipated litigation purposes."
+      },
+      "sub3": {
+        "title": "7.3 Data Deletion and Anonymization Procedures",
+        "content": "After retention periods expire or when data is no longer needed for legitimate purposes, your data will be securely deleted using irreversible deletion methods, or anonymized in such a way that it can no longer be linked to your identity. Anonymized data is no longer considered personal data and may be used for statistical analysis, research, and service improvement without time limits. Deletion is conducted systematically and documented to ensure compliance."
+      },
+      "sub4": {
+        "title": "7.4 Retention Period Exceptions",
+        "content": "In certain situations, we may retain data longer than standard periods if necessary to fulfill legal obligations, respond to requests from government authorities, enforce our Terms and Conditions, resolve disputes, protect our legal rights, or if you provide consent for longer storage."
+      }
+    },
+    "section8": {
+      "title": "8. Your Rights as a Data Subject",
+      "intro": "In accordance with Indonesia's Personal Data Protection Law and international data protection principles, you have a number of rights regarding your personal data that we process. Saldopedia is committed to respecting and facilitating the exercise of these rights. The following is a complete explanation of your rights:",
+      "sub1": {
+        "title": "8.1 Right to Access Information",
+        "content": "You have the right to know whether we process your personal data and to request access to a copy of that data. Upon your request, we will provide information about: the types of personal data we hold about you, the purposes for processing that data, the parties to whom data may have been disclosed, applicable retention periods, and the source of data if not collected directly from you. We will provide this information in a clear and readable format within 30 (thirty) business days from when the request is received."
+      },
+      "sub2": {
+        "title": "8.2 Right to Correct and Update Data",
+        "content": "You have the right to request correction of inaccurate, incomplete, or outdated personal data. You can update some account information directly through the settings page in your user dashboard, including email address, phone number, and bank account information. For changes that cannot be made independently such as name corrections, please contact our support team with valid identity evidence. We are committed to processing correction requests within a reasonable time."
+      },
+      "sub3": {
+        "title": "8.3 Right to Delete Data (Right to be Forgotten)",
+        "content": "You have the right to request deletion of your personal data in certain situations, including: when data is no longer needed for the original collection purpose, when you withdraw consent and there is no other legal basis for processing, or when data has been unlawfully processed. However, this right to deletion is not absolute and may be refused if processing is necessary to fulfill legal obligations (such as tax or anti-money laundering regulations), to enforce or defend legal claims, for archival or research purposes, or to resolve ongoing transactions or disputes."
+      },
+      "sub4": {
+        "title": "8.4 Right to Restrict Processing",
+        "content": "You have the right to request restriction of processing of your personal data in the following situations: when you question data accuracy and we are verifying it, when processing is unlawful but you prefer restriction over deletion, when we no longer need the data but you need it for legal claims, or when you have objected and we are considering it. During the restriction period, we will continue to store the data but will not process it for other purposes without your consent."
+      },
+      "sub5": {
+        "title": "8.5 Right to Data Portability",
+        "content": "You have the right to receive personal data you have provided to us in a structured, commonly used, and machine-readable format (such as CSV or JSON). You also have the right to request that we transmit that data directly to another service provider where technically feasible. This right applies to data processed based on consent or contract performance and that is processed automatically. To exercise this right, please contact our support team."
+      },
+      "sub6": {
+        "title": "8.6 Right to Object to Processing",
+        "content": "You have the right to object to processing of your personal data in certain situations, including: processing for direct marketing purposes (including profiling for marketing), and processing based on our legitimate interests. If you object to processing for direct marketing, we will immediately cease such processing. For objections based on legitimate interests, we will assess whether our legitimate interests outweigh your rights."
+      },
+      "sub7": {
+        "title": "8.7 Right to Withdraw Consent",
+        "content": "If processing of your personal data is based on consent, you have the right to withdraw that consent at any time. Withdrawal of consent does not affect the lawfulness of processing conducted prior to withdrawal based on that consent. To withdraw newsletter consent, you can use the unsubscribe link in each email. For other consent withdrawals, please contact our support team."
+      },
+      "sub8": {
+        "title": "8.8 Right to Lodge a Complaint",
+        "content": "If you believe that processing of your personal data violates your rights or applicable data protection regulations, you have the right to lodge a complaint with the competent data protection authority in Indonesia. However, we strongly encourage you to contact us first so we have the opportunity to address your concerns directly."
+      },
+      "sub9": {
+        "title": "8.9 How to Exercise Your Rights",
+        "intro": "To exercise any of the above rights, you can contact us through the following official channels:",
+        "process": "After receiving your request, we will verify your identity to ensure data security. Verification may require additional information such as confirmation of your registered email address or answers to security questions. We will respond to your request within 30 (thirty) business days from successful identity verification. If your request is complex or we receive many requests, this period may be extended with notice to you.",
+        "footer": "We do not charge fees for exercising these rights, unless requests are repetitive, excessive, or unfounded, in which case we may charge a reasonable administrative fee or refuse the request."
+      }
+    },
+    "section9": {
+      "title": "9. Cookies and Tracking Technologies",
+      "intro": "We use cookies and similar technologies to enhance your experience. For complete information, please read our",
+      "linkText": "Cookie Policy",
+      "kami": ".",
+      "sub1": {
+        "title": "9.1 Types of Cookies Used",
+        "necessary": "Essential Cookies:",
+        "necessaryDesc": "Required for basic website functions such as security and navigation.",
+        "preference": "Preference Cookies:",
+        "preferenceDesc": "Store your choices such as language and display theme.",
+        "analytics": "Analytics Cookies:",
+        "analyticsDesc": "Help us understand how visitors interact with the website.",
+        "marketing": "Marketing Cookies:",
+        "marketingDesc": "Used to display relevant ads based on your interests."
+      },
+      "sub2": {
+        "title": "9.2 Managing Cookies",
+        "content": "You can manage cookie preferences through the cookie banner on the website or your browser settings. Disabling certain cookies may affect website functionality."
+      }
+    },
+    "section10": {
+      "title": "10. Children's Privacy",
+      "content": "Saldopedia services are not intended for children under 18 years of age. We do not knowingly collect personal data from children. If you become aware that a child has provided personal data to us, please contact us for data deletion."
+    },
+    "section11": {
+      "title": "11. International Data Transfers",
+      "p1": "Your data may be transferred to and stored on servers located outside Indonesia for processing and storage purposes.",
+      "p2": "We ensure that international data transfers are conducted in accordance with adequate data protection standards through contractual agreements with service providers.",
+      "p3": "By using our services, you consent to data transfers outside Indonesian territory for the purposes described in this policy."
+    },
+    "section12": {
+      "title": "12. Third-Party Website Links",
+      "p1": "Our website may contain links to third-party sites. We are not responsible for the privacy practices of those sites.",
+      "p2": "We recommend that you read the privacy policy of each site you visit. This privacy policy only applies to information collected by Saldopedia."
+    },
+    "section13": {
+      "title": "13. Privacy Policy Changes",
+      "p1": "We may update this Privacy Policy from time to time to reflect changes in our practices or legal obligations.",
+      "p2": "Significant changes will be announced through website notifications or email. The \"Last updated\" date at the top indicates when this policy was last revised.",
+      "p3": "Continued use of our services after changes means you accept the updated policy. If you do not agree with the changes, please discontinue use of our services."
+    },
+    "section14": {
+      "title": "14. Contact Us",
+      "intro": "If you have questions, comments, or requests regarding this Privacy Policy, please contact us through:",
+      "hours": "Operating Hours:",
+      "hoursValue": "09:00 - 21:00 WIB (Customer Service)"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Saldopedia team ready to help with crypto, PayPal, and Skrill transactions"
+    },
+    "contacts": {
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "Chat directly with support team",
+        "value": "+62 811 9666 620"
+      },
+      "email": {
+        "title": "Email",
+        "description": "Send questions via email",
+        "value": "support@saldopedia.com"
+      }
+    },
+    "hours": {
+      "title": "Operating Hours",
+      "automated": "Transactions: 24/7",
+      "support": "Customer Service: 09:00 - 21:00 WIB"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "button": "Create Order Now"
+    }
+  },
+  "auth": {
+    "backToHome": "Back to Home",
+    "home": "Home",
+    "copyrightText": "Saldopedia. All rights reserved.",
+    "captcha": {
+      "error": "Please complete the reCAPTCHA verification",
+      "errorVerify": "Failed to verify reCAPTCHA. Please try again",
+      "expired": "reCAPTCHA expired. Please verify again"
+    },
+    "recaptcha": {
+      "protectedBy": "This page is protected by Google reCAPTCHA. Subject to",
+      "privacyPolicy": "Privacy Policy",
+      "and": "and",
+      "termsOfService": "Terms of Service",
+      "apply": "of Saldopedia."
+    },
+    "login": {
+      "title": "Login to Account",
+      "subtitle": "Login to continue crypto, PayPal, and Skrill transactions",
+      "emailLabel": "Email",
+      "emailPlaceholder": "name@email.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Min. 8 characters",
+      "forgotPassword": "Forgot password?",
+      "loginButton": "Login",
+      "loading": "Processing...",
+      "noAccount": "Don't have an account?",
+      "registerNow": "Sign up now",
+      "orDivider": "or",
+      "googleButton": "Login with Google",
+      "facebookButton": "Login with Facebook",
+      "sessionTimeout": "Your session has expired. Please login again",
+      "resendVerification": "Resend Verification",
+      "resending": "Sending...",
+      "errorLogin": "Login failed. Please check your email and password",
+      "errorNotVerified": "not verified",
+      "errorGeneral": "An error occurred. Please try again"
+    },
+    "register": {
+      "title": "Create New Account",
+      "subtitle": "Sign up to start crypto, PayPal, and Skrill transactions",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "John Doe",
+      "nameNote": "Make sure the name matches your bank/e-wallet account. Name cannot be changed after registration for withdrawal security.",
+      "email": "Email",
+      "emailPlaceholder": "name@email.com",
+      "phone": "WhatsApp Number",
+      "phonePlaceholder": "08123456789",
+      "password": "Password",
+      "passwordPlaceholder": "Min. 8 characters",
+      "confirmPassword": "Confirm Password",
+      "confirmPasswordPlaceholder": "Re-enter password",
+      "registerButton": "Sign Up",
+      "registering": "Processing...",
+      "haveAccount": "Already have an account?",
+      "loginLink": "Login",
+      "orDivider": "or",
+      "googleButton": "Sign up with Google",
+      "facebookButton": "Sign up with Facebook",
+      "backToLogin": "Back to login page",
+      "successTitle": "Registration Successful!",
+      "successMessage": "We've sent a verification link to",
+      "successDescription": "Please check your inbox or spam folder to activate your account.",
+      "errorRegister": "Registration failed. Please try again",
+      "errorGeneral": "An error occurred. Please try again",
+      "passwordStrength": {
+        "weak": "Weak",
+        "fair": "Fair",
+        "good": "Good",
+        "strong": "Strong"
+      },
+      "passwordChecks": {
+        "length": "Min. 8 characters",
+        "lowercase": "Lowercase letter",
+        "uppercase": "Uppercase letter",
+        "number": "Number",
+        "special": "Symbol (!@#$%)"
+      },
+      "referralCode": "Referral Code (Optional)",
+      "referralCodePlaceholder": "e.g. JOHN123",
+      "referralCodeNote": "Got a referral code from a friend? Enter it here for bonus points."
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "subtitle": "Enter your email to receive password reset link",
+      "emailLabel": "Email",
+      "emailPlaceholder": "name@email.com",
+      "sendButton": "Send Reset Link",
+      "sending": "Sending...",
+      "backToLogin": "Back to login page",
+      "successTitle": "Email Sent!",
+      "successMessage": "We've sent a password reset link to",
+      "successDescription": "Please check your inbox or spam folder.",
+      "errorSend": "Failed to send email. Please try again",
+      "errorGeneral": "An error occurred. Please try again"
+    },
+    "resetPassword": {
+      "title": "Reset Password",
+      "subtitle": "Enter your new password",
+      "newPassword": "New Password",
+      "passwordHint": "Minimum 8 characters",
+      "confirmPassword": "Confirm New Password",
+      "resetButton": "Reset Password",
+      "resetting": "Processing...",
+      "backToLogin": "Back to login page",
+      "successTitle": "Password Reset Successfully!",
+      "successMessage": "Your password has been changed. Please login with your new password.",
+      "errorInvalidToken": "Invalid or expired reset link",
+      "errorReset": "Failed to reset password. Please try again",
+      "errorGeneral": "An error occurred. Please try again"
+    },
+    "verifyEmail": {
+      "title": "Email Verification",
+      "subtitle": "Verifying your email...",
+      "successTitle": "Email Verified!",
+      "goToDashboard": "Go to Dashboard",
+      "redirecting": "Redirecting to dashboard...",
+      "errorTitle": "Verification Failed",
+      "errorNoToken": "Verification token not found",
+      "errorGeneral": "An error occurred during verification"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome,",
+    "balance": "Balance",
+    "points": "Points",
+    "pointsUnit": "pts",
+    "greetingMorning": "Good Morning, {name}",
+    "greetingAfternoon": "Good Afternoon, {name}",
+    "greetingEvening": "Good Evening, {name}",
+    "greetingNight": "Good Night, {name}",
+    "actions": {
+      "createOrder": "Create Order",
+      "topUp": "Deposit",
+      "withdraw": "Withdraw",
+      "withdrawShort": "Withdraw",
+      "transfer": "Transfer",
+      "depositShort": "Deposit"
+    },
+    "quickActions": {
+      "title": "Quick Menu",
+      "createOrder": "Create Order",
+      "topUp": "Deposit",
+      "allOrders": "All Orders"
+    },
+    "recentActivity": {
+      "title": "Recent Activity",
+      "subtitle": "Your order transactions",
+      "viewAll": "View All",
+      "noTransactions": "No transactions yet",
+      "noTransactionsDesc": "Start by creating your first order",
+      "createFirst": "Create New Order"
+    },
+    "quickLinks": {
+      "profile": "Profile",
+      "profileDesc": "Manage account info",
+      "settings": "Settings",
+      "settingsDesc": "Security & password",
+      "help": "Help",
+      "helpDesc": "Contact support"
+    },
+    "orderStatus": {
+      "completed": "Completed",
+      "pending": "Pending",
+      "pendingProof": "Awaiting Proof",
+      "processing": "Processing",
+      "verifying": "Verifying",
+      "expired": "Expired",
+      "cancelled": "Cancelled"
+    },
+    "orderType": {
+      "buy": "Buy",
+      "sell": "Sell"
+    },
+    "serviceLabels": {
+      "cryptocurrency": "Cryptocurrency",
+      "paypal": "PayPal",
+      "skrill": "Skrill"
+    },
+    "depositStatus": {
+      "completed": "Completed",
+      "pending": "Pending",
+      "pendingProof": "Awaiting Proof",
+      "expired": "Expired",
+      "rejected": "Rejected"
+    },
+    "withdrawalStatus": {
+      "completed": "Completed",
+      "pending": "Pending",
+      "rejected": "Rejected"
+    },
+    "activityLabels": {
+      "depositBalance": "Deposit Balance",
+      "withdrawBalance": "Withdraw Balance",
+      "sendBalance": "Send Balance",
+      "receiveBalance": "Receive Balance",
+      "to": "To",
+      "from": "From",
+      "transactions": "transactions",
+      "success": "Success"
+    },
+    "referral": {
+      "title": "Referral Program",
+      "subtitle": "Invite friends and earn bonus points",
+      "yourCode": "Your Referral Code",
+      "copyCode": "Copy Code",
+      "copyLink": "Copy Link",
+      "copied": "Copied!",
+      "shareWhatsApp": "Share via WhatsApp",
+      "whatsappShareMessage": "Hey! Sign up on Saldopedia using my referral code \"{code}\" and get 27,000 bonus points! {link}",
+      "bonusInfo": "Referral Bonus",
+      "yourBonus": "Your Bonus",
+      "friendBonus": "Friend Bonus",
+      "points": "Points",
+      "perReferral": "per friend who signs up",
+      "whenSignUp": "when signing up via referral",
+      "totalReferrals": "Total Referrals",
+      "totalEarned": "Total Points Earned",
+      "referralHistory": "Referral History",
+      "noReferrals": "No referrals yet",
+      "shareToStart": "Share your code to start earning points"
+    },
+    "points": {
+      "title": "My Points",
+      "subtitle": "Manage and redeem your points",
+      "pointsUnit": "points",
+      "currentBalance": "Points Balance",
+      "exchangeRate": "Exchange Rate",
+      "exchangeRateValue": "10,000 Points = IDR 5,000",
+      "redeemTitle": "Redeem Points",
+      "redeemDescription": "Minimum redemption 100,000 points",
+      "redeemButton": "Redeem to Balance",
+      "redeeming": "Processing...",
+      "redeemSuccess": "Success! Your balance has been credited",
+      "insufficientPoints": "Insufficient points. Minimum 100,000 points.",
+      "pointsHistory": "Points History",
+      "noHistory": "No points history yet",
+      "typeReferralBonus": "Referral Bonus",
+      "typeReferredBonus": "Signup Bonus",
+      "typeRedeem": "Points Redemption",
+      "redeemDesc": "Redeem {points} points to IDR {idr}",
+      "typeExpired": "Points Expired",
+      "typeAdjustment": "Adjustment",
+      "backToPoints": "Back to Points",
+      "viewAllPoints": "View All Points",
+      "pointsAmount": "Points Amount",
+      "transactionId": "Transaction ID",
+      "transactionTime": "Transaction Time",
+      "transactionType": "Transaction Type",
+      "convertedTo": "Converted to",
+      "referredFriend": "Referred Friend",
+      "invitedBy": "Invited By",
+      "notes": "Notes",
+      "descReferralBonus": "Bonus earned for inviting a friend to register using your referral code.",
+      "descReferredBonus": "Welcome bonus received when registering using a referral code.",
+      "descRedeem": "Converting points to balance that can be used for transactions.",
+      "descExpired": "Points that expired due to inactivity within a certain period.",
+      "descAdjustment": "Points adjustment by the system or admin.",
+      "redeemFailed": "Failed to redeem points",
+      "genericError": "An error occurred. Please try again."
+    }
+  },
+  "dashboardPages": {
+    "orders": {
+      "backToDashboard": "Back to Dashboard",
+      "title": "My Orders",
+      "subtitle": "Manage all your order transactions",
+      "createOrder": "Create New Order",
+      "filterAll": "All Transactions",
+      "filterCompleted": "Completed",
+      "filterPending": "Pending",
+      "filterPendingProof": "Pending Proof",
+      "filterExpired": "Expired",
+      "filterDeposit": "Deposit",
+      "filterWithdrawal": "Withdraw",
+      "filterTransfer": "Transfer",
+      "filterPoints": "Points",
+      "noOrders": "No orders yet",
+      "noOrdersDesc": "Start by creating a new order",
+      "noOrdersDesc2": "Your orders will appear here",
+      "noTransactions": "No transactions yet",
+      "noDeposit": "No deposits yet",
+      "noPendingProof": "No transactions awaiting proof",
+      "noWithdrawal": "No withdrawals yet",
+      "noTransfer": "No transfers yet",
+      "noPoints": "No points history yet",
+      "topUpBalance": "Top Up Balance",
+      "transferBalance": "Transfer Balance",
+      "loadMore": "Load More",
+      "remaining": "more",
+      "prev": "Previous",
+      "next": "Next",
+      "page": "Page",
+      "of": "of",
+      "filter": "Filter"
+    },
+    "profile": {
+      "backToDashboard": "Back to Dashboard",
+      "title": "Profile",
+      "subtitle": "Your account information"
+    },
+    "settings": {
+      "backToDashboard": "Back to Dashboard",
+      "title": "Settings",
+      "subtitle": "Manage profile and account security",
+      "profileSection": "Profile",
+      "photoProfile": "Profile Photo",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "phonePlaceholder": "08xxxxxxxxxx",
+      "otpPlaceholder": "000000",
+      "saveChanges": "Save Changes",
+      "saving": "Saving...",
+      "passwordSection": "Change Password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "changePassword": "Change Password",
+      "changing": "Changing...",
+      "successUpdate": "Profile updated successfully",
+      "photoMaxSize": "Maximum file size 2MB",
+      "nameLockedNote": "Name cannot be changed for withdrawal security. Name must match your bank/e-wallet account.",
+      "nameGoogleOneTimeNote": "You can change your name once. After changing, name cannot be changed again for withdrawal security.",
+      "savedAddresses": "Saved Addresses",
+      "manageAddresses": "Manage Addresses",
+      "manageAddressesDesc": "Saved crypto wallets and transfer recipients",
+      "addresses": {
+        "backToSettings": "Back to Settings",
+        "title": "Saved Addresses",
+        "tabWallets": "Crypto Wallets",
+        "tabRecipients": "Transfer Recipients",
+        "noWallets": "No saved wallets yet",
+        "noWalletsDesc": "Wallets will be saved automatically when you make crypto purchases",
+        "noRecipients": "No saved recipients yet",
+        "noRecipientsDesc": "Recipients will be saved automatically when you make transfers",
+        "label": "Label",
+        "crypto": "Crypto",
+        "network": "Network",
+        "walletAddress": "Wallet Address",
+        "destinationTag": "Destination Tag",
+        "optional": "Optional",
+        "used": "Used",
+        "times": "times",
+        "edit": "Edit",
+        "delete": "Delete",
+        "cancel": "Cancel",
+        "save": "Save",
+        "deleteWalletConfirm": "Delete this wallet?",
+        "deleteRecipientConfirm": "Delete this recipient?",
+        "deleteEmailConfirm": "Delete this email?",
+        "walletUpdated": "Wallet updated successfully",
+        "walletDeleted": "Wallet deleted successfully",
+        "recipientUpdated": "Recipient updated successfully",
+        "recipientDeleted": "Recipient deleted successfully",
+        "emailUpdated": "Email updated successfully",
+        "emailDeleted": "Email deleted successfully",
+        "updateFailed": "Failed to update",
+        "deleteFailed": "Failed to delete",
+        "errorOccurred": "An error occurred",
+        "walletsCount": "wallets saved",
+        "recipientsCount": "recipients saved",
+        "emailsCount": "emails saved",
+        "labelPlaceholder": "E.g.: Office friend",
+        "tabEmails": "PayPal/Skrill",
+        "noEmails": "No saved emails yet",
+        "noEmailsDesc": "Emails will be saved automatically when you make PayPal/Skrill transactions",
+        "serviceType": "Service"
+      }
+    },
+    "deposit": {
+      "backToDashboard": "Back to Dashboard",
+      "title": "Deposit Balance",
+      "subtitle": "Top up your account balance",
+      "howToTitle": "How to Deposit",
+      "step1": "1. Contact admin via WhatsApp",
+      "step2": "2. Transfer the amount",
+      "step3": "3. Send transfer proof to admin",
+      "step4": "4. Balance added after confirmation",
+      "contactAdmin": "Contact Admin WhatsApp",
+      "paymentMethods": "Payment Methods",
+      "selectMethod": "Select Method",
+      "transferAndUpload": "Transfer & Upload",
+      "paymentMethod": "Payment Method",
+      "bankTransfer": "Bank Transfer",
+      "nominalDeposit": "Deposit Amount",
+      "amountPlaceholder": "0",
+      "requestCreated": "Deposit Request Created",
+      "transferToAccount": "Transfer to This Account",
+      "transferExactAmount": "Transfer Exact Amount",
+      "uploadProof": "Upload Transfer Proof",
+      "submitProof": "Submit Transfer Proof",
+      "estimateTotal": "Estimated Total",
+      "uniqueCodeNote": "Unique code will be determined after submit to facilitate payment verification.",
+      "processing": "Processing...",
+      "continue": "Continue",
+      "bank": "Bank",
+      "eWallet": "E-Wallet",
+      "accountNumber": "Account Number",
+      "accountName": "Account Name",
+      "fileFormatError": "File format not supported. Use JPG, PNG, WebP, or PDF.",
+      "fileSizeError": "Maximum file size is 10MB.",
+      "selectBankError": "Select destination bank/e-wallet",
+      "minDepositError": "Minimum deposit {amount}",
+      "maxDepositError": "Maximum deposit {amount}",
+      "createDepositError": "Failed to create deposit",
+      "estimateFee": "Estimated Fees",
+      "adminFee": "Admin Fee",
+      "uniqueCode": "Unique Code (3 digits)",
+      "timeRemaining": "Time Remaining",
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds",
+      "depositExpired": "Deposit Expired",
+      "depositExpiredDesc": "Deposit time has expired. Please create a new deposit.",
+      "createNewDeposit": "Create New Deposit",
+      "completeTransferSoon": "Complete your transfer immediately",
+      "genericError": "An error occurred",
+      "uploadProofRequired": "Upload transfer proof",
+      "depositNotFound": "Deposit data not found",
+      "uploadProofFailed": "Failed to upload proof",
+      "enterCustomAmount": "Or enter custom amount"
+    },
+    "depositDetail": {
+      "backToHistory": "Back to History",
+      "pendingConfirmation": "Pending Confirmation",
+      "pendingProof": "Pending Proof",
+      "rejected": "Rejected",
+      "rejectedDesc": "Your deposit has been rejected by admin. Please contact us if you have any questions or create a new deposit.",
+      "completed": "Completed",
+      "expired": "Expired",
+      "depositAmount": "Deposit Amount",
+      "transferDetails": "Transfer Details",
+      "totalTransfer": "Total Transfer",
+      "nominalDeposit": "Deposit Amount",
+      "uploadProof": "Upload Transfer Proof",
+      "submitProof": "Submit Transfer Proof",
+      "waitingConfirmation": "Pending Confirmation",
+      "waitingConfirmationDesc": "Transfer proof submitted. Admin will verify within 5-15 minutes.",
+      "paymentMethod": "Payment Method",
+      "createdDate": "Created Date",
+      "deadline": "Deadline",
+      "completedDate": "Completed Date",
+      "adminNotes": "Admin Notes",
+      "bank": "Bank",
+      "eWallet": "E-Wallet",
+      "accountNumber": "Account Number",
+      "accountName": "Account Name",
+      "back": "Back",
+      "fileFormatError": "File format not supported. Use JPG, PNG, WebP, or PDF.",
+      "fileSizeError": "Maximum file size is 10MB.",
+      "uploadProofError": "Upload transfer proof",
+      "uploadError": "Failed to upload proof",
+      "genericError": "An error occurred",
+      "adminFee": "Admin Fee",
+      "uniqueCode": "Unique Code",
+      "clickToUpload": "Click to upload transfer proof",
+      "fileFormats": "JPG, PNG, WebP, or PDF (max 10MB)",
+      "uploading": "Uploading..."
+    },
+    "riwayat": {
+      "title": "Deposit History",
+      "subtitle": "History and status of your deposits",
+      "statusPending": "Pending",
+      "statusApproved": "Approved",
+      "statusRejected": "Rejected",
+      "noHistory": "No deposit history yet",
+      "note": "Note: "
+    },
+    "transfer": {
+      "backToDashboard": "Back to Dashboard",
+      "back": "Back",
+      "history": "History",
+      "title": "Transfer Balance",
+      "subtitle": "Send balance to other Saldopedia users",
+      "stepRecipient": "Recipient",
+      "stepAmount": "Amount",
+      "stepReview": "Review",
+      "recipientEmail": "Recipient Email",
+      "recipientEmailPlaceholder": "email@example.com",
+      "recipientHint": "Enter registered Saldopedia user email",
+      "verifying": "Verifying...",
+      "continue": "Continue",
+      "securityNote": "Secure transfer with end-to-end encryption",
+      "enterAmount": "Enter transfer amount",
+      "amountPlaceholder": "0",
+      "availableBalance": "Available balance",
+      "notes": "Notes",
+      "optional": "optional",
+      "notesPlaceholder": "Example: Invoice payment...",
+      "reviewTransfer": "Review Transfer",
+      "minimumNote": "Minimum transfer Rp {amount}",
+      "confirmTransfer": "Confirm Transfer",
+      "reviewDetails": "Make sure all details are correct",
+      "sendingAmount": "Amount to send",
+      "from": "From",
+      "to": "To",
+      "amount": "Amount",
+      "fee": "Fee",
+      "free": "FREE",
+      "remainingBalance": "Remaining balance",
+      "processing": "Processing...",
+      "sendNow": "Send Now",
+      "instantTransfer": "Instant transfer, balance received immediately",
+      "successTitle": "Transfer Successful!",
+      "successMessage": "Balance successfully sent to {name}",
+      "transferId": "Transfer ID",
+      "sendAnother": "Send Another",
+      "historyTitle": "Transfer History",
+      "noHistory": "No transfer history yet",
+      "errorEnterEmail": "Enter recipient email",
+      "errorSelfTransfer": "Cannot transfer to yourself",
+      "errorUserNotFound": "User not found",
+      "errorNetwork": "Network error occurred",
+      "errorMinimum": "Minimum transfer Rp {amount}",
+      "errorInsufficientBalance": "Insufficient balance",
+      "errorGeneral": "An error occurred",
+      "sent": "Sent",
+      "received": "Received",
+      "sentLabel": "Send Balance",
+      "receivedLabel": "Receive Balance",
+      "statusSuccess": "Successful",
+      "savedRecipients": "Saved Recipients",
+      "recentLabel": "Recent",
+      "favoriteLabel": "Favorite",
+      "saveRecipientCheckbox": "Save this recipient for next transfer",
+      "recipientLabelPlaceholder": "Label (e.g.: Mom, Brother, Friend)"
+    },
+    "transferDetail": {
+      "backToHistory": "Back to History",
+      "back": "Back",
+      "outgoingTransfer": "Outgoing Transfer",
+      "incomingTransfer": "Incoming Transfer",
+      "completed": "Completed",
+      "transferAmount": "Transfer Amount",
+      "sentTo": "Sent to",
+      "receivedFrom": "Received from",
+      "date": "Date",
+      "notes": "Notes"
+    },
+    "admin": {
+      "deposits": {
+        "title": "Manage Deposits",
+        "subtitle": "Review and approve deposit requests"
+      }
+    },
+    "withdraw": {
+      "backToDashboard": "Back to Dashboard",
+      "title": "Withdraw Balance",
+      "withdrawMethod": "Withdrawal Method",
+      "bankTransfer": "Bank Transfer",
+      "eWallet": "E-Wallet",
+      "selectBank": "Select Bank",
+      "selectBankPlaceholder": "-- Select Bank --",
+      "selectEWallet": "Select E-Wallet",
+      "selectEWalletPlaceholder": "-- Select E-Wallet --",
+      "accountHolderName": "Account Holder Name",
+      "accountHolderPlaceholder": "Name as on account",
+      "accountNameLockedNote": "Name is taken from your account profile and cannot be changed for transaction security.",
+      "accountNumber": "Account Number",
+      "eWalletNumber": "E-Wallet Phone Number",
+      "accountNumberPlaceholder": "Example: 1234567890",
+      "eWalletNumberPlaceholder": "Example: 08123456789",
+      "withdrawAmountLabel": "Withdrawal Amount (IDR)",
+      "minimumPlaceholder": "Minimum Rp 50,000",
+      "feeNote": "Rp 17,000 fee for withdrawals below Rp 1,000,000",
+      "withdrawAmount": "Withdrawal Amount",
+      "adminFee": "Admin Fee",
+      "free": "FREE",
+      "amountReceived": "Amount Received",
+      "remainingBalance": "Remaining Balance",
+      "processing": "Processing...",
+      "submitWithdraw": "Submit Withdrawal",
+      "history": "Withdrawal History",
+      "noHistory": "No withdrawal history yet",
+      "minimumError": "Minimum withdrawal Rp {amount}",
+      "insufficientBalance": "Insufficient balance",
+      "completeAccountData": "Complete account/e-wallet details",
+      "selectBankError": "Select destination bank",
+      "selectEWalletError": "Select destination e-wallet",
+      "genericError": "An error occurred",
+      "networkError": "Network error occurred",
+      "successMessage": "Withdrawal request {id} created successfully",
+      "status": {
+        "completed": "Completed",
+        "processing": "Processing",
+        "pending": "Pending",
+        "rejected": "Rejected"
+      }
+    },
+    "withdrawDetail": {
+      "backToHistory": "Back to History",
+      "back": "Back",
+      "title": "Withdraw Balance",
+      "withdrawAmount": "Withdrawal Amount",
+      "amount": "Amount",
+      "adminFee": "Admin Fee",
+      "amountReceived": "Amount Received",
+      "method": "Method",
+      "accountName": "Account Name",
+      "accountNumber": "Account Number",
+      "createdDate": "Created Date",
+      "processedDate": "Processed Date",
+      "completedDate": "Completed Date",
+      "adminNotes": "Admin Notes",
+      "rejected": "Rejected",
+      "rejectedDesc": "Your withdrawal has been rejected by admin. The balance has been returned to your account. Please contact us if you have any questions.",
+      "status": {
+        "completed": "Completed",
+        "processing": "Processing",
+        "pending": "Pending",
+        "rejected": "Rejected"
+      }
+    }
+  },
+  "orderPages": {
+    "expired": {
+      "title": "Order Expired",
+      "description": "Your order has passed the 1-hour time limit.",
+      "reason": "Orders have a time limit of",
+      "reasonDuration": "1 hour",
+      "reasonDesc": "to maintain rate availability.",
+      "needHelp": "Need help? WhatsApp: 08119666620",
+      "backToHome": "Back to Home",
+      "createNew": "Create New Order",
+      "contactAdmin": "Contact Admin"
+    },
+    "complete": {
+      "successTitle": "Order Completed Successfully!",
+      "successDesc": "Order status updated and invoice sent to customer email.",
+      "alreadyCompletedTitle": "Order Already Completed",
+      "alreadyCompletedDesc": "This order was already completed. Invoice has been sent to customer.",
+      "statusLabel": "Status",
+      "invoiceSent": "Invoice sent to customer",
+      "viewOrders": "View Order List"
+    },
+    "error": {
+      "invalidToken": "Invalid Link",
+      "invalidTokenDesc": "The link you used is invalid or expired.",
+      "notFound": "Order Not Found",
+      "notFoundDesc": "Order with that ID was not found.",
+      "serverError": "Server Error Occurred",
+      "serverErrorDesc": "Sorry, an error occurred. Please try again later.",
+      "unknown": "Error Occurred",
+      "unknownDesc": "An unexpected error occurred. Please contact admin.",
+      "errorCode": "Error Code",
+      "helpText": "If problem persists, contact admin via WhatsApp.",
+      "contactAdmin": "Contact Admin"
+    },
+    "countdown": {
+      "expired": "Order Expired",
+      "redirecting": "Order time expired. Redirecting to expired page...",
+      "timeRemaining": "Time Remaining",
+      "completeSoon": "Complete Soon!",
+      "adminMustProcess": "Admin must process this order immediately",
+      "hours": "h",
+      "minutes": "m",
+      "seconds": "s"
+    },
+    "detail": {
+      "backToOrders": "Back to Order List",
+      "orderId": "Order ID",
+      "transactionDetails": "Transaction Details",
+      "transactionTypeLabel": "Transaction Type",
+      "amount": "Amount",
+      "totalIDR": "Total IDR",
+      "rate": "Rate",
+      "paymentMethod": "Payment Method",
+      "timeInfo": "Time Information",
+      "created": "Order Date",
+      "expires": "Time Limit",
+      "expiredAt": "Expired At",
+      "completedAt": "Completed Date",
+      "notes": "Notes",
+      "back": "Back",
+      "viewInstructions": "View Payment Instructions",
+      "status": {
+        "completed": "Completed",
+        "pending": "Pending",
+        "processing": "Processing",
+        "expired": "Expired",
+        "cancelled": "Cancelled"
+      },
+      "transactionType": {
+        "buy": "Buy",
+        "sell": "Sell"
+      },
+      "perUnit": "per 1",
+      "paymentNote": {
+        "exact": "Exact Payment",
+        "overpaid": "Overpaid",
+        "underpaid": "Underpaid",
+        "partialExpired": "Partial (Expired)"
+      },
+      "network": "Network",
+      "amountReceived": "Amount Received",
+      "amountSent": "Crypto Sent",
+      "tier": "Tier",
+      "accountName": "Account Name",
+      "accountNumber": "Account Number",
+      "walletInfo": "Wallet Information",
+      "accountInfo": "Account Information",
+      "destinationWallet": "Destination Wallet",
+      "destinationTag": "Destination Tag",
+      "depositAddress": "Deposit Address",
+      "paypalEmail": "PayPal Email",
+      "skrillEmail": "Skrill Email",
+      "blockchainInfo": "Blockchain Transaction Info",
+      "txHash": "TX Hash",
+      "paymentId": "Payment ID",
+      "paymentStatus": "Payment Status",
+      "sendingStatus": "Sending Status",
+      "customerInfo": "Customer Information",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "paymentMethodLabel": "Payment Method",
+      "saldoPayment": "Saldopedia Balance",
+      "orderNotes": "Order Notes",
+      "error": "Error"
+    }
+  },
+  "components": {
+    "postItem": {
+      "readingTime": "min read",
+      "readMore": "Read More"
+    }
+  },
+  "orderInstructions": {
+    "buyTitle": "Order Processing",
+    "sellTitle": "Payment Instructions",
+    "statusPending": "Waiting for Payment",
+    "statusConfirmed": "Balance Deducted",
+    "statusCompleted": "Completed",
+    "service": "Service",
+    "transaction": "Transaction",
+    "amount": "Amount",
+    "total": "Total",
+    "buy": "Buy",
+    "sell": "Sell",
+    "paymentSuccess": "Payment Successful",
+    "saldoDeducted": "Your balance has been deducted by",
+    "processingAuto": "Order is being processed automatically (5-15 minutes)",
+    "paidWithSaldo": "Paid using Saldopedia account balance",
+    "whatYouReceive": "What You Will Receive",
+    "sentToWallet": "Sent to Wallet",
+    "sentToEmail": "Sent to Email",
+    "noAction": "No action required:",
+    "autoProcess": "Order processed automatically in 5-15 minutes",
+    "emailNotification": "You will receive email notification when completed",
+    "cryptoSentTo": "will be sent to your wallet",
+    "saldoSentTo": "will be sent to your account",
+    "cryptoInstructions": "Crypto Sending Instructions",
+    "sellVia": "Sell {symbol} via {network}",
+    "sendAmount": "Send amount:",
+    "sendExact": "Send the exact amount",
+    "depositAddressLabel": "Deposit Address (Send here)",
+    "network": "Network",
+    "saldoCredit": "After transaction completes, {amount} will be automatically credited to your Saldopedia account",
+    "paymentViaSaldo": "Payment via Account Balance",
+    "nextSteps": "Next Steps:",
+    "sendCryptoTo": "Send {symbol} to the deposit address above",
+    "ensureNetwork": "Make sure to use network:",
+    "waitBlockchain": "Wait for blockchain confirmation",
+    "saldoCredited": "{amount} will be credited to your account",
+    "sellInstructions": "Selling Instructions",
+    "sellBalance": "Sell {service} balance",
+    "targetEmail": "Destination {service} Email",
+    "sendToEmail": "Send to email",
+    "accountName": "Account Name",
+    "loginTo": "Login to {service} account ({email})",
+    "sendAmountTo": "Send {amount} to:",
+    "screenshotProof": "Screenshot transfer proof",
+    "sendViaWhatsApp": "Send via WhatsApp to {phone} with Order ID:",
+    "saldoCreditedAmount": "{amount} will be credited to your account",
+    "needHelp": "Need help?",
+    "backToDashboard": "Back to Dashboard",
+    "copied": "Copied!",
+    "copy": "Copy",
+    "statusPendingProof": "Awaiting Proof",
+    "uploadProofTitle": "Upload {service} Transfer Proof",
+    "uploadProofDesc": "After sending the balance to the email above, upload a screenshot of the transfer for verification.",
+    "selectFile": "Select file (JPG, PNG, WebP, PDF - Max 10MB)",
+    "uploadButton": "Upload Proof",
+    "uploading": "Uploading...",
+    "uploadSuccess": "Proof Uploaded Successfully!",
+    "uploadSuccessDesc": "Your order is being verified. You will receive an email notification when the admin confirms the payment.",
+    "uploadProofStep": "Upload transfer proof above",
+    "paypalWarningTitle": "Important: PayPal Sending Method",
+    "paypalWarningDesc": "Send balance using Friends & Family method and leave the note/message field empty.",
+    "statusVerifying": "Verifying",
+    "verifyingPayment": "Verifying Payment",
+    "proofReceived": "Payment proof received",
+    "youWillReceive": "You Will Receive",
+    "whatsNext": "What's Next?",
+    "adminVerifying": "Admin is verifying your payment proof"
+  }
+}
