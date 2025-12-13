@@ -351,7 +351,7 @@ export default function RegisterPage() {
               id="agreeToTerms"
               checked={agreeToTerms}
               onChange={(e) => setAgreeToTerms(e.target.checked)}
-              className="mt-0.5 h-5 w-5 shrink-0 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+              className="mt-1 h-4 w-4 shrink-0 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
             />
             <label htmlFor="agreeToTerms" className="text-sm text-gray-700 dark:text-gray-300 cursor-pointer">
               {t('auth.register.agreeToTerms')}{' '}
