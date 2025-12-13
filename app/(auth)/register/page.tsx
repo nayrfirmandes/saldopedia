@@ -51,6 +51,7 @@ export default function RegisterPage() {
   const referralParam = searchParams.get('ref');
   
   const [step, setStep] = useState(1);
+  const [stepLoading, setStepLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -186,9 +187,17 @@ export default function RegisterPage() {
     setError('');
     
     if (step === 1 && validateStep1()) {
-      setStep(2);
+      setStepLoading(true);
+      setTimeout(() => {
+        setStep(2);
+        setStepLoading(false);
+      }, 400);
     } else if (step === 2 && validateStep2()) {
-      setStep(3);
+      setStepLoading(true);
+      setTimeout(() => {
+        setStep(3);
+        setStepLoading(false);
+      }, 400);
     }
   };
 
@@ -271,6 +280,21 @@ export default function RegisterPage() {
           </Link>
         </div>
         </AnimateOnScroll>
+      </div>
+    );
+  }
+
+  if (stepLoading) {
+    return (
+      <div className="w-full max-w-sm">
+        <div className="min-h-[400px] flex items-center justify-center">
+          <div className="flex flex-col items-center gap-3">
+            <div className="relative w-10 h-10">
+              <div className="absolute inset-0 border-[3px] border-blue-600/20 dark:border-blue-400/20 rounded-full"></div>
+              <div className="absolute inset-0 border-[3px] border-blue-600 dark:border-blue-400 rounded-full border-t-transparent animate-spin"></div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
