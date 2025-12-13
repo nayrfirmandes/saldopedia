@@ -2,6 +2,7 @@ import { getBlogPosts } from "@/components/mdx/utils";
 import PageIllustration from "@/components/page-illustration";
 import BlogList from "@/components/blog-list";
 import BlogHero from "./blog-hero";
+import { AdsterraBanner, AdsterraSocialBar } from "@/components/adsterra-ads";
 
 export default function Blog() {
   const allBlogs = getBlogPosts();
@@ -23,8 +24,14 @@ export default function Blog() {
           <BlogHero />
 
           <BlogList posts={allBlogs} />
+          
+          {/* Ad after blog list */}
+          <AdsterraBanner className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700" />
         </div>
       </div>
+      
+      {/* Social Bar Ad */}
+      <AdsterraSocialBar />
     </section>
   );
 }
