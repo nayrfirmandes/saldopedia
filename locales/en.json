@@ -2228,7 +2228,17 @@
       "termsOfService": "Terms of Service",
       "and": "and",
       "privacyPolicy": "Privacy Policy",
-      "termsRequired": "You must agree to the terms and conditions to continue"
+      "termsRequired": "You must agree to the terms and conditions to continue",
+      "step": {
+        "subtitle1": "Enter your basic information",
+        "subtitle2": "Add optional info",
+        "subtitle3": "Create a secure password",
+        "next": "Continue",
+        "optional": "optional",
+        "nameRequired": "Full name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Invalid email format"
+      }
     },
     "forgotPassword": {
       "title": "Forgot Password",

@@ -2228,7 +2228,17 @@
       "termsOfService": "Syarat & Ketentuan",
       "and": "dan",
       "privacyPolicy": "Kebijakan Privasi",
-      "termsRequired": "Anda harus menyetujui syarat & ketentuan untuk melanjutkan"
+      "termsRequired": "Anda harus menyetujui syarat & ketentuan untuk melanjutkan",
+      "step": {
+        "subtitle1": "Masukkan informasi dasar Anda",
+        "subtitle2": "Tambahkan info opsional",
+        "subtitle3": "Buat password yang aman",
+        "next": "Lanjutkan",
+        "optional": "opsional",
+        "nameRequired": "Nama lengkap harus diisi",
+        "emailRequired": "Email harus diisi",
+        "emailInvalid": "Format email tidak valid"
+      }
     },
     "forgotPassword": {
       "title": "Lupa Password",
