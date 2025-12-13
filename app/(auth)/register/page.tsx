@@ -4,6 +4,7 @@ import { useState, FormEvent, useRef, useMemo, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Logo from '@/components/ui/logo';
+import RegisterLoading from './loading';
 import ReCaptcha, { ReCaptchaRef } from '@/components/ui/recaptcha';
 import RecaptchaNotice from '@/components/ui/recaptcha-notice';
 import { AnimateOnScroll } from '@/lib/use-animate-on-scroll';
@@ -285,18 +286,7 @@ export default function RegisterPage() {
   }
 
   if (stepLoading) {
-    return (
-      <div className="w-full max-w-sm">
-        <div className="min-h-[400px] flex items-center justify-center">
-          <div className="flex flex-col items-center gap-3">
-            <div className="relative w-10 h-10">
-              <div className="absolute inset-0 border-[3px] border-blue-600/20 dark:border-blue-400/20 rounded-full"></div>
-              <div className="absolute inset-0 border-[3px] border-blue-600 dark:border-blue-400 rounded-full border-t-transparent animate-spin"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
+    return <RegisterLoading />;
   }
 
   return (
