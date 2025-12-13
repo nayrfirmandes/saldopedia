@@ -88,10 +88,10 @@ export const metadata = {
     description: 'Platform jual beli cryptocurrency eceran, PayPal, dan Skrill mulai 25ribu rupiah. Transaksi mudah via WhatsApp atau form order online. Cepat dan aman.',
     images: [
       {
-        url: '/images/saldopedia-logo.png',
+        url: '/images/saldopedia-og.jpg',
         width: 1200,
         height: 630,
-        alt: 'Saldopedia - Jual Beli Crypto, PayPal & Skrill',
+        alt: 'Saldopedia - Jual Beli Crypto, PayPal & Skrill Mulai 25 Ribu',
       },
     ],
   },
@@ -99,7 +99,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Saldopedia - Jual Beli Cryptocurrency, PayPal & Skrill',
     description: 'Platform jual beli cryptocurrency eceran, PayPal, dan Skrill mulai 25ribu rupiah. Transaksi mudah via WhatsApp atau form order online.',
-    images: ['/images/saldopedia-logo.png'],
+    images: ['/images/saldopedia-og.jpg'],
   },
   icons: {
     icon: [
