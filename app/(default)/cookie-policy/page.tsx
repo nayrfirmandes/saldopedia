@@ -191,17 +191,14 @@ export default function CookiePolicy() {
               <h2>{t("cookiePolicy.section6.title")}</h2>
               <p>{t("cookiePolicy.section6.intro")}</p>
 
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 my-4 dark:bg-blue-900/20 dark:border-blue-800">
-                <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
-                  {t("cookieBanner.manageSettings")}:
-                </p>
+              <p>
                 <button
                   onClick={openSettings}
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors dark:bg-blue-500 dark:hover:bg-blue-600"
+                  className="text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-400 dark:hover:text-blue-300 font-medium"
                 >
-                  {t("cookieBanner.settingsTitle")}
+                  {t("cookieBanner.manageSettings")}
                 </button>
-              </div>
+              </p>
 
               <h3>{t("cookiePolicy.section6.sub1.title")}</h3>
               <p>{t("cookiePolicy.section6.sub1.content")}</p>
