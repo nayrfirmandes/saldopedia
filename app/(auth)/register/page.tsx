@@ -346,13 +346,26 @@ export default function RegisterPage() {
           </div>
 
           <div className="flex items-start gap-3">
-            <input
-              type="checkbox"
-              id="agreeToTerms"
-              checked={agreeToTerms}
-              onChange={(e) => setAgreeToTerms(e.target.checked)}
-              className="mt-1 h-4 w-4 shrink-0 rounded border-2 border-gray-400 dark:border-gray-500 text-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-offset-0 bg-white dark:bg-gray-700 cursor-pointer accent-blue-600"
-            />
+            <div className="relative mt-1 shrink-0">
+              <input
+                type="checkbox"
+                id="agreeToTerms"
+                checked={agreeToTerms}
+                onChange={(e) => setAgreeToTerms(e.target.checked)}
+                className="peer h-4 w-4 appearance-none rounded border-2 border-gray-400 dark:border-gray-500 bg-white dark:bg-gray-700 cursor-pointer checked:bg-blue-600 checked:border-blue-600 dark:checked:bg-blue-500 dark:checked:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-0"
+              />
+              <svg
+                className="pointer-events-none absolute left-0 top-0 h-4 w-4 text-white opacity-0 peer-checked:opacity-100"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M3.5 8.5L6.5 11.5L12.5 4.5" />
+              </svg>
+            </div>
             <label htmlFor="agreeToTerms" className="text-sm text-gray-600 dark:text-gray-400 cursor-pointer">
               {t('auth.register.agreeToTerms')}{' '}
               <Link href="/terms-of-service" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors">
