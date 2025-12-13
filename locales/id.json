@@ -176,6 +176,8 @@
   "common": {
     "relatedLinks": "Halaman Terkait",
     "privacyPolicy": "Kebijakan Privasi",
+    "cookiePolicy": "Kebijakan Cookie",
+    "termsOfService": "Syarat dan Ketentuan",
     "support": "Pusat Bantuan",
     "documentation": "Dokumentasi",
     "aboutUs": "Tentang Kami"
@@ -1527,7 +1529,16 @@
       "hours": "Jam Operasional Customer Service: 09:00 - 21:00 WIB setiap hari",
       "response": "Kami berkomitmen untuk merespons pertanyaan Anda dalam waktu 1-3 hari kerja."
     },
-    "footer": "Dengan terus menggunakan website Saldopedia setelah membaca Kebijakan Cookie ini, Anda menyatakan pemahaman dan persetujuan terhadap penggunaan cookie dan teknologi serupa sebagaimana dijelaskan dalam dokumen ini. Terima kasih telah mempercayai Saldopedia untuk kebutuhan transaksi cryptocurrency, PayPal, dan Skrill Anda."
+    "footer": "Dengan terus menggunakan website Saldopedia setelah membaca Kebijakan Cookie ini, Anda menyatakan pemahaman dan persetujuan terhadap penggunaan cookie dan teknologi serupa sebagaimana dijelaskan dalam dokumen ini. Terima kasih telah mempercayai Saldopedia untuk kebutuhan transaksi cryptocurrency, PayPal, dan Skrill Anda.",
+    "relatedInfo": {
+      "text": "Lihat juga",
+      "and": "dan",
+      "kami": "kami untuk informasi lengkap."
+    },
+    "section1": {
+      "privacyLink": "Kebijakan ini melengkapi",
+      "privacyLinkEnd": "kami."
+    }
   },
   "termsOfService": {
     "header": {
@@ -1539,6 +1550,11 @@
       "content": "Dengan menggunakan layanan Saldopedia, Anda menyatakan telah membaca, memahami, dan menyetujui seluruh Syarat dan Ketentuan ini. Jika Anda tidak menyetujui ketentuan ini, mohon untuk tidak menggunakan layanan kami."
     },
     "footer": "Dokumen ini merupakan perjanjian yang sah dan mengikat secara hukum antara Anda dan Saldopedia.",
+    "relatedInfo": {
+      "text": "Untuk informasi lebih lanjut tentang bagaimana kami melindungi data Anda, silakan baca",
+      "and": "dan",
+      "kami": "kami. Jika ada pertanyaan, kunjungi"
+    },
     "section1": {
       "title": "1. Pendahuluan dan Ruang Lingkup",
       "p1": "Selamat datang di Saldopedia, platform fintech Indonesia yang menyediakan layanan jual beli cryptocurrency, saldo PayPal, dan saldo Skrill. Dokumen Syarat dan Ketentuan Layanan ini merupakan perjanjian hukum yang mengikat antara Anda sebagai pengguna dengan Saldopedia sebagai penyedia layanan. Dengan mengakses atau menggunakan platform kami melalui website, aplikasi, atau saluran komunikasi resmi lainnya, Anda menyatakan persetujuan penuh terhadap seluruh ketentuan yang tercantum dalam dokumen ini.",
@@ -1753,8 +1769,15 @@
       "content": "Saldopedia berkomitmen penuh untuk melindungi privasi dan keamanan data pribadi Anda dengan standar tertinggi. Sebagai platform fintech yang memproses transaksi cryptocurrency, PayPal, dan Skrill, kami memahami bahwa kepercayaan Anda adalah fondasi dari layanan kami. Kami menangani setiap informasi pribadi dengan penuh tanggung jawab, transparansi, dan integritas, serta sesuai dengan standar perlindungan data internasional dan regulasi yang berlaku di Indonesia. Tim kami secara konsisten mengevaluasi dan meningkatkan praktik keamanan data untuk memastikan informasi Anda selalu terlindungi dari akses tidak sah, penyalahgunaan, atau kebocoran data."
     },
     "footer": "Dengan menggunakan layanan Saldopedia, Anda menyatakan telah membaca, memahami, dan menyetujui praktik pengumpulan, penggunaan, penyimpanan, dan perlindungan data yang dijelaskan dalam Kebijakan Privasi ini. Dokumen ini merupakan bagian integral dari perjanjian layanan antara Anda dan Saldopedia.",
+    "relatedInfo": {
+      "text": "Lihat juga",
+      "and": "dan",
+      "kami": "kami untuk informasi lengkap."
+    },
     "section1": {
       "title": "1. Pendahuluan dan Ruang Lingkup",
+      "termsLink": "Kebijakan ini merupakan bagian dari",
+      "termsLinkEnd": "kami.",
       "p1": "Kebijakan Privasi ini menjelaskan secara komprehensif dan mendetail bagaimana Saldopedia mengumpulkan, menggunakan, menyimpan, memproses, membagikan, dan melindungi informasi pribadi Anda ketika Anda mengakses dan menggunakan platform kami untuk transaksi cryptocurrency, PayPal, dan Skrill. Saldopedia mengoperasikan sistem saldo internal (balance system) yang memfasilitasi deposit dana, pembuatan order pembelian dan penjualan, penerimaan hasil transaksi, transfer antar pengguna, dan penarikan dana (withdrawal). Mengingat sifat sensitif dari layanan keuangan digital yang kami sediakan, pengelolaan data yang tepat, aman, dan transparan menjadi sangat penting untuk melindungi kepentingan dan keamanan transaksi Anda.",
       "p2": "Dengan mengakses website Saldopedia, mendaftarkan akun, menggunakan dashboard pengguna, berkomunikasi dengan layanan pelanggan, atau memanfaatkan layanan kami dalam bentuk apapun, Anda secara eksplisit menyetujui pengumpulan dan penggunaan informasi pribadi sesuai dengan ketentuan yang diuraikan dalam Kebijakan Privasi ini. Jika Anda tidak menyetujui sebagian atau seluruh ketentuan dalam kebijakan ini, mohon untuk segera menghentikan penggunaan layanan kami dan menghubungi tim support untuk proses penutupan akun jika diperlukan. Kebijakan ini berlaku untuk semua pengguna platform Saldopedia tanpa terkecuali, termasuk pengguna terdaftar, pengunjung website, dan pihak yang berinteraksi dengan kami melalui saluran komunikasi resmi.",
       "p3": "Saldopedia beroperasi di bawah yurisdiksi hukum Republik Indonesia dan mematuhi seluruh peraturan perundang-undangan yang berlaku terkait perlindungan data pribadi, termasuk namun tidak terbatas pada Undang-Undang Nomor 27 Tahun 2022 tentang Perlindungan Data Pribadi (UU PDP) dan regulasi terkait layanan keuangan digital. Kami juga mengadopsi praktik terbaik internasional dalam perlindungan data untuk memastikan standar keamanan yang optimal bagi seluruh pengguna kami."

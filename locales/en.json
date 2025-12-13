@@ -176,6 +176,8 @@
   "common": {
     "relatedLinks": "Related Pages",
     "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "termsOfService": "Terms and Conditions",
     "support": "Support Center",
     "documentation": "Documentation",
     "aboutUs": "About Us"
@@ -1527,7 +1529,16 @@
       "hours": "Customer Service Operating Hours: 09:00 - 21:00 WIB every day",
       "response": "We are committed to responding to your inquiries within 1-3 business days."
     },
-    "footer": "By continuing to use the Saldopedia website after reading this Cookie Policy, you acknowledge understanding and consent to the use of cookies and similar technologies as described in this document. Thank you for trusting Saldopedia for your cryptocurrency, PayPal, and Skrill transaction needs."
+    "footer": "By continuing to use the Saldopedia website after reading this Cookie Policy, you acknowledge understanding and consent to the use of cookies and similar technologies as described in this document. Thank you for trusting Saldopedia for your cryptocurrency, PayPal, and Skrill transaction needs.",
+    "relatedInfo": {
+      "text": "See also",
+      "and": "and",
+      "kami": "for complete information."
+    },
+    "section1": {
+      "privacyLink": "This policy complements our",
+      "privacyLinkEnd": ""
+    }
   },
   "termsOfService": {
     "header": {
@@ -1539,6 +1550,11 @@
       "content": "By using Saldopedia services, you confirm that you have read, understood, and agreed to all of these Terms and Conditions. If you do not agree to these terms, please do not use our services."
     },
     "footer": "This document constitutes a valid and legally binding agreement between you and Saldopedia.",
+    "relatedInfo": {
+      "text": "For more information about how we protect your data, please read our",
+      "and": "and",
+      "kami": "If you have questions, visit our"
+    },
     "section1": {
       "title": "1. Introduction and Scope",
       "p1": "Welcome to Saldopedia, an Indonesian fintech platform providing cryptocurrency, PayPal balance, and Skrill balance trading services. This Terms and Conditions document constitutes a legally binding agreement between you as a user and Saldopedia as a service provider. By accessing or using our platform through the website, application, or other official communication channels, you confirm your full consent to all terms contained in this document.",
@@ -1753,8 +1769,15 @@
       "content": "Saldopedia is fully committed to protecting the privacy and security of your personal data. As a digital financial services platform that processes cryptocurrency, PayPal, and Skrill transactions, we understand that your personal information and transaction data are highly sensitive. We handle your information with full responsibility, transparency, and in accordance with applicable data protection standards in Indonesia and international best practices. This Privacy Policy is designed to provide you with a comprehensive understanding of our data practices."
     },
     "footer": "By using Saldopedia services, you agree to the data collection and usage practices described in this Privacy Policy. If you have any questions or concerns about our privacy practices, please contact our support team.",
+    "relatedInfo": {
+      "text": "See also",
+      "and": "and",
+      "kami": "for complete information."
+    },
     "section1": {
       "title": "1. Introduction and Scope",
+      "termsLink": "This policy is part of our",
+      "termsLinkEnd": "",
       "p1": "This Privacy Policy comprehensively and thoroughly explains how Saldopedia collects, uses, stores, processes, shares, and protects your personal information when you access and use our platform for cryptocurrency, PayPal, and Skrill transactions. Saldopedia operates an internal balance system that facilitates fund deposits, purchase and sale order processing, receipt of transaction proceeds, transfers between users, and fund withdrawals. Given the sensitive nature of the digital financial services we provide, proper, secure, and transparent data management is essential to protect your interests and transaction security.",
       "p2": "By accessing the Saldopedia website, registering an account, using the user dashboard, communicating with customer service, or utilizing our services in any form, you explicitly consent to the collection and use of personal information in accordance with the terms outlined in this Privacy Policy. If you do not agree to any or all terms of this policy, please immediately discontinue use of our services and contact our support team for account closure if needed. This policy applies to all Saldopedia platform users without exception, including registered users, website visitors, and parties who interact with us through official communication channels.",
       "p3": "Saldopedia operates under the jurisdiction of the Republic of Indonesia and complies with all applicable laws and regulations regarding personal data protection, including but not limited to Law Number 27 of 2022 concerning Personal Data Protection (PDP Law) and regulations related to digital financial services. We also adopt international best practices in data protection to ensure optimal security standards for all our users."
