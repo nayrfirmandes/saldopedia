@@ -1,6 +1,7 @@
 "use client";
 
 import PageIllustration from "@/components/page-illustration";
+import Link from "next/link";
 import { useLanguage } from "@/contexts/language-context";
 
 export default function TermsOfService() {
@@ -225,6 +226,36 @@ export default function TermsOfService() {
                 <p className="text-sm">
                   <strong>{t("termsOfService.notice.title")}</strong> {t("termsOfService.notice.content")}
                 </p>
+              </div>
+
+              <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-gray-700 dark:bg-gray-800/50">
+                <h3 className="mb-4 text-lg font-semibold dark:text-gray-100">{t("common.relatedLinks") || "Halaman Terkait"}</h3>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <Link href="/privacy-policy" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    {t("common.privacyPolicy") || "Kebijakan Privasi"}
+                  </Link>
+                  <Link href="/support" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    {t("common.support") || "Pusat Bantuan"}
+                  </Link>
+                  <Link href="/documentation" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    {t("common.documentation") || "Dokumentasi"}
+                  </Link>
+                  <Link href="/about" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    {t("common.aboutUs") || "Tentang Kami"}
+                  </Link>
+                </div>
               </div>
 
               <p className="text-sm text-gray-600 text-center mt-6 dark:text-gray-400">
