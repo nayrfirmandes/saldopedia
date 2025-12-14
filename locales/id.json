@@ -182,6 +182,12 @@
     "documentation": "Dokumentasi",
     "aboutUs": "Tentang Kami"
   },
+  "blog": {
+    "shareArticle": "Bagikan Artikel",
+    "followUs": "Ikuti Saldopedia",
+    "copyLink": "Salin Link",
+    "linkCopied": "Link Disalin"
+  },
   "cookieBanner": {
     "title": "Kami Menggunakan Cookie",
     "description": "Kami menggunakan cookie untuk meningkatkan pengalaman Anda, menganalisis lalu lintas situs, dan mempersonalisasi konten. Anda dapat memilih kategori cookie yang ingin Anda terima.",

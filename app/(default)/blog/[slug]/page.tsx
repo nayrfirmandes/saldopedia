@@ -7,6 +7,7 @@ import PostNav from "./post-nav";
 import PageIllustration from "@/components/page-illustration";
 import BackLink from "./back-link";
 import { AdsterraBanner, AdsterraSocialBar } from "@/components/adsterra-ads";
+import BlogSocialShare from "@/components/blog-social-share";
 
 export async function generateMetadata(
   props: {
@@ -71,6 +72,9 @@ export default async function SinglePost(
               <div className="prose max-w-none text-gray-700 prose-headings:scroll-mt-24 prose-headings:font-bold prose-headings:text-gray-900 prose-h1:text-gray-900 prose-h2:text-gray-900 prose-h3:text-gray-900 prose-h4:text-gray-900 prose-a:font-medium prose-a:text-blue-600 hover:prose-a:underline prose-em:text-gray-900 prose-em:italic prose-blockquote:border-l-2 prose-blockquote:border-gray-300 prose-blockquote:pl-4 prose-blockquote:font-medium prose-blockquote:italic prose-blockquote:text-gray-900 prose-strong:font-bold prose-strong:text-gray-900 prose-code:rounded prose-code:bg-gray-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:text-gray-900 prose-code:before:content-none prose-code:after:content-none prose-pre:overflow-x-auto prose-pre:rounded-lg prose-pre:bg-gray-100 prose-pre:text-gray-900 prose-blockquote:xl:-ml-4 dark:text-gray-200 dark:prose-headings:text-white dark:prose-h1:text-white dark:prose-h2:text-white dark:prose-h3:text-white dark:prose-h4:text-white dark:prose-a:text-blue-400 dark:hover:prose-a:text-blue-300 dark:prose-em:text-white dark:prose-em:italic dark:prose-blockquote:border-gray-500 dark:prose-blockquote:text-gray-100 dark:prose-strong:font-bold dark:prose-strong:text-white dark:prose-code:bg-gray-700 dark:prose-code:text-gray-100 dark:prose-pre:bg-gray-700 dark:prose-pre:text-gray-100 dark:prose-ul:text-gray-200 dark:prose-ol:text-gray-200 dark:prose-li:text-gray-200 dark:prose-li:marker:text-gray-400 dark:prose-hr:border-gray-600 dark:prose-table:text-gray-200">
                 <CustomMDX source={post.content} />
               </div>
+              
+              {/* Social Share Buttons */}
+              <BlogSocialShare title={post.metadata.title} slug={params.slug} />
               
               {/* Ad after article */}
               <AdsterraBanner className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700" />

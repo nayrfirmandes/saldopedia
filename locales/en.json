@@ -182,6 +182,12 @@
     "documentation": "Documentation",
     "aboutUs": "About Us"
   },
+  "blog": {
+    "shareArticle": "Share This Article",
+    "followUs": "Follow Saldopedia",
+    "copyLink": "Copy Link",
+    "linkCopied": "Link Copied"
+  },
   "cookieBanner": {
     "title": "We Use Cookies",
     "description": "We use cookies to enhance your experience, analyze site traffic, and personalize content. You can choose which cookie categories you want to accept.",
