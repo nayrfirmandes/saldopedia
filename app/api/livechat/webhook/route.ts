@@ -175,6 +175,9 @@ export async function POST(request: NextRequest) {
       .where(eq(chatSessions.sessionId, sessionId));
 
     console.log(`Admin reply saved for session ${sessionId}`);
+    
+    await sendTelegramMessage(`Pesan terkirim ke ${sessionId.slice(-6)}`);
+    
     return NextResponse.json({ ok: true });
   } catch (error) {
     console.error('Telegram webhook error:', error);
