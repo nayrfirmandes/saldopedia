@@ -423,3 +423,46 @@ export const rateSettings = pgTable("rate_settings", {
 
 export type RateSetting = typeof rateSettings.$inferSelect;
 export type InsertRateSetting = typeof rateSettings.$inferInsert;
+
+// Livechat - Chat Sessions
+export const chatStatusEnum = pgEnum("chat_status", ["active", "waiting_admin", "closed"]);
+
+export const chatSessions = pgTable("chat_sessions", {
+  id: serial("id").primaryKey(),
+  sessionId: varchar("session_id", { length: 100 }).notNull().unique(),
+  visitorName: varchar("visitor_name", { length: 255 }),
+  visitorEmail: varchar("visitor_email", { length: 255 }),
+  userId: integer("user_id").references(() => users.id, { onDelete: "set null" }),
+  status: chatStatusEnum("status").notNull().default("active"),
+  telegramMessageId: integer("telegram_message_id"),
+  lastMessageAt: timestamp("last_message_at").notNull().defaultNow(),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+}, (table) => {
+  return {
+    sessionIdIdx: index("chat_sessions_session_id_idx").on(table.sessionId),
+    statusIdx: index("chat_sessions_status_idx").on(table.status),
+  };
+});
+
+export type ChatSession = typeof chatSessions.$inferSelect;
+export type InsertChatSession = typeof chatSessions.$inferInsert;
+
+// Livechat - Messages
+export const chatSenderEnum = pgEnum("chat_sender", ["user", "ai", "admin"]);
+
+export const chatMessages = pgTable("chat_messages", {
+  id: serial("id").primaryKey(),
+  sessionId: varchar("session_id", { length: 100 }).notNull(),
+  sender: chatSenderEnum("sender").notNull(),
+  message: text("message").notNull(),
+  telegramMessageId: integer("telegram_message_id"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+}, (table) => {
+  return {
+    sessionIdIdx: index("chat_messages_session_id_idx").on(table.sessionId),
+    createdAtIdx: index("chat_messages_created_at_idx").on(table.createdAt),
+  };
+});
+
+export type ChatMessage = typeof chatMessages.$inferSelect;
+export type InsertChatMessage = typeof chatMessages.$inferInsert;
