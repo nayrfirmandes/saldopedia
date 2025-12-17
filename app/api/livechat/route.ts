@@ -11,10 +11,12 @@ import { sendTelegramMessage, formatNewChatMessage, formatFollowUpMessage, forma
 const sqlClient = neon(getDatabaseUrl());
 const db = drizzle(sqlClient);
 
-const openai = new OpenAI({
-  baseURL: process.env.AI_INTEGRATIONS_OPENAI_BASE_URL,
-  apiKey: process.env.AI_INTEGRATIONS_OPENAI_API_KEY,
-});
+function getOpenAIClient() {
+  return new OpenAI({
+    baseURL: process.env.AI_INTEGRATIONS_OPENAI_BASE_URL,
+    apiKey: process.env.AI_INTEGRATIONS_OPENAI_API_KEY,
+  });
+}
 
 function generateSessionId(): string {
   return 'chat_' + Date.now().toString(36) + Math.random().toString(36).substring(2, 8);
@@ -141,7 +143,7 @@ export async function POST(request: NextRequest) {
       const enhancedSystemPrompt = SYSTEM_PROMPT + learnedKnowledge;
 
       try {
-        const completion = await openai.chat.completions.create({
+        const completion = await getOpenAIClient().chat.completions.create({
           model: 'gpt-4o-mini',
           messages: [
             { role: 'system', content: enhancedSystemPrompt },
