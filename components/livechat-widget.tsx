@@ -54,7 +54,13 @@ export default function LivechatWidget() {
       });
       const data = await res.json();
       if (data.success && data.messages) {
-        setMessages(data.messages);
+        const newMessages = data.messages as ChatMessage[];
+        setMessages(newMessages);
+        
+        const hasAdminMessage = newMessages.some(m => m.sender === 'admin');
+        if (hasAdminMessage) {
+          setIsWaitingAdmin(false);
+        }
       }
     } catch (error) {
       console.error('Failed to fetch messages:', error);
