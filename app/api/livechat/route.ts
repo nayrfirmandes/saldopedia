@@ -113,18 +113,14 @@ export async function POST(request: NextRequest) {
       const currentSession = session[0];
 
       if (currentSession.status === 'waiting_admin') {
-        const telegramMsgId = await sendTelegramMessage(
+        await sendTelegramMessage(
           formatFollowUpMessage(sessionId, currentSession.visitorName, message),
           currentSession.telegramMessageId || undefined
         );
 
         return NextResponse.json({
           success: true,
-          reply: {
-            sender: 'ai',
-            message: 'Pesan Anda sudah diteruskan ke admin. Mohon tunggu balasannya ya.',
-            createdAt: new Date().toISOString(),
-          },
+          waitingAdmin: true,
         });
       }
 
@@ -215,19 +211,9 @@ export async function POST(request: NextRequest) {
         })
         .where(eq(chatSessions.sessionId, sessionId));
 
-      await db.insert(chatMessages).values({
-        sessionId,
-        sender: 'ai',
-        message: 'Permintaan Anda sudah diteruskan ke admin. Mohon tunggu, admin akan segera membalas.',
-      });
-
       return NextResponse.json({
         success: true,
-        reply: {
-          sender: 'ai',
-          message: 'Permintaan Anda sudah diteruskan ke admin. Mohon tunggu, admin akan segera membalas.',
-          createdAt: new Date().toISOString(),
-        },
+        waitingAdmin: true,
       });
     }
 

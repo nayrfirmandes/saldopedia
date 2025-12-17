@@ -133,15 +133,11 @@ export async function POST(request: NextRequest) {
     }
 
     if (!message.reply_to_message) {
-      console.log('No reply_to_message, ignoring');
       return NextResponse.json({ ok: true });
     }
 
     const replyText = message.reply_to_message.text || '';
-    console.log('Reply text:', replyText);
-    
     const sessionMatch = replyText.match(/Session:\s*([a-z0-9_]+)/i);
-    console.log('Session match:', sessionMatch);
     
     let sessionId: string | null = null;
     if (sessionMatch) {
@@ -149,7 +145,6 @@ export async function POST(request: NextRequest) {
     }
 
     if (!sessionId) {
-      console.log('Trying to find session by telegram message id:', message.reply_to_message.message_id);
       const sessions = await db.select()
         .from(chatSessions)
         .where(eq(chatSessions.telegramMessageId, message.reply_to_message.message_id))
@@ -180,8 +175,6 @@ export async function POST(request: NextRequest) {
       .where(eq(chatSessions.sessionId, sessionId));
 
     console.log(`Admin reply saved for session ${sessionId}`);
-    
-    await sendTelegramMessage(`Pesan terkirim ke ${sessionId.slice(-6)}`);
     
     return NextResponse.json({ ok: true });
   } catch (error) {

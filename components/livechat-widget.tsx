@@ -102,8 +102,12 @@ export default function LivechatWidget() {
         body: JSON.stringify({ action: 'send', sessionId, message: userMessage }),
       });
       const data = await res.json();
-      if (data.success && data.reply) {
-        setMessages(prev => [...prev, data.reply]);
+      if (data.success) {
+        if (data.waitingAdmin) {
+          setIsWaitingAdmin(true);
+        } else if (data.reply) {
+          setMessages(prev => [...prev, data.reply]);
+        }
       }
     } catch (error) {
       console.error('Failed to send message:', error);
@@ -128,9 +132,10 @@ export default function LivechatWidget() {
         body: JSON.stringify({ action: 'request_admin', sessionId }),
       });
       const data = await res.json();
-      if (data.success && data.reply) {
-        setMessages(prev => [...prev, data.reply]);
-        setIsWaitingAdmin(true);
+      if (data.success) {
+        if (data.waitingAdmin) {
+          setIsWaitingAdmin(true);
+        }
       }
     } catch (error) {
       console.error('Failed to request admin:', error);
@@ -250,6 +255,25 @@ export default function LivechatWidget() {
                       <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
                       <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
                       <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+            {isWaitingAdmin && !isLoading && (
+              <div className="flex justify-start">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-green-600 flex items-center justify-center">
+                    <Headphones className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="bg-green-100 dark:bg-green-900 px-4 py-2 rounded-2xl rounded-bl-sm">
+                    <div className="flex items-center gap-2">
+                      <div className="flex gap-1">
+                        <span className="w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                        <span className="w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                        <span className="w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+                      </div>
+                      <span className="text-xs text-green-700 dark:text-green-300">Admin mengetik...</span>
                     </div>
                   </div>
                 </div>
