@@ -70,7 +70,7 @@ Built with Next.js (App Router, SSR, Static Generation), React, and TypeScript. 
 -   **Brevo (Sendinblue)**: Transactional email.
 -   **NOWPayments**: Cryptocurrency payment gateway and custody.
 -   **Google OAuth**: Social login integration.
--   **HubSpot Live Chat**: Live chat widget.
+-   **AI Livechat + Telegram**: Custom livechat with AI assistant (OpenAI via Replit AI Integrations) and Telegram admin integration.
 -   **Fonnte**: WhatsApp OTP for phone verification (Indonesian provider).
 
 ## Documentation (content/docs/)
@@ -87,4 +87,4 @@ The documentation folder contains comprehensive guides in Indonesian:
 - **poin-referral.mdx**: Points & referral system with phone verification
 - **keamanan.mdx**: Security features
 - **kalkulator.mdx**: Rate calculator guide
-- **live-chat.mdx**: Customer support channels including HubSpot live chat
+- **live-chat.mdx**: Customer support channels with AI-powered livechat and Telegram admin integration
