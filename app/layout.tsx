@@ -1,6 +1,6 @@
 import "./css/style.css";
 import { Providers } from "@/components/providers";
-import HubSpotChat from "@/components/hubspot-chat";
+import LivechatWidget from "@/components/livechat-widget";
 import localFont from "next/font/local";
 import { cookies } from "next/headers";
 
@@ -228,7 +228,7 @@ export default async function RootLayout({
           <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
             {children}
           </div>
-          <HubSpotChat />
+          <LivechatWidget />
         </Providers>
       </body>
     </html>
