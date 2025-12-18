@@ -8,13 +8,13 @@ import { SUPPORTED_CRYPTOS, CRYPTO_CONFIG } from '@/lib/rates';
 // Crypto logo paths mapping
 const CRYPTO_LOGOS: { [key: string]: string } = {
   BTC: '/images/crypto/btc.webp',
-  ETH: '/images/crypto/eth.png',
+  ETH: '/images/crypto/eth.webp',
   BNB: '/images/crypto/bnb.webp',
   SOL: '/images/crypto/sol.webp',
-  USDT: '/images/crypto/usdt.png',
-  USDC: '/images/crypto/usdc.png',
+  USDT: '/images/crypto/usdt.webp',
+  USDC: '/images/crypto/usdc.webp',
   MATIC: '/images/crypto/matic.webp',
-  ADA: '/images/crypto/ada.png',
+  ADA: '/images/crypto/ada.webp',
   XRP: '/images/crypto/xrp.webp',
   DOGE: '/images/crypto/doge.webp',
   TRX: '/images/crypto/trx.webp',
