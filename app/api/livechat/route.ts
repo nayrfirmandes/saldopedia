@@ -33,12 +33,14 @@ async function getLearnedKnowledge(userMessage: string): Promise<string> {
     const relevantKnowledge = allKnowledge
       .map(k => {
         const keywords = k.keywords ? k.keywords.split(',').map(kw => kw.trim()) : extractKeywords(k.question);
-        const score = calculateRelevanceScore(userMessage, keywords);
+        const questionScore = calculateRelevanceScore(userMessage, keywords);
+        const directMatchScore = calculateRelevanceScore(userMessage, extractKeywords(k.question + ' ' + k.answer));
+        const score = Math.max(questionScore, directMatchScore);
         return { ...k, score };
       })
-      .filter(k => k.score > 0.3)
+      .filter(k => k.score > 0.15)
       .sort((a, b) => b.score - a.score)
-      .slice(0, 5);
+      .slice(0, 8);
     
     if (relevantKnowledge.length === 0) return '';
     

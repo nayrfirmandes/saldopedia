@@ -315,7 +315,7 @@ INSTRUKSI KHUSUS:
 - Selalu tawarkan bantuan lanjutan di akhir jawaban`;
 
 export function extractKeywords(text: string): string[] {
-  const stopWords = ['yang', 'di', 'ke', 'dari', 'dan', 'atau', 'untuk', 'dengan', 'ini', 'itu', 'ada', 'tidak', 'bisa', 'apa', 'bagaimana', 'cara', 'saya', 'aku', 'kamu', 'apakah', 'gimana', 'mau', 'minta', 'tolong'];
+  const stopWords = ['yang', 'di', 'ke', 'dari', 'dan', 'atau', 'untuk', 'dengan', 'ini', 'itu', 'ada', 'tidak', 'bisa', 'apa', 'bagaimana', 'cara', 'saya', 'aku', 'kamu', 'apakah', 'gimana', 'mau', 'minta', 'tolong', 'dong', 'deh', 'nih', 'yah', 'kan', 'sih', 'lah', 'kah', 'tuh', 'gak', 'gk', 'ga', 'nggak', 'engga', 'enggak'];
   
   const words = text.toLowerCase()
     .replace(/[^a-zA-Z0-9\s]/g, '')
@@ -325,17 +325,70 @@ export function extractKeywords(text: string): string[] {
   return Array.from(new Set(words));
 }
 
+const SYNONYMS: Record<string, string[]> = {
+  'beli': ['buy', 'pembelian', 'order', 'transaksi', 'buat'],
+  'jual': ['sell', 'penjualan', 'convert', 'tukar', 'cairkan'],
+  'bayar': ['payment', 'transfer', 'kirim', 'send'],
+  'daftar': ['register', 'registrasi', 'signup', 'buat akun'],
+  'masuk': ['login', 'signin', 'akses'],
+  'saldo': ['balance', 'dana', 'uang'],
+  'tarik': ['withdraw', 'withdrawal', 'cairkan', 'ambil'],
+  'deposit': ['topup', 'top up', 'isi', 'tambah'],
+  'rate': ['kurs', 'harga', 'nilai tukar', 'price'],
+  'crypto': ['cryptocurrency', 'coin', 'koin', 'kripto'],
+  'fee': ['biaya', 'ongkos', 'charge', 'cost'],
+  'proses': ['process', 'waktu', 'lama', 'durasi'],
+  'gagal': ['failed', 'error', 'masalah', 'kendala', 'problem'],
+  'berhasil': ['success', 'sukses', 'selesai', 'done'],
+  'verifikasi': ['verify', 'konfirmasi', 'validasi'],
+  'poin': ['point', 'reward', 'bonus'],
+  'referral': ['referal', 'ajak teman', 'undang'],
+};
+
+function getSynonyms(word: string): string[] {
+  const result = [word];
+  for (const [key, synonyms] of Object.entries(SYNONYMS)) {
+    if (key === word || synonyms.includes(word)) {
+      result.push(key, ...synonyms);
+    }
+  }
+  return Array.from(new Set(result));
+}
+
+function fuzzyMatch(str1: string, str2: string): boolean {
+  if (str1 === str2) return true;
+  if (str1.includes(str2) || str2.includes(str1)) return true;
+  
+  if (str1.length < 4 || str2.length < 4) return false;
+  
+  const shorter = str1.length < str2.length ? str1 : str2;
+  const longer = str1.length < str2.length ? str2 : str1;
+  
+  if (shorter.length >= 4 && longer.startsWith(shorter.substring(0, 4))) return true;
+  if (shorter.length >= 4 && longer.endsWith(shorter.substring(shorter.length - 4))) return true;
+  
+  return false;
+}
+
 export function calculateRelevanceScore(question: string, keywords: string[]): number {
   const questionKeywords = extractKeywords(question);
   if (questionKeywords.length === 0 || keywords.length === 0) return 0;
   
   let matchCount = 0;
+  const expandedKeywords = keywords.flatMap(k => getSynonyms(k));
+  
   for (const qk of questionKeywords) {
-    for (const k of keywords) {
-      if (k.includes(qk) || qk.includes(k)) {
-        matchCount++;
-        break;
+    const qkSynonyms = getSynonyms(qk);
+    for (const qkSyn of qkSynonyms) {
+      let found = false;
+      for (const k of expandedKeywords) {
+        if (fuzzyMatch(qkSyn, k)) {
+          matchCount++;
+          found = true;
+          break;
+        }
       }
+      if (found) break;
     }
   }
   
