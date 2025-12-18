@@ -64,7 +64,7 @@ async function getLearnedKnowledge(userMessage: string): Promise<string> {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { action, sessionId, message, visitorName } = body;
+    const { action, sessionId, message, visitorName, attachment } = body;
 
     if (action === 'start') {
       const newSessionId = generateSessionId();
@@ -92,11 +92,16 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    if (action === 'send' && sessionId && message) {
+    if (action === 'send' && sessionId && (message || attachment)) {
       await db.insert(chatMessages).values({
         sessionId,
         sender: 'user',
-        message,
+        message: message || '',
+        ...(attachment && {
+          attachmentUrl: attachment.url,
+          attachmentType: attachment.type,
+          attachmentName: attachment.name,
+        }),
       });
 
       await db.update(chatSessions)
@@ -231,6 +236,11 @@ export async function POST(request: NextRequest) {
           sender: m.sender,
           message: m.message,
           createdAt: m.createdAt.toISOString(),
+          ...(m.attachmentUrl && {
+            attachmentUrl: m.attachmentUrl,
+            attachmentType: m.attachmentType,
+            attachmentName: m.attachmentName,
+          }),
         })),
       });
     }
