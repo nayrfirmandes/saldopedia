@@ -11,11 +11,7 @@ type TestimonialWithFormattedDate = DbTestimonial & { formattedDate: string };
 
 function TestimonialsCarousel() {
   const { t } = useLanguage();
-  const [isHydrated, setIsHydrated] = useState(false);
-  
-  useEffect(() => {
-    setIsHydrated(true);
-  }, []);
+  const [showCarousel, setShowCarousel] = useState(true);
   const [dbTestimonials, setDbTestimonials] = useState<TestimonialWithFormattedDate[]>([]);
 
   useEffect(() => {
@@ -81,8 +77,8 @@ function TestimonialsCarousel() {
             <div className="h-56 w-56 rounded-full border-[20px] border-white dark:border-gray-800 blur-[20px] will-change-[filter]" />
           </div>
           {/* Row */}
-          <div className={`group inline-flex w-full flex-nowrap py-12 [mask-image:_linear-gradient(to_right,transparent_0,_black_10%,_black_90%,transparent_100%)] md:py-20 transition-opacity duration-300 select-none ${
-            isHydrated ? 'opacity-100' : 'opacity-0'
+          <div className={`group inline-flex w-full flex-nowrap py-12 [mask-image:_linear-gradient(to_right,transparent_0,_black_10%,_black_90%,transparent_100%)] md:py-20 transition-opacity duration-400 select-none ${
+            showCarousel ? 'opacity-100' : 'opacity-0'
           }`}>
             <div className="flex animate-[infinite-scroll_60s_linear_infinite] items-start justify-center group-hover:[animation-play-state:paused] group-active:[animation-play-state:paused] md:justify-start *:mx-3">
               {/* Items */}
