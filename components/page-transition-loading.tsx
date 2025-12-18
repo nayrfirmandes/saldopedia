@@ -35,7 +35,7 @@ function TelegramSpinner() {
             fill="none"
             stroke="currentColor"
             strokeWidth="2.5"
-            className="text-blue-100 dark:text-gray-700"
+            className="text-gray-200 dark:text-gray-700"
           />
           <circle
             cx="18"
@@ -46,12 +46,12 @@ function TelegramSpinner() {
             strokeWidth="2.5"
             strokeLinecap="round"
             strokeDasharray="70 30"
-            className="text-blue-500 dark:text-blue-400"
+            className="text-blue-600 dark:text-blue-400"
           />
         </svg>
       </div>
       <span 
-        className="text-sm font-medium text-gray-400 dark:text-gray-500"
+        className="text-sm font-medium text-gray-500 dark:text-gray-400"
         style={{
           animation: 'telegram-fade-text 1.5s ease-in-out infinite'
         }}
@@ -157,7 +157,7 @@ export function PageTransitionLoadingProvider({ children }: { children: ReactNod
     <LoadingContext.Provider value={{ showLoading }}>
       {loading && (
         <div 
-          className="fixed inset-0 z-[9999] bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm flex items-center justify-center"
+          className="fixed inset-0 z-[9999] bg-gray-50/98 dark:bg-gray-900/98 backdrop-blur-sm flex items-center justify-center"
           style={{
             opacity: visible ? 1 : 0,
             transition: 'opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1)'
@@ -204,7 +204,7 @@ export default function PageTransitionLoading() {
 
   return (
     <div 
-      className="fixed inset-0 z-[9999] bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm flex items-center justify-center"
+      className="fixed inset-0 z-[9999] bg-gray-50/98 dark:bg-gray-900/98 backdrop-blur-sm flex items-center justify-center"
       style={{
         opacity: visible ? 1 : 0,
         transition: 'opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1)'

@@ -25,7 +25,7 @@ function TelegramSpinnerSmall() {
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
-          className="text-blue-200 dark:text-gray-700"
+          className="text-gray-200 dark:text-gray-700"
         />
         <circle
           cx="14"
@@ -36,7 +36,7 @@ function TelegramSpinnerSmall() {
           strokeWidth="2"
           strokeLinecap="round"
           strokeDasharray="50 20"
-          className="text-blue-500 dark:text-blue-400"
+          className="text-blue-600 dark:text-blue-400"
         />
       </svg>
       <style jsx>{`
