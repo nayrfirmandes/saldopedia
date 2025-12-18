@@ -58,13 +58,13 @@
       opacity var(--duration-fast) var(--ease-smooth);
   }
   
-  /* Hover - very subtle brightness change only, no scale */
+  /* Hover - subtle opacity change only, no scale or filter (filter causes blur) */
   .btn-telegram:hover,
   .btn:hover,
   .btn-sm:hover,
   .btn-lg:hover,
   button:not(.no-animation):hover {
-    filter: brightness(1.05);
+    opacity: 0.9;
   }
   
   /* Active/Press - subtle scale down */
