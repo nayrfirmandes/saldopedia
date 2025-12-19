@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PageIllustration from "@/components/page-illustration";
 import { useLanguage } from "@/contexts/language-context";
+import { useAuth } from "@/contexts/auth-context";
 
 interface HeroCommandVariant {
   line1: string;
@@ -52,6 +53,7 @@ const HERO_COMMAND_VARIANTS: HeroCommandVariant[] = [
 
 export default function HeroHome() {
   const { t } = useLanguage();
+  const { user } = useAuth();
   const [variantIndex, setVariantIndex] = useState(0);
 
   useEffect(() => {
@@ -131,17 +133,13 @@ export default function HeroHome() {
                 {t('hero.subtitle')}
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
-                <div
-                  className="relative mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
-                  
-                  
-                >
+                <div className="relative mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                   <Link
                     className="btn group w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:w-auto"
-                    href="/order"
+                    href={user ? "/order" : "/register"}
                   >
                     <span className="relative inline-flex items-center">
-                      {t('nav.formOrder')}{" "}
+                      {user ? t('nav.formOrder') : t('hero.ctaRegister')}{" "}
                       <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
                         →
                       </span>

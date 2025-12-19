@@ -38,6 +38,7 @@
     "title": "Buy Sell Crypto, PayPal & Skrill from $2",
     "subtitle": "The fastest crypto, PayPal, and Skrill transactions in Indonesia. Instant 5-15 minute processing, multi-layer security, real-time rates 24/7. Trusted by thousands.",
     "ctaStart": "Buy & Sell Now",
+    "ctaRegister": "Sign Up Now",
     "ctaHow": "How It Works"
   },
   "features": {
@@ -137,7 +138,9 @@
   },
   "cta": {
     "title": "Ready to Get Started?",
+    "titleRegister": "Don't Have an Account?",
     "telegram": "Create Order Now",
+    "register": "Sign Up Free",
     "howItWorks": "How It Works"
   },
   "footer": {

@@ -38,6 +38,7 @@
     "title": "Jual Beli Crypto, PayPal & Skrill Mulai 25 Ribu",
     "subtitle": "Transaksi cryptocurrency, PayPal, dan Skrill tercepat di Indonesia. Proses instan 5-15 menit, keamanan berlapis, rate real-time 24/7. Dipercaya ribuan pengguna.",
     "ctaStart": "Mulai Transaksi",
+    "ctaRegister": "Daftar Sekarang",
     "ctaHow": "Lihat Cara Kerja"
   },
   "features": {
@@ -137,7 +138,9 @@
   },
   "cta": {
     "title": "Siap Mulai Transaksi?",
+    "titleRegister": "Belum Punya Akun?",
     "telegram": "Buat Order Sekarang",
+    "register": "Daftar Gratis",
     "howItWorks": "Lihat Cara Kerja"
   },
   "footer": {
