@@ -233,6 +233,20 @@ export async function POST(request: NextRequest) {
       });
     }
 
+    if (action === 'submit_rating' && sessionId) {
+      const { rating, feedback } = body;
+      
+      await db.update(chatSessions)
+        .set({ 
+          rating: rating || null,
+          feedback: feedback || null,
+          status: 'closed',
+        })
+        .where(eq(chatSessions.sessionId, sessionId));
+
+      return NextResponse.json({ success: true });
+    }
+
     return NextResponse.json({ success: false, error: 'Invalid action' }, { status: 400 });
   } catch (error) {
     console.error('Livechat error:', error);

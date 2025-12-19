@@ -435,6 +435,8 @@ export const chatSessions = pgTable("chat_sessions", {
   userId: integer("user_id").references(() => users.id, { onDelete: "set null" }),
   status: chatStatusEnum("status").notNull().default("active"),
   telegramMessageId: integer("telegram_message_id"),
+  rating: integer("rating"),
+  feedback: text("feedback"),
   lastMessageAt: timestamp("last_message_at").notNull().defaultNow(),
   createdAt: timestamp("created_at").notNull().defaultNow(),
 }, (table) => {
