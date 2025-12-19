@@ -456,9 +456,6 @@ export const chatMessages = pgTable("chat_messages", {
   sender: chatSenderEnum("sender").notNull(),
   message: text("message").notNull(),
   telegramMessageId: integer("telegram_message_id"),
-  attachmentUrl: text("attachment_url"),
-  attachmentType: varchar("attachment_type", { length: 20 }),
-  attachmentName: varchar("attachment_name", { length: 255 }),
   createdAt: timestamp("created_at").notNull().defaultNow(),
 }, (table) => {
   return {

@@ -4,7 +4,6 @@ import { getDynamicRates } from "@/lib/dynamic-rates";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
-export const maxDuration = 25;
 
 type Transaction = {
   id: number;
@@ -53,17 +52,9 @@ export async function GET() {
   let statusUpdateInterval: NodeJS.Timeout | null = null;
   let keepAliveInterval: NodeJS.Timeout | null = null;
   let priceRefreshInterval: NodeJS.Timeout | null = null;
-  let connectionTimeout: NodeJS.Timeout | null = null;
 
   const stream = new ReadableStream({
     async start(controller) {
-      connectionTimeout = setTimeout(() => {
-        try {
-          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ type: "reconnect" })}\n\n`));
-          controller.close();
-        } catch (e) {
-        }
-      }, 24000);
       const sendEvent = (data: any) => {
         try {
           controller.enqueue(
@@ -237,10 +228,6 @@ export async function GET() {
       }, 60000);
     },
     cancel() {
-      if (connectionTimeout) {
-        clearTimeout(connectionTimeout);
-        connectionTimeout = null;
-      }
       if (generationInterval) {
         clearTimeout(generationInterval);
         generationInterval = null;

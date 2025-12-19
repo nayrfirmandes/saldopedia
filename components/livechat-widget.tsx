@@ -1,16 +1,13 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { MessageCircle, X, Send, User, Bot, Headphones, Paperclip, Image as ImageIcon } from 'lucide-react';
+import { MessageCircle, X, Send, User, Bot, Headphones } from 'lucide-react';
 import { useAuth } from '@/contexts/auth-context';
 
 interface ChatMessage {
   sender: 'user' | 'ai' | 'admin';
   message: string;
   createdAt: string;
-  attachmentUrl?: string;
-  attachmentType?: 'image' | 'file';
-  attachmentName?: string;
 }
 
 function renderMessageWithLinks(text: string, isUser: boolean = false) {
@@ -88,10 +85,6 @@ export default function LivechatWidget() {
   const [isHydrated, setIsHydrated] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
-  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
-  const [isUploading, setIsUploading] = useState(false);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -211,107 +204,25 @@ export default function LivechatWidget() {
     }
   };
 
-  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    
-    const maxSize = 5 * 1024 * 1024;
-    if (file.size > maxSize) {
-      alert('Ukuran file maksimal 5MB');
-      return;
-    }
-    
-    const allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp', 'application/pdf'];
-    if (!allowedTypes.includes(file.type)) {
-      alert('Tipe file yang diizinkan: JPG, PNG, GIF, WebP, PDF');
-      return;
-    }
-    
-    setSelectedFile(file);
-    
-    if (file.type.startsWith('image/')) {
-      const reader = new FileReader();
-      reader.onload = (e) => setPreviewUrl(e.target?.result as string);
-      reader.readAsDataURL(file);
-    } else {
-      setPreviewUrl(null);
-    }
-  };
-
-  const clearSelectedFile = () => {
-    setSelectedFile(null);
-    setPreviewUrl(null);
-    if (fileInputRef.current) {
-      fileInputRef.current.value = '';
-    }
-  };
-
-  const uploadFile = async (file: File): Promise<{ url: string; type: 'image' | 'file'; name: string } | null> => {
-    try {
-      const formData = new FormData();
-      formData.append('file', file);
-      formData.append('sessionId', sessionId || '');
-      
-      const res = await fetch('/api/livechat/upload', {
-        method: 'POST',
-        body: formData,
-      });
-      
-      if (!res.ok) throw new Error('Upload failed');
-      
-      const data = await res.json();
-      return {
-        url: data.url,
-        type: file.type.startsWith('image/') ? 'image' : 'file',
-        name: file.name,
-      };
-    } catch (error) {
-      console.error('File upload error:', error);
-      return null;
-    }
-  };
-
   const sendMessage = async () => {
-    if ((!inputValue.trim() && !selectedFile) || !sessionId || isLoading) return;
+    if (!inputValue.trim() || !sessionId || isLoading) return;
 
     const userMessage = inputValue.trim();
     setInputValue('');
     setIsLoading(true);
-    setIsUploading(!!selectedFile);
     updateLastActivity();
 
-    let attachmentData: { url: string; type: 'image' | 'file'; name: string } | null = null;
-    
-    if (selectedFile) {
-      attachmentData = await uploadFile(selectedFile);
-      clearSelectedFile();
-    }
-    
-    setIsUploading(false);
-
-    const newMessage: ChatMessage = {
+    setMessages(prev => [...prev, {
       sender: 'user',
-      message: userMessage || (attachmentData ? `[Attachment: ${attachmentData.name}]` : ''),
+      message: userMessage,
       createdAt: new Date().toISOString(),
-      ...(attachmentData && {
-        attachmentUrl: attachmentData.url,
-        attachmentType: attachmentData.type,
-        attachmentName: attachmentData.name,
-      }),
-    };
-    
-    setMessages(prev => [...prev, newMessage]);
+    }]);
 
     try {
       const res = await fetch('/api/livechat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          action: 'send', 
-          sessionId, 
-          message: userMessage || (attachmentData ? `[User mengirim file: ${attachmentData.name}]` : ''),
-          attachment: attachmentData,
-        }),
+        body: JSON.stringify({ action: 'send', sessionId, message: userMessage }),
       });
       const data = await res.json();
       if (data.success) {
@@ -497,29 +408,7 @@ export default function LivechatWidget() {
                         ? 'bg-green-100 dark:bg-green-900 text-green-900 dark:text-green-100 rounded-bl-sm'
                         : 'bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded-bl-sm shadow-sm'
                   }`}>
-                    {msg.attachmentUrl && msg.attachmentType === 'image' && (
-                      <a href={msg.attachmentUrl} target="_blank" rel="noopener noreferrer" className="block mb-2">
-                        <img 
-                          src={msg.attachmentUrl} 
-                          alt={msg.attachmentName || 'Attachment'} 
-                          className="max-w-full max-h-40 rounded object-cover"
-                        />
-                      </a>
-                    )}
-                    {msg.attachmentUrl && msg.attachmentType === 'file' && (
-                      <a 
-                        href={msg.attachmentUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className={`flex items-center gap-2 mb-2 p-2 rounded ${
-                          msg.sender === 'user' ? 'bg-blue-500' : 'bg-gray-100 dark:bg-gray-600'
-                        }`}
-                      >
-                        <Paperclip className="w-4 h-4" />
-                        <span className="text-xs truncate">{msg.attachmentName}</span>
-                      </a>
-                    )}
-                    {msg.message && !msg.message.startsWith('[Attachment:') && renderMessageWithLinks(msg.message, msg.sender === 'user')}
+                    {renderMessageWithLinks(msg.message, msg.sender === 'user')}
                   </div>
                 </div>
               </div>
@@ -576,59 +465,21 @@ export default function LivechatWidget() {
           )}
 
           <div className="p-3 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
-            {selectedFile && (
-              <div className="mb-2 p-2 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center gap-2">
-                {previewUrl ? (
-                  <img src={previewUrl} alt="Preview" className="w-12 h-12 object-cover rounded" />
-                ) : (
-                  <div className="w-12 h-12 bg-gray-200 dark:bg-gray-700 rounded flex items-center justify-center">
-                    <Paperclip className="w-5 h-5 text-gray-500" />
-                  </div>
-                )}
-                <div className="flex-1 min-w-0">
-                  <p className="text-xs text-gray-700 dark:text-gray-300 truncate">{selectedFile.name}</p>
-                  <p className="text-xs text-gray-500">{(selectedFile.size / 1024).toFixed(1)} KB</p>
-                </div>
-                <button
-                  onClick={clearSelectedFile}
-                  className="p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded"
-                  aria-label="Remove file"
-                >
-                  <X className="w-4 h-4 text-gray-500" />
-                </button>
-              </div>
-            )}
             <div className="flex items-center gap-2">
-              <input
-                ref={fileInputRef}
-                type="file"
-                accept="image/jpeg,image/png,image/gif,image/webp,application/pdf"
-                onChange={handleFileSelect}
-                className="hidden"
-              />
-              <button
-                onClick={() => fileInputRef.current?.click()}
-                disabled={isLoading || isUploading}
-                className="w-10 h-10 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-400 rounded-full flex items-center justify-center transition-colors disabled:opacity-50"
-                aria-label="Attach file"
-                title="Lampirkan file (maks 5MB)"
-              >
-                <Paperclip className="w-4 h-4" />
-              </button>
               <input
                 ref={inputRef}
                 type="text"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder={isUploading ? "Mengunggah..." : "Ketik pesan..."}
+                placeholder="Ketik pesan..."
                 disabled={isLoading}
                 className="flex-1 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
                 style={{ fontSize: '16px' }}
               />
               <button
                 onClick={sendMessage}
-                disabled={(!inputValue.trim() && !selectedFile) || isLoading}
+                disabled={!inputValue.trim() || isLoading}
                 className="w-10 h-10 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white rounded-full flex items-center justify-center transition-colors"
                 aria-label="Send message"
               >

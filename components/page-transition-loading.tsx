@@ -17,64 +17,9 @@ export function usePageLoading() {
   return context;
 }
 
-function TelegramSpinner() {
-  return (
-    <div className="flex flex-col items-center gap-4">
-      <div className="relative w-9 h-9">
-        <svg
-          className="w-full h-full"
-          viewBox="0 0 36 36"
-          style={{
-            animation: 'telegram-spin 0.8s cubic-bezier(0.4, 0, 0.2, 1) infinite'
-          }}
-        >
-          <circle
-            cx="18"
-            cy="18"
-            r="15"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            className="text-gray-200 dark:text-gray-700"
-          />
-          <circle
-            cx="18"
-            cy="18"
-            r="15"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeDasharray="70 30"
-            className="text-blue-600 dark:text-blue-400"
-          />
-        </svg>
-      </div>
-      <span 
-        className="text-sm font-medium text-gray-500 dark:text-gray-400"
-        style={{
-          animation: 'telegram-fade-text 1.5s ease-in-out infinite'
-        }}
-      >
-        Loading...
-      </span>
-      <style jsx>{`
-        @keyframes telegram-spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-        @keyframes telegram-fade-text {
-          0%, 100% { opacity: 0.5; }
-          50% { opacity: 1; }
-        }
-      `}</style>
-    </div>
-  );
-}
-
 export function PageTransitionLoadingProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(false);
-  const [visible, setVisible] = useState(false);
+  const [fadeOut, setFadeOut] = useState(false);
   const pathname = usePathname();
   const isFirstRender = useRef(true);
   const loadingRef = useRef(false);
@@ -83,16 +28,16 @@ export function PageTransitionLoadingProvider({ children }: { children: ReactNod
     if (loadingRef.current) return;
     loadingRef.current = true;
     setLoading(true);
-    requestAnimationFrame(() => setVisible(true));
+    setFadeOut(false);
     
     const fadeTimer = setTimeout(() => {
-      setVisible(false);
-    }, 800);
+      setFadeOut(true);
+    }, 700);
     
     const hideTimer = setTimeout(() => {
       setLoading(false);
       loadingRef.current = false;
-    }, 1100);
+    }, 900);
 
     return () => {
       clearTimeout(fadeTimer);
@@ -157,13 +102,21 @@ export function PageTransitionLoadingProvider({ children }: { children: ReactNod
     <LoadingContext.Provider value={{ showLoading }}>
       {loading && (
         <div 
-          className="fixed inset-0 z-[9999] bg-gray-50/98 dark:bg-gray-900/98 backdrop-blur-sm flex items-center justify-center"
+          className="fixed inset-0 z-[9999] bg-gray-50 dark:bg-gray-900 flex items-center justify-center"
           style={{
-            opacity: visible ? 1 : 0,
-            transition: 'opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1)'
+            opacity: fadeOut ? 0 : 1,
+            transition: 'opacity 0.15s ease-out'
           }}
         >
-          <TelegramSpinner />
+          <div className="flex flex-col items-center gap-3">
+            <div className="relative w-10 h-10">
+              <div className="absolute inset-0 border-[2.5px] border-blue-100 dark:border-gray-700 rounded-full"></div>
+              <div className="absolute inset-0 border-[2.5px] border-transparent border-t-blue-500 dark:border-t-blue-400 border-r-blue-500 dark:border-r-blue-400 rounded-full animate-spin"></div>
+            </div>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+              Loading...
+            </p>
+          </div>
         </div>
       )}
       {children}
@@ -173,7 +126,7 @@ export function PageTransitionLoadingProvider({ children }: { children: ReactNod
 
 export default function PageTransitionLoading() {
   const [loading, setLoading] = useState(false);
-  const [visible, setVisible] = useState(false);
+  const [fadeOut, setFadeOut] = useState(false);
   const pathname = usePathname();
   const isFirstRender = useRef(true);
 
@@ -184,15 +137,15 @@ export default function PageTransitionLoading() {
     }
     
     setLoading(true);
-    requestAnimationFrame(() => setVisible(true));
+    setFadeOut(false);
     
     const fadeTimer = setTimeout(() => {
-      setVisible(false);
-    }, 800);
+      setFadeOut(true);
+    }, 700);
     
     const hideTimer = setTimeout(() => {
       setLoading(false);
-    }, 1100);
+    }, 900);
 
     return () => {
       clearTimeout(fadeTimer);
@@ -204,13 +157,21 @@ export default function PageTransitionLoading() {
 
   return (
     <div 
-      className="fixed inset-0 z-[9999] bg-gray-50/98 dark:bg-gray-900/98 backdrop-blur-sm flex items-center justify-center"
+      className="fixed inset-0 z-[9999] bg-gray-50 dark:bg-gray-900 flex items-center justify-center"
       style={{
-        opacity: visible ? 1 : 0,
-        transition: 'opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1)'
+        opacity: fadeOut ? 0 : 1,
+        transition: 'opacity 0.15s ease-out'
       }}
     >
-      <TelegramSpinner />
+      <div className="flex flex-col items-center gap-3">
+        <div className="relative w-10 h-10">
+          <div className="absolute inset-0 border-[2.5px] border-blue-100 dark:border-gray-700 rounded-full"></div>
+          <div className="absolute inset-0 border-[2.5px] border-transparent border-t-blue-500 dark:border-t-blue-400 border-r-blue-500 dark:border-r-blue-400 rounded-full animate-spin"></div>
+        </div>
+        <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+          Loading...
+        </p>
+      </div>
     </div>
   );
 }

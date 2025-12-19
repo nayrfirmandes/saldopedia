@@ -31,6 +31,12 @@
    GLOBAL TRANSITION DEFAULTS
    ============================================ */
 @layer base {
+  /* Enable hardware acceleration for smooth animations */
+  * {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
   /* Smooth transitions for all interactive elements */
   a, button, input, select, textarea,
   [role="button"], [tabindex]:not([tabindex="-1"]) {
@@ -41,7 +47,7 @@
 }
 
 /* ============================================
-   BUTTON ANIMATIONS - Press & Hover (Telegram-style: subtle, not over the top)
+   BUTTON ANIMATIONS - Press & Hover
    ============================================ */
 @layer components {
   /* Base button with Telegram-style press effect */
@@ -50,30 +56,31 @@
   .btn-sm,
   .btn-lg,
   button:not(.no-animation) {
-    transform: scale(1);
+    transform: scale(1) translateZ(0);
     transition: 
-      transform var(--duration-fast) var(--ease-spring-soft),
+      transform var(--duration-fast) var(--ease-spring),
       background-color var(--duration-normal) var(--ease-smooth),
       box-shadow var(--duration-normal) var(--ease-smooth),
       opacity var(--duration-fast) var(--ease-smooth);
+    will-change: transform;
   }
   
-  /* Hover - very subtle brightness change only, no scale */
+  /* Hover - subtle lift */
   .btn-telegram:hover,
   .btn:hover,
   .btn-sm:hover,
   .btn-lg:hover,
   button:not(.no-animation):hover {
-    filter: brightness(1.05);
+    transform: scale(1.02) translateZ(0);
   }
   
-  /* Active/Press - subtle scale down */
+  /* Active/Press - scale down with spring */
   .btn-telegram:active,
   .btn:active,
   .btn-sm:active,
   .btn-lg:active,
   button:not(.no-animation):active {
-    transform: scale(0.98);
+    transform: scale(0.97) translateZ(0);
     transition-duration: var(--duration-instant);
   }
   
@@ -84,47 +91,49 @@
   .btn-lg:focus-visible,
   button:not(.no-animation):focus-visible {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
   }
 }
 
 /* ============================================
-   CARD & CONTAINER ANIMATIONS (subtle, elegant)
+   CARD & CONTAINER ANIMATIONS
    ============================================ */
 @layer components {
-  /* Card hover - very subtle lift and shadow */
+  /* Card hover - subtle lift and shadow */
   .card-telegram,
   .hover-lift {
-    transform: translateY(0);
+    transform: translateY(0) translateZ(0);
     transition: 
       transform var(--duration-smooth) var(--ease-spring-soft),
       box-shadow var(--duration-smooth) var(--ease-smooth);
+    will-change: transform, box-shadow;
   }
   
   .card-telegram:hover,
   .hover-lift:hover {
-    transform: translateY(-2px);
+    transform: translateY(-4px) translateZ(0);
     box-shadow: 
-      0 8px 25px -8px rgba(0, 0, 0, 0.12),
-      0 2px 4px -2px rgba(0, 0, 0, 0.08);
+      0 10px 40px -10px rgba(0, 0, 0, 0.15),
+      0 4px 6px -4px rgba(0, 0, 0, 0.1);
   }
   
   /* Dark mode shadow adjustment */
   .dark .card-telegram:hover,
   .dark .hover-lift:hover {
     box-shadow: 
-      0 8px 25px -8px rgba(0, 0, 0, 0.35),
-      0 2px 4px -2px rgba(0, 0, 0, 0.25);
+      0 10px 40px -10px rgba(0, 0, 0, 0.4),
+      0 4px 6px -4px rgba(0, 0, 0, 0.3);
   }
   
   /* Subtle scale on hover */
   .hover-scale {
-    transform: scale(1);
+    transform: scale(1) translateZ(0);
     transition: transform var(--duration-normal) var(--ease-spring-soft);
+    will-change: transform;
   }
   
   .hover-scale:hover {
-    transform: scale(1.015);
+    transform: scale(1.03) translateZ(0);
   }
   
   /* Glow effect on hover */
@@ -133,11 +142,11 @@
   }
   
   .hover-glow:hover {
-    box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
   }
   
   .dark .hover-glow:hover {
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
   }
 }
 
@@ -215,44 +224,46 @@
 }
 
 /* ============================================
-   MODAL & DROPDOWN ANIMATIONS (smooth, not bouncy)
+   MODAL & DROPDOWN ANIMATIONS
    ============================================ */
 @layer components {
   /* Modal backdrop */
   .modal-backdrop {
     opacity: 0;
-    transition: opacity var(--duration-normal) var(--ease-smooth);
+    transition: opacity var(--duration-smooth) var(--ease-smooth);
   }
   
   .modal-backdrop.show {
     opacity: 1;
   }
   
-  /* Modal content - smooth scale, no bounce */
+  /* Modal content - spring scale */
   .modal-content {
     opacity: 0;
-    transform: scale(0.97) translateY(8px);
+    transform: scale(0.95) translateY(10px) translateZ(0);
     transition: 
-      opacity var(--duration-normal) var(--ease-smooth),
-      transform var(--duration-normal) var(--ease-smooth-out);
+      opacity var(--duration-smooth) var(--ease-smooth),
+      transform var(--duration-smooth) var(--ease-spring-out);
+    will-change: transform, opacity;
   }
   
   .modal-content.show {
     opacity: 1;
-    transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0) translateZ(0);
   }
   
-  /* Dropdown menu - smooth slide + fade */
+  /* Dropdown menu - slide + fade */
   .dropdown-telegram,
   [data-dropdown] {
     opacity: 0;
-    transform: translateY(-4px);
+    transform: translateY(-8px) scale(0.98) translateZ(0);
     transform-origin: top center;
     transition: 
-      opacity var(--duration-fast) var(--ease-smooth),
-      transform var(--duration-fast) var(--ease-smooth-out),
-      visibility var(--duration-fast);
+      opacity var(--duration-normal) var(--ease-smooth),
+      transform var(--duration-normal) var(--ease-spring-out),
+      visibility var(--duration-normal);
     visibility: hidden;
+    will-change: transform, opacity;
   }
   
   .dropdown-telegram.show,
@@ -260,110 +271,110 @@
   .dropdown-telegram:not(.hidden),
   [data-dropdown]:not(.hidden) {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1) translateZ(0);
     visibility: visible;
   }
 }
 
 /* ============================================
-   PAGE TRANSITION ANIMATIONS (smooth, subtle)
+   PAGE TRANSITION ANIMATIONS
    ============================================ */
 @layer utilities {
   /* Fade in from bottom */
   .page-enter {
-    animation: pageEnter var(--duration-smooth) var(--ease-smooth-out) both;
+    animation: pageEnter var(--duration-page) var(--ease-spring-out) both;
   }
   
   /* Fade out to top */
   .page-exit {
-    animation: pageExit var(--duration-normal) var(--ease-smooth-in) both;
+    animation: pageExit var(--duration-smooth) var(--ease-smooth-in) both;
   }
   
   /* Slide in from right (for navigation) */
   .slide-in-right {
-    animation: slideInRight var(--duration-normal) var(--ease-smooth-out) both;
+    animation: slideInRight var(--duration-smooth) var(--ease-spring-out) both;
   }
   
   /* Slide in from left */
   .slide-in-left {
-    animation: slideInLeft var(--duration-normal) var(--ease-smooth-out) both;
+    animation: slideInLeft var(--duration-smooth) var(--ease-spring-out) both;
   }
 }
 
 @keyframes pageEnter {
   from {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(20px) translateZ(0);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) translateZ(0);
   }
 }
 
 @keyframes pageExit {
   from {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) translateZ(0);
   }
   to {
     opacity: 0;
-    transform: translateY(-6px);
+    transform: translateY(-10px) translateZ(0);
   }
 }
 
 @keyframes slideInRight {
   from {
     opacity: 0;
-    transform: translateX(16px);
+    transform: translateX(30px) translateZ(0);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) translateZ(0);
   }
 }
 
 @keyframes slideInLeft {
   from {
     opacity: 0;
-    transform: translateX(-16px);
+    transform: translateX(-30px) translateZ(0);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) translateZ(0);
   }
 }
 
 /* ============================================
-   LIST & STAGGER ANIMATIONS (subtle fade)
+   LIST & STAGGER ANIMATIONS
    ============================================ */
 @layer utilities {
   /* Base list item animation */
   .list-item-telegram {
     opacity: 0;
-    transform: translateY(6px);
-    animation: listItemEnter var(--duration-normal) var(--ease-smooth-out) both;
+    transform: translateY(10px) translateZ(0);
+    animation: listItemEnter var(--duration-smooth) var(--ease-spring-out) both;
   }
   
-  /* Stagger delays - faster */
+  /* Stagger delays */
   .stagger-1 { animation-delay: 0ms; }
-  .stagger-2 { animation-delay: 30ms; }
-  .stagger-3 { animation-delay: 60ms; }
-  .stagger-4 { animation-delay: 90ms; }
-  .stagger-5 { animation-delay: 120ms; }
-  .stagger-6 { animation-delay: 150ms; }
-  .stagger-7 { animation-delay: 180ms; }
-  .stagger-8 { animation-delay: 210ms; }
+  .stagger-2 { animation-delay: 50ms; }
+  .stagger-3 { animation-delay: 100ms; }
+  .stagger-4 { animation-delay: 150ms; }
+  .stagger-5 { animation-delay: 200ms; }
+  .stagger-6 { animation-delay: 250ms; }
+  .stagger-7 { animation-delay: 300ms; }
+  .stagger-8 { animation-delay: 350ms; }
 }
 
 @keyframes listItemEnter {
   from {
     opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(10px) translateZ(0);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) translateZ(0);
   }
 }
 
@@ -653,6 +664,19 @@
    PERFORMANCE OPTIMIZATIONS
    ============================================ */
 @layer base {
+  /* GPU acceleration for animated elements */
+  .gpu-accelerated,
+  .card-telegram,
+  .hover-lift,
+  .hover-scale,
+  .modal-content,
+  .dropdown-telegram,
+  .page-enter,
+  .list-item-telegram {
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+  
   /* Optimize scrolling */
   html {
     scroll-behavior: smooth;

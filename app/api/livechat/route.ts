@@ -33,14 +33,12 @@ async function getLearnedKnowledge(userMessage: string): Promise<string> {
     const relevantKnowledge = allKnowledge
       .map(k => {
         const keywords = k.keywords ? k.keywords.split(',').map(kw => kw.trim()) : extractKeywords(k.question);
-        const questionScore = calculateRelevanceScore(userMessage, keywords);
-        const directMatchScore = calculateRelevanceScore(userMessage, extractKeywords(k.question + ' ' + k.answer));
-        const score = Math.max(questionScore, directMatchScore);
+        const score = calculateRelevanceScore(userMessage, keywords);
         return { ...k, score };
       })
-      .filter(k => k.score > 0.15)
+      .filter(k => k.score > 0.3)
       .sort((a, b) => b.score - a.score)
-      .slice(0, 8);
+      .slice(0, 5);
     
     if (relevantKnowledge.length === 0) return '';
     
@@ -64,7 +62,7 @@ async function getLearnedKnowledge(userMessage: string): Promise<string> {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { action, sessionId, message, visitorName, attachment } = body;
+    const { action, sessionId, message, visitorName } = body;
 
     if (action === 'start') {
       const newSessionId = generateSessionId();
@@ -92,16 +90,11 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    if (action === 'send' && sessionId && (message || attachment)) {
+    if (action === 'send' && sessionId && message) {
       await db.insert(chatMessages).values({
         sessionId,
         sender: 'user',
-        message: message || '',
-        ...(attachment && {
-          attachmentUrl: attachment.url,
-          attachmentType: attachment.type,
-          attachmentName: attachment.name,
-        }),
+        message,
       });
 
       await db.update(chatSessions)
@@ -236,11 +229,6 @@ export async function POST(request: NextRequest) {
           sender: m.sender,
           message: m.message,
           createdAt: m.createdAt.toISOString(),
-          ...(m.attachmentUrl && {
-            attachmentUrl: m.attachmentUrl,
-            attachmentType: m.attachmentType,
-            attachmentName: m.attachmentName,
-          }),
         })),
       });
     }
