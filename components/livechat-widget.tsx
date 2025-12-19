@@ -531,14 +531,14 @@ export default function LivechatWidget() {
               value={visitorName}
               onChange={(e) => setVisitorName(e.target.value)}
               placeholder="Nama Anda (opsional)"
-              className="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-gray-100 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
+              className="w-full px-3 py-2 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 mb-3"
               style={{ fontSize: '16px' }}
               onKeyDown={(e) => e.key === 'Enter' && handleStartChat()}
             />
             <button
               onClick={handleStartChat}
               disabled={isLoading}
-              className="w-full py-3 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-medium rounded-lg transition-colors"
+              className="w-full py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white text-sm font-medium rounded-lg transition-colors"
             >
               {isLoading ? 'Memulai...' : 'Mulai Chat'}
             </button>
@@ -584,20 +584,20 @@ export default function LivechatWidget() {
                   value={feedback}
                   onChange={(e) => setFeedback(e.target.value)}
                   placeholder="Komentar tambahan (opsional)"
-                  rows={3}
-                  className="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4 resize-none"
+                  rows={2}
+                  className="w-full px-3 py-2 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 mb-3 resize-none"
                 />
                 <div className="flex gap-2 w-full">
                   <button
                     onClick={() => setShowRating(false)}
-                    className="flex-1 py-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 font-medium rounded-lg transition-colors"
+                    className="flex-1 py-1.5 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 text-sm font-medium rounded-lg transition-colors"
                   >
                     Kembali
                   </button>
                   <button
                     onClick={submitRating}
                     disabled={rating === 0}
-                    className="flex-1 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-medium rounded-lg transition-colors"
+                    className="flex-1 py-1.5 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white text-sm font-medium rounded-lg transition-colors"
                   >
                     Kirim
                   </button>
