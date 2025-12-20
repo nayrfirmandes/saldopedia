@@ -246,9 +246,10 @@ function DecorativeLines() {
 
 function BackgroundGradient() {
   return (
-    <div className="absolute inset-0 -z-20 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 via-transparent to-transparent dark:from-blue-950/20" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-blue-100/40 via-transparent to-transparent dark:from-blue-900/20 rounded-full blur-3xl" />
+    <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 bg-radial-gradient" />
+      <div className="absolute top-0 left-0 right-0 h-24 section-fade-top" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 section-fade-bottom" />
     </div>
   );
 }

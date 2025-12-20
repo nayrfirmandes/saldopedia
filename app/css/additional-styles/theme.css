@@ -91,3 +91,29 @@ transition-property: transform, opacity;
       transform: translate3d(10px, 0, 0) scale(1.2);
   }
 }
+
+/* Smooth radial gradients for section backgrounds */
+.bg-radial-gradient {
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+}
+
+.dark .bg-radial-gradient {
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+}
+
+/* Smooth section transition overlays */
+.section-fade-top {
+  background: linear-gradient(to bottom, var(--bg-color, white) 0%, transparent 100%);
+}
+
+.section-fade-bottom {
+  background: linear-gradient(to top, var(--bg-color, white) 0%, transparent 100%);
+}
+
+.dark .section-fade-top {
+  --bg-color: rgb(17, 24, 39);
+}
+
+.dark .section-fade-bottom {
+  --bg-color: rgb(17, 24, 39);
+}
